@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="DESteer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\DESteer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\DESteer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="Include" />
+		</Compiler>
+		<Linker>
+			<Add library="lib\libIrrlicht.a" />
+		</Linker>
+		<Unit filename="Include\DESteer\IBaseEntity.h" />
+		<Unit filename="Include\DESteer\IMobileEntity.h" />
+		<Unit filename="Include\DESteer\IrrlichtBaseEntity.h" />
+		<Unit filename="Include\DESteer\IrrlichtMobileEntity.h" />
+		<Unit filename="Include\DESteer\SteeringBehaviors.h" />
+		<Unit filename="Include\DESteer\Types.h" />
+		<Unit filename="Source\IrrlichtMobileEntity.cpp" />
+		<Unit filename="Source\SteeringBehaviors.cpp" />
+		<Unit filename="Source\main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
