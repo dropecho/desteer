@@ -8,8 +8,10 @@ using namespace desteer;
 SteeringBehaviors::SteeringBehaviors(IMobileEntity* mob)
 {
     _mob = mob;
-    _target = irr::core::vector3df(0,0,0);
-    _wanderTarget = irr::core::vector3df(0,0,0);
+    _seekTarget     = irr::core::vector3df(0,0,0);
+    _arriveTarget   = irr::core::vector3df(0,0,0);
+    _wanderTarget   = irr::core::vector3df(0,0,0);
+    _fleeTarget     = irr::core::vector3df(0,0,0);
 
     _isSeeking = false;
     _isFleeing = false;
@@ -39,7 +41,7 @@ irr::core::vector3df SteeringBehaviors::Calculate()
 
     if(_isSeeking)
     {
-        steeringForce += Seek(_target);
+        steeringForce += Seek(_seekTarget);
         if(steeringForce.getLengthSQ() > maxForceSQ)
         {
             steeringForce.setLength(_mob->MaxForce());
@@ -48,7 +50,7 @@ irr::core::vector3df SteeringBehaviors::Calculate()
     }
     if(_isArriving)
     {
-        steeringForce += Arrive(_target);
+        steeringForce += Arrive(_arriveTarget);
         if(steeringForce.getLengthSQ() > maxForceSQ)
         {
             steeringForce.setLength(_mob->MaxForce());
@@ -57,7 +59,7 @@ irr::core::vector3df SteeringBehaviors::Calculate()
     }
     if(_isFleeing)
     {
-        steeringForce += Flee(_target);
+        steeringForce += Flee(_fleeTarget);
         if(steeringForce.getLengthSQ() > maxForceSQ)
         {
             steeringForce.setLength(_mob->MaxForce());
@@ -196,7 +198,7 @@ vector3df SteeringBehaviors::AvoidObstacles(const EntityGroup &obstacles)
             bool intersecting = (fabs(localPos.X) - ((*currentObs)->Radius() * .75) < _mob->Radius());
             if(intersecting)
             {
-                if(localPos.Z < distToClosest)
+                if(localPos.getLength() < distToClosest)
                 {
                     closestHitObstacle = (*currentObs);
                     distToClosest = localPos.Z;
@@ -208,6 +210,7 @@ vector3df SteeringBehaviors::AvoidObstacles(const EntityGroup &obstacles)
     if(closestHitObstacle)
     {
         vector3df steeringForce = vector3df(0,0,0);
+        irr::f32 distFromObs = localPos.getLength();
         //f32 magnitude =  ((_mob->MaxForce() / 10) + ((detectLength - localPos.Z) / detectLength));
         f32 magnitude = _mob->MaxForce();
         steeringForce.X = localPos.X <= 0 ? magnitude : -(magnitude);

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1296941767 source:d:\programming\projects\desteer\source\main.cpp
+1296948608 source:d:\programming\projects\desteer\source\main.cpp
 	"Irrlicht/Irrlicht.h"
 	"DESteer/IrrlichtMobileEntity.hpp"
 	"DESteer/IrrlichtBaseEntity.hpp"
@@ -988,7 +988,7 @@
 	"DESteer/IMobileEntity.h"
 	"DESteer/Types.h"
 
-1296941959 source:d:\programming\projects\desteer\source\steeringbehaviors.cpp
+1296948725 source:d:\programming\projects\desteer\source\steeringbehaviors.cpp
 	"DESteer/SteeringBehaviors.hpp"
 	"DESteer/Types.hpp"
 
@@ -1015,12 +1015,12 @@
 1296938371 d:\programming\projects\desteer\include\desteer\ientityspace.hpp
 	"irrlicht/Irrlicht.h"
 
-1296942058 d:\programming\projects\desteer\include\desteer\steeringbehaviors.hpp
+1296945720 d:\programming\projects\desteer\include\desteer\steeringbehaviors.hpp
 	"Irrlicht/Irrlicht.h"
 	"DESteer/IMobileEntity.hpp"
 	"DESteer/Types.hpp"
 
-1296421917 d:\programming\projects\desteer\include\desteer\types.hpp
+1296945428 d:\programming\projects\desteer\include\desteer\types.hpp
 	<vector>
 	<iterator>
 

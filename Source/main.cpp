@@ -51,9 +51,8 @@ int main()
     SteeringBehaviors* Entity1Steering = new SteeringBehaviors(Entity1);
     Entity1->SetSteering(Entity1Steering);
     //Entity1Steering->PursuitOn(Entity2);
-    Entity1Steering->SetTarget(vector3df(0,0,150));
-    Entity1Steering->SetArriveTolerance(25);
-    Entity1Steering->ToggleArrive();
+    Entity1Steering->ArriveOn(vector3df(0,0,150));
+    Entity1Steering->SetArriveTolerance(15);
 
 
     SteeringBehaviors * Entity2Steering = new SteeringBehaviors(Entity2);
@@ -68,15 +67,13 @@ int main()
 
     EntityGroup obstacles;
 
-
-
-    for(int i = 0; i < 1; i++)
+    for(int i = 0; i < 3; i++)
     {
         ISceneNode* s = smgr->addSphereSceneNode(20);
         IrrlichtBaseEntity * e = new IrrlichtBaseEntity(s);
 
         //s->setPosition(vector3df(rand()%randLength - (randLength/2),0,rand()%randLength - (randLength/2)));
-        s->setPosition(vector3df(0,0,100));
+        s->setPosition(vector3df((i-1)*50,0,100));
         //s->setDebugDataVisible(EDS_FULL);
 
         obstacles.push_back(e);

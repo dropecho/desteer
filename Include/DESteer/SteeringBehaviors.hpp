@@ -9,8 +9,10 @@ namespace desteer{
 class SteeringBehaviors
 {
     private:
+
         irr::core::vector3df    _seekTarget;
         irr::core::vector3df    _arriveTarget;
+        irr::core::vector3df    _fleeTarget;
         irr::core::vector3df    _wanderTarget;
         IMobileEntity *         _pursuitTarget;
         IMobileEntity *         _evadeTarget;
@@ -53,11 +55,11 @@ class SteeringBehaviors
 
         void SetArriveTolerance(irr::f32 tolerance) { _arriveTolerance = tolerance; }
 
-        void SeekOn(irr::core::vector3df target) { _seekTarget      = target; _isSeeking    = true;}
-        void SeekOn(irr::core::vector3df target) { _arriveTarget    = target; _isArriving   = true;}
-        void PursuitOn(IMobileEntity* target)    { _pursuitTarget   = target; _isPursuing   = true;}
-        void EvadeOn(IMobileEntity* target)      { _evadeTarget     = target; _isEvading    = true;}
-        void AvoidObstaclesOn(EntityGroup &obstacles) { _obstacles = obstacles; _isAvoidingObstacles = true;}
+        void SeekOn(irr::core::vector3df target)    { _seekTarget      = target; _isSeeking    = true;}
+        void ArriveOn(irr::core::vector3df target)  { _arriveTarget    = target; _isArriving   = true;}
+        void PursuitOn(IMobileEntity* target)       { _pursuitTarget   = target; _isPursuing   = true;}
+        void EvadeOn(IMobileEntity* target)         { _evadeTarget     = target; _isEvading    = true;}
+        void AvoidObstaclesOn(EntityGroup &obstacles) { _obstacles = obstacles;  _isAvoidingObstacles = true;}
     };
 
 }//end ns desteer
