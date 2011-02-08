@@ -16,13 +16,13 @@
 	<File name="Include\DESteer\SteeringBehaviors.h" open="1" top="0" tabpos="4">
 		<Cursor position="1646" topLine="9" />
 	</File>
-	<File name="Source\IrrlichtMobileEntity.cpp" open="1" top="0" tabpos="7">
+	<File name="Source\IrrlichtMobileEntity.cpp" open="1" top="0" tabpos="3">
 		<Cursor position="1443" topLine="0" />
 	</File>
-	<File name="Source\SteeringBehaviors.cpp" open="1" top="0" tabpos="5">
+	<File name="Source\SteeringBehaviors.cpp" open="1" top="0" tabpos="2">
 		<Cursor position="5731" topLine="148" />
 	</File>
-	<File name="Source\main.cpp" open="1" top="1" tabpos="3">
+	<File name="Source\main.cpp" open="1" top="1" tabpos="1">
 		<Cursor position="2619" topLine="51" />
 	</File>
 </CodeBlocks_layout_file>

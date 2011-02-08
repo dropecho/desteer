@@ -17,7 +17,8 @@ int main()
 	IVideoDriver* driver = device->getVideoDriver();
 	ISceneManager* smgr = device->getSceneManager();
 
-	ICameraSceneNode * camera = smgr->addCameraSceneNode();
+	//ICameraSceneNode * camera = smgr->addCameraSceneNode();
+	smgr->addCameraSceneNodeFPS();
 
     u32 tileNumber = 128;
 	IAnimatedMesh* groundMesh = smgr->addHillPlaneMesh(
@@ -42,22 +43,19 @@ int main()
     cube2->setMaterialFlag(EMF_LIGHTING,false);
     cube2->setMaterialTexture(0,driver->getTexture("../media/v2-solid.png"));
 
-    vector3df target = vector3df(rand()%randLength - (randLength/2),0,rand()%randLength - (randLength/2));
 
-    vector3df e2Position = vector3df(rand()%randLength - (randLength/2),0,rand()%randLength - (randLength/2));
-    IrrlichtMobileEntity * Entity1 = new IrrlichtMobileEntity(cube,vector3df(0,0,0),1,50,50);
-    IrrlichtMobileEntity * Entity2 = new IrrlichtMobileEntity(cube2,e2Position,1,100,100);
+
+
+    IrrlichtMobileEntity * Entity1 = new IrrlichtMobileEntity(cube ,vector3df(0,0,0)  );
+    IrrlichtMobileEntity * Entity2 = new IrrlichtMobileEntity(cube2,vector3df(0,0,300));
 
     SteeringBehaviors* Entity1Steering = new SteeringBehaviors(Entity1);
     Entity1->SetSteering(Entity1Steering);
-    //Entity1Steering->PursuitOn(Entity2);
-    Entity1Steering->ArriveOn(vector3df(0,0,150));
-    Entity1Steering->SetArriveTolerance(15);
+    Entity1Steering->HideOn(Entity2);
 
 
     SteeringBehaviors * Entity2Steering = new SteeringBehaviors(Entity2);
-    Entity2Steering->ToggleWander();
-    Entity2Steering->EvadeOn(Entity1);
+    //Entity2Steering->PursuitOn(Entity1);
     Entity2->SetSteering(Entity2Steering);
 
     u32 then = device->getTimer()->getTime();
@@ -67,55 +65,18 @@ int main()
 
     EntityGroup obstacles;
 
-    for(int i = 0; i < 3; i++)
+    for(int i = 0; i < 20; i++)
     {
         ISceneNode* s = smgr->addSphereSceneNode(20);
         IrrlichtBaseEntity * e = new IrrlichtBaseEntity(s);
 
-        //s->setPosition(vector3df(rand()%randLength - (randLength/2),0,rand()%randLength - (randLength/2)));
-        s->setPosition(vector3df((i-1)*50,0,100));
-        //s->setDebugDataVisible(EDS_FULL);
-
+        s->setPosition(vector3df(rand()%randLength - (randLength/2),0,rand()%randLength - (randLength/2)));
+    //    s->setPosition(vector3df(0,0,50));
         obstacles.push_back(e);
     }
 
     Entity1Steering->AvoidObstaclesOn(obstacles);
     Entity2Steering->AvoidObstaclesOn(obstacles);
-
-/*
-    printf("Radius Test \n");
-    printf("Entity1 Radius: %f \n ",Entity1->Radius());
-
-
-    printf("VectorTest \n");
-    Entity1->SetPosition(vector3df(1,0,1));
-    printf("Entity 1 current position is X: %f Z: %f \n",Entity1->Position().X,Entity1->Position().Z);
-    Entity1->SetForwardVector(vector3df(0,0,1));
-    vector3df worldOrigin = Entity1->transformWorldVectToLocal(vector3df(0,0,0));
-
-    printf("Entity 1 current heading is X: %f Z: %f \n",Entity1->ForwardVector().X,Entity1->ForwardVector().Z);
-    printf(" -- \n Origin should be 0,0 in worldspace, in localspace it should be -1,-1 \n");
-    printf("Origin is actually X: %f Z: %f \n\n",worldOrigin.X,worldOrigin.Z);
-
-    Entity1->SetForwardVector(vector3df(1,0,0));
-    worldOrigin = Entity1->transformWorldVectToLocal(vector3df(0,0,0));
-    printf("Changing Heading to (1,0,0) \n -- \n");
-    printf("Origin should now be 0,0 in worldspace and in localspace shold be 1,-1 \n");
-    printf("Origin is actually X: %f Z: %f \n\n",worldOrigin.X,worldOrigin.Z);
-
-    Entity1->SetForwardVector(vector3df(0,0,-1));
-    worldOrigin = Entity1->transformWorldVectToLocal(vector3df(0,0,0));
-    printf("Changing Heading to (0,0,-1) \n -- \n");
-    printf("Origin should now be 0,0 in worldspace and in localspace shold be 1,1 \n");
-    printf("Origin is actually X: %f Z: %f \n\n",worldOrigin.X,worldOrigin.Z);
-
-    Entity1->SetForwardVector(vector3df(-1,0,0));
-    worldOrigin = Entity1->transformWorldVectToLocal(vector3df(0,0,0));
-    printf("Changing Heading to (-1,0,0) \n -- \n");
-    printf("Origin should now be 0,0 in worldspace and in localspace shold be -1,1 \n");
-    printf("Origin is actually X: %f Z: %f \n\n",worldOrigin.X,worldOrigin.Z);
-
-    */
 
     while(device->run())
 	{
@@ -136,8 +97,8 @@ int main()
         Entity1->Update(frameDeltaTime);
         Entity2->Update(frameDeltaTime);
 
-	    camera->setTarget(Entity1->Position());
-        camera->setPosition((Entity1->Position() - Entity1->ForwardVector()*100) + vector3df(0,100,0) );
+	    //camera->setTarget(Entity1->Position());
+        //camera->setPosition((Entity1->Position() - Entity1->ForwardVector()*100) + vector3df(0,100,0) );
 
         driver->beginScene(true, true, SColor(255,100,101,140));
             smgr->drawAll();

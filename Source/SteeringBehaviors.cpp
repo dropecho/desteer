@@ -21,6 +21,7 @@ SteeringBehaviors::SteeringBehaviors(IMobileEntity* mob)
     _isAvoidingObstacles = false;
     _isArriving = false;
     _fleeDistance = 128;
+    _hideDistanceFromObj = 20;
 }
 
 irr::core::vector3df SteeringBehaviors::Calculate()
@@ -38,7 +39,15 @@ irr::core::vector3df SteeringBehaviors::Calculate()
             return steeringForce;
         }
     }
-
+    if(_isHiding)
+    {
+        steeringForce += Hide(_hideTarget,_obstacles);
+        if(steeringForce.getLengthSQ() > maxForceSQ)
+        {
+            steeringForce.setLength(_mob->MaxForce());
+            return steeringForce;
+        }
+    }
     if(_isSeeking)
     {
         steeringForce += Seek(_seekTarget);
@@ -102,13 +111,13 @@ f64 RandomClamped()
     return ((rand()%10000) - 5000) * .0001;
 }
 
-vector3df SteeringBehaviors::Seek(vector3df target)
+vector3df SteeringBehaviors::Seek(const vector3df& target)
 {
     vector3df desiredVelocity = (target - _mob->Position()).normalize() * _mob->MaxSpeed();
     return (desiredVelocity - _mob->Velocity());
 }
 
-vector3df SteeringBehaviors::Flee(vector3df target)
+vector3df SteeringBehaviors::Flee(const vector3df& target)
 {
     if(target.getDistanceFromSQ(_mob->Position()) < _fleeDistance * _fleeDistance)
     {
@@ -131,7 +140,7 @@ vector3df SteeringBehaviors::Wander()
     return realWanderTarget - _mob->Position();
 }
 
-vector3df SteeringBehaviors::Arrive(vector3df targetPos)
+vector3df SteeringBehaviors::Arrive(const vector3df& targetPos)
 {
     vector3df target = targetPos - _mob->Position();
 
@@ -193,6 +202,7 @@ vector3df SteeringBehaviors::AvoidObstacles(const EntityGroup &obstacles)
 
         bool inFront = localPos.Z >= 0;
         bool nearby = localPos.Z < detectLength;
+
         if(inFront && nearby)
         {
             bool intersecting = (fabs(localPos.X) - ((*currentObs)->Radius() * .75) < _mob->Radius());
@@ -201,7 +211,7 @@ vector3df SteeringBehaviors::AvoidObstacles(const EntityGroup &obstacles)
                 if(localPos.getLength() < distToClosest)
                 {
                     closestHitObstacle = (*currentObs);
-                    distToClosest = localPos.Z;
+                    distToClosest = localPos.getLength();
                 }
             }
         }
@@ -210,13 +220,11 @@ vector3df SteeringBehaviors::AvoidObstacles(const EntityGroup &obstacles)
     if(closestHitObstacle)
     {
         vector3df steeringForce = vector3df(0,0,0);
-        irr::f32 distFromObs = localPos.getLength();
-        //f32 magnitude =  ((_mob->MaxForce() / 10) + ((detectLength - localPos.Z) / detectLength));
-        f32 magnitude = _mob->MaxForce();
-        steeringForce.X = localPos.X <= 0 ? magnitude : -(magnitude);
-        //steeringForce.Z = -(magnitude / (localPos.Z /100));
 
-        printf("obs at z: %f x: %f \n",localPos.Z,localPos.X);
+        f32 multiplier = 1.0 + ( detectLength - localPos.Z ) / detectLength;
+        f32 distToEdge = ( closestHitObstacle->Radius() - localPos.Z );
+        steeringForce.X = distToEdge * multiplier;
+        steeringForce.Z = distToEdge * .02;
 
         return _mob->transformLocalVectToWorld(steeringForce);
     }
@@ -224,3 +232,29 @@ vector3df SteeringBehaviors::AvoidObstacles(const EntityGroup &obstacles)
 }
 
 
+vector3df SteeringBehaviors::GetHidingPosition(const IBaseEntity *obstacle, const vector3df& targetPos)
+{
+    vector3df toHidingSpotNorm = (obstacle->Position() - targetPos).normalize();
+    vector3df toHidingSpot = toHidingSpotNorm * (obstacle->Radius() + _hideDistanceFromObj);
+    return toHidingSpot + obstacle->Position();
+}
+
+vector3df SteeringBehaviors::Hide(const IMobileEntity* target, const EntityGroup &obstacles)
+{
+    f32 distToClosest = 16415876;
+    vector3df BestHidingSpot;
+
+    for(EntityIterator currentObs = obstacles.begin(); currentObs != obstacles.end(); ++currentObs)
+    {
+        vector3df HidingSpot = GetHidingPosition((*currentObs),target->Position());
+        f32 sqDist = (HidingSpot - _mob->Position()).getLengthSQ();
+
+        if(sqDist < distToClosest)
+        {
+            distToClosest = sqDist;
+            BestHidingSpot = HidingSpot;
+        }
+    }
+
+    return distToClosest == 16415876 ? Evade(target) : Arrive(BestHidingSpot);
+}

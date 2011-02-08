@@ -1,0 +1,6 @@
+
+Move steering behaviors into seperate classes so that they are more abstracted, only need calculate
+on each steering behavior.  This would allow users to create pluggable behaviors in their own code.
+
+Abstract localspace and mobile entity, have IMobileEntityWithLocalspace, mobile entity should have
+function getLocalSpace, IMobileEntityWithLocalSpace should return this on that function.
