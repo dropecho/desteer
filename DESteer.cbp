@@ -38,14 +38,23 @@
 		<Linker>
 			<Add library="lib\libIrrlicht.a" />
 		</Linker>
-		<Unit filename="Include\DESteer\IBaseEntity.h" />
-		<Unit filename="Include\DESteer\IMobileEntity.h" />
-		<Unit filename="Include\DESteer\IrrlichtBaseEntity.h" />
-		<Unit filename="Include\DESteer\IrrlichtMobileEntity.h" />
-		<Unit filename="Include\DESteer\SteeringBehaviors.h" />
-		<Unit filename="Include\DESteer\Types.h" />
+		<Unit filename="Include\DESteer\Types.hpp" />
+		<Unit filename="Include\DESteer\entity\IBaseEntity.hpp" />
+		<Unit filename="Include\DESteer\entity\IEntitySpace.hpp" />
+		<Unit filename="Include\DESteer\entity\IMobileEntity.hpp" />
+		<Unit filename="Include\DESteer\entity\IrrlichtBaseEntity.hpp" />
+		<Unit filename="Include\DESteer\entity\IrrlichtMobileEntity.hpp" />
+		<Unit filename="Include\desteer\behavior\FleeBehavior.hpp" />
+		<Unit filename="Include\desteer\behavior\ISteeringBehavior.hpp" />
+		<Unit filename="Include\desteer\behavior\SeekBehavior.hpp" />
+		<Unit filename="Include\desteer\controller\ISteeringController.hpp" />
+		<Unit filename="Include\desteer\controller\ModularSteeringController.hpp" />
+		<Unit filename="Include\desteer\controller\SimpleSteeringController.hpp" />
+		<Unit filename="Source\FleeBehavior.cpp" />
 		<Unit filename="Source\IrrlichtMobileEntity.cpp" />
-		<Unit filename="Source\SteeringBehaviors.cpp" />
+		<Unit filename="Source\ModularSteeringController.cpp" />
+		<Unit filename="Source\SeekBehavior.cpp" />
+		<Unit filename="Source\SimpleSteeringController.cpp" />
 		<Unit filename="Source\main.cpp" />
 		<Extensions>
 			<code_completion />

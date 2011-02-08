@@ -18,9 +18,9 @@ public :
 	virtual void SetPosition(irr::core::vector3df position) {_node->setPosition(position);};
 
 	virtual irr::core::aabbox3df BoundingBox() const {return _node->getBoundingBox();};
-	virtual irr::f32 Radius() const {return (_node->getBoundingBox().getExtent().getLength() / 2);};
+	virtual float Radius() const {return (_node->getBoundingBox().getExtent().getLength() / 2);};
 
-	virtual void Update(irr::f32 timeElapsed) {return;};
+	virtual void Update(float timeElapsed) {return;};
 };
 
 }//end namespace entity

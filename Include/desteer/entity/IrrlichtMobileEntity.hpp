@@ -1,6 +1,6 @@
 #pragma once
 #include "desteer/entity/IMobileEntity.hpp"
-#include "desteer/behavior/SteeringBehaviors.hpp"
+#include "desteer/controller/SimpleSteeringController.hpp"
 
 namespace desteer {
 namespace entity {
@@ -10,14 +10,14 @@ class IrrlichtMobileEntity : public IMobileEntity
 private:
 	irr::scene::ISceneNode* _node;
 
-	behavior::SteeringBehaviors *_steering;
+	controller::SimpleSteeringController *_steering;
 public:
     IrrlichtMobileEntity(){};
     IrrlichtMobileEntity(irr::scene::ISceneNode* node,
                          irr::core::vector3df position = irr::core::vector3df(0,0,0),
-                         irr::f32 mass = 1,
-                         irr::f32 maxSpeed = 50,
-                         irr::f32 maxForce = 50)
+                         float mass = 1,
+                         float maxSpeed = 50,
+                         float maxForce = 50)
                          {
                              _node = node;
                              SetPosition(position);
@@ -35,7 +35,7 @@ public:
 
 	virtual irr::core::aabbox3df BoundingBox() const;
 	//an approximation of the radius of the bounding box.
-	virtual irr::f32 Radius() const;
+	virtual float Radius() const;
 
 	virtual irr::core::vector3df PredictFuturePosition(const float predictionTime) const { return irr::core::vector3df(0,0,0); };
 
@@ -48,8 +48,8 @@ public:
     virtual irr::core::vector3df transformWorldVectToLocal(irr::core::vector3df vec);
 	virtual irr::core::vector3df transformLocalVectToWorld(irr::core::vector3df vec);
 
-    void SetSteering(behavior::SteeringBehaviors *container){ _steering = container;};
-	virtual void Update(irr::f32 timeElapsed);
+    void SetSteering(controller::SimpleSteeringController * controller){ _steering = controller;};
+	virtual void Update(float timeElapsed);
 };
 
 }//end namespace entity

@@ -1,28 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Include\DESteer\IBaseEntity.h" open="1" top="0" tabpos="1">
-		<Cursor position="307" topLine="0" />
+	<File name="Include\DESteer\Types.hpp" open="0" top="0" tabpos="3">
+		<Cursor position="309" topLine="0" />
 	</File>
-	<File name="Include\DESteer\IMobileEntity.h" open="0" top="0" tabpos="7">
-		<Cursor position="103" topLine="3" />
+	<File name="Include\DESteer\entity\IBaseEntity.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="390" topLine="0" />
 	</File>
-	<File name="Include\DESteer\IrrlichtBaseEntity.h" open="1" top="0" tabpos="6">
-		<Cursor position="335" topLine="0" />
+	<File name="Include\DESteer\entity\IEntitySpace.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="596" topLine="0" />
 	</File>
-	<File name="Include\DESteer\IrrlichtMobileEntity.h" open="1" top="0" tabpos="2">
-		<Cursor position="697" topLine="0" />
+	<File name="Include\DESteer\entity\IMobileEntity.hpp" open="0" top="0" tabpos="8">
+		<Cursor position="197" topLine="0" />
 	</File>
-	<File name="Include\DESteer\SteeringBehaviors.h" open="1" top="0" tabpos="4">
-		<Cursor position="1646" topLine="9" />
+	<File name="Include\DESteer\entity\IrrlichtBaseEntity.hpp" open="0" top="0" tabpos="5">
+		<Cursor position="24" topLine="0" />
 	</File>
-	<File name="Source\IrrlichtMobileEntity.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="1443" topLine="0" />
+	<File name="Include\DESteer\entity\IrrlichtMobileEntity.hpp" open="1" top="0" tabpos="11">
+		<Cursor position="1987" topLine="11" />
 	</File>
-	<File name="Source\SteeringBehaviors.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="5731" topLine="148" />
+	<File name="Include\desteer\behavior\FleeBehavior.hpp" open="1" top="0" tabpos="12">
+		<Cursor position="245" topLine="0" />
 	</File>
-	<File name="Source\main.cpp" open="1" top="1" tabpos="1">
-		<Cursor position="2619" topLine="51" />
+	<File name="Include\desteer\behavior\ISteeringBehavior.hpp" open="1" top="0" tabpos="8">
+		<Cursor position="485" topLine="0" />
+	</File>
+	<File name="Include\desteer\behavior\SeekBehavior.hpp" open="1" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="Include\desteer\controller\ISteeringController.hpp" open="1" top="0" tabpos="1">
+		<Cursor position="309" topLine="0" />
+	</File>
+	<File name="Include\desteer\controller\ModularSteeringController.hpp" open="1" top="0" tabpos="2">
+		<Cursor position="406" topLine="0" />
+	</File>
+	<File name="Include\desteer\controller\SimpleSteeringController.hpp" open="1" top="0" tabpos="3">
+		<Cursor position="3462" topLine="29" />
+	</File>
+	<File name="Source\FleeBehavior.cpp" open="1" top="1" tabpos="13">
+		<Cursor position="681" topLine="0" />
+	</File>
+	<File name="Source\IrrlichtMobileEntity.cpp" open="1" top="0" tabpos="17">
+		<Cursor position="2213" topLine="37" />
+	</File>
+	<File name="Source\ModularSteeringController.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="427" topLine="0" />
+	</File>
+	<File name="Source\SeekBehavior.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="Source\SimpleSteeringController.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="3955" topLine="124" />
+	</File>
+	<File name="Source\main.cpp" open="1" top="0" tabpos="10">
+		<Cursor position="2210" topLine="34" />
 	</File>
 </CodeBlocks_layout_file>

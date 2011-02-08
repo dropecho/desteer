@@ -20,7 +20,7 @@ aabbox3df IrrlichtMobileEntity::BoundingBox() const{
     return _node->getBoundingBox();
 }
 
-f32 IrrlichtMobileEntity::Radius() const{
+float IrrlichtMobileEntity::Radius() const{
     return (_node->getBoundingBox().getExtent().getLength() / 2);
 }
 
@@ -62,7 +62,7 @@ vector3df IrrlichtMobileEntity::transformLocalVectToWorld(irr::core::vector3df v
     return returnVec;
 }
 
-void IrrlichtMobileEntity::Update(f32 timeElapsed)
+void IrrlichtMobileEntity::Update(float timeElapsed)
 {
     //_steering->Calculate() = steering force
     //divided by mass = acceleration

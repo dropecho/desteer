@@ -9,6 +9,7 @@ using namespace scene;
 using namespace desteer;
 using namespace entity;
 using namespace behavior;
+using namespace controller;
 
 int main()
 {
@@ -25,7 +26,7 @@ int main()
     u32 tileNumber = 128;
 	IAnimatedMesh* groundMesh = smgr->addHillPlaneMesh(
         "",
-        dimension2d<f32>(8,8),
+        dimension2d<float>(8,8),
         dimension2d<u32>(tileNumber,tileNumber),
         0,
         0.0f,
@@ -45,25 +46,21 @@ int main()
     cube2->setMaterialFlag(EMF_LIGHTING,false);
     cube2->setMaterialTexture(0,driver->getTexture("../media/v2-solid.png"));
 
-
-
-
     IrrlichtMobileEntity * Entity1 = new IrrlichtMobileEntity(cube ,vector3df(0,0,0)  );
     IrrlichtMobileEntity * Entity2 = new IrrlichtMobileEntity(cube2,vector3df(0,0,300));
 
-    SteeringBehaviors* Entity1Steering = new SteeringBehaviors(Entity1);
+    SimpleSteeringController* Entity1Steering = new SimpleSteeringController(Entity1);
     Entity1->SetSteering(Entity1Steering);
     Entity1Steering->HideOn(Entity2);
 
-
-    SteeringBehaviors * Entity2Steering = new SteeringBehaviors(Entity2);
-    //Entity2Steering->PursuitOn(Entity1);
+    SimpleSteeringController * Entity2Steering = new SimpleSteeringController(Entity2);
+    Entity2Steering->PursuitOn(Entity1);
     Entity2->SetSteering(Entity2Steering);
 
     u32 then = device->getTimer()->getTime();
 
     srand(device->getTimer()->getRealTime());
-    f32 timeUpdate = 0;
+    float timeUpdate = 0;
 
     EntityGroup obstacles;
 
@@ -83,7 +80,7 @@ int main()
     while(device->run())
 	{
 	    const u32 now = device->getTimer()->getTime();
-        const f32 frameDeltaTime = (f32)(now - then) / 1000.f; // Time in seconds
+        const float frameDeltaTime = (float)(now - then) / 1000.f; // Time in seconds
         then = now;
         timeUpdate += frameDeltaTime;
 
