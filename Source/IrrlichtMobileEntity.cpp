@@ -1,8 +1,11 @@
-#include "DESteer/IrrlichtMobileEntity.hpp"
+#include "desteer/entity/IrrlichtMobileEntity.hpp"
 
-using namespace desteer;
 using namespace irr;
 using namespace core;
+
+using namespace desteer;
+using namespace entity;
+using namespace behavior;
 
 vector3df IrrlichtMobileEntity::Position() const{
     return _node->getPosition();

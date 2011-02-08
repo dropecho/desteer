@@ -1,12 +1,14 @@
 #include "Irrlicht/Irrlicht.h"
-#include "DESteer/IrrlichtMobileEntity.hpp"
-#include "DESteer/IrrlichtBaseEntity.hpp"
+#include "DESteer/entity/IrrlichtMobileEntity.hpp"
+#include "desteer/entity/IrrlichtBaseEntity.hpp"
 
 using namespace irr;
 using namespace core;
 using namespace video;
 using namespace scene;
 using namespace desteer;
+using namespace entity;
+using namespace behavior;
 
 int main()
 {

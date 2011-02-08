@@ -1,9 +1,11 @@
-#include "DESteer/SteeringBehaviors.hpp"
+#include "DESteer/behavior/SteeringBehaviors.hpp"
 #include "DESteer/Types.hpp"
 
 using namespace irr;
 using namespace core;
 using namespace desteer;
+using namespace behavior;
+using namespace entity;
 
 SteeringBehaviors::SteeringBehaviors(IMobileEntity* mob)
 {
