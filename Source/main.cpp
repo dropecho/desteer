@@ -1,5 +1,5 @@
-#include "Irrlicht/Irrlicht.h"
-#include "DESteer/entity/IrrlichtMobileEntity.hpp"
+#include "irrlicht/irrlicht.h"
+#include "desteer/entity/IrrlichtMobileEntity.hpp"
 #include "desteer/entity/IrrlichtBaseEntity.hpp"
 
 using namespace irr;
@@ -51,10 +51,10 @@ int main()
 
     SimpleSteeringController* Entity1Steering = new SimpleSteeringController(Entity1);
     Entity1->SetSteering(Entity1Steering);
-    Entity1Steering->HideOn(Entity2);
+//    Entity1Steering->HideOn(Entity2);
 
     SimpleSteeringController * Entity2Steering = new SimpleSteeringController(Entity2);
-    Entity2Steering->PursuitOn(Entity1);
+//    Entity2Steering->PursuitOn(Entity1);
     Entity2->SetSteering(Entity2Steering);
 
     u32 then = device->getTimer()->getTime();
@@ -74,8 +74,8 @@ int main()
         obstacles.push_back(e);
     }
 
-    Entity1Steering->AvoidObstaclesOn(obstacles);
-    Entity2Steering->AvoidObstaclesOn(obstacles);
+//    Entity1Steering->AvoidObstaclesOn(obstacles);
+//    Entity2Steering->AvoidObstaclesOn(obstacles);
 
     while(device->run())
 	{
@@ -86,7 +86,7 @@ int main()
 
         if(timeUpdate > 3)
         {
-            core::stringw str = L"DESteer v0.0.1 ";
+            core::stringw str = L"desteer v0.0.1 ";
 			str += L" FPS: ";
 			str += (s32)driver->getFPS();
 			device->setWindowCaption(str.c_str());

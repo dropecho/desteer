@@ -1,8 +1,10 @@
 # depslib dependency file v1.0
-1297135269 source:d:\programming\projects\desteer\source\main.cpp
-	"Irrlicht/Irrlicht.h"
-	"DESteer/entity/IrrlichtMobileEntity.hpp"
+1297406932 source:d:\programming\projects\desteer\source\main.cpp
+	"irrlicht/irrlicht.h"
+	"desteer/entity/IrrlichtMobileEntity.hpp"
 	"desteer/entity/IrrlichtBaseEntity.hpp"
+
+1297135269 ntity/IrrlichtBaseEntity.hpp"
 
 1287942100 d:\programming\projects\desteer\include\irrlicht\irrlicht.h
 	"IrrCompileConfig.h"
@@ -161,9 +163,13 @@
 	"vector3d.h"
 	"SIrrCreationParameters.h"
 
+1287942100 ionParameters.h"
+
 1287941188 d:\programming\projects\desteer\include\irrlicht\irrcompileconfig.h
 	<stdio.h>
 	<xtl.h>
+
+1297132271 
 
 1287931378 d:\programming\projects\desteer\include\irrlicht\aabbox3d.h
 	"irrMath.h"
@@ -190,8 +196,12 @@
 	"irrMath.h"
 	"vector3d.h"
 
+1287931378 h"
+
 1287931378 d:\programming\projects\desteer\include\irrlicht\vector3d.h
 	"irrMath.h"
+
+1287931380 "
 
 1287931378 d:\programming\projects\desteer\include\irrlicht\line3d.h
 	"irrTypes.h"
@@ -201,6 +211,8 @@
 	"IDynamicMeshBuffer.h"
 	"CVertexBuffer.h"
 	"CIndexBuffer.h"
+
+1287931380 fer.h"
 
 1287931380 d:\programming\projects\desteer\include\irrlicht\idynamicmeshbuffer.h
 	"IMeshBuffer.h"
@@ -216,6 +228,8 @@
 	"EHardwareBufferFlags.h"
 	"EPrimitiveTypes.h"
 
+1287931380 eTypes.h"
+
 1287931378 d:\programming\projects\desteer\include\irrlicht\ireferencecounted.h
 	"irrTypes.h"
 
@@ -227,6 +241,8 @@
 	"EMaterialTypes.h"
 	"EMaterialFlags.h"
 	"SMaterialLayer.h"
+
+1287931380 Layer.h"
 
 1287931378 d:\programming\projects\desteer\include\irrlicht\scolor.h
 	"irrTypes.h"
@@ -242,9 +258,13 @@
 	"irrString.h"
 	<windows.h>
 
+1287931380 >
+
 1287931380 d:\programming\projects\desteer\include\irrlicht\vector2d.h
 	"irrMath.h"
 	"dimension2d.h"
+
+1287931378 2d.h"
 
 1287931378 d:\programming\projects\desteer\include\irrlicht\dimension2d.h
 	"irrTypes.h"
@@ -254,6 +274,8 @@
 	"irrTypes.h"
 	"dimension2d.h"
 	"position2d.h"
+
+1287931380 d.h"
 
 1287931380 d:\programming\projects\desteer\include\irrlicht\position2d.h
 	"vector2d.h"
@@ -288,6 +310,8 @@
 	"matrix4.h"
 	"irrAllocator.h"
 
+1287931378 tor.h"
+
 1287931380 d:\programming\projects\desteer\include\irrlicht\s3dvertex.h
 	"vector3d.h"
 	"vector2d.h"
@@ -305,13 +329,19 @@
 	"irrArray.h"
 	"S3DVertex.h"
 
+1287931380 .h"
+
 1287931380 d:\programming\projects\desteer\include\irrlicht\iindexbuffer.h
 	"IReferenceCounted.h"
 	"irrArray.h"
 	"SVertexIndex.h"
 
+1287931380 dex.h"
+
 1287931380 d:\programming\projects\desteer\include\irrlicht\cvertexbuffer.h
 	"IVertexBuffer.h"
+
+1287931380 ffer.h"
 
 1287931380 d:\programming\projects\desteer\include\irrlicht\cindexbuffer.h
 	"IIndexBuffer.h"
@@ -319,6 +349,8 @@
 1287931378 d:\programming\projects\desteer\include\irrlicht\cmeshbuffer.h
 	"irrArray.h"
 	"IMeshBuffer.h"
+
+1287931380 er.h"
 
 1287931378 d:\programming\projects\desteer\include\irrlicht\coreutil.h
 	"irrString.h"
@@ -365,13 +397,19 @@
 	"SMaterial.h"
 	"EHardwareBufferFlags.h"
 
+1287931380 BufferFlags.h"
+
 1287931378 d:\programming\projects\desteer\include\irrlicht\ianimatedmeshmd2.h
 	"IAnimatedMesh.h"
+
+1287931378 Mesh.h"
 
 1287931378 d:\programming\projects\desteer\include\irrlicht\ianimatedmeshmd3.h
 	"IAnimatedMesh.h"
 	"IQ3Shader.h"
 	"quaternion.h"
+
+1287931378 n.h"
 
 1287931380 d:\programming\projects\desteer\include\irrlicht\iq3shader.h
 	"irrArray.h"
@@ -384,6 +422,8 @@
 	"IReferenceCounted.h"
 	"IXMLReader.h"
 	"IFileArchive.h"
+
+1287931380 ive.h"
 
 1287931378 d:\programming\projects\desteer\include\irrlicht\ixmlreader.h
 	"IReferenceCounted.h"
@@ -426,6 +466,8 @@
 	"EDriverFeatures.h"
 	"SExposedVideoData.h"
 
+1287931380 ideoData.h"
+
 1287931378 d:\programming\projects\desteer\include\irrlicht\itexture.h
 	"IReferenceCounted.h"
 	"IImage.h"
@@ -460,6 +502,8 @@
 	"IAnimatedMeshMD2.h"
 	"IAnimatedMeshMD3.h"
 
+1287931378 MeshMD3.h"
+
 1287931380 d:\programming\projects\desteer\include\irrlicht\iscenenode.h
 	"IAttributeExchangingObject.h"
 	"ESceneNodeTypes.h"
@@ -474,8 +518,12 @@
 	"irrList.h"
 	"IAttributes.h"
 
+1287931380 es.h"
+
 1287931380 d:\programming\projects\desteer\include\irrlicht\iattributeexchangingobject.h
 	"IReferenceCounted.h"
+
+1287931380 eCounted.h"
 
 1287931378 d:\programming\projects\desteer\include\irrlicht\iscenenodeanimator.h
 	"IReferenceCounted.h"
@@ -483,6 +531,8 @@
 	"ESceneNodeAnimatorTypes.h"
 	"IAttributeExchangingObject.h"
 	"IEventReceiver.h"
+
+1287931380 eiver.h"
 
 1287931380 d:\programming\projects\desteer\include\irrlicht\ieventreceiver.h
 	"ILogger.h"
@@ -536,11 +586,15 @@
 1287931378 d:\programming\projects\desteer\include\irrlicht\ibonescenenode.h
 	"ISceneNode.h"
 
+1287931378 e.h"
+
 1287931380 d:\programming\projects\desteer\include\irrlicht\ibillboardscenenode.h
 	"ISceneNode.h"
 
 1287931378 d:\programming\projects\desteer\include\irrlicht\ibillboardtextscenenode.h
 	"IBillboardSceneNode.h"
+
+1287931378 dSceneNode.h"
 
 1287931380 d:\programming\projects\desteer\include\irrlicht\icamerascenenode.h
 	"ISceneNode.h"
@@ -571,6 +625,8 @@
 1287931380 d:\programming\projects\desteer\include\irrlicht\iguibutton.h
 	"IGUIElement.h"
 
+1287931380 nt.h"
+
 1287931380 d:\programming\projects\desteer\include\irrlicht\iguielement.h
 	"IAttributeExchangingObject.h"
 	"irrList.h"
@@ -600,6 +656,8 @@
 1287931380 d:\programming\projects\desteer\include\irrlicht\iguielementfactory.h
 	"IReferenceCounted.h"
 	"EGUIElementTypes.h"
+
+1287931380 ntTypes.h"
 
 1287931380 d:\programming\projects\desteer\include\irrlicht\iguienvironment.h
 	"IReferenceCounted.h"
@@ -677,6 +735,8 @@
 	"IGUIElement.h"
 	"EMessageBoxFlags.h"
 
+1287931380 oxFlags.h"
+
 1287931378 d:\programming\projects\desteer\include\irrlicht\iguitreeview.h
 	"IGUIElement.h"
 	"IGUIImageList.h"
@@ -730,6 +790,8 @@
 	"IMeshBuffer.h"
 	"SVertexManipulator.h"
 
+1287931378 nipulator.h"
+
 1287931380 d:\programming\projects\desteer\include\irrlicht\svertexmanipulator.h
 	"S3DVertex.h"
 	"SColor.h"
@@ -741,8 +803,12 @@
 	"IReferenceCounted.h"
 	"EMeshWriterEnums.h"
 
+1287931378 erEnums.h"
+
 1287931380 d:\programming\projects\desteer\include\irrlicht\imetatriangleselector.h
 	"ITriangleSelector.h"
+
+1287931380 Selector.h"
 
 1287931380 d:\programming\projects\desteer\include\irrlicht\iosoperator.h
 	"IReferenceCounted.h"
@@ -765,6 +831,8 @@
 	"IParticleEmitter.h"
 	"IAnimatedMeshSceneNode.h"
 
+1287931378 MeshSceneNode.h"
+
 1287931380 d:\programming\projects\desteer\include\irrlicht\iparticleemitter.h
 	"IAttributeExchangingObject.h"
 	"SParticle.h"
@@ -781,6 +849,8 @@
 1287931380 d:\programming\projects\desteer\include\irrlicht\iparticlecylinderemitter.h
 	"IParticleEmitter.h"
 
+1287931378 Emitter.h"
+
 1287931378 d:\programming\projects\desteer\include\irrlicht\iparticlemeshemitter.h
 	"IParticleEmitter.h"
 	"IMesh.h"
@@ -793,6 +863,8 @@
 
 1287931378 d:\programming\projects\desteer\include\irrlicht\iparticleattractionaffector.h
 	"IParticleAffector.h"
+
+1287931380 Affector.h"
 
 1287931380 d:\programming\projects\desteer\include\irrlicht\iparticleaffector.h
 	"IAttributeExchangingObject.h"
@@ -822,6 +894,8 @@
 	"IVideoModeList.h"
 	"ITimer.h"
 	"IOSOperator.h"
+
+1287931380 or.h"
 
 1287931378 d:\programming\projects\desteer\include\irrlicht\edevicetypes.h
 
@@ -859,6 +933,8 @@
 	"IGeometryCreator.h"
 	"ISkinnedMesh.h"
 
+1287931378 esh.h"
+
 1287931378 d:\programming\projects\desteer\include\irrlicht\sceneparameters.h
 
 1287931378 d:\programming\projects\desteer\include\irrlicht\iskinnedmesh.h
@@ -866,6 +942,8 @@
 	"IBoneSceneNode.h"
 	"IAnimatedMesh.h"
 	"SSkinMeshBuffer.h"
+
+1287931378 Buffer.h"
 
 1287931380 d:\programming\projects\desteer\include\irrlicht\sskinmeshbuffer.h
 	"IMeshBuffer.h"
@@ -878,12 +956,16 @@
 1287931380 d:\programming\projects\desteer\include\irrlicht\iscenenodeanimatorcameramaya.h
 	"ISceneNodeAnimator.h"
 
+1287931380 eAnimator.h"
+
 1287931378 d:\programming\projects\desteer\include\irrlicht\iscenenodeanimatorcollisionresponse.h
 	"ISceneNode.h"
 
 1287931378 d:\programming\projects\desteer\include\irrlicht\iscenenodeanimatorfactory.h
 	"IReferenceCounted.h"
 	"ESceneNodeAnimatorTypes.h"
+
+1287931378 eAnimatorTypes.h"
 
 1287931380 d:\programming\projects\desteer\include\irrlicht\iscenenodefactory.h
 	"IReferenceCounted.h"
@@ -965,32 +1047,48 @@
 	"matrix4.h"
 	"IVideoDriver.h"
 
-1297135304 source:d:\programming\projects\desteer\source\irrlichtmobileentity.cpp
+1287931378 ver.h"
+
+1297406831 source:d:\programming\projects\desteer\source\irrlichtmobileentity.cpp
 	"desteer/entity/IrrlichtMobileEntity.hpp"
+
+1297135304 ntity/IrrlichtMobileEntity.hpp"
 
 1296421882 d:\programming\projects\desteer\include\desteer\irrlichtmobileentity.h
 	"DESteer/IMobileEntity.h"
 	"DESteer/SteeringBehaviors.h"
 
+1296421882 teeringBehaviors.h"
+
 1296938029 d:\programming\projects\desteer\include\desteer\imobileentity.h
 	"Irrlicht/Irrlicht.h"
 	"DESteer/IBaseEntity.h"
 
+1296938029 BaseEntity.h"
+
 1296421178 d:\programming\projects\desteer\include\desteer\ibaseentity.h
 	"Irrlicht/Irrlicht.h"
+
+1297135294 Irrlicht.h"
 
 1295937061 d:\programming\projects\desteer\include\desteer\ibasesteeringbehavior.h
 	"Irrlicht/Irrlicht.h"
 	"DESteer/IMobileEntity.h"
+
+1295937061 MobileEntity.h"
 
 1296430221 d:\programming\projects\desteer\include\desteer\steeringbehaviors.h
 	"Irrlicht/Irrlicht.h"
 	"DESteer/IMobileEntity.h"
 	"DESteer/Types.h"
 
+1296430221 ypes.h"
+
 1297128585 source:d:\programming\projects\desteer\source\steeringbehaviors.cpp
 	"DESteer/behavior/SteeringBehaviors.hpp"
 	"DESteer/Types.hpp"
+
+1297173613 ypes.hpp"
 
 1296421917 d:\programming\projects\desteer\include\desteer\types.h
 	<vector>
@@ -1004,10 +1102,14 @@
 	"DESteer/IMobileEntity.hpp"
 	"DESteer/SteeringBehaviors.hpp"
 
+1296938104 teeringBehaviors.hpp"
+
 1296938396 d:\programming\projects\desteer\include\desteer\imobileentity.hpp
 	"Irrlicht/Irrlicht.h"
 	"DESteer/IBaseEntity.hpp"
 	"DESteer/IEntitySpace.hpp"
+
+1296938396 EntitySpace.hpp"
 
 1296938973 d:\programming\projects\desteer\include\desteer\ibaseentity.hpp
 	"Irrlicht/Irrlicht.h"
@@ -1035,24 +1137,28 @@
 	"desteer/entity/IMobileEntity.hpp"
 	"DESteer/Types.hpp"
 
-1297135294 d:\programming\projects\desteer\include\desteer\entity\imobileentity.hpp
-	"Irrlicht/Irrlicht.h"
+1297406831 d:\programming\projects\desteer\include\desteer\entity\imobileentity.hpp
+	"irrlicht/irrlicht.h"
 	"desteer/entity/IBaseEntity.hpp"
 	"desteer/entity/IEntitySpace.hpp"
 
-1297135294 d:\programming\projects\desteer\include\desteer\entity\ibaseentity.hpp
-	"Irrlicht/Irrlicht.h"
+1297135294 ntity/IEntitySpace.hpp"
 
-1297128415 d:\programming\projects\desteer\include\desteer\entity\ientityspace.hpp
-	"irrlicht/Irrlicht.h"
+1297406831 d:\programming\projects\desteer\include\desteer\entity\ibaseentity.hpp
+	"irrlicht/irrlicht.h"
 
-1297135294 d:\programming\projects\desteer\include\desteer\entity\irrlichtmobileentity.hpp
+1297406831 d:\programming\projects\desteer\include\desteer\entity\ientityspace.hpp
+	"irrlicht/irrlicht.h"
+
+1297406831 d:\programming\projects\desteer\include\desteer\entity\irrlichtmobileentity.hpp
 	"desteer/entity/IMobileEntity.hpp"
 	"desteer/controller/SimpleSteeringController.hpp"
 
-1297135294 d:\programming\projects\desteer\include\desteer\entity\irrlichtbaseentity.hpp
+1297135294 ontroller/SimpleSteeringController.hpp"
+
+1297406871 d:\programming\projects\desteer\include\desteer\entity\irrlichtbaseentity.hpp
 	"desteer/entity/IBaseEntity.hpp"
-	"Irrlicht/Irrlicht.h"
+	"irrlicht/irrlicht.h"
 
 1297129277 d:\programming\projects\desteer\include\desteer\behavior\staticsteeringbehaviors.hpp
 	"Irrlicht/Irrlicht.h"
@@ -1066,27 +1172,33 @@
 1297131509 d:\programming\projects\desteer\include\desteer\behavior\staticsteeringcontroller.hpp
 	"desteer/behavior/ISteeringController.hpp"
 
+1297131847 ehavior/ISteeringController.hpp"
+
 1297130111 d:\programming\projects\desteer\include\desteer\behavior\isteeringcontroller.hpp
 	"irrlicht/irrlicht.h"
 	"DESteer/Types.hpp"
 	"desteer/entity/IMobileEntity.hpp"
 
+1297133476 ntity/IMobileEntity.hpp"
+
 1297129465 source:d:\programming\projects\desteer\source\staticsteeringcontroller.cpp
 	"DESteer/behavior/StaticSteeringController.hpp"
 	"DESteer/Types.hpp"
 
-1297134679 d:\programming\projects\desteer\include\desteer\behavior\isteeringbehavior.hpp
+1297172867 d:\programming\projects\desteer\include\desteer\behavior\isteeringbehavior.hpp
 	"desteer/entity/IMobileEntity.hpp"
 
 1297131847 d:\programming\projects\desteer\include\desteer\behavior\simplesteeringcontroller.hpp
 	"desteer/behavior/ISteeringController.hpp"
 
-1297135314 source:d:\programming\projects\desteer\source\simplesteeringcontroller.cpp
-	"DESteer/controller/SimpleSteeringController.hpp"
-	"DESteer/Types.hpp"
+1297406849 source:d:\programming\projects\desteer\source\simplesteeringcontroller.cpp
+	"desteer/controller/SimpleSteeringController.hpp"
+	"desteer/Types.hpp"
 
-1297135269 source:d:\programming\projects\desteer\source\modularsteeringcontroller.cpp
+1297406831 source:d:\programming\projects\desteer\source\modularsteeringcontroller.cpp
 	"desteer/controller/ModularSteeringController.hpp"
+
+1297135269 ontroller/ModularSteeringController.hpp"
 
 1297133532 d:\programming\projects\desteer\include\desteer\controller\modularsteeringcontroller.hpp
 	"ISteeringController.hpp"
@@ -1094,17 +1206,1117 @@
 	"desteer/entity/IMobileEntity.hpp"
 	"desteer/behavior/ISteeringBehavior.hpp"
 
-1297133476 d:\programming\projects\desteer\include\desteer\controller\isteeringcontroller.hpp
+1297133532 ehavior/ISteeringBehavior.hpp"
+
+1297406831 d:\programming\projects\desteer\include\desteer\controller\isteeringcontroller.hpp
 	"irrlicht/irrlicht.h"
-	"DESteer/Types.hpp"
+	"desteer/Types.hpp"
 	"desteer/entity/IMobileEntity.hpp"
 
-1297134739 source:d:\programming\projects\desteer\source\seekbehavior.cpp
+1297406831 source:d:\programming\projects\desteer\source\seekbehavior.cpp
 	"desteer/behavior/SeekBehavior.hpp"
 
-1297134731 d:\programming\projects\desteer\include\desteer\behavior\seekbehavior.hpp
+1297172888 ehavior/SeekBehavior.hpp"
+
+1297172762 d:\programming\projects\desteer\include\desteer\behavior\seekbehavior.hpp
 	"ISteeringBehavior.hpp"
 
-1297135294 d:\programming\projects\desteer\include\desteer\controller\simplesteeringcontroller.hpp
+1297223557 Behavior.hpp"
+
+1297406831 d:\programming\projects\desteer\include\desteer\controller\simplesteeringcontroller.hpp
 	"desteer/controller/ISteeringController.hpp"
+
+1297143582 ontroller/ISteeringController.hpp"
+
+1297406831 source:d:\programming\projects\desteer\source\fleebehavior.cpp
+	"desteer/behavior/FleeBehavior.hpp"
+
+1297223109 ehavior/FleeBehavior.hpp"
+
+1297173139 d:\programming\projects\desteer\include\desteer\behavior\fleebehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1297143668 source:d:\programming\projects\desteer\source\wanderbehavior.cpp
+	"desteer/behavior/WanderBehavior.hpp"
+
+1297143668 ehavior/WanderBehavior.hpp"
+
+1297172816 d:\programming\projects\desteer\include\desteer\behavior\wanderbehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1297223676 source:d:\programming\projects\desteer\source\arrivebehavior.cpp
+	"desteer/behavior/ArriveBehavior.hpp"
+
+1297223382 ehavior/ArriveBehavior.hpp"
+
+1297223557 d:\programming\projects\desteer\include\desteer\behavior\arrivebehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1297172580 source:d:\programming\projects\desteer\source\pursuitbehavior.cpp
+	"desteer/behavior/PursuitBehavior.hpp"
+
+1297172580 ehavior/PursuitBehavior.hpp"
+
+1297172888 d:\programming\projects\desteer\include\desteer\behavior\pursuitbehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/SeekBehavior.hpp"
+
+1297223133 source:d:\programming\projects\desteer\source\evadebehavior.cpp
+	"desteer/behavior/EvadeBehavior.hpp"
+
+1297223133 ehavior/EvadeBehavior.hpp"
+
+1297223109 d:\programming\projects\desteer\include\desteer\behavior\evadebehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/FleeBehavior.hpp"
+
+1297173633 source:d:\programming\projects\desteer\source\obstacleavoidancebehavior.cpp
+	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
+
+1297173633 ehavior/ObstacleAvoidanceBehavior.hpp"
+
+1297173613 d:\programming\projects\desteer\include\desteer\behavior\obstacleavoidancebehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+
+1297223519 source:d:\programming\projects\desteer\source\hidebehavior.cpp
+	"desteer/behavior/HideBehavior.hpp"
+
+1297223519 ehavior/HideBehavior.hpp"
+
+1297223382 d:\programming\projects\desteer\include\desteer\behavior\hidebehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+	"desteer/behavior/EvadeBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+
+1297406831 source:/home/kaeles/code/DESteer/Source/FleeBehavior.cpp
+	"desteer/behavior/FleeBehavior.hpp"
+
+1297173139 /home/kaeles/code/DESteer/Include/desteer/behavior/FleeBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1297172867 /home/kaeles/code/DESteer/Include/desteer/behavior/ISteeringBehavior.hpp
+	"desteer/entity/IMobileEntity.hpp"
+
+1297406831 /home/kaeles/code/DESteer/Include/desteer/entity/IMobileEntity.hpp
+	"irrlicht/irrlicht.h"
+	"desteer/entity/IBaseEntity.hpp"
+	"desteer/entity/IEntitySpace.hpp"
+
+1297406831 /home/kaeles/code/DESteer/Include/desteer/entity/IBaseEntity.hpp
+	"irrlicht/irrlicht.h"
+
+1297406831 /home/kaeles/code/DESteer/Include/desteer/entity/IEntitySpace.hpp
+	"irrlicht/irrlicht.h"
+
+1297406831 source:/home/kaeles/code/DESteer/Source/IrrlichtMobileEntity.cpp
+	"desteer/entity/IrrlichtMobileEntity.hpp"
+
+1297406831 /home/kaeles/code/DESteer/Include/desteer/entity/IrrlichtMobileEntity.hpp
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/controller/SimpleSteeringController.hpp"
+
+1297406831 /home/kaeles/code/DESteer/Include/desteer/controller/SimpleSteeringController.hpp
+	"desteer/controller/ISteeringController.hpp"
+
+1297406831 /home/kaeles/code/DESteer/Include/desteer/controller/ISteeringController.hpp
+	"irrlicht/irrlicht.h"
+	"desteer/Types.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+
+1287945700 /home/kaeles/code/DESteer/Include/irrlicht/irrlicht.h
+	"IrrCompileConfig.h"
+	"aabbox3d.h"
+	"CDynamicMeshBuffer.h"
+	"CIndexBuffer.h"
+	"CMeshBuffer.h"
+	"coreutil.h"
+	"CVertexBuffer.h"
+	"dimension2d.h"
+	"ECullingTypes.h"
+	"EDebugSceneTypes.h"
+	"EDriverFeatures.h"
+	"EDriverTypes.h"
+	"EGUIAlignment.h"
+	"EGUIElementTypes.h"
+	"EHardwareBufferFlags.h"
+	"EMaterialFlags.h"
+	"EMaterialTypes.h"
+	"EMeshWriterEnums.h"
+	"EMessageBoxFlags.h"
+	"ESceneNodeAnimatorTypes.h"
+	"ESceneNodeTypes.h"
+	"ETerrainElements.h"
+	"fast_atof.h"
+	"heapsort.h"
+	"IAnimatedMesh.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+	"IAnimatedMeshSceneNode.h"
+	"IAttributeExchangingObject.h"
+	"IAttributes.h"
+	"IBillboardSceneNode.h"
+	"IBillboardTextSceneNode.h"
+	"IBoneSceneNode.h"
+	"ICameraSceneNode.h"
+	"ICursorControl.h"
+	"IDummyTransformationSceneNode.h"
+	"IDynamicMeshBuffer.h"
+	"IEventReceiver.h"
+	"IFileList.h"
+	"IFileSystem.h"
+	"IGeometryCreator.h"
+	"IGPUProgrammingServices.h"
+	"IGUIButton.h"
+	"IGUICheckBox.h"
+	"IGUIColorSelectDialog.h"
+	"IGUIComboBox.h"
+	"IGUIContextMenu.h"
+	"IGUIEditBox.h"
+	"IGUIElement.h"
+	"IGUIElementFactory.h"
+	"IGUIEnvironment.h"
+	"IGUIFileOpenDialog.h"
+	"IGUIFont.h"
+	"IGUIFontBitmap.h"
+	"IGUIImage.h"
+	"IGUIInOutFader.h"
+	"IGUIListBox.h"
+	"IGUIMeshViewer.h"
+	"IGUIScrollBar.h"
+	"IGUISkin.h"
+	"IGUISpinBox.h"
+	"IGUISpriteBank.h"
+	"IGUIStaticText.h"
+	"IGUITabControl.h"
+	"IGUITable.h"
+	"IGUIToolbar.h"
+	"IGUIWindow.h"
+	"IGUITreeView.h"
+	"IImage.h"
+	"IImageLoader.h"
+	"IImageWriter.h"
+	"IIndexBuffer.h"
+	"ILightSceneNode.h"
+	"ILogger.h"
+	"IMaterialRenderer.h"
+	"IMaterialRendererServices.h"
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"IMeshCache.h"
+	"IMeshLoader.h"
+	"IMeshManipulator.h"
+	"IMeshSceneNode.h"
+	"IMeshWriter.h"
+	"IMetaTriangleSelector.h"
+	"IOSOperator.h"
+	"IParticleSystemSceneNode.h"
+	"IQ3LevelMesh.h"
+	"IQ3Shader.h"
+	"IReadFile.h"
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"IrrlichtDevice.h"
+	"irrList.h"
+	"irrMap.h"
+	"irrMath.h"
+	"irrString.h"
+	"irrTypes.h"
+	"path.h"
+	"irrXML.h"
+	"ISceneCollisionManager.h"
+	"ISceneManager.h"
+	"ISceneNode.h"
+	"ISceneNodeAnimator.h"
+	"ISceneNodeAnimatorCameraFPS.h"
+	"ISceneNodeAnimatorCameraMaya.h"
+	"ISceneNodeAnimatorCollisionResponse.h"
+	"ISceneNodeAnimatorFactory.h"
+	"ISceneNodeFactory.h"
+	"ISceneUserDataSerializer.h"
+	"IShaderConstantSetCallBack.h"
+	"IShadowVolumeSceneNode.h"
+	"ISkinnedMesh.h"
+	"ITerrainSceneNode.h"
+	"ITextSceneNode.h"
+	"ITexture.h"
+	"ITimer.h"
+	"ITriangleSelector.h"
+	"IVertexBuffer.h"
+	"IVideoDriver.h"
+	"IVideoModeList.h"
+	"IVolumeLightSceneNode.h"
+	"IWriteFile.h"
+	"IXMLReader.h"
+	"IXMLWriter.h"
+	"ILightManager.h"
+	"Keycodes.h"
+	"line2d.h"
+	"line3d.h"
+	"matrix4.h"
+	"plane3d.h"
+	"position2d.h"
+	"quaternion.h"
+	"rect.h"
+	"S3DVertex.h"
+	"SAnimatedMesh.h"
+	"SceneParameters.h"
+	"SColor.h"
+	"SExposedVideoData.h"
+	"SIrrCreationParameters.h"
+	"SKeyMap.h"
+	"SLight.h"
+	"SMaterial.h"
+	"SMesh.h"
+	"SMeshBuffer.h"
+	"SMeshBufferLightMap.h"
+	"SMeshBufferTangents.h"
+	"SParticle.h"
+	"SSharedMeshBuffer.h"
+	"SSkinMeshBuffer.h"
+	"SVertexIndex.h"
+	"SViewFrustum.h"
+	"triangle3d.h"
+	"vector2d.h"
+	"vector3d.h"
+	"SIrrCreationParameters.h"
+
+1287944788 /home/kaeles/code/DESteer/Include/irrlicht/IrrCompileConfig.h
+	<stdio.h>
+	<xtl.h>
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/aabbox3d.h
+	"irrMath.h"
+	"plane3d.h"
+	"line3d.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/irrMath.h
+	"IrrCompileConfig.h"
+	"irrTypes.h"
+	<math.h>
+	<float.h>
+	<stdlib.h>
+	<limits.h>
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/irrTypes.h
+	"IrrCompileConfig.h"
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/plane3d.h
+	"irrMath.h"
+	"vector3d.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/vector3d.h
+	"irrMath.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/line3d.h
+	"irrTypes.h"
+	"vector3d.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/CDynamicMeshBuffer.h
+	"IDynamicMeshBuffer.h"
+	"CVertexBuffer.h"
+	"CIndexBuffer.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IDynamicMeshBuffer.h
+	"IMeshBuffer.h"
+	"IVertexBuffer.h"
+	"IIndexBuffer.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IMeshBuffer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"aabbox3d.h"
+	"S3DVertex.h"
+	"SVertexIndex.h"
+	"EHardwareBufferFlags.h"
+	"EPrimitiveTypes.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IReferenceCounted.h
+	"irrTypes.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/SMaterial.h
+	"SColor.h"
+	"matrix4.h"
+	"irrArray.h"
+	"irrMath.h"
+	"EMaterialTypes.h"
+	"EMaterialFlags.h"
+	"SMaterialLayer.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/SColor.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/matrix4.h
+	"irrMath.h"
+	"vector3d.h"
+	"vector2d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+	"rect.h"
+	"irrString.h"
+	<windows.h>
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/vector2d.h
+	"irrMath.h"
+	"dimension2d.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/dimension2d.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/rect.h
+	"irrTypes.h"
+	"dimension2d.h"
+	"position2d.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/position2d.h
+	"vector2d.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/irrString.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/irrAllocator.h
+	"irrTypes.h"
+	<new>
+	<memory.h>
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/irrArray.h
+	"irrTypes.h"
+	"heapsort.h"
+	"irrAllocator.h"
+	"irrMath.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/heapsort.h
+	"irrTypes.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/EMaterialTypes.h
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/EMaterialFlags.h
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/SMaterialLayer.h
+	"matrix4.h"
+	"irrAllocator.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/S3DVertex.h
+	"vector3d.h"
+	"vector2d.h"
+	"SColor.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/SVertexIndex.h
+	"irrTypes.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/EHardwareBufferFlags.h
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/EPrimitiveTypes.h
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IVertexBuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"S3DVertex.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IIndexBuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SVertexIndex.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/CVertexBuffer.h
+	"IVertexBuffer.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/CIndexBuffer.h
+	"IIndexBuffer.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/CMeshBuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/coreutil.h
+	"irrString.h"
+	"path.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/path.h
+	"irrString.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/ECullingTypes.h
+	"irrTypes.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/EDebugSceneTypes.h
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/EDriverFeatures.h
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/EDriverTypes.h
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/EGUIAlignment.h
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/EGUIElementTypes.h
+	"irrTypes.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/EMeshWriterEnums.h
+	"irrTypes.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/EMessageBoxFlags.h
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/ESceneNodeAnimatorTypes.h
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/ESceneNodeTypes.h
+	"irrTypes.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/ETerrainElements.h
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/fast_atof.h
+	"irrMath.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IAnimatedMesh.h
+	"aabbox3d.h"
+	"IMesh.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IMesh.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"EHardwareBufferFlags.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IAnimatedMeshMD2.h
+	"IAnimatedMesh.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IAnimatedMeshMD3.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+	"quaternion.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IQ3Shader.h
+	"irrArray.h"
+	"fast_atof.h"
+	"IFileSystem.h"
+	"IVideoDriver.h"
+	"coreutil.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IFileSystem.h
+	"IReferenceCounted.h"
+	"IXMLReader.h"
+	"IFileArchive.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IXMLReader.h
+	"IReferenceCounted.h"
+	"irrXML.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/irrXML.h
+	<stdio.h>
+	"IrrCompileConfig.h"
+	<irrXML.h>
+	<string>
+	<irrXML.h>
+	<irrXML.h>
+	<irrXML.h>
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IFileArchive.h
+	"IReadFile.h"
+	"IFileList.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IReadFile.h
+	"IReferenceCounted.h"
+	"coreutil.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IFileList.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IVideoDriver.h
+	"rect.h"
+	"SColor.h"
+	"ITexture.h"
+	"irrArray.h"
+	"matrix4.h"
+	"plane3d.h"
+	"dimension2d.h"
+	"position2d.h"
+	"SMaterial.h"
+	"IMeshBuffer.h"
+	"triangle3d.h"
+	"EDriverTypes.h"
+	"EDriverFeatures.h"
+	"SExposedVideoData.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/ITexture.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"dimension2d.h"
+	"EDriverTypes.h"
+	"path.h"
+	"matrix4.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IImage.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+	"SColor.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/triangle3d.h
+	"vector3d.h"
+	"line3d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/SExposedVideoData.h
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/quaternion.h
+	"irrTypes.h"
+	"irrMath.h"
+	"matrix4.h"
+	"vector3d.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IAnimatedMeshSceneNode.h
+	"ISceneNode.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/ISceneNode.h
+	"IAttributeExchangingObject.h"
+	"ESceneNodeTypes.h"
+	"ECullingTypes.h"
+	"EDebugSceneTypes.h"
+	"ISceneNodeAnimator.h"
+	"ITriangleSelector.h"
+	"SMaterial.h"
+	"irrString.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"irrList.h"
+	"IAttributes.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IAttributeExchangingObject.h
+	"IReferenceCounted.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/ISceneNodeAnimator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"ESceneNodeAnimatorTypes.h"
+	"IAttributeExchangingObject.h"
+	"IEventReceiver.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IEventReceiver.h
+	"ILogger.h"
+	"Keycodes.h"
+	"irrString.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/ILogger.h
+	"IReferenceCounted.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/Keycodes.h
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/ITriangleSelector.h
+	"IReferenceCounted.h"
+	"triangle3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"line3d.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/irrList.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IAttributes.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"vector3d.h"
+	"vector2d.h"
+	"line2d.h"
+	"line3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"rect.h"
+	"matrix4.h"
+	"quaternion.h"
+	"plane3d.h"
+	"triangle3d.h"
+	"line2d.h"
+	"line3d.h"
+	"irrString.h"
+	"irrArray.h"
+	"IXMLReader.h"
+	"EAttributes.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/line2d.h
+	"irrTypes.h"
+	"vector2d.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/EAttributes.h
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IBoneSceneNode.h
+	"ISceneNode.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IBillboardSceneNode.h
+	"ISceneNode.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IBillboardTextSceneNode.h
+	"IBillboardSceneNode.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/ICameraSceneNode.h
+	"ISceneNode.h"
+	"IEventReceiver.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/ICursorControl.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IDummyTransformationSceneNode.h
+	"ISceneNode.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGeometryCreator.h
+	"IReferenceCounted.h"
+	"IMesh.h"
+	"IImage.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGPUProgrammingServices.h
+	"EShaderTypes.h"
+	"EMaterialTypes.h"
+	"EPrimitiveTypes.h"
+	"path.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/EShaderTypes.h
+	"irrTypes.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUIButton.h
+	"IGUIElement.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUIElement.h
+	"IAttributeExchangingObject.h"
+	"irrList.h"
+	"rect.h"
+	"irrString.h"
+	"IEventReceiver.h"
+	"EGUIElementTypes.h"
+	"EGUIAlignment.h"
+	"IAttributes.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IGUICheckBox.h
+	"IGUIElement.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IGUIColorSelectDialog.h
+	"IGUIElement.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IGUIComboBox.h
+	"IGUIElement.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUIContextMenu.h
+	"IGUIElement.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IGUIEditBox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUIElementFactory.h
+	"IReferenceCounted.h"
+	"EGUIElementTypes.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUIEnvironment.h
+	"IReferenceCounted.h"
+	"IGUISkin.h"
+	"rect.h"
+	"EMessageBoxFlags.h"
+	"IEventReceiver.h"
+	"IXMLReader.h"
+	"path.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUISkin.h
+	"IAttributeExchangingObject.h"
+	"EGUIAlignment.h"
+	"SColor.h"
+	"rect.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IGUIFileOpenDialog.h
+	"IGUIElement.h"
+	"path.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUIFont.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"rect.h"
+	"irrString.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUIFontBitmap.h
+	"IGUIFont.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUIImage.h
+	"IGUIElement.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUIInOutFader.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IGUIListBox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUIMeshViewer.h
+	"IGUIElement.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUIScrollBar.h
+	"IGUIElement.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUISpinBox.h
+	"IGUIElement.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUISpriteBank.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SColor.h"
+	"rect.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUIStaticText.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUITabControl.h
+	"IGUIElement.h"
+	"SColor.h"
+	"IGUISkin.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUITable.h
+	"IGUIElement.h"
+	"irrTypes.h"
+	"SColor.h"
+	"IGUISkin.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUIToolbar.h
+	"IGUIElement.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUIWindow.h
+	"IGUIElement.h"
+	"EMessageBoxFlags.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IGUITreeView.h
+	"IGUIElement.h"
+	"IGUIImageList.h"
+	"irrTypes.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IGUIImageList.h
+	"IGUIElement.h"
+	"rect.h"
+	"irrTypes.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IImageLoader.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"path.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IImageWriter.h
+	"IReferenceCounted.h"
+	"irrString.h"
+	"coreutil.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/ILightSceneNode.h
+	"ISceneNode.h"
+	"SLight.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/SLight.h
+	"SColor.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IMaterialRenderer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IMaterialRendererServices.h
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IMeshCache.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IMeshLoader.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IMeshManipulator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IAnimatedMesh.h"
+	"IMeshBuffer.h"
+	"SVertexManipulator.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/SVertexManipulator.h
+	"S3DVertex.h"
+	"SColor.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IMeshSceneNode.h
+	"ISceneNode.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IMeshWriter.h
+	"IReferenceCounted.h"
+	"EMeshWriterEnums.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IMetaTriangleSelector.h
+	"ITriangleSelector.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IOSOperator.h
+	"IReferenceCounted.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IParticleSystemSceneNode.h
+	"ISceneNode.h"
+	"IParticleAnimatedMeshSceneNodeEmitter.h"
+	"IParticleBoxEmitter.h"
+	"IParticleCylinderEmitter.h"
+	"IParticleMeshEmitter.h"
+	"IParticleRingEmitter.h"
+	"IParticleSphereEmitter.h"
+	"IParticleAttractionAffector.h"
+	"IParticleFadeOutAffector.h"
+	"IParticleGravityAffector.h"
+	"IParticleRotationAffector.h"
+	"dimension2d.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IParticleAnimatedMeshSceneNodeEmitter.h
+	"IParticleEmitter.h"
+	"IAnimatedMeshSceneNode.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IParticleEmitter.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/SParticle.h
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IParticleBoxEmitter.h
+	"IParticleEmitter.h"
+	"aabbox3d.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IParticleCylinderEmitter.h
+	"IParticleEmitter.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IParticleMeshEmitter.h
+	"IParticleEmitter.h"
+	"IMesh.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IParticleRingEmitter.h
+	"IParticleEmitter.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IParticleSphereEmitter.h
+	"IParticleEmitter.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IParticleAttractionAffector.h
+	"IParticleAffector.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IParticleAffector.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IParticleFadeOutAffector.h
+	"IParticleAffector.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IParticleGravityAffector.h
+	"IParticleAffector.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IParticleRotationAffector.h
+	"IParticleAffector.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IQ3LevelMesh.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IrrlichtDevice.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+	"IVideoDriver.h"
+	"EDriverTypes.h"
+	"EDeviceTypes.h"
+	"IEventReceiver.h"
+	"ICursorControl.h"
+	"IVideoModeList.h"
+	"ITimer.h"
+	"IOSOperator.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/EDeviceTypes.h
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IVideoModeList.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/ITimer.h
+	"IReferenceCounted.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/irrMap.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/ISceneCollisionManager.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"line3d.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/ISceneManager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"irrString.h"
+	"path.h"
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+	"ETerrainElements.h"
+	"ESceneNodeTypes.h"
+	"ESceneNodeAnimatorTypes.h"
+	"EMeshWriterEnums.h"
+	"SceneParameters.h"
+	"IGeometryCreator.h"
+	"ISkinnedMesh.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/SceneParameters.h
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/ISkinnedMesh.h
+	"irrArray.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMesh.h"
+	"SSkinMeshBuffer.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/SSkinMeshBuffer.h
+	"IMeshBuffer.h"
+	"S3DVertex.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/ISceneNodeAnimatorCameraFPS.h
+	"ISceneNodeAnimator.h"
+	"IEventReceiver.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/ISceneNodeAnimatorCameraMaya.h
+	"ISceneNodeAnimator.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/ISceneNodeAnimatorCollisionResponse.h
+	"ISceneNode.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/ISceneNodeAnimatorFactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeAnimatorTypes.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/ISceneNodeFactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeTypes.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/ISceneUserDataSerializer.h
+	"IReferenceCounted.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IShaderConstantSetCallBack.h
+	"IReferenceCounted.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IShadowVolumeSceneNode.h
+	"ISceneNode.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/ITerrainSceneNode.h
+	"ETerrainElements.h"
+	"ISceneNode.h"
+	"IDynamicMeshBuffer.h"
+	"irrArray.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/ITextSceneNode.h
+	"ISceneNode.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/IVolumeLightSceneNode.h
+	"ISceneNode.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IWriteFile.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/IXMLWriter.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"irrString.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/ILightManager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/SAnimatedMesh.h
+	"IAnimatedMesh.h"
+	"IMesh.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/SIrrCreationParameters.h
+	"EDriverTypes.h"
+	"EDeviceTypes.h"
+	"dimension2d.h"
+	"ILogger.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/SKeyMap.h
+	"Keycodes.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/SMesh.h
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/SMeshBuffer.h
+	"CMeshBuffer.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/SMeshBufferLightMap.h
+	"CMeshBuffer.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/SMeshBufferTangents.h
+	"CMeshBuffer.h"
+
+1287934980 /home/kaeles/code/DESteer/Include/irrlicht/SSharedMeshBuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1287934978 /home/kaeles/code/DESteer/Include/irrlicht/SViewFrustum.h
+	"plane3d.h"
+	"vector3d.h"
+	"line3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IVideoDriver.h"
+
+1297406831 source:/home/kaeles/code/DESteer/Source/ModularSteeringController.cpp
+	"desteer/controller/ModularSteeringController.hpp"
+
+1297133532 /home/kaeles/code/DESteer/Include/desteer/controller/ModularSteeringController.hpp
+	"ISteeringController.hpp"
+	"desteer/Types.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/behavior/ISteeringBehavior.hpp"
+
+1297132271 /home/kaeles/code/DESteer/Include/desteer/Types.hpp
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/behavior/ISteeringBehavior.hpp"
+	<vector>
+	<iterator>
+
+1297406831 source:/home/kaeles/code/DESteer/Source/SeekBehavior.cpp
+	"desteer/behavior/SeekBehavior.hpp"
+
+1297172762 /home/kaeles/code/DESteer/Include/desteer/behavior/SeekBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1297406849 source:/home/kaeles/code/DESteer/Source/SimpleSteeringController.cpp
+	"desteer/controller/SimpleSteeringController.hpp"
+	"desteer/Types.hpp"
+
+1297135270 source:/home/kaeles/code/DESteer/Source/main.cpp
+	"Irrlicht/Irrlicht.h"
+	"DESteer/entity/IrrlichtMobileEntity.hpp"
+	"desteer/entity/IrrlichtBaseEntity.hpp"
+
+1297135295 /home/kaeles/code/DESteer/Include/desteer/entity/IrrlichtBaseEntity.hpp
+	"desteer/entity/IBaseEntity.hpp"
+	"Irrlicht/Irrlicht.h"
 

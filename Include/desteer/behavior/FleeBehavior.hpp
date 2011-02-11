@@ -4,7 +4,7 @@
 namespace desteer{
 namespace behavior{
 
-class FleeBehavior : ISteeringBehavior
+class FleeBehavior : public ISteeringBehavior
 {
     private:
         irr::core::vector3df _target;
@@ -12,8 +12,9 @@ class FleeBehavior : ISteeringBehavior
 
         float _fleeDistance;
     public:
-        FleeBehavior(irr::core::vector3df target, float fleeDistance);
+        FleeBehavior(irr::core::vector3df target, float fleeDistance = -1);
         void SetMobile(entity::IMobileEntity * mob);
+        void SetTarget(irr::core::vector3df target);
         irr::core::vector3df Calculate();
 };
 

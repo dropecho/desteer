@@ -1,5 +1,5 @@
 #include "desteer/entity/IBaseEntity.hpp"
-#include "Irrlicht/Irrlicht.h"
+#include "irrlicht/irrlicht.h"
 
 namespace desteer{
 namespace entity {

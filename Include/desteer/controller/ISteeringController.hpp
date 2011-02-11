@@ -1,6 +1,6 @@
 #pragma once
 #include "irrlicht/irrlicht.h"
-#include "DESteer/Types.hpp"
+#include "desteer/Types.hpp"
 #include "desteer/entity/IMobileEntity.hpp"
 
 namespace desteer{

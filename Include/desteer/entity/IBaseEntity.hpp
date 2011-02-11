@@ -1,4 +1,4 @@
-#include "Irrlicht/Irrlicht.h"
+#include "irrlicht/irrlicht.h"
 #pragma once
 
 namespace desteer {

@@ -1,4 +1,4 @@
-#include "Irrlicht/Irrlicht.h"
+#include "irrlicht/irrlicht.h"
 #include "desteer/entity/IBaseEntity.hpp"
 #include "desteer/entity/IEntitySpace.hpp"
 #pragma once

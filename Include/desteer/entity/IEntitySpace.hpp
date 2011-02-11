@@ -1,4 +1,4 @@
-#include "irrlicht/Irrlicht.h"
+#include "irrlicht/irrlicht.h"
 
 namespace desteer{
 namespace entity {

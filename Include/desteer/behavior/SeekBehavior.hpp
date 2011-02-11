@@ -4,7 +4,7 @@
 namespace desteer{
 namespace behavior{
 
-class SeekBehavior : ISteeringBehavior
+class SeekBehavior : public ISteeringBehavior
 {
     private:
         irr::core::vector3df _target;
@@ -12,6 +12,8 @@ class SeekBehavior : ISteeringBehavior
     public:
         SeekBehavior(irr::core::vector3df target);
         void SetMobile(entity::IMobileEntity * mob);
+        void SetTarget(irr::core::vector3df target);
+        void SetTarget(entity::IMobileEntity * target) {return;};
         irr::core::vector3df Calculate();
 };
 

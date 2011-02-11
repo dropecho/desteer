@@ -6,7 +6,12 @@ using namespace entity;
 using namespace irr;
 using namespace core;
 
-SeekBehavior::SeekBehavior(irr::core::vector3df target)
+SeekBehavior::SeekBehavior(vector3df target)
+{
+    _target = target;
+}
+
+void SeekBehavior::SetTarget(vector3df target)
 {
     _target = target;
 }

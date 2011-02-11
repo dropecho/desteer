@@ -6,7 +6,7 @@ using namespace entity;
 using namespace irr;
 using namespace core;
 
-FleeBehavior::FleeBehavior(irr::core::vector3df target, float fleeDistance = -1)
+FleeBehavior::FleeBehavior(irr::core::vector3df target, float fleeDistance)
 {
     _target = target;
     _fleeDistance = fleeDistance;
@@ -15,6 +15,11 @@ FleeBehavior::FleeBehavior(irr::core::vector3df target, float fleeDistance = -1)
 void FleeBehavior::SetMobile(IMobileEntity * mob)
 {
     _mob = mob;
+}
+
+void FleeBehavior::SetTarget(vector3df target)
+{
+    _target = target;
 }
 
 vector3df FleeBehavior::Calculate()
