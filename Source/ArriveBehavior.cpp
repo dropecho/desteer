@@ -4,10 +4,12 @@ using namespace desteer;
 using namespace behavior;
 using namespace irr;
 using namespace core;
+using namespace entity;
 
-ArriveBehavior::ArriveBehavior(vector3df target, float arriveTolerance, float decceleration)
+ArriveBehavior::ArriveBehavior(vector3df target,IMobileEntity * mob ,float arriveTolerance, float decceleration)
 {
     _target = target;
+    _mob = mob;
     _arriveTolerance = arriveTolerance;
     _decceleration = decceleration;
 }
@@ -37,7 +39,7 @@ vector3df ArriveBehavior::Calculate()
     return vector3df(0,0,0);
 }
 
-void ArriveBehavior::SetMobile(entity::IMobileEntity * mob)
+void ArriveBehavior::SetMobile(IMobileEntity * mob)
 {
     _mob = mob;
 }

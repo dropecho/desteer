@@ -10,7 +10,7 @@ class SeekBehavior : public ISteeringBehavior
         irr::core::vector3df _target;
         entity::IMobileEntity * _mob;
     public:
-        SeekBehavior(irr::core::vector3df target);
+        SeekBehavior(irr::core::vector3df target = irr::core::vector3df(0,0,0), entity::IMobileEntity * mob = NULL);
         void SetMobile(entity::IMobileEntity * mob);
         void SetTarget(irr::core::vector3df target);
         void SetTarget(entity::IMobileEntity * target) {return;};

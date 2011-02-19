@@ -27,7 +27,7 @@ void HideBehavior::SetTarget(IMobileEntity * target)
     _target = target;
 }
 
-vector3df HideBehavior::GetHidingPosition(const IBaseEntity *obstacle, const vector3df& targetPos)
+vector3df HideBehavior::GetHidingPosition(const vector3df& targetPos,const IBaseEntity *obstacle)
 {
     vector3df toHidingSpotNorm = (obstacle->Position() - targetPos).normalize();
     vector3df toHidingSpot = toHidingSpotNorm * (obstacle->Radius() + _hideDistanceFromObj);
@@ -41,7 +41,7 @@ vector3df HideBehavior::Calculate()
 
     for(EntityIterator currentObs = _obstacles.begin(); currentObs != _obstacles.end(); ++currentObs)
     {
-        vector3df HidingSpot = GetHidingPosition((*currentObs),_target->Position());
+        vector3df HidingSpot = GetHidingPosition(_target->Position(),(*currentObs));
         float sqDist = (HidingSpot - _mob->Position()).getLengthSQ();
 
         if(sqDist < distToClosest)

@@ -7,9 +7,9 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/DESteer" prefix_auto="1" extension_auto="1" />
+				<Option output="bin\DESteer" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="bin" />
-				<Option object_output="obj/Debug/" />
+				<Option object_output="obj\Debug\" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -17,9 +17,9 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/DESteer" prefix_auto="1" extension_auto="1" />
+				<Option output="bin\DESteer" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="bin" />
-				<Option object_output="obj/Release/" />
+				<Option object_output="obj\Release\" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -36,32 +36,38 @@
 			<Add directory="Include" />
 		</Compiler>
 		<Linker>
-			<Add library="lib/libIrrlicht.a" />
+			<Add library="lib\libIrrlicht.a" />
 		</Linker>
-		<Unit filename="Include/desteer/Types.hpp" />
-		<Unit filename="Include/desteer/behavior/ArriveBehavior.hpp" />
-		<Unit filename="Include/desteer/behavior/EvadeBehavior.hpp" />
-		<Unit filename="Include/desteer/behavior/FleeBehavior.hpp" />
-		<Unit filename="Include/desteer/behavior/HideBehavior.hpp" />
-		<Unit filename="Include/desteer/behavior/ISteeringBehavior.hpp" />
-		<Unit filename="Include/desteer/behavior/ObstacleAvoidanceBehavior.hpp" />
-		<Unit filename="Include/desteer/behavior/PursuitBehavior.hpp" />
-		<Unit filename="Include/desteer/behavior/SeekBehavior.hpp" />
-		<Unit filename="Include/desteer/behavior/WanderBehavior.hpp" />
-		<Unit filename="Include/desteer/controller/ISteeringController.hpp" />
-		<Unit filename="Include/desteer/controller/ModularSteeringController.hpp" />
-		<Unit filename="Include/desteer/controller/SimpleSteeringController.hpp" />
-		<Unit filename="Include/desteer/entity/IBaseEntity.hpp" />
-		<Unit filename="Include/desteer/entity/IEntitySpace.hpp" />
-		<Unit filename="Include/desteer/entity/IMobileEntity.hpp" />
-		<Unit filename="Include/desteer/entity/IrrlichtBaseEntity.hpp" />
-		<Unit filename="Include/desteer/entity/IrrlichtMobileEntity.hpp" />
-		<Unit filename="Source/FleeBehavior.cpp" />
-		<Unit filename="Source/IrrlichtMobileEntity.cpp" />
-		<Unit filename="Source/ModularSteeringController.cpp" />
-		<Unit filename="Source/SeekBehavior.cpp" />
-		<Unit filename="Source/SimpleSteeringController.cpp" />
-		<Unit filename="Source/main.cpp" />
+		<Unit filename="Include\desteer\Types.hpp" />
+		<Unit filename="Include\desteer\behavior\ArriveBehavior.hpp" />
+		<Unit filename="Include\desteer\behavior\EvadeBehavior.hpp" />
+		<Unit filename="Include\desteer\behavior\FleeBehavior.hpp" />
+		<Unit filename="Include\desteer\behavior\HideBehavior.hpp" />
+		<Unit filename="Include\desteer\behavior\ISteeringBehavior.hpp" />
+		<Unit filename="Include\desteer\behavior\ObstacleAvoidanceBehavior.hpp" />
+		<Unit filename="Include\desteer\behavior\PursuitBehavior.hpp" />
+		<Unit filename="Include\desteer\behavior\SeekBehavior.hpp" />
+		<Unit filename="Include\desteer\behavior\WanderBehavior.hpp" />
+		<Unit filename="Include\desteer\controller\ISteeringController.hpp" />
+		<Unit filename="Include\desteer\controller\ModularSteeringController.hpp" />
+		<Unit filename="Include\desteer\controller\SimpleSteeringController.hpp" />
+		<Unit filename="Include\desteer\entity\IBaseEntity.hpp" />
+		<Unit filename="Include\desteer\entity\IEntitySpace.hpp" />
+		<Unit filename="Include\desteer\entity\IMobileEntity.hpp" />
+		<Unit filename="Include\desteer\entity\IrrlichtBaseEntity.hpp" />
+		<Unit filename="Include\desteer\entity\IrrlichtMobileEntity.hpp" />
+		<Unit filename="Source\ArriveBehavior.cpp" />
+		<Unit filename="Source\EvadeBehavior.cpp" />
+		<Unit filename="Source\FleeBehavior.cpp" />
+		<Unit filename="Source\HideBehavior.cpp" />
+		<Unit filename="Source\IrrlichtMobileEntity.cpp" />
+		<Unit filename="Source\ModularSteeringController.cpp" />
+		<Unit filename="Source\ObstacleAvoidanceBehavior.cpp" />
+		<Unit filename="Source\PursuitBehavior.cpp" />
+		<Unit filename="Source\SeekBehavior.cpp" />
+		<Unit filename="Source\SimpleSteeringController.cpp" />
+		<Unit filename="Source\WanderBehavior.cpp" />
+		<Unit filename="Source\main.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

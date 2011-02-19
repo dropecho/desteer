@@ -1,3 +1,4 @@
+#pragma once
 #include "desteer/behavior/ISteeringBehavior.hpp"
 #include "desteer/behavior/FleeBehavior.hpp"
 

@@ -1,3 +1,4 @@
+#pragma once
 #include "ISteeringBehavior.hpp"
 #include "desteer/Types.hpp"
 

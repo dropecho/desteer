@@ -1,3 +1,4 @@
+#pragma once
 #include "ISteeringBehavior.hpp"
 #include "desteer/Types.hpp"
 #include "desteer/behavior/EvadeBehavior.hpp"
@@ -19,7 +20,7 @@ private:
     EvadeBehavior * _evadeBehavior;
     ArriveBehavior  * _arriveBehavior;
 
-    irr::core::vector3df GetHidingPosition(const entity::IBaseEntity *obstacle, const irr::core::vector3df& targetPos);
+    irr::core::vector3df GetHidingPosition(const irr::core::vector3df& targetPos, const entity::IBaseEntity *obstacle);
 public:
     HideBehavior(entity::IMobileEntity* target, EntityGroup & obstacles);
     irr::core::vector3df Calculate();

@@ -51,6 +51,8 @@ int main()
 
     SimpleSteeringController* Entity1Steering = new SimpleSteeringController(Entity1);
     Entity1->SetSteering(Entity1Steering);
+    Entity1Steering->SetArriveTarget(vector3df(0,0,200));
+    Entity1Steering->SetBehaviorFlag(EBF_ARRIVE,true);
 //    Entity1Steering->HideOn(Entity2);
 
     SimpleSteeringController * Entity2Steering = new SimpleSteeringController(Entity2);
