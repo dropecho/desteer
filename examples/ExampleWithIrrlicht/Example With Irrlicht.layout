@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="IrrlichtBaseEntity.hpp" open="1" top="0" tabpos="6">
+		<Cursor position="180" topLine="0" />
+	</File>
+	<File name="IrrlichtMobileEntity.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="320" topLine="0" />
+	</File>
+	<File name="IrrlichtMobileEntity.hpp" open="1" top="0" tabpos="5">
+		<Cursor position="1542" topLine="3" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="2690" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>
