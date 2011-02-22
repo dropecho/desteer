@@ -11,8 +11,6 @@ using namespace entity;
 
 SimpleSteeringController::SimpleSteeringController(IMobileEntity* mob)
 {
-
-
     _mob = mob;
     _arriveTarget   = vector3df(0,0,0);
     _seekTarget     = vector3df(0,0,0);

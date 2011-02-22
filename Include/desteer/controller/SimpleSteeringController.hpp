@@ -40,7 +40,7 @@ class SimpleSteeringController : public ISteeringController
         entity::IMobileEntity *     _pursueTarget;
         EntityGroup     _obstacles;
 
-        int _behaviorFlags;
+        unsigned int _behaviorFlags;
 
         behavior::ArriveBehavior  * _arriveBehavior;
         behavior::EvadeBehavior   * _evadeBehavior;

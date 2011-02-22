@@ -13,7 +13,6 @@ namespace behavior{
 class ISteeringBehavior
 {
     public:
-        virtual ~ISteeringBehavior();
         virtual irr::core::vector3df Calculate() = 0;
         virtual void SetMobile(entity::IMobileEntity * mob) = 0;
 

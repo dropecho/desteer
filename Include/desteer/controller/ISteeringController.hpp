@@ -9,7 +9,6 @@ namespace controller{
 class ISteeringController
 {
     public:
-    virtual ~ISteeringController();
     virtual irr::core::vector3df Calculate() = 0;
 };
 
