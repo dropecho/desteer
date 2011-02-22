@@ -1,8 +1,8 @@
 
 
-Move steering behaviors into seperate classes so that they are more abstracted, only need calculate
-on each steering behavior.  This would allow users to create pluggable behaviors in their own code.
-edit: mostly done, just need to copy existing behaviors from simplecontroller to modular behaviors.
+//Move steering behaviors into seperate classes so that they are more abstracted, only need calculate
+//on each steering behavior.  This would allow users to create pluggable behaviors in their own code.
+Finished this.
 
 Abstract localspace and mobile entity, have IMobileEntityWithLocalspace, mobile entity should have
 function getLocalSpace, IMobileEntityWithLocalSpace should return this on that function.
