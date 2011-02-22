@@ -1,4 +1,5 @@
-#include "irrlicht/irrlicht.h"
+#pragma once
+#include "irrvector/vector3d.h"
 
 namespace desteer{
 namespace entity {

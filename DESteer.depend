@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1297481814 source:d:\programming\projects\desteer\source\main.cpp
+1298138837 source:d:\programming\projects\desteer\source\main.cpp
 	"irrlicht/irrlicht.h"
 	"desteer/entity/IrrlichtMobileEntity.hpp"
 	"desteer/entity/IrrlichtBaseEntity.hpp"
@@ -1122,11 +1122,11 @@
 	"DESteer/IMobileEntity.hpp"
 	"DESteer/Types.hpp"
 
-1297408837 d:\programming\projects\desteer\include\desteer\types.hpp
-	"desteer/entity/IMobileEntity.hpp"
-	"desteer/behavior/ISteeringBehavior.hpp"
+1298137824 d:\programming\projects\desteer\include\desteer\types.hpp
 	<vector>
 	<iterator>
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/behavior/ISteeringBehavior.hpp"
 
 1296938121 d:\programming\projects\desteer\include\desteer\irrlichtbaseentity.hpp
 	"DESteer/IBaseEntity.hpp"
@@ -1137,20 +1137,19 @@
 	"desteer/entity/IMobileEntity.hpp"
 	"DESteer/Types.hpp"
 
-1297408837 d:\programming\projects\desteer\include\desteer\entity\imobileentity.hpp
-	"irrlicht/irrlicht.h"
+1298140830 d:\programming\projects\desteer\include\desteer\entity\imobileentity.hpp
 	"desteer/entity/IBaseEntity.hpp"
 	"desteer/entity/IEntitySpace.hpp"
 
 1297135294 ntity/IEntitySpace.hpp"
 
-1297408837 d:\programming\projects\desteer\include\desteer\entity\ibaseentity.hpp
-	"irrlicht/irrlicht.h"
+1298140352 d:\programming\projects\desteer\include\desteer\entity\ibaseentity.hpp
+	"irrvector/vector3d.h"
 
-1297408837 d:\programming\projects\desteer\include\desteer\entity\ientityspace.hpp
-	"irrlicht/irrlicht.h"
+1298140048 d:\programming\projects\desteer\include\desteer\entity\ientityspace.hpp
+	"irrvector/vector3d.h"
 
-1297408837 d:\programming\projects\desteer\include\desteer\entity\irrlichtmobileentity.hpp
+1298137974 d:\programming\projects\desteer\include\desteer\entity\irrlichtmobileentity.hpp
 	"desteer/entity/IMobileEntity.hpp"
 	"desteer/controller/SimpleSteeringController.hpp"
 
@@ -1191,7 +1190,7 @@
 1297131847 d:\programming\projects\desteer\include\desteer\behavior\simplesteeringcontroller.hpp
 	"desteer/behavior/ISteeringController.hpp"
 
-1297748116 source:d:\programming\projects\desteer\source\simplesteeringcontroller.cpp
+1298139205 source:d:\programming\projects\desteer\source\simplesteeringcontroller.cpp
 	"desteer/controller/SimpleSteeringController.hpp"
 	"desteer/Types.hpp"
 
@@ -1208,8 +1207,8 @@
 
 1297133532 ehavior/ISteeringBehavior.hpp"
 
-1297408837 d:\programming\projects\desteer\include\desteer\controller\isteeringcontroller.hpp
-	"irrlicht/irrlicht.h"
+1298140083 d:\programming\projects\desteer\include\desteer\controller\isteeringcontroller.hpp
+	"irrvector/vector3d.h"
 	"desteer/Types.hpp"
 	"desteer/entity/IMobileEntity.hpp"
 
@@ -2327,4 +2326,21 @@
 1297135295 /home/kaeles/code/DESteer/Include/desteer/entity/IrrlichtBaseEntity.hpp
 	"desteer/entity/IBaseEntity.hpp"
 	"Irrlicht/Irrlicht.h"
+
+1287931378 d:\programming\projects\desteer\include\irrvector\vector3d.h
+	"irrMath.h"
+
+1298139990 d:\programming\projects\desteer\include\irrvector\irrmath.h
+	"irrTypes.h"
+	<math.h>
+	<float.h>
+	<stdlib.h>
+	<limits.h>
+
+1298140012 d:\programming\projects\desteer\include\irrvector\irrtypes.h
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
 

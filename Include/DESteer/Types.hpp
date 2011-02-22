@@ -1,8 +1,9 @@
 #pragma once
-#include "desteer/entity/IMobileEntity.hpp"
-#include "desteer/behavior/ISteeringBehavior.hpp"
+
 #include <vector>
 #include <iterator>
+#include "desteer/entity/IMobileEntity.hpp"
+#include "desteer/behavior/ISteeringBehavior.hpp"
 
 namespace desteer{
 

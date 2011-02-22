@@ -1,5 +1,5 @@
 #pragma once
-#include "irrlicht/irrlicht.h"
+#include "irrvector/vector3d.h"
 #include "desteer/Types.hpp"
 #include "desteer/entity/IMobileEntity.hpp"
 
@@ -9,6 +9,7 @@ namespace controller{
 class ISteeringController
 {
     public:
+    virtual ~ISteeringController();
     virtual irr::core::vector3df Calculate() = 0;
 };
 

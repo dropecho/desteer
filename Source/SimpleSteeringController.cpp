@@ -11,6 +11,8 @@ using namespace entity;
 
 SimpleSteeringController::SimpleSteeringController(IMobileEntity* mob)
 {
+
+
     _mob = mob;
     _arriveTarget   = vector3df(0,0,0);
     _seekTarget     = vector3df(0,0,0);
@@ -20,7 +22,7 @@ SimpleSteeringController::SimpleSteeringController(IMobileEntity* mob)
     _hideTarget     = NULL;
     _pursueTarget   = NULL;
 
-    _behaviorFlags  = 0x00;
+    _behaviorFlags  = 0;
 
     _seekBehavior       = new SeekBehavior(_seekTarget,mob);
     _arriveBehavior     = new ArriveBehavior(_seekTarget,mob,.08);
@@ -30,6 +32,9 @@ SimpleSteeringController::SimpleSteeringController(IMobileEntity* mob)
     _evadeBehavior      = new EvadeBehavior(_evadeTarget);
     _pursuitBehavior    = new PursuitBehavior(_pursueTarget);
     _obsAvoidBehavior   = new ObstacleAvoidanceBehavior(_obstacles);
+
+
+    _mob->SetSteering(this);
 }
 
 irr::core::vector3df SimpleSteeringController::Calculate()
