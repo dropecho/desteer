@@ -18,8 +18,6 @@ IrrlichtMobileEntity::IrrlichtMobileEntity(
     SetMaxForce(maxForce);
 };
 
-
-
 vector3df IrrlichtMobileEntity::Position() const{
     return _node->getPosition();
 }
@@ -73,23 +71,22 @@ vector3df IrrlichtMobileEntity::transformLocalVectToWorld(irr::core::vector3df v
 
 void IrrlichtMobileEntity::Update(float timeElapsed)
 {
-    printf("oh heroo, im in de upppaadate fuurrnction");
-    //_steering->Calculate() = steering force
 
+    //_steering->Calculate() = steering force
     //divided by mass = acceleration
     //times time = velocity
 
-    //_velocity += (_steering->Calculate()/_mass) * timeElapsed;
+    _velocity += (_steering->Calculate()/_mass) * timeElapsed;
 
     //truncate velocity to max speed
-    //_velocity.setLength(irr::core::min_(_velocity.getLength(),_maxSpeed));
+    _velocity.setLength(irr::core::min_(_velocity.getLength(),_maxSpeed));
 
-    //_node->setPosition(_node->getPosition() + (_velocity * timeElapsed));
+    _node->setPosition(_node->getPosition() + (_velocity * timeElapsed));
 
-    //if(_velocity.getLengthSQ() > ROUNDING_ERROR_f32)
-    //{
-    //   vector3df forward = _velocity;
-    //   SetForwardVector(forward.normalize());
-    //}
+    if(_velocity.getLengthSQ() > ROUNDING_ERROR_f32)
+    {
+       vector3df forward = _velocity;
+       SetForwardVector(forward.normalize());
+    }
 
 }

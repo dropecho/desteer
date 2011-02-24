@@ -82,10 +82,10 @@ int main()
 			str += (s32)driver->getFPS();
 			device->setWindowCaption(str.c_str());
 			timeUpdate = 0;
-			Entity1->Update(frameDeltaTime);
+
 		}
 
-
+        Entity1->Update(frameDeltaTime);
         //Entity2->Update(frameDeltaTime);
 
 	    //camera->setTarget(Entity1->Position());

@@ -32,15 +32,16 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add directory="..\..\include" />
+			<Add directory="include" />
 		</Compiler>
 		<Linker>
 			<Add library="..\..\lib\libDESteer.dll.a" />
 			<Add library="lib\libIrrlicht.a" />
 		</Linker>
-		<Unit filename="IrrlichtBaseEntity.hpp" />
-		<Unit filename="IrrlichtMobileEntity.cpp" />
-		<Unit filename="IrrlichtMobileEntity.hpp" />
-		<Unit filename="main.cpp" />
+		<Unit filename="source\IrrlichtBaseEntity.hpp" />
+		<Unit filename="source\IrrlichtMobileEntity.cpp" />
+		<Unit filename="source\IrrlichtMobileEntity.hpp" />
+		<Unit filename="source\main.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
