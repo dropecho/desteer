@@ -14,7 +14,6 @@
 namespace desteer{
 namespace controller{
 
-
 enum EBEHAVIOR_FLAG
 {
     EBF_ARRIVE  = 0x01,

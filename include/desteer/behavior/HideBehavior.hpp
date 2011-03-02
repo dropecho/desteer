@@ -7,7 +7,7 @@
 namespace desteer{
 namespace behavior{
 
-class HideBehavior : ISteeringBehavior
+class HideBehavior : public ISteeringBehavior
 {
 private:
     entity::IMobileEntity * _mob;

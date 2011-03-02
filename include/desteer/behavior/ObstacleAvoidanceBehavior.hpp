@@ -5,7 +5,7 @@
 namespace desteer{
 namespace behavior{
 
-class ObstacleAvoidanceBehavior : ISteeringBehavior
+class ObstacleAvoidanceBehavior : public ISteeringBehavior
 {
 private:
     entity::IMobileEntity * _mob;
