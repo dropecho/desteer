@@ -17,6 +17,7 @@ public:
     PursuitBehavior(entity::IMobileEntity* target);
     irr::core::vector3df Calculate();
     void SetMobile(entity::IMobileEntity * mob);
+    void SetTarget(entity::IMobileEntity * target);
 };
 
 

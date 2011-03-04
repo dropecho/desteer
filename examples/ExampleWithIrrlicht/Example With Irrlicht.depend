@@ -979,7 +979,7 @@
 1298341154 d:\programming\projects\desteer\include\desteer\entity\ientityspace.hpp
 	"irrvector/vector3d.h"
 
-1298341154 d:\programming\projects\desteer\include\desteer\controller\simplesteeringcontroller.hpp
+1299215279 d:\programming\projects\desteer\include\desteer\controller\simplesteeringcontroller.hpp
 	"desteer/controller/ISteeringController.hpp"
 	"desteer/behavior/SeekBehavior.hpp"
 	"desteer/behavior/FleeBehavior.hpp"
@@ -990,7 +990,7 @@
 	"desteer/behavior/HideBehavior.hpp"
 	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
 
-1298341154 d:\programming\projects\desteer\include\desteer\controller\isteeringcontroller.hpp
+1298608419 d:\programming\projects\desteer\include\desteer\controller\isteeringcontroller.hpp
 	"irrvector/vector3d.h"
 	"desteer/Types.hpp"
 	"desteer/entity/IMobileEntity.hpp"
@@ -1001,7 +1001,7 @@
 	"desteer/entity/IMobileEntity.hpp"
 	"desteer/behavior/ISteeringBehavior.hpp"
 
-1298341154 d:\programming\projects\desteer\include\desteer\behavior\isteeringbehavior.hpp
+1298608130 d:\programming\projects\desteer\include\desteer\behavior\isteeringbehavior.hpp
 	"desteer/entity/IMobileEntity.hpp"
 
 1298341154 d:\programming\projects\desteer\include\desteer\behavior\seekbehavior.hpp
@@ -1013,7 +1013,7 @@
 1298341154 d:\programming\projects\desteer\include\desteer\behavior\wanderbehavior.hpp
 	"ISteeringBehavior.hpp"
 
-1298341154 d:\programming\projects\desteer\include\desteer\behavior\pursuitbehavior.hpp
+1299215261 d:\programming\projects\desteer\include\desteer\behavior\pursuitbehavior.hpp
 	"desteer/behavior/ISteeringBehavior.hpp"
 	"desteer/behavior/SeekBehavior.hpp"
 
@@ -1024,13 +1024,13 @@
 1298341154 d:\programming\projects\desteer\include\desteer\behavior\arrivebehavior.hpp
 	"ISteeringBehavior.hpp"
 
-1298341154 d:\programming\projects\desteer\include\desteer\behavior\hidebehavior.hpp
+1299214589 d:\programming\projects\desteer\include\desteer\behavior\hidebehavior.hpp
 	"ISteeringBehavior.hpp"
 	"desteer/Types.hpp"
 	"desteer/behavior/EvadeBehavior.hpp"
 	"desteer/behavior/ArriveBehavior.hpp"
 
-1298341154 d:\programming\projects\desteer\include\desteer\behavior\obstacleavoidancebehavior.hpp
+1299215682 d:\programming\projects\desteer\include\desteer\behavior\obstacleavoidancebehavior.hpp
 	"ISteeringBehavior.hpp"
 	"desteer/Types.hpp"
 
@@ -2028,7 +2028,7 @@
 	"matrix4.h"
 	"IVideoDriver.h"
 
-1298345078 source:d:\programming\projects\desteer\examples\examplewithirrlicht\source\main.cpp
+1299215798 source:d:\programming\projects\desteer\examples\examplewithirrlicht\source\main.cpp
 	"irrlicht/irrlicht.h"
 	"IrrlichtMobileEntity.hpp"
 	"IrrlichtBaseEntity.hpp"

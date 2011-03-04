@@ -36,7 +36,7 @@ class SimpleSteeringController : public ISteeringController
 
         entity::IMobileEntity *     _evadeTarget;
         entity::IMobileEntity *     _hideTarget;
-        entity::IMobileEntity *     _pursueTarget;
+        entity::IMobileEntity *     _pursuitTarget;
         EntityGroup     _obstacles;
 
         unsigned int _behaviorFlags;
@@ -56,9 +56,13 @@ class SimpleSteeringController : public ISteeringController
         irr::core::vector3df Calculate();
 
         void SetBehaviorFlag(EBEHAVIOR_FLAG flag, bool active);
+
         void SetSeekTarget(irr::core::vector3df target);
         void SetArriveTarget(irr::core::vector3df target);
+        void SetHideTarget(entity::IMobileEntity *target);
+        void SetPursuitTarget(entity::IMobileEntity * target);
 
+        void SetObstacles(EntityGroup &obstacles);
     };
 
 }//end ns controller

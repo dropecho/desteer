@@ -18,7 +18,7 @@ SimpleSteeringController::SimpleSteeringController(IMobileEntity* mob)
 
     _evadeTarget    = NULL;
     _hideTarget     = NULL;
-    _pursueTarget   = NULL;
+    _pursuitTarget   = NULL;
 
     _behaviorFlags  = 0;
 
@@ -28,9 +28,18 @@ SimpleSteeringController::SimpleSteeringController(IMobileEntity* mob)
     _hideBehavior       = new HideBehavior(_hideTarget,_obstacles);
     _wanderBehavior     = new WanderBehavior();
     _evadeBehavior      = new EvadeBehavior(_evadeTarget);
-    _pursuitBehavior    = new PursuitBehavior(_pursueTarget);
+    _pursuitBehavior    = new PursuitBehavior(_pursuitTarget);
     _obsAvoidBehavior   = new ObstacleAvoidanceBehavior(_obstacles);
 
+
+    _seekBehavior->SetMobile(_mob);
+    _arriveBehavior->SetMobile(_mob);
+    _fleeBehavior->SetMobile(_mob);
+    _hideBehavior->SetMobile(_mob);
+    _wanderBehavior->SetMobile(_mob);
+    _evadeBehavior->SetMobile(_mob);
+    _pursuitBehavior->SetMobile(_mob);
+    _obsAvoidBehavior->SetMobile(_mob);
 
     _mob->SetSteering(this);
 }
@@ -42,6 +51,7 @@ irr::core::vector3df SimpleSteeringController::Calculate()
 
     if(_behaviorFlags & EBF_AVOID)
     {
+        _obsAvoidBehavior->SetObstacles(_obstacles);
         steeringForce += _obsAvoidBehavior->Calculate();
         if(steeringForce.getLengthSQ() > maxForceSQ)
         {
@@ -52,6 +62,8 @@ irr::core::vector3df SimpleSteeringController::Calculate()
 
     if(_behaviorFlags & EBF_HIDE)
     {
+        _hideBehavior->SetTarget(_hideTarget);
+        _hideBehavior->SetObstacles(_obstacles);
         steeringForce += _hideBehavior->Calculate();
         if(steeringForce.getLengthSQ() > maxForceSQ)
         {
@@ -62,6 +74,7 @@ irr::core::vector3df SimpleSteeringController::Calculate()
 
     if(_behaviorFlags & EBF_PURSUIT)
     {
+        _pursuitBehavior->SetTarget(_pursuitTarget);
         steeringForce += _pursuitBehavior->Calculate();
         if(steeringForce.getLengthSQ() > maxForceSQ)
         {
@@ -126,7 +139,22 @@ void SimpleSteeringController::SetArriveTarget(vector3df target)
     _arriveTarget = target;
 }
 
+void SimpleSteeringController::SetHideTarget(entity::IMobileEntity *target)
+{
+    _hideTarget = target;
+}
+
+void SimpleSteeringController::SetPursuitTarget(entity::IMobileEntity *target)
+{
+    _pursuitTarget = target;
+}
+
+void SimpleSteeringController::SetObstacles(EntityGroup &obstacles)
+{
+    _obstacles = obstacles;
+}
+
 void SimpleSteeringController::SetBehaviorFlag(EBEHAVIOR_FLAG flag, bool active)
 {
-    _behaviorFlags = active ? _behaviorFlags | flag :  _behaviorFlags ^= flag;
+    _behaviorFlags = active ? _behaviorFlags | flag :  _behaviorFlags ^ flag;
 }

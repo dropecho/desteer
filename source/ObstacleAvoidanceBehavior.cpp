@@ -17,6 +17,11 @@ void ObstacleAvoidanceBehavior::SetMobile(IMobileEntity * mob)
     _mob = mob;
 }
 
+void ObstacleAvoidanceBehavior::SetObstacles(EntityGroup &obstacles)
+{
+    _obstacles = obstacles;
+}
+
 vector3df ObstacleAvoidanceBehavior::Calculate()
 {
     IBaseEntity* closestHitObstacle = NULL;

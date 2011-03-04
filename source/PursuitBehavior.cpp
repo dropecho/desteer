@@ -35,4 +35,11 @@ vector3df PursuitBehavior::Calculate()
 void PursuitBehavior::SetMobile(entity::IMobileEntity * mob)
 {
     _mob = mob;
+
+    _seekBehavior->SetMobile(_mob);
+}
+
+void PursuitBehavior::SetTarget(entity::IMobileEntity *target)
+{
+    _target = target;
 }

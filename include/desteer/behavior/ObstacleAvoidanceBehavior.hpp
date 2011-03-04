@@ -16,6 +16,7 @@ public:
     ObstacleAvoidanceBehavior(EntityGroup & obstacles);
     irr::core::vector3df Calculate();
     void SetMobile(entity::IMobileEntity * mob);
+    void SetObstacles(EntityGroup &obstacles);
 };
 
 } //end ns behavior

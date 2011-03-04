@@ -22,10 +22,11 @@ private:
 
     irr::core::vector3df GetHidingPosition(const irr::core::vector3df& targetPos, const entity::IBaseEntity *obstacle);
 public:
-    HideBehavior(entity::IMobileEntity* target, EntityGroup & obstacles);
+    HideBehavior(entity::IMobileEntity* target, EntityGroup & obstacles, float hideDistanceFromObstacle = 20);
     irr::core::vector3df Calculate();
     void SetMobile(entity::IMobileEntity * mob);
     void SetTarget(entity::IMobileEntity * target);
+    void SetObstacles(EntityGroup &obstacles);
 };
 
 } //end ns behavior

@@ -7,24 +7,35 @@ using namespace entity;
 using namespace irr;
 using namespace core;
 
-HideBehavior::HideBehavior(IMobileEntity* target,EntityGroup & obstacles)
+HideBehavior::HideBehavior(IMobileEntity* target,EntityGroup & obstacles, float hideDistanceFromObstacle)
 {
     _obstacles = obstacles;
     _target = target;
 
-    _hideDistanceFromObj = 20;
+    _hideDistanceFromObj = hideDistanceFromObstacle;
     _evadeBehavior = new EvadeBehavior(NULL);
     _arriveBehavior = new ArriveBehavior(vector3df(0,0,0));
+
+    _evadeBehavior->SetMobile(_mob);
+    _arriveBehavior->SetMobile(_mob);
 }
 
 void HideBehavior::SetMobile(IMobileEntity * mob)
 {
     _mob = mob;
+
+    _evadeBehavior->SetMobile(_mob);
+    _arriveBehavior->SetMobile(_mob);
 }
 
 void HideBehavior::SetTarget(IMobileEntity * target)
 {
     _target = target;
+}
+
+void HideBehavior::SetObstacles(EntityGroup &obstacles)
+{
+    _obstacles = obstacles;
 }
 
 vector3df HideBehavior::GetHidingPosition(const vector3df& targetPos,const IBaseEntity *obstacle)

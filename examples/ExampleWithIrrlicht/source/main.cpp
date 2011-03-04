@@ -14,13 +14,17 @@ using namespace controller;
 int main()
 {
 
-    const s32 randLength = 1024;
+
 
 	IrrlichtDevice *device = createDevice( video::EDT_OPENGL, dimension2d<u32>(1024, 768), 32, false, false, true, 0);
 	IVideoDriver* driver = device->getVideoDriver();
 	ISceneManager* smgr = device->getSceneManager();
 
 	smgr->addCameraSceneNodeFPS();
+
+    const s32 randLength = 1024;
+    srand(device->getTimer()->getRealTime());
+
 
     //Creating the grid for unit measure, etc
     u32 tileNumber = 128;
@@ -29,6 +33,18 @@ int main()
     groundNode->setMaterialTexture(0,driver->getTexture("../media/grid2.png"));
     groundNode->setMaterialFlag(EMF_LIGHTING,false);
     groundNode->setPosition(vector3df(0,-2,0));
+
+
+    //obstacles for stuff
+    EntityGroup obstacles;
+
+    for(int i = 0; i < 20; i++)
+    {
+        ISceneNode* s = smgr->addSphereSceneNode(20);
+        IrrlichtBaseEntity * e = new IrrlichtBaseEntity(s);
+        s->setPosition(vector3df(rand()%randLength - (randLength/2),0,rand()%randLength - (randLength/2)));
+        obstacles.push_back(e);
+    }
 
     //Nodes for vehicles
     ISceneNode * cube = smgr->addCubeSceneNode(4);
@@ -39,34 +55,27 @@ int main()
     cube2->setMaterialTexture(0,driver->getTexture("../media/v2-solid.png"));
 
     //Creating the actual vehicles
-    IrrlichtMobileEntity * Entity1 = new IrrlichtMobileEntity(cube ,vector3df(0,0,0)  );
+    IrrlichtMobileEntity * Entity1 = new IrrlichtMobileEntity(cube ,vector3df(0,0,0));
     IrrlichtMobileEntity * Entity2 = new IrrlichtMobileEntity(cube2,vector3df(0,0,300));
 
     //Creating the steering conrollers, constructor also sets steering on entity
     SimpleSteeringController* Entity1Steering = new SimpleSteeringController(Entity1);
     SimpleSteeringController * Entity2Steering = new SimpleSteeringController(Entity2);
 
-    Entity1Steering->SetArriveTarget(vector3df(0,0,200));
-    Entity1Steering->SetBehaviorFlag(EBF_ARRIVE,true);
+    //Setting up other params for behaviors
+    Entity1Steering->SetObstacles(obstacles);
+    Entity1Steering->SetHideTarget(Entity2);
+    Entity1Steering->SetBehaviorFlag(EBF_HIDE,true);
+    Entity1Steering->SetBehaviorFlag(EBF_AVOID,true);
 
+    Entity2Steering->SetObstacles(obstacles);
+    Entity2Steering->SetPursuitTarget(Entity1);
+    Entity2Steering->SetBehaviorFlag(EBF_PURSUIT,true);
+    Entity2Steering->SetBehaviorFlag(EBF_AVOID,true);
+
+    //vars for tracking time between frames. This allows framerate independent motion state updates.
     u32 then = device->getTimer()->getTime();
-    srand(device->getTimer()->getRealTime());
     float timeUpdate = 0;
-
-    EntityGroup obstacles;
-
-    for(int i = 0; i < 20; i++)
-    {
-        ISceneNode* s = smgr->addSphereSceneNode(20);
-        IrrlichtBaseEntity * e = new IrrlichtBaseEntity(s);
-
-        s->setPosition(vector3df(rand()%randLength - (randLength/2),0,rand()%randLength - (randLength/2)));
-    //    s->setPosition(vector3df(0,0,50));
-        obstacles.push_back(e);
-    }
-
-//    Entity1Steering->AvoidObstaclesOn(obstacles);
-//    Entity2Steering->AvoidObstaclesOn(obstacles);
 
     while(device->run())
 	{
@@ -75,27 +84,23 @@ int main()
         then = now;
         timeUpdate += frameDeltaTime;
 
-        if(timeUpdate > 3)
+        if(timeUpdate > 1)
         {
-            core::stringw str = L"desteer v0.0.1 ";
-			str += L" FPS: ";
-			str += (s32)driver->getFPS();
+            core::stringw str = L"desteer v0.0.1  FPS: ";
+            str += (s32)driver->getFPS();
 			device->setWindowCaption(str.c_str());
 			timeUpdate = 0;
-
 		}
 
+        //Do behavior updates before the rendering.
         Entity1->Update(frameDeltaTime);
-        //Entity2->Update(frameDeltaTime);
-
-	    //camera->setTarget(Entity1->Position());
-        //camera->setPosition((Entity1->Position() - Entity1->ForwardVector()*100) + vector3df(0,100,0) );
+        Entity2->Update(frameDeltaTime);
 
         driver->beginScene(true, true, SColor(255,100,101,140));
             smgr->drawAll();
 		driver->endScene();
 	}
-
+    //Clean up irrlicht.
 	device->drop();
 
 	return 0;

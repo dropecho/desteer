@@ -1184,13 +1184,13 @@
 	"DESteer/behavior/StaticSteeringController.hpp"
 	"DESteer/Types.hpp"
 
-1298341154 d:\programming\projects\desteer\include\desteer\behavior\isteeringbehavior.hpp
+1298608130 d:\programming\projects\desteer\include\desteer\behavior\isteeringbehavior.hpp
 	"desteer/entity/IMobileEntity.hpp"
 
 1297131847 d:\programming\projects\desteer\include\desteer\behavior\simplesteeringcontroller.hpp
 	"desteer/behavior/ISteeringController.hpp"
 
-1298341154 source:d:\programming\projects\desteer\source\simplesteeringcontroller.cpp
+1299215662 source:d:\programming\projects\desteer\source\simplesteeringcontroller.cpp
 	"desteer/controller/SimpleSteeringController.hpp"
 	"desteer/Types.hpp"
 
@@ -1199,7 +1199,7 @@
 
 1297135269 ontroller/ModularSteeringController.hpp"
 
-1298341154 d:\programming\projects\desteer\include\desteer\controller\modularsteeringcontroller.hpp
+1298608513 d:\programming\projects\desteer\include\desteer\controller\modularsteeringcontroller.hpp
 	"ISteeringController.hpp"
 	"desteer/Types.hpp"
 	"desteer/entity/IMobileEntity.hpp"
@@ -1207,7 +1207,7 @@
 
 1297133532 ehavior/ISteeringBehavior.hpp"
 
-1298341154 d:\programming\projects\desteer\include\desteer\controller\isteeringcontroller.hpp
+1298608419 d:\programming\projects\desteer\include\desteer\controller\isteeringcontroller.hpp
 	"irrvector/vector3d.h"
 	"desteer/Types.hpp"
 	"desteer/entity/IMobileEntity.hpp"
@@ -1222,7 +1222,7 @@
 
 1297223557 Behavior.hpp"
 
-1298341154 d:\programming\projects\desteer\include\desteer\controller\simplesteeringcontroller.hpp
+1299215279 d:\programming\projects\desteer\include\desteer\controller\simplesteeringcontroller.hpp
 	"desteer/controller/ISteeringController.hpp"
 	"desteer/behavior/SeekBehavior.hpp"
 	"desteer/behavior/FleeBehavior.hpp"
@@ -1259,12 +1259,12 @@
 1298341154 d:\programming\projects\desteer\include\desteer\behavior\arrivebehavior.hpp
 	"ISteeringBehavior.hpp"
 
-1298341154 source:d:\programming\projects\desteer\source\pursuitbehavior.cpp
+1299215432 source:d:\programming\projects\desteer\source\pursuitbehavior.cpp
 	"desteer/behavior/PursuitBehavior.hpp"
 
 1297172580 ehavior/PursuitBehavior.hpp"
 
-1298341154 d:\programming\projects\desteer\include\desteer\behavior\pursuitbehavior.hpp
+1299215261 d:\programming\projects\desteer\include\desteer\behavior\pursuitbehavior.hpp
 	"desteer/behavior/ISteeringBehavior.hpp"
 	"desteer/behavior/SeekBehavior.hpp"
 
@@ -1277,21 +1277,21 @@
 	"desteer/behavior/ISteeringBehavior.hpp"
 	"desteer/behavior/FleeBehavior.hpp"
 
-1298341154 source:d:\programming\projects\desteer\source\obstacleavoidancebehavior.cpp
+1299215707 source:d:\programming\projects\desteer\source\obstacleavoidancebehavior.cpp
 	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
 
 1297173633 ehavior/ObstacleAvoidanceBehavior.hpp"
 
-1298341154 d:\programming\projects\desteer\include\desteer\behavior\obstacleavoidancebehavior.hpp
+1299215682 d:\programming\projects\desteer\include\desteer\behavior\obstacleavoidancebehavior.hpp
 	"ISteeringBehavior.hpp"
 	"desteer/Types.hpp"
 
-1298341154 source:d:\programming\projects\desteer\source\hidebehavior.cpp
+1299215103 source:d:\programming\projects\desteer\source\hidebehavior.cpp
 	"desteer/behavior/HideBehavior.hpp"
 
 1297223519 ehavior/HideBehavior.hpp"
 
-1298341154 d:\programming\projects\desteer\include\desteer\behavior\hidebehavior.hpp
+1299214589 d:\programming\projects\desteer\include\desteer\behavior\hidebehavior.hpp
 	"ISteeringBehavior.hpp"
 	"desteer/Types.hpp"
 	"desteer/behavior/EvadeBehavior.hpp"
