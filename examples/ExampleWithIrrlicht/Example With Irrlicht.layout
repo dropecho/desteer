@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<ActiveTarget name="Debug" />
+	<ActiveTarget name="Debug-Linux" />
+	<File name="source/main.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2476" topLine="51" />
+	</File>
 </CodeBlocks_layout_file>
