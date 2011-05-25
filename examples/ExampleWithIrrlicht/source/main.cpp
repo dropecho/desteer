@@ -1,3 +1,4 @@
+#include "desteer/controller/SimpleSteeringController.hpp"
 #include "irrlicht/irrlicht.h"
 #include "IrrlichtMobileEntity.hpp"
 #include "IrrlichtBaseEntity.hpp"

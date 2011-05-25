@@ -118,3 +118,128 @@
 1298340312 source:/home/kaeles/Code/desteer/source/WanderBehavior.cpp
 	"desteer/behavior/WanderBehavior.hpp"
 
+1306297465 source:d:\programming\projects\desteer\source\arrivebehavior.cpp
+	"desteer/behavior/ArriveBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\arrivebehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\isteeringbehavior.hpp
+	"desteer/entity/IMobileEntity.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\entity\imobileentity.hpp
+	"desteer/entity/IBaseEntity.hpp"
+	"desteer/entity/IEntitySpace.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\entity\ibaseentity.hpp
+	"irrvector/vector3d.h"
+
+1306297465 d:\programming\projects\desteer\include\irrvector\vector3d.h
+	"irrMath.h"
+
+1306297465 d:\programming\projects\desteer\include\irrvector\irrmath.h
+	"irrTypes.h"
+	<math.h>
+	<float.h>
+	<stdlib.h>
+	<limits.h>
+
+1306297465 d:\programming\projects\desteer\include\irrvector\irrtypes.h
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1306297465 d:\programming\projects\desteer\include\desteer\entity\ientityspace.hpp
+	"irrvector/vector3d.h"
+
+1306297465 source:d:\programming\projects\desteer\source\evadebehavior.cpp
+	"desteer/behavior/EvadeBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\evadebehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/FleeBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\fleebehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306297465 source:d:\programming\projects\desteer\source\fleebehavior.cpp
+	"desteer/behavior/FleeBehavior.hpp"
+
+1306297465 source:d:\programming\projects\desteer\source\hidebehavior.cpp
+	"desteer/behavior/HideBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\hidebehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+	"desteer/behavior/EvadeBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\types.hpp
+	<vector>
+	<iterator>
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/behavior/ISteeringBehavior.hpp"
+
+1306297465 source:d:\programming\projects\desteer\source\modularsteeringcontroller.cpp
+	"desteer/controller/ModularSteeringController.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\controller\modularsteeringcontroller.hpp
+	"ISteeringController.hpp"
+	"desteer/Types.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/behavior/ISteeringBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\controller\isteeringcontroller.hpp
+	"irrvector/vector3d.h"
+	"desteer/Types.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+
+1306297465 source:d:\programming\projects\desteer\source\obstacleavoidancebehavior.cpp
+	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\obstacleavoidancebehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+
+1306297465 source:d:\programming\projects\desteer\source\pursuitbehavior.cpp
+	"desteer/behavior/PursuitBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\pursuitbehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/SeekBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\seekbehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306297465 source:d:\programming\projects\desteer\source\seekbehavior.cpp
+	"desteer/behavior/SeekBehavior.hpp"
+
+1306297465 source:d:\programming\projects\desteer\source\simplesteeringcontroller.cpp
+	"desteer/controller/SimpleSteeringController.hpp"
+	"desteer/Types.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\controller\simplesteeringcontroller.hpp
+	"desteer/controller/ISteeringController.hpp"
+	"desteer/behavior/SeekBehavior.hpp"
+	"desteer/behavior/FleeBehavior.hpp"
+	"desteer/behavior/WanderBehavior.hpp"
+	"desteer/behavior/PursuitBehavior.hpp"
+	"desteer/behavior/EvadeBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+	"desteer/behavior/HideBehavior.hpp"
+	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\wanderbehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306297465 source:d:\programming\projects\desteer\source\wanderbehavior.cpp
+	"desteer/behavior/WanderBehavior.hpp"
+
+1306297965 source:d:\programming\projects\desteer\source\interposebehavior.cpp
+	"desteer/behavior/InterposeBehavior.hpp"
+
+1306297965 d:\programming\projects\desteer\include\desteer\behavior\interposebehavior.hpp
+	"ISteeringBehavior.hpp"
+
