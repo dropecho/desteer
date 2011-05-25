@@ -40,18 +40,24 @@
 					<Add option="-g" />
 				</Compiler>
 				<Linker>
+					<Add option="-L/usr/X11R6/lib" />
+					<Add option="-L../../lib/Linux" />
+					<Add option="-lGL" />
+					<Add option="-lXxf86vm" />
+					<Add option="-lXext" />
+					<Add option="-lX11" />
+					<Add option="-ldl" />
+					<Add option="-lpthread" />
 					<Add library="../../lib/libdesteer.a" />
+					<Add library="../../../LikeMagic-All/irrlicht/lib/Linux/libIrrlicht.a" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 			<Add directory="../../include" />
-			<Add directory="include" />
+			<Add directory="../../../LikeMagic-All/irrlicht/include" />
 		</Compiler>
-		<Linker>
-			<Add library="lib/libIrrlicht.a" />
-		</Linker>
 		<Unit filename="source/IrrlichtBaseEntity.hpp" />
 		<Unit filename="source/IrrlichtMobileEntity.cpp" />
 		<Unit filename="source/IrrlichtMobileEntity.hpp" />
