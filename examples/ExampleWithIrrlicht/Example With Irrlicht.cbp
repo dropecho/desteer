@@ -49,14 +49,14 @@
 					<Add option="-ldl" />
 					<Add option="-lpthread" />
 					<Add library="../../lib/libdesteer.a" />
-					<Add library="../../../LikeMagic-All/irrlicht/lib/Linux/libIrrlicht.a" />
+					<Add library="../../../irrlicht/lib/Linux/libIrrlicht.a" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 			<Add directory="../../include" />
-			<Add directory="../../../LikeMagic-All/irrlicht/include" />
+			<Add directory="../irrlicht/include" />
 		</Compiler>
 		<Unit filename="source/IrrlichtBaseEntity.hpp" />
 		<Unit filename="source/IrrlichtMobileEntity.cpp" />

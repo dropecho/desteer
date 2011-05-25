@@ -5238,3 +5238,102 @@
 	"irrlicht/irrlicht.h"
 	"desteer/entity/IBaseEntity.hpp"
 
+1306292001 source:/home/dennis/code/LikeMagic-All/desteer/examples/ExampleWithIrrlicht/source/IrrlichtMobileEntity.cpp
+	"IrrlichtMobileEntity.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/examples/ExampleWithIrrlicht/source/IrrlichtMobileEntity.hpp
+	"irrlicht/irrlicht.h"
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/controller/SimpleSteeringController.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/entity/IMobileEntity.hpp
+	"desteer/entity/IBaseEntity.hpp"
+	"desteer/entity/IEntitySpace.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/entity/IBaseEntity.hpp
+	"irrvector/vector3d.h"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/irrvector/vector3d.h
+	"irrMath.h"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/irrvector/irrMath.h
+	"irrTypes.h"
+	<math.h>
+	<float.h>
+	<stdlib.h>
+	<limits.h>
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/irrvector/irrTypes.h
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/entity/IEntitySpace.hpp
+	"irrvector/vector3d.h"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/controller/SimpleSteeringController.hpp
+	"desteer/controller/ISteeringController.hpp"
+	"desteer/behavior/SeekBehavior.hpp"
+	"desteer/behavior/FleeBehavior.hpp"
+	"desteer/behavior/WanderBehavior.hpp"
+	"desteer/behavior/PursuitBehavior.hpp"
+	"desteer/behavior/EvadeBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+	"desteer/behavior/HideBehavior.hpp"
+	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/controller/ISteeringController.hpp
+	"irrvector/vector3d.h"
+	"desteer/Types.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/Types.hpp
+	<vector>
+	<iterator>
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/behavior/ISteeringBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/ISteeringBehavior.hpp
+	"desteer/entity/IMobileEntity.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/SeekBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/FleeBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/WanderBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/PursuitBehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/SeekBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/EvadeBehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/FleeBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/ArriveBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/HideBehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+	"desteer/behavior/EvadeBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/ObstacleAvoidanceBehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+
+1306292001 source:/home/dennis/code/LikeMagic-All/desteer/examples/ExampleWithIrrlicht/source/main.cpp
+	"irrlicht/irrlicht.h"
+	"IrrlichtMobileEntity.hpp"
+	"IrrlichtBaseEntity.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/examples/ExampleWithIrrlicht/source/IrrlichtBaseEntity.hpp
+	"irrlicht/irrlicht.h"
+	"desteer/entity/IBaseEntity.hpp"
+
