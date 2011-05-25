@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="source\HideBehavior.cpp" open="1" top="1" tabpos="2">
+	<File name="include/desteer/behavior/ISteeringBehavior.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="599" topLine="0" />
+	</File>
+	<File name="include/desteer/behavior/InterposeBehavior.hpp" open="1" top="0" tabpos="2">
+		<Cursor position="531" topLine="0" />
+	</File>
+	<File name="source/EvadeBehavior.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="17" topLine="0" />
+	</File>
+	<File name="source/HideBehavior.cpp" open="0" top="0" tabpos="2">
 		<Cursor position="795" topLine="30" />
 	</File>
-	<File name="source\SimpleSteeringController.cpp" open="1" top="0" tabpos="1">
+	<File name="source/InterposeBehavior.cpp" open="1" top="1" tabpos="3">
+		<Cursor position="678" topLine="0" />
+	</File>
+	<File name="source/SimpleSteeringController.cpp" open="1" top="0" tabpos="1">
 		<Cursor position="2529" topLine="48" />
 	</File>
 </CodeBlocks_layout_file>
