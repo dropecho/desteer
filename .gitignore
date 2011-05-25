@@ -1,4 +1,10 @@
+#Ignore codeblocks temporary files and layout files (layout files change often, making a repo look modified when it is not)
+*.cbTemp
+*.layout
+
 # Ignore binaries
+examples/ExampleWithIrrlicht/bin/*
+
 Interpreter/bin/*
 Interpreter/NetbeansLinux/Interpreter/dist/Debug/GNU-Linux-x86/*
 Projects/CodeBlocksLinux/Interpreter/bin/Debug/*
