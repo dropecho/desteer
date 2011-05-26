@@ -51,6 +51,8 @@
 		</Compiler>
 		<Unit filename="Include/Bindings/DESteer/Bindings.hpp" />
 		<Unit filename="Include/Bindings/DESteer/Protos.hpp" />
+		<Unit filename="Include/Bindings/DESteer/ScriptedBaseEntity.hpp" />
+		<Unit filename="Include/Bindings/DESteer/ScriptedMobileEntity.hpp" />
 		<Unit filename="Script/DESteerBindings.io" />
 		<Unit filename="Source/Bindings.cpp" />
 		<Unit filename="Source/Protos.cpp" />
