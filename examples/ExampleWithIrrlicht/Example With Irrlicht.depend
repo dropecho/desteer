@@ -5241,12 +5241,12 @@
 1306292001 source:/home/dennis/code/LikeMagic-All/desteer/examples/ExampleWithIrrlicht/source/IrrlichtMobileEntity.cpp
 	"IrrlichtMobileEntity.hpp"
 
-1306292001 /home/dennis/code/LikeMagic-All/desteer/examples/ExampleWithIrrlicht/source/IrrlichtMobileEntity.hpp
+1306466583 /home/dennis/code/LikeMagic-All/desteer/examples/ExampleWithIrrlicht/source/IrrlichtMobileEntity.hpp
 	"irrlicht/irrlicht.h"
-	"desteer/entity/IMobileEntity.hpp"
+	"desteer/entity/MobileEntity.hpp"
 	"desteer/controller/SimpleSteeringController.hpp"
 
-1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/entity/IMobileEntity.hpp
+1306466721 /home/dennis/code/LikeMagic-All/desteer/include/desteer/entity/IMobileEntity.hpp
 	"desteer/entity/IBaseEntity.hpp"
 	"desteer/entity/IEntitySpace.hpp"
 
@@ -5328,7 +5328,7 @@
 	"ISteeringBehavior.hpp"
 	"desteer/Types.hpp"
 
-1306292001 source:/home/dennis/code/LikeMagic-All/desteer/examples/ExampleWithIrrlicht/source/main.cpp
+1306293725 source:/home/dennis/code/LikeMagic-All/desteer/examples/ExampleWithIrrlicht/source/main.cpp
 	"irrlicht/irrlicht.h"
 	"IrrlichtMobileEntity.hpp"
 	"IrrlichtBaseEntity.hpp"
@@ -5336,4 +5336,7 @@
 1306292001 /home/dennis/code/LikeMagic-All/desteer/examples/ExampleWithIrrlicht/source/IrrlichtBaseEntity.hpp
 	"irrlicht/irrlicht.h"
 	"desteer/entity/IBaseEntity.hpp"
+
+1306466575 /home/dennis/code/LikeMagic-All/desteer/include/desteer/entity/MobileEntity.hpp
+	"desteer/entity/IMobileEntity.hpp"
 

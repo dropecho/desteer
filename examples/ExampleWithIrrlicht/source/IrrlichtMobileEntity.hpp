@@ -1,12 +1,12 @@
 #pragma once
 #include "irrlicht/irrlicht.h"
-#include "desteer/entity/IMobileEntity.hpp"
+#include "desteer/entity/MobileEntity.hpp"
 #include "desteer/controller/SimpleSteeringController.hpp"
 
 namespace desteer {
 namespace entity {
 
-class IrrlichtMobileEntity : public IMobileEntity
+class IrrlichtMobileEntity : public MobileEntity
 {
 private:
 	irr::scene::ISceneNode* _node;
