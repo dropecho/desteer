@@ -8,9 +8,9 @@
 		<Build>
 			<Target title="Debug">
 				<Option platforms="Windows;" />
-				<Option output="bin/Example With Irrlicht" prefix_auto="1" extension_auto="1" />
+				<Option output="bin\Example With Irrlicht" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="bin" />
-				<Option object_output="obj/Debug/" />
+				<Option object_output="obj\Debug\" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -18,8 +18,8 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/Example With Irrlicht" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
+				<Option output="bin\Release\Example With Irrlicht" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -31,9 +31,9 @@
 			</Target>
 			<Target title="Debug-Linux">
 				<Option platforms="Unix;" />
-				<Option output="bin/Example With Irrlicht" prefix_auto="1" extension_auto="1" />
+				<Option output="bin\Example With Irrlicht" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="bin" />
-				<Option object_output="obj/Debug/" />
+				<Option object_output="obj\Debug\" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -48,20 +48,20 @@
 					<Add option="-lX11" />
 					<Add option="-ldl" />
 					<Add option="-lpthread" />
-					<Add library="../../lib/libdesteer.a" />
-					<Add library="../../../LikeMagic-All/irrlicht/lib/Linux/libIrrlicht.a" />
+					<Add library="..\..\lib\libdesteer.a" />
+					<Add library="..\..\..\LikeMagic-All\irrlicht\lib\Linux\libIrrlicht.a" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add directory="../../include" />
-			<Add directory="../../../LikeMagic-All/irrlicht/include" />
+			<Add directory="..\..\include" />
+			<Add directory="include" />
 		</Compiler>
-		<Unit filename="source/IrrlichtBaseEntity.hpp" />
-		<Unit filename="source/IrrlichtMobileEntity.cpp" />
-		<Unit filename="source/IrrlichtMobileEntity.hpp" />
-		<Unit filename="source/main.cpp" />
+		<Unit filename="source\IrrlichtBaseEntity.hpp" />
+		<Unit filename="source\IrrlichtMobileEntity.cpp" />
+		<Unit filename="source\IrrlichtMobileEntity.hpp" />
+		<Unit filename="source\main.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
