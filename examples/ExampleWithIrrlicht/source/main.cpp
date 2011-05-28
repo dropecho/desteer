@@ -1,3 +1,4 @@
+#include "desteer/controller/SimpleSteeringController.hpp"
 #include "irrlicht/irrlicht.h"
 #include "IrrlichtMobileEntity.hpp"
 #include "IrrlichtBaseEntity.hpp"
@@ -13,9 +14,6 @@ using namespace controller;
 
 int main()
 {
-
-
-
 	IrrlichtDevice *device = createDevice( video::EDT_OPENGL, dimension2d<u32>(1024, 768), 32, false, false, true, 0);
 	IVideoDriver* driver = device->getVideoDriver();
 	ISceneManager* smgr = device->getSceneManager();
@@ -55,8 +53,8 @@ int main()
     cube2->setMaterialTexture(0,driver->getTexture("../media/v2-solid.png"));
 
     //Creating the actual vehicles
-    IrrlichtMobileEntity * Entity1 = new IrrlichtMobileEntity(cube ,vector3df(0,0,0));
-    IrrlichtMobileEntity * Entity2 = new IrrlichtMobileEntity(cube2,vector3df(0,0,300));
+    IrrlichtMobileEntity * Entity1 = new IrrlichtMobileEntity(cube ,vector3df(0,0,0), 1, 60, 150);
+    IrrlichtMobileEntity * Entity2 = new IrrlichtMobileEntity(cube2,vector3df(0,0,300), 1, 200, 25);
 
     //Creating the steering conrollers, constructor also sets steering on entity
     SimpleSteeringController* Entity1Steering = new SimpleSteeringController(Entity1);
