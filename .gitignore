@@ -34,7 +34,7 @@ autom4te.cache/*
 */.deps/*
 
 # Ignore crap codeblocks files
-*.depend
+*.depend~
 
 # Ignore doxygen output (which can be quite sizeable).
 doxygen/*
