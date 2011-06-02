@@ -107,6 +107,22 @@ DLL_PUBLIC void add_bindings(RuntimeTypeSystem& type_sys)
     LM_CONSTR(ScriptedMobileEntity,,)
 
     LM_BLOCK(ScriptedMobileEntity,
+
+        // IBaseEntity
+        (Position)
+        (SetPosition)
+        (Radius)
+        (Update)
+
+        // IEntitySpace
+        (SideVector)
+        (SetSideVector)
+        (ForwardVector)
+        (SetForwardVector)
+        (transformWorldVectToLocal)
+        (transformLocalVectToWorld)
+
+        // IMobileEntity
         (SetSteering)
         (Mass)
         (SetMass)
