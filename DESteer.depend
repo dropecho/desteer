@@ -289,8 +289,9 @@
 1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/FleeBehavior.hpp
 	"ISteeringBehavior.hpp"
 
-1306292001 source:/home/dennis/code/LikeMagic-All/desteer/source/FleeBehavior.cpp
+1307229418 source:/home/dennis/code/LikeMagic-All/desteer/source/FleeBehavior.cpp
 	"desteer/behavior/FleeBehavior.hpp"
+	<cassert>
 
 1306292001 source:/home/dennis/code/LikeMagic-All/desteer/source/HideBehavior.cpp
 	"desteer/behavior/HideBehavior.hpp"

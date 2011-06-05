@@ -32,14 +32,24 @@ DLL_PUBLIC void add_bindings(RuntimeTypeSystem& type_sys)
     // This needs to be done once in every DLL.
     LM_SET_TYPE_INFO(type_sys)
 
+    auto ns_bindings = Namespace::global(type_sys).subspace("Bindings").subspace("DESteer");
+
+    LM_STATIC_FUNC(ns_bindings, Bindings::DESteer, add_protos)
+
     auto ns_desteer = Namespace::global(type_sys).subspace("desteer");
 
     LM_CLASS(ns_desteer, BehaviorGroup)
     LM_CLASS(ns_desteer, BehaviorIterator)
     LM_CLASS(ns_desteer, MobGroup)
     LM_CLASS(ns_desteer, MobIterator)
+
     LM_CLASS(ns_desteer, EntityGroup)
+    LM_FUNC(EntityGroup, (size)(begin)(end)(rbegin)(rend)(front)(back)(push_back)(clear))
+    LM_FUNC_OVERLOAD_BOTH(EntityGroup, at, IBaseEntity*&, EntityGroup::size_type)
+
     LM_CLASS(ns_desteer, EntityIterator)
+    LM_OP_OVERLOAD(EntityIterator, , ++, EntityIterator, int) // Can only overload postfix ++ in Io)
+    LM_FUNC_OVERLOAD(EntityIterator, "next" , operator ++, EntityIterator) // So overload the prefix ++ as a "next" method.
 
     auto ns_entity = ns_desteer.subspace("entity");
 
@@ -106,6 +116,8 @@ DLL_PUBLIC void add_bindings(RuntimeTypeSystem& type_sys)
     LM_BASE(ScriptedMobileEntity, IMobileEntity)
     LM_CONSTR(ScriptedMobileEntity,,)
 
+    LM_FIELD(ScriptedMobileEntity, (OnPosition))
+
     LM_BLOCK(ScriptedMobileEntity,
 
         // IBaseEntity
@@ -121,6 +133,7 @@ DLL_PUBLIC void add_bindings(RuntimeTypeSystem& type_sys)
         (SetForwardVector)
         (transformWorldVectToLocal)
         (transformLocalVectToWorld)
+
 
         // IMobileEntity
         (SetSteering)
@@ -150,6 +163,9 @@ DLL_PUBLIC void add_bindings(RuntimeTypeSystem& type_sys)
         (SetPursuitTarget)
         (SetObstacles)
     )
+
+    // Values of the enum are defined in protos
+    LM_ENUM(ns_controller, EBEHAVIOR_FLAG)
 
     auto ns_behavior = ns_desteer.subspace("behavior");
 

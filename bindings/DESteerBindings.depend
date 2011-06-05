@@ -1,21 +1,17 @@
 # depslib dependency file v1.0
-1306294322 source:/home/dennis/code/LikeMagic-All/desteer/bindings/Source/Protos.cpp
+1307223322 source:/home/dennis/code/LikeMagic-All/desteer/bindings/Source/Bindings.cpp
+	"Bindings/DESteer/Bindings.hpp"
 	"Bindings/DESteer/Protos.hpp"
 	"LikeMagic/Utility/UserMacros.hpp"
+	"Bindings/DESteer/ScriptedBaseEntity.hpp"
+	"Bindings/DESteer/ScriptedMobileEntity.hpp"
+	"desteer/Types.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/controller/SimpleSteeringController.hpp"
 
-1306294322 /home/dennis/code/LikeMagic-All/desteer/bindings/Include/Bindings/DESteer/Protos.hpp
-	"LikeMagic/Backends/Io/IoVM.hpp"
-	"LikeMagic/Utility/DLLHelper.hpp"
-
-1305595503 /home/dennis/code/LikeMagic-All/LikeMagic/Include/LikeMagic/Backends/Io/IoVM.hpp
+1306294322 /home/dennis/code/LikeMagic-All/desteer/bindings/Include/Bindings/DESteer/Bindings.hpp
 	"LikeMagic/RuntimeTypeSystem.hpp"
-	"LikeMagic/Backends/Io/IoBlock.hpp"
-	"LikeMagic/Backends/Io/API_Io.hpp"
-	"LikeMagic/SFMO/CppObjProxy.hpp"
-	"LikeMagic/ITypeSystemObserver.hpp"
-	"LikeMagic/MarkableObjGraph.hpp"
-	"boost/unordered_map.hpp"
-	"boost/unordered_set.hpp"
+	"LikeMagic/Utility/DLLHelper.hpp"
 
 1305686575 /home/dennis/code/LikeMagic-All/LikeMagic/Include/LikeMagic/RuntimeTypeSystem.hpp
 	"boost/type_traits/is_enum.hpp"
@@ -5527,7 +5523,7 @@
 	"LikeMagic/Utility/TypeInfoCache.hpp"
 	<string>
 
-1305423426 /home/dennis/code/LikeMagic-All/LikeMagic/Include/LikeMagic/Marshaling/Class.hpp
+1307163139 /home/dennis/code/LikeMagic-All/LikeMagic/Include/LikeMagic/Marshaling/Class.hpp
 	"AbstractClass.hpp"
 	"LikeMagic/Marshaling/MethodCallGenerator.hpp"
 	"ConstructorCallTarget.hpp"
@@ -5864,6 +5860,22 @@
 	"ConvertibleTo.hpp"
 	"../SFMO/Trampoline.hpp"
 
+1292730773 /home/dennis/code/LikeMagic-All/LikeMagic/Include/LikeMagic/Utility/DLLHelper.hpp
+
+1306294322 /home/dennis/code/LikeMagic-All/desteer/bindings/Include/Bindings/DESteer/Protos.hpp
+	"LikeMagic/Backends/Io/IoVM.hpp"
+	"LikeMagic/Utility/DLLHelper.hpp"
+
+1305595503 /home/dennis/code/LikeMagic-All/LikeMagic/Include/LikeMagic/Backends/Io/IoVM.hpp
+	"LikeMagic/RuntimeTypeSystem.hpp"
+	"LikeMagic/Backends/Io/IoBlock.hpp"
+	"LikeMagic/Backends/Io/API_Io.hpp"
+	"LikeMagic/SFMO/CppObjProxy.hpp"
+	"LikeMagic/ITypeSystemObserver.hpp"
+	"LikeMagic/MarkableObjGraph.hpp"
+	"boost/unordered_map.hpp"
+	"boost/unordered_set.hpp"
+
 1304793907 /home/dennis/code/LikeMagic-All/LikeMagic/Include/LikeMagic/Backends/Io/IoBlock.hpp
 	"LikeMagic/Backends/Io/API_Io.hpp"
 	"LikeMagic/AbstractTypeSystem.hpp"
@@ -5874,8 +5886,6 @@
 1304793773 /home/dennis/code/LikeMagic-All/LikeMagic/Include/LikeMagic/Backends/Io/API_Io.hpp
 	"LikeMagic/SFMO/AbstractCppObjProxy.hpp"
 	"LikeMagic/Utility/BetterTypeInfo.hpp"
-
-1292730773 /home/dennis/code/LikeMagic-All/LikeMagic/Include/LikeMagic/Utility/DLLHelper.hpp
 
 1306469505 /home/dennis/code/LikeMagic-All/LikeMagic/Include/LikeMagic/Utility/UserMacros.hpp
 	"LikeMagic/RuntimeTypeSystem.hpp"
@@ -5896,4 +5906,112 @@
 	<boost/preprocessor/seq/size.hpp>
 	<boost/preprocessor/tuple/elem.hpp>
 	<boost/preprocessor/tuple/rem.hpp>
+
+1306467123 /home/dennis/code/LikeMagic-All/desteer/bindings/Include/Bindings/DESteer/ScriptedBaseEntity.hpp
+	"desteer/entity/IBaseEntity.hpp"
+	"LikeMagic/Utility/ScriptFunc.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/entity/IBaseEntity.hpp
+	"irrvector/vector3d.h"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/irrvector/vector3d.h
+	"irrMath.h"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/irrvector/irrMath.h
+	"irrTypes.h"
+	<math.h>
+	<float.h>
+	<stdlib.h>
+	<limits.h>
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/irrvector/irrTypes.h
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1306383585 /home/dennis/code/LikeMagic-All/LikeMagic/Include/LikeMagic/Utility/ScriptFunc.hpp
+	"LikeMagic/MarkableObjGraph.hpp"
+	"LikeMagic/Backends/Io/IoBlock.hpp"
+	<stdexcept>
+	"boost/preprocessor/control/iif.hpp"
+
+1306468773 /home/dennis/code/LikeMagic-All/desteer/bindings/Include/Bindings/DESteer/ScriptedMobileEntity.hpp
+	"desteer/entity/IMobileEntity.hpp"
+	"Bindings/DESteer/ScriptedBaseEntity.hpp"
+	"Bindings/DESteer/ScriptedEntitySpace.hpp"
+	"LikeMagic/Utility/ScriptFunc.hpp"
+
+1306466721 /home/dennis/code/LikeMagic-All/desteer/include/desteer/entity/IMobileEntity.hpp
+	"desteer/entity/IBaseEntity.hpp"
+	"desteer/entity/IEntitySpace.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/entity/IEntitySpace.hpp
+	"irrvector/vector3d.h"
+
+1306467963 /home/dennis/code/LikeMagic-All/desteer/bindings/Include/Bindings/DESteer/ScriptedEntitySpace.hpp
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/controller/SimpleSteeringController.hpp"
+	"LikeMagic/Utility/ScriptFunc.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/controller/SimpleSteeringController.hpp
+	"desteer/controller/ISteeringController.hpp"
+	"desteer/behavior/SeekBehavior.hpp"
+	"desteer/behavior/FleeBehavior.hpp"
+	"desteer/behavior/WanderBehavior.hpp"
+	"desteer/behavior/PursuitBehavior.hpp"
+	"desteer/behavior/EvadeBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+	"desteer/behavior/HideBehavior.hpp"
+	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/controller/ISteeringController.hpp
+	"irrvector/vector3d.h"
+	"desteer/Types.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/Types.hpp
+	<vector>
+	<iterator>
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/behavior/ISteeringBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/ISteeringBehavior.hpp
+	"desteer/entity/IMobileEntity.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/SeekBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/FleeBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/WanderBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/PursuitBehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/SeekBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/EvadeBehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/FleeBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/ArriveBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/HideBehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+	"desteer/behavior/EvadeBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+
+1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/ObstacleAvoidanceBehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+
+1307223446 source:/home/dennis/code/LikeMagic-All/desteer/bindings/Source/Protos.cpp
+	"Bindings/DESteer/Protos.hpp"
+	"LikeMagic/Utility/UserMacros.hpp"
+	"desteer/controller/SimpleSteeringController.hpp"
 
