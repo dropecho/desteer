@@ -10,7 +10,7 @@
 namespace desteer {
 namespace entity {
 
-class ScriptedMobileEntity : public LikeMagic::MarkableObjGraph, public IMobileEntity
+class ScriptedMobileEntity : public IMobileEntity, public LikeMagic::MarkableObjGraph
 {
 public:
 

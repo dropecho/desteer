@@ -25,6 +25,8 @@ using namespace desteer::entity;
 using namespace desteer::controller;
 using namespace desteer::behavior;
 
+#include "LikeMagic/TypeConv/NumberConv.hpp"
+
 namespace Bindings { namespace DESteer {
 
 DLL_PUBLIC void add_bindings(RuntimeTypeSystem& type_sys)
@@ -44,12 +46,14 @@ DLL_PUBLIC void add_bindings(RuntimeTypeSystem& type_sys)
     LM_CLASS(ns_desteer, MobIterator)
 
     LM_CLASS(ns_desteer, EntityGroup)
-    LM_FUNC(EntityGroup, (size)(begin)(end)(rbegin)(rend)(front)(back)(push_back)(clear))
+    LM_CONSTR(EntityGroup,,)
+    LM_FUNC(EntityGroup, (size)(clear))
+    LM_FUNC_OVERLOAD(EntityGroup, "push_back", push_back, void, EntityGroup::value_type const&)
     LM_FUNC_OVERLOAD_BOTH(EntityGroup, at, IBaseEntity*&, EntityGroup::size_type)
 
     LM_CLASS(ns_desteer, EntityIterator)
     LM_OP_OVERLOAD(EntityIterator, , ++, EntityIterator, int) // Can only overload postfix ++ in Io)
-    LM_FUNC_OVERLOAD(EntityIterator, "next" , operator ++, EntityIterator) // So overload the prefix ++ as a "next" method.
+    //LM_FUNC_OVERLOAD(EntityIterator, "next" , operator ++, EntityIterator) // So overload the prefix ++ as a "next" method.
 
     auto ns_entity = ns_desteer.subspace("entity");
 
@@ -116,6 +120,20 @@ DLL_PUBLIC void add_bindings(RuntimeTypeSystem& type_sys)
     LM_BASE(ScriptedMobileEntity, IMobileEntity)
     LM_CONSTR(ScriptedMobileEntity,,)
 
+    // There's something strange about the conversion from
+    // ScriptedMobileEntity*& to IBaseEntity* const&.
+    // I would expect the conversion path to be automatically discovered
+    // but it is not.  It might have something to do with the fact
+    // that when you try to code the conversion directly you get
+    // a warning about returning a reference to a temporary.
+    // Apparently casting ScriptedMobileEntity to its base
+    // creates a temporary pointer value (probably because of
+    // the multiple inheritance in its inheritance tree).
+    // To avoid the warning, I'm using NumberConv which
+    // caches the temporary copy of the value so there
+    // will be something persistent for the reference to refer to.
+    type_sys.add_conv<ScriptedMobileEntity*&, IBaseEntity* const&, LikeMagic::TypeConv::NumberConv>();
+
     LM_FIELD(ScriptedMobileEntity, (OnPosition))
 
     LM_BLOCK(ScriptedMobileEntity,
@@ -133,7 +151,6 @@ DLL_PUBLIC void add_bindings(RuntimeTypeSystem& type_sys)
         (SetForwardVector)
         (transformWorldVectToLocal)
         (transformLocalVectToWorld)
-
 
         // IMobileEntity
         (SetSteering)

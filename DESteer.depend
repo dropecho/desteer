@@ -279,8 +279,9 @@
 1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/entity/IEntitySpace.hpp
 	"irrvector/vector3d.h"
 
-1306292001 source:/home/dennis/code/LikeMagic-All/desteer/source/EvadeBehavior.cpp
+1307229618 source:/home/dennis/code/LikeMagic-All/desteer/source/EvadeBehavior.cpp
 	"desteer/behavior/EvadeBehavior.hpp"
+	<cassert>
 
 1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/EvadeBehavior.hpp
 	"desteer/behavior/ISteeringBehavior.hpp"
@@ -289,7 +290,7 @@
 1306292001 /home/dennis/code/LikeMagic-All/desteer/include/desteer/behavior/FleeBehavior.hpp
 	"ISteeringBehavior.hpp"
 
-1307229418 source:/home/dennis/code/LikeMagic-All/desteer/source/FleeBehavior.cpp
+1307233499 source:/home/dennis/code/LikeMagic-All/desteer/source/FleeBehavior.cpp
 	"desteer/behavior/FleeBehavior.hpp"
 	<cassert>
 
