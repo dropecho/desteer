@@ -28,7 +28,7 @@ enum EBEHAVIOR_FLAG
 
 class SimpleSteeringController : public ISteeringController
 {
-    private:
+    protected:
         entity::IMobileEntity *     _mob;
         irr::core::vector3df        _seekTarget;
         irr::core::vector3df        _arriveTarget;
