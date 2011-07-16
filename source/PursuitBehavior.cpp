@@ -11,7 +11,7 @@ using namespace core;
 PursuitBehavior::PursuitBehavior(IMobileEntity * target)
 {
     _target = target;
-    _seekBehavior = new SeekBehavior(vector3df(0,0,0));
+    _seekBehavior = new SeekBehavior();
 }
 
 vector3df PursuitBehavior::Calculate()

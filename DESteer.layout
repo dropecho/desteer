@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="include\desteer\behavior\SeekBehavior.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="587" topLine="0" />
+	</File>
+	<File name="include\desteer\controller\FluentSimpleController.hpp" open="1" top="0" tabpos="6">
+		<Cursor position="652" topLine="0" />
+	</File>
+	<File name="include\desteer\controller\SimpleSteeringController.hpp" open="1" top="0" tabpos="5">
+		<Cursor position="2028" topLine="25" />
+	</File>
+	<File name="source\FluentSimpleController.cpp" open="1" top="1" tabpos="7">
+		<Cursor position="1344" topLine="0" />
+	</File>
+	<File name="source\PursuitBehavior.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="301" topLine="0" />
+	</File>
+	<File name="source\SeekBehavior.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="236" topLine="0" />
+	</File>
+	<File name="source\SimpleSteeringController.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="641" topLine="2" />
+	</File>
+</CodeBlocks_layout_file>

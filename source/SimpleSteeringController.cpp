@@ -22,7 +22,7 @@ SimpleSteeringController::SimpleSteeringController(IMobileEntity* mob)
 
     _behaviorFlags  = 0;
 
-    _seekBehavior       = new SeekBehavior(_seekTarget,mob);
+    _seekBehavior       = new SeekBehavior(mob,_seekTarget);
     _arriveBehavior     = new ArriveBehavior(_seekTarget,mob,.08);
     _fleeBehavior       = new FleeBehavior(_fleeTarget);
     _hideBehavior       = new HideBehavior(_hideTarget,_obstacles);
