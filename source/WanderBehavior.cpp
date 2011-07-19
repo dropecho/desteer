@@ -5,6 +5,7 @@ using namespace behavior;
 
 using namespace irr;
 using namespace core;
+using boost::shared_ptr;
 
 f64 RandomClamped()
 {
@@ -28,7 +29,7 @@ vector3df WanderBehavior::Calculate()
     return _mob->transformLocalVectToWorld(_wanderTarget + vector3df(0,0,_wanderDistance)) - _mob->Position();
 }
 
-void WanderBehavior::SetMobile(entity::IMobileEntity * mob)
+void WanderBehavior::SetMobile(shared_ptr<entity::IMobileEntity> mob)
 {
     _mob = mob;
 }

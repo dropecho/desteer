@@ -4,16 +4,17 @@
 #include <iterator>
 #include "desteer/entity/IMobileEntity.hpp"
 #include "desteer/behavior/ISteeringBehavior.hpp"
+#include <boost/smart_ptr.hpp>
 
 namespace desteer{
 
-typedef std::vector<behavior::ISteeringBehavior *> BehaviorGroup;
-typedef std::vector<behavior::ISteeringBehavior *>::const_iterator BehaviorIterator;
+typedef std::vector<boost::shared_ptr<desteer::behavior::ISteeringBehavior> > BehaviorGroup;
+typedef BehaviorGroup::const_iterator BehaviorIterator;
 
-typedef std::vector<entity::IMobileEntity*> MobGroup;
+typedef std::vector<boost::shared_ptr<desteer::entity::IMobileEntity> > MobGroup;
 typedef MobGroup::const_iterator MobIterator;
 
-typedef std::vector<entity::IBaseEntity*> EntityGroup;
+typedef std::vector<boost::shared_ptr<desteer::entity::IBaseEntity> > EntityGroup;
 typedef EntityGroup::const_iterator EntityIterator;
 
 }

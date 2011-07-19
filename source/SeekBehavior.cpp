@@ -5,8 +5,9 @@ using namespace behavior;
 using namespace entity;
 using namespace irr;
 using namespace core;
+using boost::shared_ptr;
 
-SeekBehavior::SeekBehavior(vector3df target, IMobileEntity * mob)
+SeekBehavior::SeekBehavior(vector3df target, shared_ptr<IMobileEntity> mob)
 {
     _target = target;
     _mob = mob;
@@ -17,7 +18,7 @@ void SeekBehavior::SetTarget(vector3df target)
     _target = target;
 }
 
-void SeekBehavior::SetMobile(IMobileEntity * mob)
+void SeekBehavior::SetMobile(shared_ptr<IMobileEntity> mob)
 {
     _mob = mob;
 }

@@ -1,5 +1,6 @@
 #pragma once
 #include "desteer/entity/IMobileEntity.hpp"
+#include <boost/smart_ptr.hpp>
 
 namespace desteer{
 namespace behavior{
@@ -20,7 +21,7 @@ class ISteeringBehavior
         /*!
             Sets the current entity this steering behavior is using to determine its calculations.
         */
-        virtual void SetMobile(entity::IMobileEntity * mob) = 0;
+        virtual void SetMobile(boost::shared_ptr<entity::IMobileEntity> mob) = 0;
 
 };//end class ISteeringBehavior
 

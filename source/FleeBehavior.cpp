@@ -5,6 +5,7 @@ using namespace behavior;
 using namespace entity;
 using namespace irr;
 using namespace core;
+using boost::shared_ptr;
 
 FleeBehavior::FleeBehavior(irr::core::vector3df target, float fleeDistance)
 {
@@ -12,7 +13,7 @@ FleeBehavior::FleeBehavior(irr::core::vector3df target, float fleeDistance)
     _fleeDistance = fleeDistance;
 }
 
-void FleeBehavior::SetMobile(IMobileEntity * mob)
+void FleeBehavior::SetMobile(shared_ptr<IMobileEntity> mob)
 {
     _mob = mob;
 }

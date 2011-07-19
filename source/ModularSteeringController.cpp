@@ -6,8 +6,9 @@ using namespace controller;
 using namespace entity;
 using namespace irr;
 using namespace core;
+using boost::shared_ptr;
 
-ModularSteeringController::ModularSteeringController(IMobileEntity* mob)
+ModularSteeringController::ModularSteeringController(shared_ptr<IMobileEntity> mob)
 {
     _mob = mob;
 }
@@ -34,7 +35,7 @@ vector3df ModularSteeringController::Calculate()
 
 }
 
-void ModularSteeringController::AddBehavior(ISteeringBehavior* behavior)
+void ModularSteeringController::AddBehavior(shared_ptr<ISteeringBehavior> behavior)
 {
     _behaviors.push_back(behavior);
     behavior->SetMobile(_mob);

@@ -2,6 +2,7 @@
 #include "irrlicht/irrlicht.h"
 #include "IrrlichtMobileEntity.hpp"
 #include "IrrlichtBaseEntity.hpp"
+#include <boost/smart_ptr.hpp>
 
 using namespace irr;
 using namespace core;
@@ -11,6 +12,7 @@ using namespace desteer;
 using namespace entity;
 using namespace behavior;
 using namespace controller;
+using boost::shared_ptr;
 
 int main()
 {
@@ -39,7 +41,7 @@ int main()
     for(int i = 0; i < 20; i++)
     {
         ISceneNode* s = smgr->addSphereSceneNode(20);
-        IrrlichtBaseEntity * e = new IrrlichtBaseEntity(s);
+        shared_ptr<IrrlichtBaseEntity> e(new IrrlichtBaseEntity(s));
         s->setPosition(vector3df(rand()%randLength - (randLength/2),0,rand()%randLength - (randLength/2)));
         obstacles.push_back(e);
     }
@@ -53,12 +55,12 @@ int main()
     cube2->setMaterialTexture(0,driver->getTexture("../media/v2-solid.png"));
 
     //Creating the actual vehicles
-    IrrlichtMobileEntity * Entity1 = new IrrlichtMobileEntity(cube ,vector3df(0,0,0), 1, 60, 150);
-    IrrlichtMobileEntity * Entity2 = new IrrlichtMobileEntity(cube2,vector3df(0,0,300), 1, 200, 25);
+    shared_ptr<IrrlichtMobileEntity> Entity1(new IrrlichtMobileEntity(cube ,vector3df(0,0,0), 1, 60, 150));
+    shared_ptr<IrrlichtMobileEntity> Entity2(new IrrlichtMobileEntity(cube2,vector3df(0,0,300), 1, 200, 25));
 
     //Creating the steering conrollers, constructor also sets steering on entity
-    SimpleSteeringController* Entity1Steering = new SimpleSteeringController(Entity1);
-    SimpleSteeringController * Entity2Steering = new SimpleSteeringController(Entity2);
+    shared_ptr<SimpleSteeringController> Entity1Steering(new SimpleSteeringController(Entity1));
+    shared_ptr<SimpleSteeringController> Entity2Steering(new SimpleSteeringController(Entity2));
 
     //Setting up other params for behaviors
     Entity1Steering->SetObstacles(obstacles);

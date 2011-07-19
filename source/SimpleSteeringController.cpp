@@ -8,28 +8,44 @@ using namespace desteer;
 using namespace behavior;
 using namespace controller;
 using namespace entity;
+using boost::shared_ptr;
 
-SimpleSteeringController::SimpleSteeringController(IMobileEntity* mob)
+SimpleSteeringController::SimpleSteeringController(shared_ptr<IMobileEntity> mob)
 {
     _mob = mob;
     _arriveTarget   = vector3df(0,0,0);
     _seekTarget     = vector3df(0,0,0);
     _fleeTarget     = vector3df(0,0,0);
 
-    _evadeTarget    = NULL;
-    _hideTarget     = NULL;
-    _pursuitTarget   = NULL;
+    _evadeTarget    = shared_ptr<IMobileEntity>();
+    _hideTarget     = shared_ptr<IMobileEntity>();
+    _pursuitTarget  = shared_ptr<IMobileEntity>();
 
     _behaviorFlags  = 0;
 
-    _seekBehavior       = new SeekBehavior(_seekTarget,mob);
-    _arriveBehavior     = new ArriveBehavior(_seekTarget,mob,.08);
-    _fleeBehavior       = new FleeBehavior(_fleeTarget);
-    _hideBehavior       = new HideBehavior(_hideTarget,_obstacles);
-    _wanderBehavior     = new WanderBehavior();
-    _evadeBehavior      = new EvadeBehavior(_evadeTarget);
-    _pursuitBehavior    = new PursuitBehavior(_pursuitTarget);
-    _obsAvoidBehavior   = new ObstacleAvoidanceBehavior(_obstacles);
+    shared_ptr<SeekBehavior> seekBehavior(new SeekBehavior(_seekTarget,mob));
+    _seekBehavior       = seekBehavior;
+
+    shared_ptr<ArriveBehavior> arriveBehavior(new ArriveBehavior(_seekTarget,mob,.08));
+    _arriveBehavior     = arriveBehavior;
+
+    shared_ptr<FleeBehavior> fleeBehavior(new FleeBehavior(_fleeTarget));
+    _fleeBehavior       = fleeBehavior;
+
+    shared_ptr<HideBehavior> hideBehavior(new HideBehavior(_hideTarget,_obstacles));
+    _hideBehavior       = hideBehavior;
+
+    shared_ptr<WanderBehavior> wanderBehavior(new WanderBehavior());
+    _wanderBehavior     = wanderBehavior;
+
+    shared_ptr<EvadeBehavior> evadeBehavior(new EvadeBehavior(_evadeTarget));
+    _evadeBehavior      = evadeBehavior;
+
+    shared_ptr<PursuitBehavior> pursuitBehavior(new PursuitBehavior(_pursuitTarget));
+    _pursuitBehavior    = pursuitBehavior;
+
+    shared_ptr<ObstacleAvoidanceBehavior> obsAvoidBehavior(new ObstacleAvoidanceBehavior(_obstacles));
+    _obsAvoidBehavior   = obsAvoidBehavior;
 
 
     _seekBehavior->SetMobile(_mob);
@@ -41,7 +57,7 @@ SimpleSteeringController::SimpleSteeringController(IMobileEntity* mob)
     _pursuitBehavior->SetMobile(_mob);
     _obsAvoidBehavior->SetMobile(_mob);
 
-    _mob->SetSteering(this);
+    _mob->SetSteering(shared_ptr<ISteeringController>(this));
 }
 
 irr::core::vector3df SimpleSteeringController::Calculate()
@@ -139,12 +155,12 @@ void SimpleSteeringController::SetArriveTarget(vector3df target)
     _arriveTarget = target;
 }
 
-void SimpleSteeringController::SetHideTarget(entity::IMobileEntity *target)
+void SimpleSteeringController::SetHideTarget(shared_ptr<entity::IMobileEntity> target)
 {
     _hideTarget = target;
 }
 
-void SimpleSteeringController::SetPursuitTarget(entity::IMobileEntity *target)
+void SimpleSteeringController::SetPursuitTarget(shared_ptr<entity::IMobileEntity> target)
 {
     _pursuitTarget = target;
 }

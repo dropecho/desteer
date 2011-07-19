@@ -2,6 +2,7 @@
 
 #include "desteer/entity/IBaseEntity.hpp"
 #include "desteer/entity/IEntitySpace.hpp"
+#include <boost/smart_ptr.hpp>
 
 //Predefining stuff to avoid circular reference.
 namespace desteer { namespace controller {
@@ -37,7 +38,7 @@ public:
 
     virtual irr::core::vector3df Velocity() const {return _velocity;};
 
-    virtual void SetSteering(controller::ISteeringController * controller) = 0;
+    virtual void SetSteering(boost::shared_ptr<controller::ISteeringController> controller) = 0;
 };
 
 }//end namespace entity

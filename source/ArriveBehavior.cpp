@@ -5,8 +5,9 @@ using namespace behavior;
 using namespace irr;
 using namespace core;
 using namespace entity;
+using boost::shared_ptr;
 
-ArriveBehavior::ArriveBehavior(vector3df target,IMobileEntity * mob ,float arriveTolerance, float decceleration)
+ArriveBehavior::ArriveBehavior(vector3df target,shared_ptr<IMobileEntity> mob ,float arriveTolerance, float decceleration)
 {
     _target = target;
     _mob = mob;
@@ -39,7 +40,7 @@ vector3df ArriveBehavior::Calculate()
     return vector3df(0,0,0);
 }
 
-void ArriveBehavior::SetMobile(IMobileEntity * mob)
+void ArriveBehavior::SetMobile(shared_ptr<IMobileEntity> mob)
 {
     _mob = mob;
 }
