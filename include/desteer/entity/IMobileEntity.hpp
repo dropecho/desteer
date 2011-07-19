@@ -39,6 +39,7 @@ public:
     virtual irr::core::vector3df Velocity() const {return _velocity;};
 
     virtual void SetSteering(boost::shared_ptr<controller::ISteeringController> controller) = 0;
+
 };
 
 }//end namespace entity

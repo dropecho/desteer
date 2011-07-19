@@ -21,6 +21,7 @@ public :
 	virtual float Radius() const {return (_node->getBoundingBox().getExtent().getLength() / 2);};
 
 	virtual void Update(float timeElapsed) {return;};
+	virtual ~IrrlichtBaseEntity(){}
 };
 
 }//end namespace entity

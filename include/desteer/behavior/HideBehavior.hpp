@@ -28,6 +28,7 @@ public:
     void SetMobile(boost::shared_ptr<entity::IMobileEntity> mob);
     void SetTarget(boost::shared_ptr<entity::IMobileEntity> target);
     void SetObstacles(EntityGroup &obstacles);
+    virtual ~HideBehavior(){}
 };
 
 } //end ns behavior

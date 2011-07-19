@@ -66,6 +66,8 @@ public:
     void SetPursuitTarget(boost::shared_ptr<desteer::entity::IMobileEntity> target);
 
     void SetObstacles(desteer::EntityGroup &obstacles);
+
+    virtual ~SimpleSteeringController(){}
 };
 
 }//end ns controller

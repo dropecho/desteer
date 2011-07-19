@@ -18,6 +18,7 @@ public:
     irr::core::vector3df Calculate();
     void SetMobile(boost::shared_ptr<entity::IMobileEntity> mob);
     void SetObstacles(EntityGroup &obstacles);
+    virtual ~ObstacleAvoidanceBehavior(){}
 };
 
 } //end ns behavior

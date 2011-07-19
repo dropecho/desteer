@@ -18,7 +18,6 @@ class ISteeringController
     */
     virtual irr::core::vector3df Calculate() = 0;
 
-    virtual ~ISteeringController(){}
 };
 
 } //end ns controller

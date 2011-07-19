@@ -18,6 +18,7 @@ public:
     WanderBehavior(float wanderRadius = 10, float wanderDistance = 20, float wanderJitter = 10 );
     irr::core::vector3df Calculate();
     void SetMobile(boost::shared_ptr<entity::IMobileEntity> mob);
+    virtual ~WanderBehavior(){}
 };
 
 } //end ns behavior

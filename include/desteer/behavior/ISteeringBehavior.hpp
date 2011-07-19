@@ -23,6 +23,7 @@ class ISteeringBehavior
         */
         virtual void SetMobile(boost::shared_ptr<entity::IMobileEntity> mob) = 0;
 
+
 };//end class ISteeringBehavior
 
 } //end ns behavior

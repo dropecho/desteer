@@ -27,6 +27,8 @@ public:
 
     void AddBehavior(boost::shared_ptr<behavior::ISteeringBehavior> behavior);
 
+    virtual ~ModularSteeringController(){
+    }
 };
 
 } //end ns controller

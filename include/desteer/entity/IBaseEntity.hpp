@@ -13,7 +13,6 @@ public:
 
 	virtual void Update(float timeElapsed) = 0;
 
-	virtual ~IBaseEntity(){}
 };
 
 }//end namespace entity

@@ -16,7 +16,7 @@ public:
 
     virtual irr::core::vector3df Calculate();
     virtual void SetMobile(boost::shared_ptr<entity::IMobileEntity> mob);
-
+    virtual ~InterposeBehavior(){}
 };
 
 }   //end namespace behavior

@@ -42,6 +42,7 @@ public:
 
     virtual void Update(float delta);
 	virtual void SetSteering(boost::shared_ptr<controller::ISteeringController> controller){_steering = controller;};
+	virtual ~IrrlichtMobileEntity(){}
 };
 
 }//end namespace entity

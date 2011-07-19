@@ -22,6 +22,7 @@ public:
         return;
     };
     irr::core::vector3df Calculate();
+    virtual ~SeekBehavior(){}
 };
 
 } //end ns behavior

@@ -25,6 +25,7 @@ public:
     irr::core::vector3df Calculate();
     void SetMobile(boost::shared_ptr<entity::IMobileEntity> mob);
     void SetTarget(irr::core::vector3df target);
+    virtual ~ArriveBehavior(){}
 };
 
 } //end ns behavior

@@ -19,6 +19,7 @@ public:
     irr::core::vector3df Calculate();
     void SetMobile(boost::shared_ptr<entity::IMobileEntity> mob);
     void SetTarget(boost::shared_ptr<entity::IMobileEntity> target);
+    virtual ~PursuitBehavior(){}
 };
 
 

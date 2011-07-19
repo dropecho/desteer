@@ -17,6 +17,7 @@ class FleeBehavior : public ISteeringBehavior
         void SetMobile(boost::shared_ptr<entity::IMobileEntity> mob);
         void SetTarget(irr::core::vector3df target);
         irr::core::vector3df Calculate();
+        virtual ~FleeBehavior(){}
 };
 
 } //end ns behavior
