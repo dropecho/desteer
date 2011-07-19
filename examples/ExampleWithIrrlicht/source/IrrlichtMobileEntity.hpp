@@ -2,6 +2,7 @@
 #include "irrlicht/irrlicht.h"
 #include "desteer/entity/IMobileEntity.hpp"
 #include "desteer/controller/SimpleSteeringController.hpp"
+#include <boost/smart_ptr.hpp>
 
 namespace desteer {
 namespace entity {
@@ -11,7 +12,7 @@ class IrrlichtMobileEntity : public IMobileEntity
 private:
 	irr::scene::ISceneNode* _node;
 
-	controller::ISteeringController *_steering;
+	boost::shared_ptr<controller::ISteeringController> _steering;
 public:
     IrrlichtMobileEntity(irr::scene::ISceneNode* node,
                          irr::core::vector3df position = irr::core::vector3df(0,0,0),
@@ -40,7 +41,7 @@ public:
 	virtual irr::core::vector3df transformLocalVectToWorld(irr::core::vector3df vec);
 
     virtual void Update(float delta);
-	virtual void SetSteering(controller::ISteeringController * controller){_steering = controller;};
+	virtual void SetSteering(boost::shared_ptr<controller::ISteeringController> controller){_steering = controller;};
 };
 
 }//end namespace entity

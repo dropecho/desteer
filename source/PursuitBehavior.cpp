@@ -6,12 +6,14 @@ using namespace entity;
 
 using namespace irr;
 using namespace core;
+using boost::shared_ptr;
 
 
-PursuitBehavior::PursuitBehavior(IMobileEntity * target)
+PursuitBehavior::PursuitBehavior(shared_ptr<IMobileEntity> target)
 {
     _target = target;
-    _seekBehavior = new SeekBehavior(vector3df(0,0,0));
+    shared_ptr<SeekBehavior> seekBehavior(new SeekBehavior(vector3df(0,0,0)));
+    _seekBehavior = seekBehavior;
 }
 
 vector3df PursuitBehavior::Calculate()
@@ -32,14 +34,14 @@ vector3df PursuitBehavior::Calculate()
     return _seekBehavior->Calculate();
 }
 
-void PursuitBehavior::SetMobile(entity::IMobileEntity * mob)
+void PursuitBehavior::SetMobile(shared_ptr<entity::IMobileEntity> mob)
 {
     _mob = mob;
 
     _seekBehavior->SetMobile(_mob);
 }
 
-void PursuitBehavior::SetTarget(entity::IMobileEntity *target)
+void PursuitBehavior::SetTarget(shared_ptr<entity::IMobileEntity> target)
 {
     _target = target;
 }

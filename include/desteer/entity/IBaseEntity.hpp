@@ -12,6 +12,8 @@ public:
 	virtual float Radius() const = 0;
 
 	virtual void Update(float timeElapsed) = 0;
+
+	virtual ~IBaseEntity(){}
 };
 
 }//end namespace entity

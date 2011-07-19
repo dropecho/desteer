@@ -6,13 +6,14 @@ using namespace entity;
 
 using namespace irr;
 using namespace core;
+using boost::shared_ptr;
 
 ObstacleAvoidanceBehavior::ObstacleAvoidanceBehavior(EntityGroup & obstacles)
 {
     _obstacles = obstacles;
 }
 
-void ObstacleAvoidanceBehavior::SetMobile(IMobileEntity * mob)
+void ObstacleAvoidanceBehavior::SetMobile(shared_ptr<IMobileEntity> mob)
 {
     _mob = mob;
 }
@@ -24,7 +25,7 @@ void ObstacleAvoidanceBehavior::SetObstacles(EntityGroup &obstacles)
 
 vector3df ObstacleAvoidanceBehavior::Calculate()
 {
-    IBaseEntity* closestHitObstacle = NULL;
+    shared_ptr<IBaseEntity> closestHitObstacle = shared_ptr<IBaseEntity>();
     vector3df localPos = vector3df(0,0,0);
     float distToClosest = 16487654;
     float detectLength = 40 + (_mob->Velocity().getLength()/1.5); //_mob->MaxSpeed() / 5
@@ -43,14 +44,15 @@ vector3df ObstacleAvoidanceBehavior::Calculate()
             {
                 if(localPos.getLength() < distToClosest)
                 {
-                    closestHitObstacle = (*currentObs);
+                    shared_ptr<IBaseEntity> currentObsPtr(*currentObs);
+                    closestHitObstacle = currentObsPtr;
                     distToClosest = localPos.getLength();
                 }
             }
         }
     }
 
-    if(closestHitObstacle)
+    if(closestHitObstacle.use_count())
     {
         vector3df steeringForce = vector3df(0,0,0);
 

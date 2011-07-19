@@ -17,6 +17,8 @@ class ISteeringController
         Returns the calculated sum of all the behaviors this controller is using.
     */
     virtual irr::core::vector3df Calculate() = 0;
+
+    virtual ~ISteeringController(){}
 };
 
 } //end ns controller

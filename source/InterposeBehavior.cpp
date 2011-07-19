@@ -5,6 +5,7 @@ using namespace behavior;
 using namespace entity;
 using namespace irr;
 using namespace core;
+using boost::shared_ptr;
 
 vector3df InterposeBehavior::Calculate()
 {
@@ -21,7 +22,7 @@ vector3df InterposeBehavior::Calculate()
     return vector3df(0,0,0);
 }
 
-void InterposeBehavior::SetMobile(entity::IMobileEntity * mob)
+void InterposeBehavior::SetMobile(shared_ptr<entity::IMobileEntity> mob)
 {
     _mob = mob;
 }

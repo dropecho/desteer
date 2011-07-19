@@ -1,6 +1,7 @@
 #pragma once
 #include "desteer/behavior/ISteeringBehavior.hpp"
 #include "desteer/behavior/FleeBehavior.hpp"
+#include <boost/smart_ptr.hpp>
 
 namespace desteer{
 namespace behavior{
@@ -8,16 +9,16 @@ namespace behavior{
 class EvadeBehavior : public ISteeringBehavior
 {
     private:
-    entity::IMobileEntity * _mob;
-    entity::IMobileEntity * _target;
+    boost::shared_ptr<entity::IMobileEntity> _mob;
+    boost::shared_ptr<entity::IMobileEntity> _target;
 
-    FleeBehavior * _fleeBehavior;
+    boost::shared_ptr<FleeBehavior> _fleeBehavior;
 
 public:
-    EvadeBehavior(entity::IMobileEntity* target);
+    EvadeBehavior(boost::shared_ptr<entity::IMobileEntity> target = boost::shared_ptr<entity::IMobileEntity>());
     irr::core::vector3df Calculate();
-    void SetMobile(entity::IMobileEntity * mob);
-    void SetTarget(entity::IMobileEntity * target);
+    void SetMobile(boost::shared_ptr<entity::IMobileEntity> mob);
+    void SetTarget(boost::shared_ptr<entity::IMobileEntity> target);
 };
 
 

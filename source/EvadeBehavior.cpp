@@ -6,12 +6,13 @@ using namespace entity;
 
 using namespace irr;
 using namespace core;
+using boost::shared_ptr;
 
-
-EvadeBehavior::EvadeBehavior(IMobileEntity * target)
+EvadeBehavior::EvadeBehavior(shared_ptr<IMobileEntity> target)
 {
     _target = target;
-    _fleeBehavior = new FleeBehavior(vector3df(0,0,0));
+    shared_ptr<FleeBehavior> fleeBehavior(new FleeBehavior(vector3df(0,0,0)));
+    _fleeBehavior = fleeBehavior;
 }
 
 vector3df EvadeBehavior::Calculate()
@@ -24,12 +25,12 @@ vector3df EvadeBehavior::Calculate()
     return _fleeBehavior->Calculate();
 }
 
-void EvadeBehavior::SetMobile(entity::IMobileEntity * mob)
+void EvadeBehavior::SetMobile(shared_ptr<entity::IMobileEntity> mob)
 {
     _mob = mob;
 }
 
-void EvadeBehavior::SetTarget(IMobileEntity *target)
+void EvadeBehavior::SetTarget(shared_ptr<IMobileEntity> target)
 {
     _target = target;
 }

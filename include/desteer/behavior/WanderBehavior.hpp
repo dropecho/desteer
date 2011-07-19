@@ -1,5 +1,6 @@
 #pragma once
 #include "ISteeringBehavior.hpp"
+#include <boost/smart_ptr.hpp>
 
 namespace desteer{
 namespace behavior{
@@ -7,7 +8,7 @@ namespace behavior{
 class WanderBehavior : public ISteeringBehavior
 {
 private:
-    entity::IMobileEntity * _mob;
+    boost::shared_ptr<entity::IMobileEntity> _mob;
 
     float _wanderRadius;
     float _wanderDistance;
@@ -16,7 +17,7 @@ private:
 public:
     WanderBehavior(float wanderRadius = 10, float wanderDistance = 20, float wanderJitter = 10 );
     irr::core::vector3df Calculate();
-    void SetMobile(entity::IMobileEntity * mob);
+    void SetMobile(boost::shared_ptr<entity::IMobileEntity> mob);
 };
 
 } //end ns behavior

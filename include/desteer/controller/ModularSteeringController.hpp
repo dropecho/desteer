@@ -3,6 +3,7 @@
 #include "desteer/Types.hpp"
 #include "desteer/entity/IMobileEntity.hpp"
 #include "desteer/behavior/ISteeringBehavior.hpp"
+#include <boost/smart_ptr.hpp>
 
 namespace desteer{
 namespace controller{
@@ -14,17 +15,17 @@ namespace controller{
 class ModularSteeringController : ISteeringController
 {
 private:
-    entity::IMobileEntity * _mob;
+    boost::shared_ptr<entity::IMobileEntity> _mob;
     BehaviorGroup _behaviors;
 
 public:
     /*!
         @\param mob The entity is controller is supplying with a calculated steering force.
     */
-    ModularSteeringController(entity::IMobileEntity * mob);
+    ModularSteeringController(boost::shared_ptr<entity::IMobileEntity> mob);
     irr::core::vector3df Calculate();
 
-    void AddBehavior(behavior::ISteeringBehavior * behavior);
+    void AddBehavior(boost::shared_ptr<behavior::ISteeringBehavior> behavior);
 
 };
 

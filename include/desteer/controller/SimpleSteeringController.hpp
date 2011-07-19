@@ -10,9 +10,12 @@
 #include "desteer/behavior/ArriveBehavior.hpp"
 #include "desteer/behavior/HideBehavior.hpp"
 #include "desteer/behavior/ObstacleAvoidanceBehavior.hpp"
+#include <boost/smart_ptr.hpp>
 
-namespace desteer{
-namespace controller{
+namespace desteer
+{
+namespace controller
+{
 
 enum EBEHAVIOR_FLAG
 {
@@ -28,42 +31,42 @@ enum EBEHAVIOR_FLAG
 
 class SimpleSteeringController : public ISteeringController
 {
-    private:
-        entity::IMobileEntity *     _mob;
-        irr::core::vector3df        _seekTarget;
-        irr::core::vector3df        _arriveTarget;
-        irr::core::vector3df        _fleeTarget;
+private:
+    boost::shared_ptr<desteer::entity::IMobileEntity>     _mob;
+    irr::core::vector3df        _seekTarget;
+    irr::core::vector3df        _arriveTarget;
+    irr::core::vector3df        _fleeTarget;
 
-        entity::IMobileEntity *     _evadeTarget;
-        entity::IMobileEntity *     _hideTarget;
-        entity::IMobileEntity *     _pursuitTarget;
-        EntityGroup     _obstacles;
+    boost::shared_ptr<desteer::entity::IMobileEntity>     _evadeTarget;
+    boost::shared_ptr<desteer::entity::IMobileEntity>     _hideTarget;
+    boost::shared_ptr<desteer::entity::IMobileEntity>     _pursuitTarget;
+    EntityGroup     _obstacles;
 
-        unsigned int _behaviorFlags;
+    unsigned int _behaviorFlags;
 
-        behavior::ArriveBehavior  * _arriveBehavior;
-        behavior::EvadeBehavior   * _evadeBehavior;
-        behavior::FleeBehavior    * _fleeBehavior;
-        behavior::HideBehavior    * _hideBehavior;
-        behavior::SeekBehavior    * _seekBehavior;
-        behavior::PursuitBehavior * _pursuitBehavior;
-        behavior::WanderBehavior  * _wanderBehavior;
-        behavior::ObstacleAvoidanceBehavior * _obsAvoidBehavior;
+    boost::shared_ptr<desteer::behavior::ArriveBehavior>  _arriveBehavior;
+    boost::shared_ptr<desteer::behavior::EvadeBehavior>   _evadeBehavior;
+    boost::shared_ptr<desteer::behavior::FleeBehavior>    _fleeBehavior;
+    boost::shared_ptr<desteer::behavior::HideBehavior>    _hideBehavior;
+    boost::shared_ptr<desteer::behavior::SeekBehavior>    _seekBehavior;
+    boost::shared_ptr<desteer::behavior::PursuitBehavior> _pursuitBehavior;
+    boost::shared_ptr<desteer::behavior::WanderBehavior>  _wanderBehavior;
+    boost::shared_ptr<desteer::behavior::ObstacleAvoidanceBehavior> _obsAvoidBehavior;
 
 
-    public:
-        SimpleSteeringController(entity::IMobileEntity *vehicle);
-        irr::core::vector3df Calculate();
+public:
+    SimpleSteeringController(boost::shared_ptr<desteer::entity::IMobileEntity> vehicle);
+    irr::core::vector3df Calculate();
 
-        void SetBehaviorFlag(EBEHAVIOR_FLAG flag, bool active);
+    void SetBehaviorFlag(EBEHAVIOR_FLAG flag, bool active);
 
-        void SetSeekTarget(irr::core::vector3df target);
-        void SetArriveTarget(irr::core::vector3df target);
-        void SetHideTarget(entity::IMobileEntity *target);
-        void SetPursuitTarget(entity::IMobileEntity * target);
+    void SetSeekTarget(irr::core::vector3df target);
+    void SetArriveTarget(irr::core::vector3df target);
+    void SetHideTarget(boost::shared_ptr<desteer::entity::IMobileEntity> target);
+    void SetPursuitTarget(boost::shared_ptr<desteer::entity::IMobileEntity> target);
 
-        void SetObstacles(EntityGroup &obstacles);
-    };
+    void SetObstacles(desteer::EntityGroup &obstacles);
+};
 
 }//end ns controller
 }//end ns desteer
