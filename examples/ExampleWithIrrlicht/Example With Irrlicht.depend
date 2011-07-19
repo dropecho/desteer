@@ -18,7 +18,7 @@
 	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
 	<boost/smart_ptr.hpp>
 
-1311094380 c:\desteer\include\desteer\controller\isteeringcontroller.hpp
+1311097250 c:\desteer\include\desteer\controller\isteeringcontroller.hpp
 	"irrvector/vector3d.h"
 	"desteer/Types.hpp"
 	"desteer/entity/IMobileEntity.hpp"
@@ -47,15 +47,15 @@
 	"desteer/behavior/ISteeringBehavior.hpp"
 	<boost/smart_ptr.hpp>
 
-1311094364 c:\desteer\include\desteer\entity\imobileentity.hpp
+1311095518 c:\desteer\include\desteer\entity\imobileentity.hpp
 	"desteer/entity/IBaseEntity.hpp"
 	"desteer/entity/IEntitySpace.hpp"
 	<boost/smart_ptr.hpp>
 
-1311094365 c:\desteer\include\desteer\entity\ibaseentity.hpp
+1311095518 c:\desteer\include\desteer\entity\ibaseentity.hpp
 	"irrvector/vector3d.h"
 
-1311095220 c:\desteer\include\desteer\entity\ientityspace.hpp
+1311095518 c:\desteer\include\desteer\entity\ientityspace.hpp
 	"irrvector/vector3d.h"
 
 1311095013 c:\desteer\include\desteer\behavior\isteeringbehavior.hpp
