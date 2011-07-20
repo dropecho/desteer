@@ -3403,7 +3403,7 @@
 	<boost/assert.hpp>
 	<boost/config.hpp>
 
-1311128501 /home/karl/code/desteer/include/desteer/controller/SimpleSteeringController.hpp
+1311129593 /home/karl/code/desteer/include/desteer/controller/SimpleSteeringController.hpp
 	"desteer/controller/ISteeringController.hpp"
 	"desteer/behavior/SeekBehavior.hpp"
 	"desteer/behavior/FleeBehavior.hpp"
@@ -3471,8 +3471,9 @@
 	"desteer/Types.hpp"
 	<boost/smart_ptr.hpp>
 
-1311124195 source:/home/karl/code/desteer/examples/ExampleWithIrrlicht/source/main.cpp
+1311130500 source:/home/karl/code/desteer/examples/ExampleWithIrrlicht/source/main.cpp
 	"desteer/controller/SimpleSteeringController.hpp"
+	"desteer/factory/SimpleSteeringControllerFactory.hpp"
 	"irrlicht/irrlicht.h"
 	"IrrlichtMobileEntity.hpp"
 	"IrrlichtBaseEntity.hpp"
@@ -3481,4 +3482,9 @@
 1311115639 /home/karl/code/desteer/examples/ExampleWithIrrlicht/source/IrrlichtBaseEntity.hpp
 	"irrlicht/irrlicht.h"
 	"desteer/entity/IBaseEntity.hpp"
+
+1311130777 /home/karl/code/desteer/include/desteer/factory/SimpleSteeringControllerFactory.hpp
+	<boost/smart_ptr.hpp>
+	"desteer/controller/SimpleSteeringController.hpp"
+	"desteer/entity/IMobileEntity.hpp"
 

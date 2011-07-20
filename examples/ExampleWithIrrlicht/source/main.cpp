@@ -1,4 +1,5 @@
 #include "desteer/controller/SimpleSteeringController.hpp"
+#include "desteer/factory/SimpleSteeringControllerFactory.hpp"
 #include "irrlicht/irrlicht.h"
 #include "IrrlichtMobileEntity.hpp"
 #include "IrrlichtBaseEntity.hpp"
@@ -89,12 +90,9 @@ int main()
     shared_ptr<IrrlichtMobileEntity> Entity1(new IrrlichtMobileEntity(cube ,vector3df(0,0,0), 1, 60, 150));
     shared_ptr<IrrlichtMobileEntity> Entity2(new IrrlichtMobileEntity(cube2,vector3df(0,0,300), 1, 200, 25));
 
-    //Creating the steering conrollers, constructor also sets steering on entity
-    shared_ptr<SimpleSteeringController> Entity1Steering(new SimpleSteeringController(Entity1));
-    Entity1->SetSteering(Entity1Steering);
-
-    shared_ptr<SimpleSteeringController> Entity2Steering(new SimpleSteeringController(Entity2));
-    Entity2->SetSteering(Entity2Steering);
+    //Creating the steering conrollers, factory also sets steering on entity
+    shared_ptr<SimpleSteeringController> Entity1Steering = SimpleSteeringControllerFactory::CreateController(Entity1);
+    shared_ptr<SimpleSteeringController> Entity2Steering = SimpleSteeringControllerFactory::CreateController(Entity2);
 
 
     //Setting up other params for behaviors

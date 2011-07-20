@@ -58,6 +58,7 @@ private:
 
 public:
     SimpleSteeringController(boost::shared_ptr<desteer::entity::IMobileEntity> vehicle);
+
     irr::core::vector3df Calculate();
 
     void SetBehaviorFlag(EBEHAVIOR_FLAG flag, bool active);
