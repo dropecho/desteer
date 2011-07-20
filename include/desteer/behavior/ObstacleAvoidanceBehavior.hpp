@@ -11,13 +11,13 @@ class ObstacleAvoidanceBehavior : public ISteeringBehavior
 private:
     boost::shared_ptr<entity::IMobileEntity> _mob;
 
-    EntityGroup _obstacles;
+    boost::shared_ptr<EntityGroup> _obstacles;
 
 public:
-    ObstacleAvoidanceBehavior(EntityGroup & obstacles);
+    ObstacleAvoidanceBehavior(boost::shared_ptr<EntityGroup> obstacles);
     irr::core::vector3df Calculate();
     void SetMobile(boost::shared_ptr<entity::IMobileEntity> mob);
-    void SetObstacles(EntityGroup &obstacles);
+    void SetObstacles(boost::shared_ptr<EntityGroup> obstacles);
     virtual ~ObstacleAvoidanceBehavior(){}
 };
 

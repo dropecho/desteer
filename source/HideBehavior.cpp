@@ -8,7 +8,9 @@ using namespace irr;
 using namespace core;
 using boost::shared_ptr;
 
-HideBehavior::HideBehavior(shared_ptr<IMobileEntity> target,EntityGroup & obstacles, float hideDistanceFromObstacle)
+HideBehavior::HideBehavior(shared_ptr<IMobileEntity> target,
+                           boost::shared_ptr<EntityGroup> obstacles,
+                           float hideDistanceFromObstacle)
 {
     _obstacles = obstacles;
     _target = target;
@@ -36,12 +38,13 @@ void HideBehavior::SetTarget(shared_ptr<IMobileEntity> target)
     _target = target;
 }
 
-void HideBehavior::SetObstacles(EntityGroup &obstacles)
+void HideBehavior::SetObstacles(boost::shared_ptr<EntityGroup> obstacles)
 {
     _obstacles = obstacles;
 }
 
-vector3df HideBehavior::GetHidingPosition(const vector3df& targetPos,const shared_ptr<IBaseEntity> obstacle)
+vector3df HideBehavior::GetHidingPosition(const vector3df& targetPos,
+                                          const shared_ptr<IBaseEntity> obstacle)
 {
     vector3df toHidingSpotNorm = (obstacle->Position() - targetPos).normalize();
     vector3df toHidingSpot = toHidingSpotNorm * (obstacle->Radius() + _hideDistanceFromObj);
@@ -53,7 +56,7 @@ vector3df HideBehavior::Calculate()
     float distToClosest = 16415876;
     vector3df BestHidingSpot;
 
-    for(EntityIterator currentObs = _obstacles.begin(); currentObs != _obstacles.end(); ++currentObs)
+    for(EntityIterator currentObs = _obstacles->begin(); currentObs != _obstacles->end(); ++currentObs)
     {
         vector3df HidingSpot = GetHidingPosition(_target->Position(),(*currentObs));
         float sqDist = (HidingSpot - _mob->Position()).getLengthSQ();

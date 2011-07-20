@@ -11,6 +11,8 @@
 #include "desteer/behavior/HideBehavior.hpp"
 #include "desteer/behavior/ObstacleAvoidanceBehavior.hpp"
 #include <boost/smart_ptr.hpp>
+#include <iostream>
+#include <string>
 
 namespace desteer
 {
@@ -40,7 +42,7 @@ private:
     boost::shared_ptr<desteer::entity::IMobileEntity>     _evadeTarget;
     boost::shared_ptr<desteer::entity::IMobileEntity>     _hideTarget;
     boost::shared_ptr<desteer::entity::IMobileEntity>     _pursuitTarget;
-    EntityGroup     _obstacles;
+    boost::shared_ptr<EntityGroup>    _obstacles;
 
     unsigned int _behaviorFlags;
 
@@ -65,9 +67,10 @@ public:
     void SetHideTarget(boost::shared_ptr<desteer::entity::IMobileEntity> target);
     void SetPursuitTarget(boost::shared_ptr<desteer::entity::IMobileEntity> target);
 
-    void SetObstacles(desteer::EntityGroup &obstacles);
+    void SetObstacles(boost::shared_ptr<desteer::EntityGroup> obstacles);
 
-    virtual ~SimpleSteeringController(){}
+    virtual ~SimpleSteeringController(){
+    }
 };
 
 }//end ns controller

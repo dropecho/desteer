@@ -14,9 +14,40 @@ using namespace behavior;
 using namespace controller;
 using boost::shared_ptr;
 
+class EventReceiver : public IEventReceiver
+{
+public:
+        // This is the one method that we have to implement
+        virtual bool OnEvent(const SEvent& event)
+        {
+                // Remember whether each key is down or up
+                if (event.EventType == irr::EET_KEY_INPUT_EVENT)
+                        KeyIsDown[event.KeyInput.Key] = event.KeyInput.PressedDown;
+
+                return false;
+        }
+
+        // This is used to check whether a key is being held down
+        virtual bool IsKeyDown(EKEY_CODE keyCode) const
+        {
+                return KeyIsDown[keyCode];
+        }
+
+        EventReceiver()
+        {
+                for (u32 i=0; i<KEY_KEY_CODES_COUNT; ++i)
+                        KeyIsDown[i] = false;
+        }
+
+private:
+        // We use this array to store the current state of each key
+        bool KeyIsDown[KEY_KEY_CODES_COUNT];
+};
+
 int main()
 {
-	IrrlichtDevice *device = createDevice( video::EDT_OPENGL, dimension2d<u32>(1024, 768), 32, false, false, true, 0);
+    EventReceiver eventReceiver;
+	IrrlichtDevice *device = createDevice( video::EDT_OPENGL, dimension2d<u32>(1024, 768), 32, false, false, true, &eventReceiver);
 	IVideoDriver* driver = device->getVideoDriver();
 	ISceneManager* smgr = device->getSceneManager();
 
@@ -36,14 +67,14 @@ int main()
 
 
     //obstacles for stuff
-    EntityGroup obstacles;
+    shared_ptr<EntityGroup> obstacles(new EntityGroup());
 
     for(int i = 0; i < 20; i++)
     {
         ISceneNode* s = smgr->addSphereSceneNode(20);
         shared_ptr<IrrlichtBaseEntity> e(new IrrlichtBaseEntity(s));
         s->setPosition(vector3df(rand()%randLength - (randLength/2),0,rand()%randLength - (randLength/2)));
-        obstacles.push_back(e);
+        obstacles->push_back(e);
     }
 
     //Nodes for vehicles
@@ -60,7 +91,11 @@ int main()
 
     //Creating the steering conrollers, constructor also sets steering on entity
     shared_ptr<SimpleSteeringController> Entity1Steering(new SimpleSteeringController(Entity1));
+    Entity1->SetSteering(Entity1Steering);
+
     shared_ptr<SimpleSteeringController> Entity2Steering(new SimpleSteeringController(Entity2));
+    Entity2->SetSteering(Entity2Steering);
+
 
     //Setting up other params for behaviors
     Entity1Steering->SetObstacles(obstacles);
@@ -79,6 +114,7 @@ int main()
 
     while(device->run())
 	{
+
 	    const u32 now = device->getTimer()->getTime();
         const float frameDeltaTime = (float)(now - then) / 1000.f; // Time in seconds
         then = now;
@@ -99,6 +135,10 @@ int main()
         driver->beginScene(true, true, SColor(255,100,101,140));
             smgr->drawAll();
 		driver->endScene();
+
+	    if(eventReceiver.IsKeyDown(irr::KEY_ESCAPE)){
+            device->closeDevice();
+	    }
 	}
     //Clean up irrlicht.
 	device->drop();

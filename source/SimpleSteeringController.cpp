@@ -9,6 +9,7 @@ using namespace behavior;
 using namespace controller;
 using namespace entity;
 using boost::shared_ptr;
+using boost::weak_ptr;
 
 SimpleSteeringController::SimpleSteeringController(shared_ptr<IMobileEntity> mob)
 {
@@ -57,7 +58,6 @@ SimpleSteeringController::SimpleSteeringController(shared_ptr<IMobileEntity> mob
     _pursuitBehavior->SetMobile(_mob);
     _obsAvoidBehavior->SetMobile(_mob);
 
-    _mob->SetSteering(shared_ptr<ISteeringController>(this));
 }
 
 irr::core::vector3df SimpleSteeringController::Calculate()
@@ -165,7 +165,7 @@ void SimpleSteeringController::SetPursuitTarget(shared_ptr<entity::IMobileEntity
     _pursuitTarget = target;
 }
 
-void SimpleSteeringController::SetObstacles(EntityGroup &obstacles)
+void SimpleSteeringController::SetObstacles(boost::shared_ptr<EntityGroup> obstacles)
 {
     _obstacles = obstacles;
 }

@@ -3,6 +3,8 @@
 #include "desteer/entity/IMobileEntity.hpp"
 #include "desteer/controller/SimpleSteeringController.hpp"
 #include <boost/smart_ptr.hpp>
+#include <iostream>
+#include <string>
 
 namespace desteer {
 namespace entity {
@@ -42,7 +44,8 @@ public:
 
     virtual void Update(float delta);
 	virtual void SetSteering(boost::shared_ptr<controller::ISteeringController> controller){_steering = controller;};
-	virtual ~IrrlichtMobileEntity(){}
+	virtual ~IrrlichtMobileEntity(){
+	}
 };
 
 }//end namespace entity

@@ -1074,3 +1074,2411 @@
 1311093914 source:c:\desteer\examples\examplewithirrlicht\source\irrlichtmobileentity.cpp
 	"IrrlichtMobileEntity.hpp"
 
+1311123460 source:/home/karl/code/desteer/examples/ExampleWithIrrlicht/source/IrrlichtMobileEntity.cpp
+	"IrrlichtMobileEntity.hpp"
+
+1311128450 /home/karl/code/desteer/examples/ExampleWithIrrlicht/source/IrrlichtMobileEntity.hpp
+	"irrlicht/irrlicht.h"
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/controller/SimpleSteeringController.hpp"
+	<boost/smart_ptr.hpp>
+	<iostream>
+	<string>
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/irrlicht.h
+	"IrrCompileConfig.h"
+	"aabbox3d.h"
+	"CDynamicMeshBuffer.h"
+	"CIndexBuffer.h"
+	"CMeshBuffer.h"
+	"coreutil.h"
+	"CVertexBuffer.h"
+	"dimension2d.h"
+	"ECullingTypes.h"
+	"EDebugSceneTypes.h"
+	"EDriverFeatures.h"
+	"EDriverTypes.h"
+	"EGUIAlignment.h"
+	"EGUIElementTypes.h"
+	"EHardwareBufferFlags.h"
+	"EMaterialFlags.h"
+	"EMaterialTypes.h"
+	"EMeshWriterEnums.h"
+	"EMessageBoxFlags.h"
+	"ESceneNodeAnimatorTypes.h"
+	"ESceneNodeTypes.h"
+	"ETerrainElements.h"
+	"fast_atof.h"
+	"heapsort.h"
+	"IAnimatedMesh.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+	"IAnimatedMeshSceneNode.h"
+	"IAttributeExchangingObject.h"
+	"IAttributes.h"
+	"IBillboardSceneNode.h"
+	"IBillboardTextSceneNode.h"
+	"IBoneSceneNode.h"
+	"ICameraSceneNode.h"
+	"ICursorControl.h"
+	"IDummyTransformationSceneNode.h"
+	"IDynamicMeshBuffer.h"
+	"IEventReceiver.h"
+	"IFileList.h"
+	"IFileSystem.h"
+	"IGeometryCreator.h"
+	"IGPUProgrammingServices.h"
+	"IGUIButton.h"
+	"IGUICheckBox.h"
+	"IGUIColorSelectDialog.h"
+	"IGUIComboBox.h"
+	"IGUIContextMenu.h"
+	"IGUIEditBox.h"
+	"IGUIElement.h"
+	"IGUIElementFactory.h"
+	"IGUIEnvironment.h"
+	"IGUIFileOpenDialog.h"
+	"IGUIFont.h"
+	"IGUIFontBitmap.h"
+	"IGUIImage.h"
+	"IGUIInOutFader.h"
+	"IGUIListBox.h"
+	"IGUIMeshViewer.h"
+	"IGUIScrollBar.h"
+	"IGUISkin.h"
+	"IGUISpinBox.h"
+	"IGUISpriteBank.h"
+	"IGUIStaticText.h"
+	"IGUITabControl.h"
+	"IGUITable.h"
+	"IGUIToolbar.h"
+	"IGUIWindow.h"
+	"IGUITreeView.h"
+	"IImage.h"
+	"IImageLoader.h"
+	"IImageWriter.h"
+	"IIndexBuffer.h"
+	"ILightSceneNode.h"
+	"ILogger.h"
+	"IMaterialRenderer.h"
+	"IMaterialRendererServices.h"
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"IMeshCache.h"
+	"IMeshLoader.h"
+	"IMeshManipulator.h"
+	"IMeshSceneNode.h"
+	"IMeshWriter.h"
+	"IMetaTriangleSelector.h"
+	"IOSOperator.h"
+	"IParticleSystemSceneNode.h"
+	"IQ3LevelMesh.h"
+	"IQ3Shader.h"
+	"IReadFile.h"
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"IrrlichtDevice.h"
+	"irrList.h"
+	"irrMap.h"
+	"irrMath.h"
+	"irrString.h"
+	"irrTypes.h"
+	"path.h"
+	"irrXML.h"
+	"ISceneCollisionManager.h"
+	"ISceneManager.h"
+	"ISceneNode.h"
+	"ISceneNodeAnimator.h"
+	"ISceneNodeAnimatorCameraFPS.h"
+	"ISceneNodeAnimatorCameraMaya.h"
+	"ISceneNodeAnimatorCollisionResponse.h"
+	"ISceneNodeAnimatorFactory.h"
+	"ISceneNodeFactory.h"
+	"ISceneUserDataSerializer.h"
+	"IShaderConstantSetCallBack.h"
+	"IShadowVolumeSceneNode.h"
+	"ISkinnedMesh.h"
+	"ITerrainSceneNode.h"
+	"ITextSceneNode.h"
+	"ITexture.h"
+	"ITimer.h"
+	"ITriangleSelector.h"
+	"IVertexBuffer.h"
+	"IVideoDriver.h"
+	"IVideoModeList.h"
+	"IVolumeLightSceneNode.h"
+	"IWriteFile.h"
+	"IXMLReader.h"
+	"IXMLWriter.h"
+	"ILightManager.h"
+	"Keycodes.h"
+	"line2d.h"
+	"line3d.h"
+	"matrix4.h"
+	"plane3d.h"
+	"position2d.h"
+	"quaternion.h"
+	"rect.h"
+	"S3DVertex.h"
+	"SAnimatedMesh.h"
+	"SceneParameters.h"
+	"SColor.h"
+	"SExposedVideoData.h"
+	"SIrrCreationParameters.h"
+	"SKeyMap.h"
+	"SLight.h"
+	"SMaterial.h"
+	"SMesh.h"
+	"SMeshBuffer.h"
+	"SMeshBufferLightMap.h"
+	"SMeshBufferTangents.h"
+	"SParticle.h"
+	"SSharedMeshBuffer.h"
+	"SSkinMeshBuffer.h"
+	"SVertexIndex.h"
+	"SViewFrustum.h"
+	"triangle3d.h"
+	"vector2d.h"
+	"vector3d.h"
+	"SIrrCreationParameters.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IrrCompileConfig.h
+	<stdio.h>
+	<xtl.h>
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/aabbox3d.h
+	"irrMath.h"
+	"plane3d.h"
+	"line3d.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/irrMath.h
+	"IrrCompileConfig.h"
+	"irrTypes.h"
+	<math.h>
+	<float.h>
+	<stdlib.h>
+	<limits.h>
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/irrTypes.h
+	"IrrCompileConfig.h"
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/plane3d.h
+	"irrMath.h"
+	"vector3d.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/vector3d.h
+	"irrMath.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/line3d.h
+	"irrTypes.h"
+	"vector3d.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/CDynamicMeshBuffer.h
+	"IDynamicMeshBuffer.h"
+	"CVertexBuffer.h"
+	"CIndexBuffer.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IDynamicMeshBuffer.h
+	"IMeshBuffer.h"
+	"IVertexBuffer.h"
+	"IIndexBuffer.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IMeshBuffer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"aabbox3d.h"
+	"S3DVertex.h"
+	"SVertexIndex.h"
+	"EHardwareBufferFlags.h"
+	"EPrimitiveTypes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IReferenceCounted.h
+	"irrTypes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SMaterial.h
+	"SColor.h"
+	"matrix4.h"
+	"irrArray.h"
+	"irrMath.h"
+	"EMaterialTypes.h"
+	"EMaterialFlags.h"
+	"SMaterialLayer.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SColor.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/matrix4.h
+	"irrMath.h"
+	"vector3d.h"
+	"vector2d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+	"rect.h"
+	"irrString.h"
+	<windows.h>
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/vector2d.h
+	"irrMath.h"
+	"dimension2d.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/dimension2d.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/rect.h
+	"irrTypes.h"
+	"dimension2d.h"
+	"position2d.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/position2d.h
+	"vector2d.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/irrString.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/irrAllocator.h
+	"irrTypes.h"
+	<new>
+	<memory.h>
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/irrArray.h
+	"irrTypes.h"
+	"heapsort.h"
+	"irrAllocator.h"
+	"irrMath.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/heapsort.h
+	"irrTypes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/EMaterialTypes.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/EMaterialFlags.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SMaterialLayer.h
+	"matrix4.h"
+	"irrAllocator.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/S3DVertex.h
+	"vector3d.h"
+	"vector2d.h"
+	"SColor.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SVertexIndex.h
+	"irrTypes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/EHardwareBufferFlags.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/EPrimitiveTypes.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IVertexBuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"S3DVertex.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IIndexBuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SVertexIndex.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/CVertexBuffer.h
+	"IVertexBuffer.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/CIndexBuffer.h
+	"IIndexBuffer.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/CMeshBuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/coreutil.h
+	"irrString.h"
+	"path.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/path.h
+	"irrString.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ECullingTypes.h
+	"irrTypes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/EDebugSceneTypes.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/EDriverFeatures.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/EDriverTypes.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/EGUIAlignment.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/EGUIElementTypes.h
+	"irrTypes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/EMeshWriterEnums.h
+	"irrTypes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/EMessageBoxFlags.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ESceneNodeAnimatorTypes.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ESceneNodeTypes.h
+	"irrTypes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ETerrainElements.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/fast_atof.h
+	"irrMath.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IAnimatedMesh.h
+	"aabbox3d.h"
+	"IMesh.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IMesh.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"EHardwareBufferFlags.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IAnimatedMeshMD2.h
+	"IAnimatedMesh.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IAnimatedMeshMD3.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+	"quaternion.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IQ3Shader.h
+	"irrArray.h"
+	"fast_atof.h"
+	"IFileSystem.h"
+	"IVideoDriver.h"
+	"coreutil.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IFileSystem.h
+	"IReferenceCounted.h"
+	"IXMLReader.h"
+	"IFileArchive.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IXMLReader.h
+	"IReferenceCounted.h"
+	"irrXML.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/irrXML.h
+	<stdio.h>
+	"IrrCompileConfig.h"
+	<irrXML.h>
+	<string>
+	<irrXML.h>
+	<irrXML.h>
+	<irrXML.h>
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IFileArchive.h
+	"IReadFile.h"
+	"IFileList.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IReadFile.h
+	"IReferenceCounted.h"
+	"coreutil.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IFileList.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IVideoDriver.h
+	"rect.h"
+	"SColor.h"
+	"ITexture.h"
+	"irrArray.h"
+	"matrix4.h"
+	"plane3d.h"
+	"dimension2d.h"
+	"position2d.h"
+	"SMaterial.h"
+	"IMeshBuffer.h"
+	"triangle3d.h"
+	"EDriverTypes.h"
+	"EDriverFeatures.h"
+	"SExposedVideoData.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ITexture.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"dimension2d.h"
+	"EDriverTypes.h"
+	"path.h"
+	"matrix4.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IImage.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+	"SColor.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/triangle3d.h
+	"vector3d.h"
+	"line3d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SExposedVideoData.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/quaternion.h
+	"irrTypes.h"
+	"irrMath.h"
+	"matrix4.h"
+	"vector3d.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IAnimatedMeshSceneNode.h
+	"ISceneNode.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ISceneNode.h
+	"IAttributeExchangingObject.h"
+	"ESceneNodeTypes.h"
+	"ECullingTypes.h"
+	"EDebugSceneTypes.h"
+	"ISceneNodeAnimator.h"
+	"ITriangleSelector.h"
+	"SMaterial.h"
+	"irrString.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"irrList.h"
+	"IAttributes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IAttributeExchangingObject.h
+	"IReferenceCounted.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ISceneNodeAnimator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"ESceneNodeAnimatorTypes.h"
+	"IAttributeExchangingObject.h"
+	"IEventReceiver.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IEventReceiver.h
+	"ILogger.h"
+	"Keycodes.h"
+	"irrString.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ILogger.h
+	"IReferenceCounted.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/Keycodes.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ITriangleSelector.h
+	"IReferenceCounted.h"
+	"triangle3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"line3d.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/irrList.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IAttributes.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"vector3d.h"
+	"vector2d.h"
+	"line2d.h"
+	"line3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"rect.h"
+	"matrix4.h"
+	"quaternion.h"
+	"plane3d.h"
+	"triangle3d.h"
+	"line2d.h"
+	"line3d.h"
+	"irrString.h"
+	"irrArray.h"
+	"IXMLReader.h"
+	"EAttributes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/line2d.h
+	"irrTypes.h"
+	"vector2d.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/EAttributes.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IBoneSceneNode.h
+	"ISceneNode.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IBillboardSceneNode.h
+	"ISceneNode.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IBillboardTextSceneNode.h
+	"IBillboardSceneNode.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ICameraSceneNode.h
+	"ISceneNode.h"
+	"IEventReceiver.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ICursorControl.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IDummyTransformationSceneNode.h
+	"ISceneNode.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGeometryCreator.h
+	"IReferenceCounted.h"
+	"IMesh.h"
+	"IImage.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGPUProgrammingServices.h
+	"EShaderTypes.h"
+	"EMaterialTypes.h"
+	"EPrimitiveTypes.h"
+	"path.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/EShaderTypes.h
+	"irrTypes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIButton.h
+	"IGUIElement.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIElement.h
+	"IAttributeExchangingObject.h"
+	"irrList.h"
+	"rect.h"
+	"irrString.h"
+	"IEventReceiver.h"
+	"EGUIElementTypes.h"
+	"EGUIAlignment.h"
+	"IAttributes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUICheckBox.h
+	"IGUIElement.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIColorSelectDialog.h
+	"IGUIElement.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIComboBox.h
+	"IGUIElement.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIContextMenu.h
+	"IGUIElement.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIEditBox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIElementFactory.h
+	"IReferenceCounted.h"
+	"EGUIElementTypes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIEnvironment.h
+	"IReferenceCounted.h"
+	"IGUISkin.h"
+	"rect.h"
+	"EMessageBoxFlags.h"
+	"IEventReceiver.h"
+	"IXMLReader.h"
+	"path.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUISkin.h
+	"IAttributeExchangingObject.h"
+	"EGUIAlignment.h"
+	"SColor.h"
+	"rect.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIFileOpenDialog.h
+	"IGUIElement.h"
+	"path.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIFont.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"rect.h"
+	"irrString.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIFontBitmap.h
+	"IGUIFont.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIImage.h
+	"IGUIElement.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIInOutFader.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIListBox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIMeshViewer.h
+	"IGUIElement.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIScrollBar.h
+	"IGUIElement.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUISpinBox.h
+	"IGUIElement.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUISpriteBank.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SColor.h"
+	"rect.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIStaticText.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUITabControl.h
+	"IGUIElement.h"
+	"SColor.h"
+	"IGUISkin.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUITable.h
+	"IGUIElement.h"
+	"irrTypes.h"
+	"SColor.h"
+	"IGUISkin.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIToolbar.h
+	"IGUIElement.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIWindow.h
+	"IGUIElement.h"
+	"EMessageBoxFlags.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUITreeView.h
+	"IGUIElement.h"
+	"IGUIImageList.h"
+	"irrTypes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IGUIImageList.h
+	"IGUIElement.h"
+	"rect.h"
+	"irrTypes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IImageLoader.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"path.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IImageWriter.h
+	"IReferenceCounted.h"
+	"irrString.h"
+	"coreutil.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ILightSceneNode.h
+	"ISceneNode.h"
+	"SLight.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SLight.h
+	"SColor.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IMaterialRenderer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IMaterialRendererServices.h
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IMeshCache.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IMeshLoader.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IMeshManipulator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IAnimatedMesh.h"
+	"IMeshBuffer.h"
+	"SVertexManipulator.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SVertexManipulator.h
+	"S3DVertex.h"
+	"SColor.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IMeshSceneNode.h
+	"ISceneNode.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IMeshWriter.h
+	"IReferenceCounted.h"
+	"EMeshWriterEnums.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IMetaTriangleSelector.h
+	"ITriangleSelector.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IOSOperator.h
+	"IReferenceCounted.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IParticleSystemSceneNode.h
+	"ISceneNode.h"
+	"IParticleAnimatedMeshSceneNodeEmitter.h"
+	"IParticleBoxEmitter.h"
+	"IParticleCylinderEmitter.h"
+	"IParticleMeshEmitter.h"
+	"IParticleRingEmitter.h"
+	"IParticleSphereEmitter.h"
+	"IParticleAttractionAffector.h"
+	"IParticleFadeOutAffector.h"
+	"IParticleGravityAffector.h"
+	"IParticleRotationAffector.h"
+	"dimension2d.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IParticleAnimatedMeshSceneNodeEmitter.h
+	"IParticleEmitter.h"
+	"IAnimatedMeshSceneNode.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IParticleEmitter.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SParticle.h
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IParticleBoxEmitter.h
+	"IParticleEmitter.h"
+	"aabbox3d.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IParticleCylinderEmitter.h
+	"IParticleEmitter.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IParticleMeshEmitter.h
+	"IParticleEmitter.h"
+	"IMesh.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IParticleRingEmitter.h
+	"IParticleEmitter.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IParticleSphereEmitter.h
+	"IParticleEmitter.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IParticleAttractionAffector.h
+	"IParticleAffector.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IParticleAffector.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IParticleFadeOutAffector.h
+	"IParticleAffector.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IParticleGravityAffector.h
+	"IParticleAffector.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IParticleRotationAffector.h
+	"IParticleAffector.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IQ3LevelMesh.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IrrlichtDevice.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+	"IVideoDriver.h"
+	"EDriverTypes.h"
+	"EDeviceTypes.h"
+	"IEventReceiver.h"
+	"ICursorControl.h"
+	"IVideoModeList.h"
+	"ITimer.h"
+	"IOSOperator.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/EDeviceTypes.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IVideoModeList.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ITimer.h
+	"IReferenceCounted.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/irrMap.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ISceneCollisionManager.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"line3d.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ISceneManager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"irrString.h"
+	"path.h"
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+	"ETerrainElements.h"
+	"ESceneNodeTypes.h"
+	"ESceneNodeAnimatorTypes.h"
+	"EMeshWriterEnums.h"
+	"SceneParameters.h"
+	"IGeometryCreator.h"
+	"ISkinnedMesh.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SceneParameters.h
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ISkinnedMesh.h
+	"irrArray.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMesh.h"
+	"SSkinMeshBuffer.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SSkinMeshBuffer.h
+	"IMeshBuffer.h"
+	"S3DVertex.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ISceneNodeAnimatorCameraFPS.h
+	"ISceneNodeAnimator.h"
+	"IEventReceiver.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ISceneNodeAnimatorCameraMaya.h
+	"ISceneNodeAnimator.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ISceneNodeAnimatorCollisionResponse.h
+	"ISceneNode.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ISceneNodeAnimatorFactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeAnimatorTypes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ISceneNodeFactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeTypes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ISceneUserDataSerializer.h
+	"IReferenceCounted.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IShaderConstantSetCallBack.h
+	"IReferenceCounted.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IShadowVolumeSceneNode.h
+	"ISceneNode.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ITerrainSceneNode.h
+	"ETerrainElements.h"
+	"ISceneNode.h"
+	"IDynamicMeshBuffer.h"
+	"irrArray.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ITextSceneNode.h
+	"ISceneNode.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IVolumeLightSceneNode.h
+	"ISceneNode.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IWriteFile.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/IXMLWriter.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"irrString.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/ILightManager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SAnimatedMesh.h
+	"IAnimatedMesh.h"
+	"IMesh.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SIrrCreationParameters.h
+	"EDriverTypes.h"
+	"EDeviceTypes.h"
+	"dimension2d.h"
+	"ILogger.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SKeyMap.h
+	"Keycodes.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SMesh.h
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SMeshBuffer.h
+	"CMeshBuffer.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SMeshBufferLightMap.h
+	"CMeshBuffer.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SMeshBufferTangents.h
+	"CMeshBuffer.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SSharedMeshBuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1311115604 /home/karl/code/desteer/examples/ExampleWithIrrlicht/include/irrlicht/SViewFrustum.h
+	"plane3d.h"
+	"vector3d.h"
+	"line3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IVideoDriver.h"
+
+1311128470 /home/karl/code/desteer/include/desteer/entity/IMobileEntity.hpp
+	"desteer/entity/IBaseEntity.hpp"
+	"desteer/entity/IEntitySpace.hpp"
+	<boost/smart_ptr.hpp>
+	<iostream>
+	<string>
+
+1311128501 /home/karl/code/desteer/include/desteer/entity/IBaseEntity.hpp
+	"irrvector/vector3d.h"
+	<iostream>
+	<string>
+
+1311115604 /home/karl/code/desteer/include/irrvector/vector3d.h
+	"irrMath.h"
+
+1311115604 /home/karl/code/desteer/include/irrvector/irrMath.h
+	"irrTypes.h"
+	<math.h>
+	<float.h>
+	<stdlib.h>
+	<limits.h>
+
+1311115604 /home/karl/code/desteer/include/irrvector/irrTypes.h
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1311128501 /home/karl/code/desteer/include/desteer/entity/IEntitySpace.hpp
+	"irrvector/vector3d.h"
+	<iostream>
+	<string>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr.hpp
+	<boost/config.hpp>
+	<boost/scoped_ptr.hpp>
+	<boost/scoped_array.hpp>
+	<boost/shared_ptr.hpp>
+	<boost/shared_array.hpp>
+	<boost/weak_ptr.hpp>
+	<boost/intrusive_ptr.hpp>
+	<boost/enable_shared_from_this.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/config.hpp
+	<boost/config/select_compiler_config.hpp>
+	<boost/config/select_stdlib_config.hpp>
+	<boost/config/select_platform_config.hpp>
+	<boost/config/suffix.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/config/select_compiler_config.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/config/select_stdlib_config.hpp
+	<cstddef>
+	<boost/config/no_tr1/utility.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/config/no_tr1/utility.hpp
+	<utility>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/config/select_platform_config.hpp
+	<boost/config/posix_features.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/config/posix_features.hpp
+	<unistd.h>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/config/suffix.hpp
+	<limits.h>
+	<cstddef>
+	"boost/type.hpp"
+	"boost/non_type.hpp"
+	<typeinfo>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/non_type.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/scoped_ptr.hpp
+	<boost/smart_ptr/scoped_ptr.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/scoped_ptr.hpp
+	<boost/assert.hpp>
+	<boost/checked_delete.hpp>
+	<boost/detail/workaround.hpp>
+	<memory>
+	<boost/smart_ptr/detail/operator_bool.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/assert.hpp
+	<boost/current_function.hpp>
+	<assert.h>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/current_function.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/checked_delete.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/detail/workaround.hpp
+	<boost/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/operator_bool.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/scoped_array.hpp
+	<boost/smart_ptr/scoped_array.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/scoped_array.hpp
+	<boost/assert.hpp>
+	<boost/checked_delete.hpp>
+	<boost/config.hpp>
+	<boost/detail/workaround.hpp>
+	<cstddef>
+	<boost/smart_ptr/detail/operator_bool.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/shared_ptr.hpp
+	<boost/smart_ptr/shared_ptr.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/shared_ptr.hpp
+	<boost/config.hpp>
+	<boost/smart_ptr/detail/shared_ptr_nmt.hpp>
+	<boost/config/no_tr1/memory.hpp>
+	<boost/assert.hpp>
+	<boost/checked_delete.hpp>
+	<boost/throw_exception.hpp>
+	<boost/smart_ptr/detail/shared_count.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/smart_ptr/detail/sp_convertible.hpp>
+	<boost/smart_ptr/detail/spinlock_pool.hpp>
+	<boost/memory_order.hpp>
+	<algorithm>
+	<functional>
+	<typeinfo>
+	<iosfwd>
+	<ostream>
+	<boost/smart_ptr/detail/operator_bool.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/shared_ptr_nmt.hpp
+	<boost/assert.hpp>
+	<boost/checked_delete.hpp>
+	<boost/throw_exception.hpp>
+	<boost/smart_ptr/detail/atomic_count.hpp>
+	<memory>
+	<algorithm>
+	<functional>
+	<new>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/throw_exception.hpp
+	<boost/exception/detail/attribute_noreturn.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/config.hpp>
+	<exception>
+	<boost/exception/exception.hpp>
+	<boost/current_function.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/exception/detail/attribute_noreturn.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/exception/exception.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/atomic_count.hpp
+	<boost/config.hpp>
+	<boost/smart_ptr/detail/sp_has_sync.hpp>
+	<boost/smart_ptr/detail/atomic_count_pthreads.hpp>
+	<boost/smart_ptr/detail/atomic_count_gcc_x86.hpp>
+	<boost/smart_ptr/detail/atomic_count_win32.hpp>
+	<boost/smart_ptr/detail/atomic_count_sync.hpp>
+	<boost/smart_ptr/detail/atomic_count_gcc.hpp>
+	<boost/smart_ptr/detail/atomic_count_pthreads.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/atomic_count_pthreads.hpp
+	<pthread.h>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/atomic_count_gcc_x86.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/atomic_count_win32.hpp
+	<boost/detail/interlocked.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/detail/interlocked.hpp
+	<boost/config.hpp>
+	<windows.h>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/atomic_count_sync.hpp
+	<ia64intrin.h>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/atomic_count_gcc.hpp
+	<ext/atomicity.h>
+	<bits/atomicity.h>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/config/no_tr1/memory.hpp
+	<memory>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/shared_count.hpp
+	<boost/config.hpp>
+	<boost/checked_delete.hpp>
+	<boost/throw_exception.hpp>
+	<boost/smart_ptr/bad_weak_ptr.hpp>
+	<boost/smart_ptr/detail/sp_counted_base.hpp>
+	<boost/smart_ptr/detail/sp_counted_impl.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/config/no_tr1/memory.hpp>
+	<functional>
+	<new>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/bad_weak_ptr.hpp
+	<exception>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_counted_base.hpp
+	<boost/config.hpp>
+	<boost/smart_ptr/detail/sp_has_sync.hpp>
+	<boost/smart_ptr/detail/sp_counted_base_nt.hpp>
+	<boost/smart_ptr/detail/sp_counted_base_spin.hpp>
+	<boost/smart_ptr/detail/sp_counted_base_pt.hpp>
+	<boost/smart_ptr/detail/sp_counted_base_nt.hpp>
+	<boost/smart_ptr/detail/sp_counted_base_gcc_x86.hpp>
+	<boost/smart_ptr/detail/sp_counted_base_gcc_ia64.hpp>
+	<boost/smart_ptr/detail/sp_counted_base_acc_ia64.hpp>
+	<boost/smart_ptr/detail/sp_counted_base_cw_ppc.hpp>
+	<boost/smart_ptr/detail/sp_counted_base_gcc_ppc.hpp>
+	<boost/smart_ptr/detail/sp_counted_base_gcc_mips.hpp>
+	<boost/smart_ptr/detail/sp_counted_base_sync.hpp>
+	<boost/smart_ptr/detail/sp_counted_base_gcc_sparc.hpp>
+	<boost/smart_ptr/detail/sp_counted_base_w32.hpp>
+	<boost/smart_ptr/detail/sp_counted_base_nt.hpp>
+	<boost/smart_ptr/detail/sp_counted_base_spin.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_counted_base_nt.hpp
+	<boost/detail/sp_typeinfo.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/detail/sp_typeinfo.hpp
+	<boost/config.hpp>
+	<boost/current_function.hpp>
+	<functional>
+	<typeinfo>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_counted_base_spin.hpp
+	<boost/detail/sp_typeinfo.hpp>
+	<boost/smart_ptr/detail/spinlock_pool.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/spinlock_pool.hpp
+	<boost/config.hpp>
+	<boost/smart_ptr/detail/spinlock.hpp>
+	<cstddef>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/spinlock.hpp
+	<boost/config.hpp>
+	<boost/smart_ptr/detail/sp_has_sync.hpp>
+	<boost/smart_ptr/detail/spinlock_gcc_arm.hpp>
+	<boost/smart_ptr/detail/spinlock_sync.hpp>
+	<boost/smart_ptr/detail/spinlock_w32.hpp>
+	<boost/smart_ptr/detail/spinlock_pt.hpp>
+	<boost/smart_ptr/detail/spinlock_nt.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/spinlock_gcc_arm.hpp
+	<boost/smart_ptr/detail/yield_k.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/yield_k.hpp
+	<boost/config.hpp>
+	<windows.h>
+	<sched.h>
+	<time.h>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/spinlock_sync.hpp
+	<boost/smart_ptr/detail/yield_k.hpp>
+	<ia64intrin.h>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/spinlock_w32.hpp
+	<boost/detail/interlocked.hpp>
+	<boost/smart_ptr/detail/yield_k.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/spinlock_pt.hpp
+	<pthread.h>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/spinlock_nt.hpp
+	<boost/assert.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
+	<boost/detail/sp_typeinfo.hpp>
+	<pthread.h>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_counted_base_gcc_x86.hpp
+	<boost/detail/sp_typeinfo.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_counted_base_gcc_ia64.hpp
+	<boost/detail/sp_typeinfo.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_counted_base_acc_ia64.hpp
+	<boost/detail/sp_typeinfo.hpp>
+	<machine/sys/inline.h>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_counted_base_cw_ppc.hpp
+	<boost/detail/sp_typeinfo.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_counted_base_gcc_ppc.hpp
+	<boost/detail/sp_typeinfo.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_counted_base_gcc_mips.hpp
+	<boost/detail/sp_typeinfo.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_counted_base_sync.hpp
+	<boost/detail/sp_typeinfo.hpp>
+	<limits.h>
+	<ia64intrin.h>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_counted_base_gcc_sparc.hpp
+	<boost/detail/sp_typeinfo.hpp>
+	<inttypes.h>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_counted_base_w32.hpp
+	<boost/detail/interlocked.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/detail/sp_typeinfo.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_counted_impl.hpp
+	<boost/config.hpp>
+	<boost/checked_delete.hpp>
+	<boost/smart_ptr/detail/sp_counted_base.hpp>
+	<boost/smart_ptr/detail/quick_allocator.hpp>
+	<memory>
+	<cstddef>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/quick_allocator.hpp
+	<boost/config.hpp>
+	<boost/smart_ptr/detail/lightweight_mutex.hpp>
+	<boost/type_traits/type_with_alignment.hpp>
+	<boost/type_traits/alignment_of.hpp>
+	<new>
+	<cstddef>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
+	<boost/config.hpp>
+	<boost/smart_ptr/detail/lwm_nop.hpp>
+	<boost/smart_ptr/detail/lwm_pthreads.hpp>
+	<boost/smart_ptr/detail/lwm_win32_cs.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/lwm_nop.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/lwm_pthreads.hpp
+	<boost/assert.hpp>
+	<pthread.h>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/lwm_win32_cs.hpp
+	<windows.h>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/type_with_alignment.hpp
+	<boost/mpl/if.hpp>
+	<boost/preprocessor/list/for_each_i.hpp>
+	<boost/preprocessor/tuple/to_list.hpp>
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/list/transform.hpp>
+	<boost/preprocessor/list/append.hpp>
+	<boost/type_traits/alignment_of.hpp>
+	<boost/type_traits/is_pod.hpp>
+	<boost/static_assert.hpp>
+	<boost/config.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<cstddef>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/if.hpp
+	<boost/mpl/aux_/value_wknd.hpp>
+	<boost/mpl/aux_/static_cast.hpp>
+	<boost/mpl/aux_/na_spec.hpp>
+	<boost/mpl/aux_/lambda_support.hpp>
+	<boost/mpl/aux_/config/integral.hpp>
+	<boost/mpl/aux_/config/ctps.hpp>
+	<boost/mpl/aux_/config/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/value_wknd.hpp
+	<boost/mpl/aux_/static_cast.hpp>
+	<boost/mpl/aux_/config/integral.hpp>
+	<boost/mpl/aux_/config/eti.hpp>
+	<boost/mpl/aux_/config/workaround.hpp>
+	<boost/mpl/int.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/static_cast.hpp
+	<boost/mpl/aux_/config/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/workaround.hpp
+	<boost/detail/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/integral.hpp
+	<boost/mpl/aux_/config/msvc.hpp>
+	<boost/mpl/aux_/config/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/msvc.hpp
+	<boost/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/eti.hpp
+	<boost/mpl/aux_/config/msvc.hpp>
+	<boost/mpl/aux_/config/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/int.hpp
+	<boost/mpl/int_fwd.hpp>
+	<boost/mpl/aux_/integral_wrapper.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/int_fwd.hpp
+	<boost/mpl/aux_/adl_barrier.hpp>
+	<boost/mpl/aux_/nttp_decl.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/adl_barrier.hpp
+	<boost/mpl/aux_/config/adl.hpp>
+	<boost/mpl/aux_/config/gcc.hpp>
+	<boost/mpl/aux_/config/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/adl.hpp
+	<boost/mpl/aux_/config/msvc.hpp>
+	<boost/mpl/aux_/config/intel.hpp>
+	<boost/mpl/aux_/config/gcc.hpp>
+	<boost/mpl/aux_/config/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/intel.hpp
+	<boost/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/gcc.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/nttp_decl.hpp
+	<boost/mpl/aux_/config/nttp.hpp>
+	<boost/preprocessor/cat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/nttp.hpp
+	<boost/mpl/aux_/config/msvc.hpp>
+	<boost/mpl/aux_/config/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/cat.hpp
+	<boost/preprocessor/config/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/config/config.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/integral_wrapper.hpp
+	<boost/mpl/integral_c_tag.hpp>
+	<boost/mpl/aux_/static_cast.hpp>
+	<boost/mpl/aux_/nttp_decl.hpp>
+	<boost/mpl/aux_/config/static_constant.hpp>
+	<boost/mpl/aux_/config/workaround.hpp>
+	<boost/preprocessor/cat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/integral_c_tag.hpp
+	<boost/mpl/aux_/adl_barrier.hpp>
+	<boost/mpl/aux_/config/static_constant.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/static_constant.hpp
+	<boost/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/na_spec.hpp
+	<boost/mpl/lambda_fwd.hpp>
+	<boost/mpl/int.hpp>
+	<boost/mpl/bool.hpp>
+	<boost/mpl/aux_/na.hpp>
+	<boost/mpl/aux_/arity.hpp>
+	<boost/mpl/aux_/template_arity_fwd.hpp>
+	<boost/mpl/aux_/preprocessor/params.hpp>
+	<boost/mpl/aux_/preprocessor/enum.hpp>
+	<boost/mpl/aux_/preprocessor/def_params_tail.hpp>
+	<boost/mpl/aux_/lambda_arity_param.hpp>
+	<boost/mpl/aux_/config/dtp.hpp>
+	<boost/mpl/aux_/config/eti.hpp>
+	<boost/mpl/aux_/nttp_decl.hpp>
+	<boost/mpl/aux_/config/ttp.hpp>
+	<boost/mpl/aux_/config/lambda.hpp>
+	<boost/mpl/aux_/config/overload_resolution.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/lambda_fwd.hpp
+	<boost/mpl/void_fwd.hpp>
+	<boost/mpl/aux_/na.hpp>
+	<boost/mpl/aux_/config/lambda.hpp>
+	<boost/mpl/int.hpp>
+	<boost/mpl/aux_/lambda_arity_param.hpp>
+	<boost/mpl/aux_/template_arity_fwd.hpp>
+	<boost/mpl/bool.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/void_fwd.hpp
+	<boost/mpl/aux_/adl_barrier.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/na.hpp
+	<boost/mpl/bool.hpp>
+	<boost/mpl/aux_/na_fwd.hpp>
+	<boost/mpl/aux_/config/msvc.hpp>
+	<boost/mpl/aux_/config/ctps.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/bool.hpp
+	<boost/mpl/bool_fwd.hpp>
+	<boost/mpl/integral_c_tag.hpp>
+	<boost/mpl/aux_/config/static_constant.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/bool_fwd.hpp
+	<boost/mpl/aux_/adl_barrier.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/na_fwd.hpp
+	<boost/mpl/aux_/adl_barrier.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/ctps.hpp
+	<boost/mpl/aux_/config/workaround.hpp>
+	<boost/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/lambda.hpp
+	<boost/mpl/aux_/config/ttp.hpp>
+	<boost/mpl/aux_/config/ctps.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/ttp.hpp
+	<boost/mpl/aux_/config/msvc.hpp>
+	<boost/mpl/aux_/config/gcc.hpp>
+	<boost/mpl/aux_/config/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/lambda_arity_param.hpp
+	<boost/mpl/aux_/config/ttp.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/template_arity_fwd.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/arity.hpp
+	<boost/mpl/aux_/config/dtp.hpp>
+	<boost/mpl/aux_/nttp_decl.hpp>
+	<boost/mpl/aux_/config/static_constant.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/dtp.hpp
+	<boost/mpl/aux_/config/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/preprocessor/params.hpp
+	<boost/mpl/aux_/config/preprocessor.hpp>
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/comma_if.hpp>
+	<boost/preprocessor/repeat.hpp>
+	<boost/preprocessor/inc.hpp>
+	<boost/preprocessor/cat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/preprocessor.hpp
+	<boost/mpl/aux_/config/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/comma_if.hpp
+	<boost/preprocessor/punctuation/comma_if.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/punctuation/comma_if.hpp
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/control/if.hpp>
+	<boost/preprocessor/facilities/empty.hpp>
+	<boost/preprocessor/punctuation/comma.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/control/if.hpp
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/control/iif.hpp>
+	<boost/preprocessor/logical/bool.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/control/iif.hpp
+	<boost/preprocessor/config/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/logical/bool.hpp
+	<boost/preprocessor/config/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/facilities/empty.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/punctuation/comma.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/repeat.hpp
+	<boost/preprocessor/repetition/repeat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/repetition/repeat.hpp
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/debug/error.hpp>
+	<boost/preprocessor/detail/auto_rec.hpp>
+	<boost/preprocessor/tuple/eat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/debug/error.hpp
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/config/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/detail/auto_rec.hpp
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/detail/dmc/auto_rec.hpp>
+	<boost/preprocessor/control/iif.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/detail/dmc/auto_rec.hpp
+	<boost/preprocessor/control/iif.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/tuple/eat.hpp
+	<boost/preprocessor/config/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/inc.hpp
+	<boost/preprocessor/arithmetic/inc.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/arithmetic/inc.hpp
+	<boost/preprocessor/config/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/preprocessor/enum.hpp
+	<boost/mpl/aux_/config/preprocessor.hpp>
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/comma_if.hpp>
+	<boost/preprocessor/repeat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/preprocessor/def_params_tail.hpp
+	<boost/mpl/limits/arity.hpp>
+	<boost/mpl/aux_/config/dtp.hpp>
+	<boost/mpl/aux_/config/preprocessor.hpp>
+	<boost/preprocessor/comma_if.hpp>
+	<boost/preprocessor/logical/and.hpp>
+	<boost/preprocessor/identity.hpp>
+	<boost/preprocessor/empty.hpp>
+	<boost/mpl/aux_/preprocessor/filter_params.hpp>
+	<boost/mpl/aux_/preprocessor/sub.hpp>
+	<boost/preprocessor/arithmetic/add.hpp>
+	<boost/preprocessor/arithmetic/sub.hpp>
+	<boost/preprocessor/inc.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+	<boost/preprocessor/repeat.hpp>
+	<boost/preprocessor/cat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/limits/arity.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/logical/and.hpp
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/logical/bool.hpp>
+	<boost/preprocessor/logical/bitand.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/logical/bitand.hpp
+	<boost/preprocessor/config/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/identity.hpp
+	<boost/preprocessor/facilities/identity.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/facilities/identity.hpp
+	<boost/preprocessor/facilities/empty.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/empty.hpp
+	<boost/preprocessor/facilities/empty.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/preprocessor/filter_params.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/preprocessor/sub.hpp
+	<boost/mpl/aux_/config/preprocessor.hpp>
+	<boost/mpl/aux_/preprocessor/tuple.hpp>
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/arithmetic/sub.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/preprocessor/tuple.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/arithmetic/sub.hpp
+	<boost/preprocessor/arithmetic/dec.hpp>
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/control/while.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/arithmetic/dec.hpp
+	<boost/preprocessor/config/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/control/while.hpp
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/debug/error.hpp>
+	<boost/preprocessor/detail/auto_rec.hpp>
+	<boost/preprocessor/list/fold_left.hpp>
+	<boost/preprocessor/list/fold_right.hpp>
+	<boost/preprocessor/logical/bitand.hpp>
+	<boost/preprocessor/control/detail/edg/while.hpp>
+	<boost/preprocessor/control/detail/msvc/while.hpp>
+	<boost/preprocessor/control/detail/dmc/while.hpp>
+	<boost/preprocessor/control/detail/while.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/list/fold_left.hpp
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/control/while.hpp>
+	<boost/preprocessor/debug/error.hpp>
+	<boost/preprocessor/detail/auto_rec.hpp>
+	<boost/preprocessor/list/detail/edg/fold_left.hpp>
+	<boost/preprocessor/list/detail/dmc/fold_left.hpp>
+	<boost/preprocessor/list/detail/fold_left.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/list/detail/edg/fold_left.hpp
+	<boost/preprocessor/control/expr_iif.hpp>
+	<boost/preprocessor/control/iif.hpp>
+	<boost/preprocessor/list/adt.hpp>
+	<boost/preprocessor/tuple/eat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/control/expr_iif.hpp
+	<boost/preprocessor/config/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/list/adt.hpp
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/detail/is_binary.hpp>
+	<boost/preprocessor/logical/compl.hpp>
+	<boost/preprocessor/tuple/eat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/detail/is_binary.hpp
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/detail/check.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/detail/check.hpp
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/config/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/logical/compl.hpp
+	<boost/preprocessor/config/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/list/detail/dmc/fold_left.hpp
+	<boost/preprocessor/control/expr_iif.hpp>
+	<boost/preprocessor/control/iif.hpp>
+	<boost/preprocessor/list/adt.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/tuple/elem.hpp
+	<boost/preprocessor/config/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/list/detail/fold_left.hpp
+	<boost/preprocessor/control/expr_iif.hpp>
+	<boost/preprocessor/control/iif.hpp>
+	<boost/preprocessor/list/adt.hpp>
+	<boost/preprocessor/tuple/eat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/list/fold_right.hpp
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/control/while.hpp>
+	<boost/preprocessor/debug/error.hpp>
+	<boost/preprocessor/detail/auto_rec.hpp>
+	<boost/preprocessor/list/detail/edg/fold_right.hpp>
+	<boost/preprocessor/list/detail/fold_right.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/list/detail/edg/fold_right.hpp
+	<boost/preprocessor/control/iif.hpp>
+	<boost/preprocessor/list/adt.hpp>
+	<boost/preprocessor/tuple/eat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/list/detail/fold_right.hpp
+	<boost/preprocessor/list/fold_left.hpp>
+	<boost/preprocessor/list/reverse.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/list/reverse.hpp
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/list/fold_left.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/control/detail/edg/while.hpp
+	<boost/preprocessor/control/if.hpp>
+	<boost/preprocessor/tuple/eat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/control/detail/msvc/while.hpp
+	<boost/preprocessor/control/if.hpp>
+	<boost/preprocessor/tuple/eat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/control/detail/dmc/while.hpp
+	<boost/preprocessor/control/iif.hpp>
+	<boost/preprocessor/logical/bool.hpp>
+	<boost/preprocessor/tuple/eat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/control/detail/while.hpp
+	<boost/preprocessor/control/iif.hpp>
+	<boost/preprocessor/logical/bool.hpp>
+	<boost/preprocessor/tuple/eat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/arithmetic/add.hpp
+	<boost/preprocessor/arithmetic/dec.hpp>
+	<boost/preprocessor/arithmetic/inc.hpp>
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/control/while.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/overload_resolution.hpp
+	<boost/mpl/aux_/config/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/lambda_support.hpp
+	<boost/mpl/aux_/config/lambda.hpp>
+	<boost/mpl/int_fwd.hpp>
+	<boost/mpl/aux_/yes_no.hpp>
+	<boost/mpl/aux_/na_fwd.hpp>
+	<boost/mpl/aux_/preprocessor/params.hpp>
+	<boost/mpl/aux_/preprocessor/enum.hpp>
+	<boost/mpl/aux_/config/msvc.hpp>
+	<boost/mpl/aux_/config/workaround.hpp>
+	<boost/preprocessor/tuple/to_list.hpp>
+	<boost/preprocessor/list/for_each_i.hpp>
+	<boost/preprocessor/inc.hpp>
+	<boost/preprocessor/cat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/yes_no.hpp
+	<boost/mpl/aux_/nttp_decl.hpp>
+	<boost/mpl/aux_/config/arrays.hpp>
+	<boost/mpl/aux_/config/msvc.hpp>
+	<boost/mpl/aux_/config/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/aux_/config/arrays.hpp
+	<boost/mpl/aux_/config/msvc.hpp>
+	<boost/mpl/aux_/config/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/tuple/to_list.hpp
+	<boost/preprocessor/config/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/list/for_each_i.hpp
+	<boost/preprocessor/arithmetic/inc.hpp>
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/list/adt.hpp>
+	<boost/preprocessor/repetition/for.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+	<boost/preprocessor/tuple/rem.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/repetition/for.hpp
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/debug/error.hpp>
+	<boost/preprocessor/detail/auto_rec.hpp>
+	<boost/preprocessor/repetition/detail/edg/for.hpp>
+	<boost/preprocessor/repetition/detail/msvc/for.hpp>
+	<boost/preprocessor/repetition/detail/dmc/for.hpp>
+	<boost/preprocessor/repetition/detail/for.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/repetition/detail/edg/for.hpp
+	<boost/preprocessor/control/if.hpp>
+	<boost/preprocessor/tuple/eat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/repetition/detail/msvc/for.hpp
+	<boost/preprocessor/control/if.hpp>
+	<boost/preprocessor/tuple/eat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/repetition/detail/dmc/for.hpp
+	<boost/preprocessor/control/expr_iif.hpp>
+	<boost/preprocessor/control/iif.hpp>
+	<boost/preprocessor/logical/bool.hpp>
+	<boost/preprocessor/tuple/eat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/repetition/detail/for.hpp
+	<boost/preprocessor/control/expr_iif.hpp>
+	<boost/preprocessor/control/iif.hpp>
+	<boost/preprocessor/logical/bool.hpp>
+	<boost/preprocessor/tuple/eat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/tuple/rem.hpp
+	<boost/preprocessor/config/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/list/transform.hpp
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/list/fold_right.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+	<boost/preprocessor/tuple/rem.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/list/append.hpp
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/list/fold_right.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/alignment_of.hpp
+	<boost/config.hpp>
+	<cstddef>
+	<boost/type_traits/intrinsics.hpp>
+	<boost/type_traits/detail/size_t_trait_def.hpp>
+	<boost/type_traits/detail/size_t_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/intrinsics.hpp
+	<boost/type_traits/config.hpp>
+	<boost/type_traits/is_same.hpp>
+	<algorithm>
+	<type_traits.h>
+	<msl_utility>
+	<boost/type_traits/is_same.hpp>
+	<boost/type_traits/is_same.hpp>
+	<boost/type_traits/is_reference.hpp>
+	<boost/type_traits/is_volatile.hpp>
+	<boost/type_traits/is_same.hpp>
+	<boost/type_traits/is_reference.hpp>
+	<boost/type_traits/is_volatile.hpp>
+	<boost/type_traits/is_void.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/config.hpp
+	<boost/config.hpp>
+	<boost/detail/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_same.hpp
+	<boost/type_traits/config.hpp>
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/detail/ice_and.hpp>
+	<boost/type_traits/is_reference.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/yes_no_type.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/ice_and.hpp
+	<boost/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_reference.hpp
+	<boost/type_traits/config.hpp>
+	<boost/type_traits/is_lvalue_reference.hpp>
+	<boost/type_traits/is_rvalue_reference.hpp>
+	<boost/type_traits/ice.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_lvalue_reference.hpp
+	<boost/type_traits/config.hpp>
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/detail/wrap.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/wrap.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/bool_trait_def.hpp
+	<boost/type_traits/detail/template_arity_spec.hpp>
+	<boost/type_traits/integral_constant.hpp>
+	<boost/mpl/bool.hpp>
+	<boost/mpl/aux_/lambda_support.hpp>
+	<boost/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/template_arity_spec.hpp
+	<boost/mpl/int.hpp>
+	<boost/mpl/aux_/template_arity_fwd.hpp>
+	<boost/mpl/aux_/preprocessor/params.hpp>
+	<boost/mpl/aux_/config/lambda.hpp>
+	<boost/mpl/aux_/config/overload_resolution.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/integral_constant.hpp
+	<boost/config.hpp>
+	<boost/mpl/bool.hpp>
+	<boost/mpl/integral_c.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/integral_c.hpp
+	<boost/mpl/integral_c_fwd.hpp>
+	<boost/mpl/aux_/config/ctps.hpp>
+	<boost/mpl/aux_/config/static_constant.hpp>
+	<boost/mpl/aux_/config/workaround.hpp>
+	<boost/mpl/aux_/integral_wrapper.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/integral_c_fwd.hpp
+	<boost/mpl/aux_/config/workaround.hpp>
+	<boost/mpl/aux_/adl_barrier.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/bool_trait_undef.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_rvalue_reference.hpp
+	<boost/type_traits/config.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/ice.hpp
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/detail/ice_or.hpp>
+	<boost/type_traits/detail/ice_and.hpp>
+	<boost/type_traits/detail/ice_not.hpp>
+	<boost/type_traits/detail/ice_eq.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/ice_or.hpp
+	<boost/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/ice_not.hpp
+	<boost/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/ice_eq.hpp
+	<boost/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_volatile.hpp
+	<boost/config.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/type_traits/detail/cv_traits_impl.hpp>
+	<boost/type_traits/remove_bounds.hpp>
+	<boost/type_traits/is_reference.hpp>
+	<boost/type_traits/is_array.hpp>
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/detail/false_result.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/cv_traits_impl.hpp
+	<boost/config.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/type_traits/detail/yes_no_type.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/remove_bounds.hpp
+	<boost/config.hpp>
+	<cstddef>
+	<boost/detail/workaround.hpp>
+	<boost/type_traits/msvc/remove_bounds.hpp>
+	<boost/type_traits/detail/type_trait_def.hpp>
+	<boost/type_traits/detail/type_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/msvc/remove_bounds.hpp
+	<boost/type_traits/msvc/typeof.hpp>
+	<boost/type_traits/is_array.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/msvc/typeof.hpp
+	<boost/config.hpp>
+	<boost/detail/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_array.hpp
+	<boost/type_traits/config.hpp>
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/detail/wrap.hpp>
+	<cstddef>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/type_trait_def.hpp
+	<boost/type_traits/detail/template_arity_spec.hpp>
+	<boost/mpl/aux_/lambda_support.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/type_trait_undef.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/false_result.hpp
+	<boost/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_void.hpp
+	<boost/config.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/size_t_trait_def.hpp
+	<boost/type_traits/detail/template_arity_spec.hpp>
+	<boost/type_traits/integral_constant.hpp>
+	<boost/mpl/aux_/lambda_support.hpp>
+	<boost/mpl/size_t.hpp>
+	<cstddef>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/size_t.hpp
+	<boost/mpl/size_t_fwd.hpp>
+	<boost/mpl/aux_/integral_wrapper.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/mpl/size_t_fwd.hpp
+	<boost/mpl/aux_/adl_barrier.hpp>
+	<boost/config.hpp>
+	<cstddef>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/size_t_trait_undef.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_pod.hpp
+	<boost/type_traits/config.hpp>
+	<boost/type_traits/is_void.hpp>
+	<boost/type_traits/is_scalar.hpp>
+	<boost/type_traits/detail/ice_or.hpp>
+	<boost/type_traits/intrinsics.hpp>
+	<cstddef>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_scalar.hpp
+	<boost/type_traits/is_arithmetic.hpp>
+	<boost/type_traits/is_enum.hpp>
+	<boost/type_traits/is_pointer.hpp>
+	<boost/type_traits/is_member_pointer.hpp>
+	<boost/type_traits/detail/ice_or.hpp>
+	<boost/config.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_arithmetic.hpp
+	<boost/type_traits/is_integral.hpp>
+	<boost/type_traits/is_float.hpp>
+	<boost/type_traits/detail/ice_or.hpp>
+	<boost/config.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_integral.hpp
+	<boost/config.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_float.hpp
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_enum.hpp
+	<boost/type_traits/intrinsics.hpp>
+	<boost/type_traits/add_reference.hpp>
+	<boost/type_traits/is_arithmetic.hpp>
+	<boost/type_traits/is_reference.hpp>
+	<boost/type_traits/is_convertible.hpp>
+	<boost/type_traits/is_array.hpp>
+	<boost/type_traits/is_function.hpp>
+	<boost/type_traits/config.hpp>
+	<boost/type_traits/is_class.hpp>
+	<boost/type_traits/is_union.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/add_reference.hpp
+	<boost/type_traits/is_reference.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/config.hpp>
+	<boost/type_traits/detail/type_trait_def.hpp>
+	<boost/type_traits/detail/type_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_convertible.hpp
+	<boost/type_traits/intrinsics.hpp>
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/config.hpp>
+	<boost/type_traits/is_array.hpp>
+	<boost/type_traits/add_reference.hpp>
+	<boost/type_traits/ice.hpp>
+	<boost/type_traits/is_arithmetic.hpp>
+	<boost/type_traits/is_void.hpp>
+	<boost/type_traits/is_abstract.hpp>
+	<boost/type_traits/is_function.hpp>
+	<boost/type_traits/remove_reference.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_abstract.hpp
+	<boost/type_traits/intrinsics.hpp>
+	<boost/static_assert.hpp>
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/is_class.hpp>
+	<boost/type_traits/detail/ice_and.hpp>
+	<boost/type_traits/is_polymorphic.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/static_assert.hpp
+	<boost/config.hpp>
+	<boost/detail/workaround.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_class.hpp
+	<boost/type_traits/config.hpp>
+	<boost/type_traits/intrinsics.hpp>
+	<boost/type_traits/is_union.hpp>
+	<boost/type_traits/detail/ice_and.hpp>
+	<boost/type_traits/detail/ice_not.hpp>
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/is_scalar.hpp>
+	<boost/type_traits/is_array.hpp>
+	<boost/type_traits/is_reference.hpp>
+	<boost/type_traits/is_void.hpp>
+	<boost/type_traits/is_function.hpp>
+	<boost/type_traits/remove_cv.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_union.hpp
+	<boost/type_traits/remove_cv.hpp>
+	<boost/type_traits/config.hpp>
+	<boost/type_traits/intrinsics.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/remove_cv.hpp
+	<boost/type_traits/broken_compiler_spec.hpp>
+	<boost/type_traits/detail/cv_traits_impl.hpp>
+	<boost/config.hpp>
+	<boost/detail/workaround.hpp>
+	<cstddef>
+	<boost/type_traits/msvc/remove_cv.hpp>
+	<boost/type_traits/detail/type_trait_def.hpp>
+	<boost/type_traits/detail/type_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/broken_compiler_spec.hpp
+	<boost/mpl/aux_/lambda_support.hpp>
+	<boost/config.hpp>
+	<boost/type_traits/detail/type_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/msvc/remove_cv.hpp
+	<boost/type_traits/msvc/typeof.hpp>
+	<boost/type_traits/is_volatile.hpp>
+	<boost/type_traits/is_const.hpp>
+	<boost/type_traits/is_pointer.hpp>
+	<boost/type_traits/is_array.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_const.hpp
+	<boost/config.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/type_traits/detail/cv_traits_impl.hpp>
+	<boost/type_traits/is_reference.hpp>
+	<boost/type_traits/remove_bounds.hpp>
+	<boost/type_traits/is_reference.hpp>
+	<boost/type_traits/is_array.hpp>
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/detail/false_result.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_pointer.hpp
+	<boost/type_traits/is_member_pointer.hpp>
+	<boost/type_traits/detail/ice_and.hpp>
+	<boost/type_traits/detail/ice_not.hpp>
+	<boost/type_traits/config.hpp>
+	<boost/type_traits/remove_cv.hpp>
+	<boost/type_traits/is_reference.hpp>
+	<boost/type_traits/is_array.hpp>
+	<boost/type_traits/detail/is_function_ptr_tester.hpp>
+	<boost/type_traits/detail/false_result.hpp>
+	<boost/type_traits/detail/ice_or.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_member_pointer.hpp
+	<boost/type_traits/config.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/type_traits/is_member_function_pointer.hpp>
+	<boost/type_traits/is_reference.hpp>
+	<boost/type_traits/is_array.hpp>
+	<boost/type_traits/detail/is_mem_fun_pointer_tester.hpp>
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/detail/false_result.hpp>
+	<boost/type_traits/detail/ice_or.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_member_function_pointer.hpp
+	<boost/type_traits/config.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/type_traits/detail/is_mem_fun_pointer_impl.hpp>
+	<boost/type_traits/remove_cv.hpp>
+	<boost/type_traits/is_reference.hpp>
+	<boost/type_traits/is_array.hpp>
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/detail/false_result.hpp>
+	<boost/type_traits/detail/ice_or.hpp>
+	<boost/type_traits/detail/is_mem_fun_pointer_tester.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/is_mem_fun_pointer_impl.hpp
+	<boost/config.hpp>
+	<boost/preprocessor/iterate.hpp>
+	<boost/preprocessor/enum_params.hpp>
+	<boost/preprocessor/comma_if.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/iterate.hpp
+	<boost/preprocessor/iteration/iterate.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/iteration/iterate.hpp
+	<boost/preprocessor/arithmetic/dec.hpp>
+	<boost/preprocessor/arithmetic/inc.hpp>
+	<boost/preprocessor/array/elem.hpp>
+	<boost/preprocessor/array/size.hpp>
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/slot/slot.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/array/elem.hpp
+	<boost/preprocessor/array/data.hpp>
+	<boost/preprocessor/array/size.hpp>
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/array/data.hpp
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/array/size.hpp
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/slot/slot.hpp
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/slot/detail/def.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/slot/detail/def.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/enum_params.hpp
+	<boost/preprocessor/repetition/enum_params.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/preprocessor/repetition/enum_params.hpp
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/punctuation/comma_if.hpp>
+	<boost/preprocessor/repetition/repeat.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/is_mem_fun_pointer_tester.hpp
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/config.hpp>
+	<boost/preprocessor/iterate.hpp>
+	<boost/preprocessor/enum_params.hpp>
+	<boost/preprocessor/comma_if.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/is_function_ptr_tester.hpp
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/config.hpp>
+	<boost/preprocessor/iterate.hpp>
+	<boost/preprocessor/enum_params.hpp>
+	<boost/preprocessor/comma_if.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_function.hpp
+	<boost/type_traits/is_reference.hpp>
+	<boost/type_traits/detail/false_result.hpp>
+	<boost/config.hpp>
+	<boost/type_traits/detail/is_function_ptr_helper.hpp>
+	<boost/type_traits/detail/is_function_ptr_tester.hpp>
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/detail/is_function_ptr_helper.hpp
+	<boost/type_traits/config.hpp>
+	<boost/preprocessor/iterate.hpp>
+	<boost/preprocessor/enum_params.hpp>
+	<boost/preprocessor/comma_if.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/is_polymorphic.hpp
+	<boost/type_traits/intrinsics.hpp>
+	<boost/type_traits/is_class.hpp>
+	<boost/type_traits/remove_cv.hpp>
+	<boost/type_traits/detail/bool_trait_def.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/type_traits/detail/bool_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/remove_reference.hpp
+	<boost/type_traits/broken_compiler_spec.hpp>
+	<boost/config.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/type_traits/msvc/remove_reference.hpp>
+	<boost/type_traits/detail/type_trait_def.hpp>
+	<boost/type_traits/detail/type_trait_undef.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/type_traits/msvc/remove_reference.hpp
+	<boost/type_traits/msvc/typeof.hpp>
+	<boost/type_traits/is_reference.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/sp_convertible.hpp
+	<boost/config.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/memory_order.hpp
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/shared_array.hpp
+	<boost/smart_ptr/shared_array.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/shared_array.hpp
+	<boost/config.hpp>
+	<boost/smart_ptr/detail/shared_array_nmt.hpp>
+	<memory>
+	<boost/assert.hpp>
+	<boost/checked_delete.hpp>
+	<boost/smart_ptr/detail/shared_count.hpp>
+	<boost/detail/workaround.hpp>
+	<cstddef>
+	<algorithm>
+	<functional>
+	<boost/smart_ptr/detail/operator_bool.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/detail/shared_array_nmt.hpp
+	<boost/assert.hpp>
+	<boost/checked_delete.hpp>
+	<boost/throw_exception.hpp>
+	<boost/smart_ptr/detail/atomic_count.hpp>
+	<cstddef>
+	<algorithm>
+	<functional>
+	<new>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/weak_ptr.hpp
+	<boost/smart_ptr/weak_ptr.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/weak_ptr.hpp
+	<memory>
+	<boost/smart_ptr/detail/shared_count.hpp>
+	<boost/smart_ptr/shared_ptr.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/intrusive_ptr.hpp
+	<boost/smart_ptr/intrusive_ptr.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/intrusive_ptr.hpp
+	<boost/config.hpp>
+	<boost/assert.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/smart_ptr/detail/sp_convertible.hpp>
+	<boost/config/no_tr1/functional.hpp>
+	<iosfwd>
+	<ostream>
+	<boost/smart_ptr/detail/operator_bool.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/config/no_tr1/functional.hpp
+	<functional>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/enable_shared_from_this.hpp
+	<boost/smart_ptr/enable_shared_from_this.hpp>
+
+1310786164 /home/karl/code/LikeMagic-All/boost/boost/smart_ptr/enable_shared_from_this.hpp
+	<boost/smart_ptr/weak_ptr.hpp>
+	<boost/smart_ptr/shared_ptr.hpp>
+	<boost/assert.hpp>
+	<boost/config.hpp>
+
+1311128501 /home/karl/code/desteer/include/desteer/controller/SimpleSteeringController.hpp
+	"desteer/controller/ISteeringController.hpp"
+	"desteer/behavior/SeekBehavior.hpp"
+	"desteer/behavior/FleeBehavior.hpp"
+	"desteer/behavior/WanderBehavior.hpp"
+	"desteer/behavior/PursuitBehavior.hpp"
+	"desteer/behavior/EvadeBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+	"desteer/behavior/HideBehavior.hpp"
+	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
+	<boost/smart_ptr.hpp>
+	<iostream>
+	<string>
+
+1311115639 /home/karl/code/desteer/include/desteer/controller/ISteeringController.hpp
+	"irrvector/vector3d.h"
+	"desteer/Types.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+
+1311115604 /home/karl/code/desteer/include/desteer/Types.hpp
+	<vector>
+	<iterator>
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/behavior/ISteeringBehavior.hpp"
+	<boost/smart_ptr.hpp>
+
+1311115639 /home/karl/code/desteer/include/desteer/behavior/ISteeringBehavior.hpp
+	"desteer/entity/IMobileEntity.hpp"
+	<boost/smart_ptr.hpp>
+
+1311115639 /home/karl/code/desteer/include/desteer/behavior/SeekBehavior.hpp
+	"ISteeringBehavior.hpp"
+	<boost/smart_ptr.hpp>
+
+1311115639 /home/karl/code/desteer/include/desteer/behavior/FleeBehavior.hpp
+	"ISteeringBehavior.hpp"
+	<boost/smart_ptr.hpp>
+
+1311115639 /home/karl/code/desteer/include/desteer/behavior/WanderBehavior.hpp
+	"ISteeringBehavior.hpp"
+	<boost/smart_ptr.hpp>
+
+1311115639 /home/karl/code/desteer/include/desteer/behavior/PursuitBehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/SeekBehavior.hpp"
+	<boost/smart_ptr.hpp>
+
+1311115639 /home/karl/code/desteer/include/desteer/behavior/EvadeBehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/FleeBehavior.hpp"
+	<boost/smart_ptr.hpp>
+
+1311115639 /home/karl/code/desteer/include/desteer/behavior/ArriveBehavior.hpp
+	"ISteeringBehavior.hpp"
+	<boost/smart_ptr.hpp>
+
+1311120478 /home/karl/code/desteer/include/desteer/behavior/HideBehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+	"desteer/behavior/EvadeBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+	<boost/smart_ptr.hpp>
+
+1311120446 /home/karl/code/desteer/include/desteer/behavior/ObstacleAvoidanceBehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+	<boost/smart_ptr.hpp>
+
+1311124195 source:/home/karl/code/desteer/examples/ExampleWithIrrlicht/source/main.cpp
+	"desteer/controller/SimpleSteeringController.hpp"
+	"irrlicht/irrlicht.h"
+	"IrrlichtMobileEntity.hpp"
+	"IrrlichtBaseEntity.hpp"
+	<boost/smart_ptr.hpp>
+
+1311115639 /home/karl/code/desteer/examples/ExampleWithIrrlicht/source/IrrlichtBaseEntity.hpp
+	"irrlicht/irrlicht.h"
+	"desteer/entity/IBaseEntity.hpp"
+

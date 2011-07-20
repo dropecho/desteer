@@ -8,7 +8,7 @@ using namespace irr;
 using namespace core;
 using boost::shared_ptr;
 
-ObstacleAvoidanceBehavior::ObstacleAvoidanceBehavior(EntityGroup & obstacles)
+ObstacleAvoidanceBehavior::ObstacleAvoidanceBehavior(boost::shared_ptr<EntityGroup> obstacles)
 {
     _obstacles = obstacles;
 }
@@ -18,7 +18,7 @@ void ObstacleAvoidanceBehavior::SetMobile(shared_ptr<IMobileEntity> mob)
     _mob = mob;
 }
 
-void ObstacleAvoidanceBehavior::SetObstacles(EntityGroup &obstacles)
+void ObstacleAvoidanceBehavior::SetObstacles(boost::shared_ptr<EntityGroup> obstacles)
 {
     _obstacles = obstacles;
 }
@@ -30,7 +30,7 @@ vector3df ObstacleAvoidanceBehavior::Calculate()
     float distToClosest = 16487654;
     float detectLength = 40 + (_mob->Velocity().getLength()/1.5); //_mob->MaxSpeed() / 5
 
-    for(EntityIterator currentObs = _obstacles.begin(); currentObs != _obstacles.end(); ++currentObs)
+    for(EntityIterator currentObs = _obstacles->begin(); currentObs != _obstacles->end(); ++currentObs)
     {
         localPos = _mob->transformWorldVectToLocal((*currentObs)->Position());
 

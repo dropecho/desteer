@@ -3,42 +3,75 @@
 #include "desteer/entity/IBaseEntity.hpp"
 #include "desteer/entity/IEntitySpace.hpp"
 #include <boost/smart_ptr.hpp>
+#include <iostream>
+#include <string>
 
 //Predefining stuff to avoid circular reference.
-namespace desteer { namespace controller {
+namespace desteer
+{
+namespace controller
+{
 class ISteeringController;
-}}
+}
+}
 
-namespace desteer {
-namespace entity {
+namespace desteer
+{
+namespace entity
+{
 
 //TODO: change this to be an actual abstract class and make MobileEntity, which has the stuff to derive from.
 class IMobileEntity : public IBaseEntity, public IEntitySpace
 {
 protected:
-	float _mass;
-	float _maxForce;
-	float _maxSpeed;
-	//float _maxTurnRate;
+    float _mass;
+    float _maxForce;
+    float _maxSpeed;
+    //float _maxTurnRate;
 
-	irr::core::vector3df _velocity;
+    irr::core::vector3df _velocity;
 
 public:
-    float Mass() const { return _mass; };
-	void SetMass(float mass) { _mass = mass; };
+    float Mass() const
+    {
+        return _mass;
+    };
+    void SetMass(float mass)
+    {
+        _mass = mass;
+    };
 
-	float MaxForce() const { return _maxForce; };
-	void SetMaxForce(float maxForce) { _maxForce = maxForce; };
+    float MaxForce() const
+    {
+        return _maxForce;
+    };
+    void SetMaxForce(float maxForce)
+    {
+        _maxForce = maxForce;
+    };
 
-	float MaxSpeed() const { return _maxSpeed; };
-	void SetMaxSpeed(float maxSpeed) { _maxSpeed = maxSpeed; };
+    float MaxSpeed() const
+    {
+        return _maxSpeed;
+    };
+    void SetMaxSpeed(float maxSpeed)
+    {
+        _maxSpeed = maxSpeed;
+    };
 
-	//inline float MaxTurnRate() const { return _maxTurnRate; };
-	//inline void SetMaxTurnRate(float maxTurnRate) { _maxTurnRate = maxTurnRate; };
+    //inline float MaxTurnRate() const { return _maxTurnRate; };
+    //inline void SetMaxTurnRate(float maxTurnRate) { _maxTurnRate = maxTurnRate; };
 
-    virtual irr::core::vector3df Velocity() const {return _velocity;};
+    virtual irr::core::vector3df Velocity() const
+    {
+        return _velocity;
+    };
 
     virtual void SetSteering(boost::shared_ptr<controller::ISteeringController> controller) = 0;
+
+    virtual ~IMobileEntity()
+    {
+    }
 
 };
 

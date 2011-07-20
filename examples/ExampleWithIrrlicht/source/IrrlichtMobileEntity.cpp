@@ -6,6 +6,8 @@ using namespace core;
 using namespace desteer;
 using namespace entity;
 using namespace behavior;
+using namespace controller;
+using boost::shared_ptr;
 
 IrrlichtMobileEntity::IrrlichtMobileEntity(
     irr::scene::ISceneNode* node, irr::core::vector3df position, float mass, float maxSpeed, float maxForce
@@ -77,6 +79,7 @@ void IrrlichtMobileEntity::Update(float timeElapsed)
     //times time = velocity
 
     _velocity += (_steering->Calculate()/_mass) * timeElapsed;
+
 
     //truncate velocity to max speed
     _velocity.setLength(irr::core::min_(_velocity.getLength(),_maxSpeed));

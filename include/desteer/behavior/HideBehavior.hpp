@@ -16,18 +16,21 @@ private:
 
     float _hideDistanceFromObj;
 
-    EntityGroup _obstacles;
+    boost::shared_ptr<EntityGroup> _obstacles;
 
     boost::shared_ptr<EvadeBehavior>  _evadeBehavior;
     boost::shared_ptr<ArriveBehavior> _arriveBehavior;
 
-    irr::core::vector3df GetHidingPosition(const irr::core::vector3df& targetPos, const boost::shared_ptr<entity::IBaseEntity> obstacle);
+    irr::core::vector3df GetHidingPosition(const irr::core::vector3df& targetPos,
+                                           const boost::shared_ptr<entity::IBaseEntity> obstacle);
 public:
-    HideBehavior(boost::shared_ptr<entity::IMobileEntity> target, EntityGroup & obstacles, float hideDistanceFromObstacle = 20);
+    HideBehavior(boost::shared_ptr<entity::IMobileEntity> target,
+                 boost::shared_ptr<EntityGroup> obstacles,
+                 float hideDistanceFromObstacle = 20);
     irr::core::vector3df Calculate();
     void SetMobile(boost::shared_ptr<entity::IMobileEntity> mob);
     void SetTarget(boost::shared_ptr<entity::IMobileEntity> target);
-    void SetObstacles(EntityGroup &obstacles);
+    void SetObstacles(boost::shared_ptr<EntityGroup> obstacles);
     virtual ~HideBehavior(){}
 };
 
