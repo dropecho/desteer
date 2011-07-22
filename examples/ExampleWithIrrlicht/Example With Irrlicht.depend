@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # depslib dependency file v1.0
 1298345078 source:d:\programming\projects\desteer\examples\examplewithirrlicht\main.cpp
 	"irrlicht/irrlicht.h"
@@ -2146,6 +2147,98 @@
 	"IrrlichtBaseEntity.hpp"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrlicht.h
+=======
+# depslib dependency file v1.0
+1311317456 source:d:\programming\projects\desteer\examples\examplewithirrlicht\source\main.cpp
+	"desteer/controller/SimpleSteeringController.hpp"
+	"irrlicht/irrlicht.h"
+	"IrrlichtMobileEntity.hpp"
+	"IrrlichtBaseEntity.hpp"
+
+1310795164 d:\programming\projects\desteer\include\desteer\controller\simplesteeringcontroller.hpp
+	"desteer/controller/ISteeringController.hpp"
+	"desteer/behavior/SeekBehavior.hpp"
+	"desteer/behavior/FleeBehavior.hpp"
+	"desteer/behavior/WanderBehavior.hpp"
+	"desteer/behavior/PursuitBehavior.hpp"
+	"desteer/behavior/EvadeBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+	"desteer/behavior/HideBehavior.hpp"
+	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\controller\isteeringcontroller.hpp
+	"irrvector/vector3d.h"
+	"desteer/Types.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+
+1306297465 d:\programming\projects\desteer\include\irrvector\vector3d.h
+	"irrMath.h"
+
+1306297465 d:\programming\projects\desteer\include\irrvector\irrmath.h
+	"irrTypes.h"
+	<math.h>
+	<float.h>
+	<stdlib.h>
+	<limits.h>
+
+1306297465 d:\programming\projects\desteer\include\irrvector\irrtypes.h
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1306297465 d:\programming\projects\desteer\include\desteer\types.hpp
+	<vector>
+	<iterator>
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/behavior/ISteeringBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\entity\imobileentity.hpp
+	"desteer/entity/IBaseEntity.hpp"
+	"desteer/entity/IEntitySpace.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\entity\ibaseentity.hpp
+	"irrvector/vector3d.h"
+
+1306297465 d:\programming\projects\desteer\include\desteer\entity\ientityspace.hpp
+	"irrvector/vector3d.h"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\isteeringbehavior.hpp
+	"desteer/entity/IMobileEntity.hpp"
+
+1310794948 d:\programming\projects\desteer\include\desteer\behavior\seekbehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\fleebehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\wanderbehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\pursuitbehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/SeekBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\evadebehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/FleeBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\arrivebehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\hidebehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+	"desteer/behavior/EvadeBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+
+1306297465 d:\programming\projects\desteer\include\desteer\behavior\obstacleavoidancebehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrlicht.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IrrCompileConfig.h"
 	"aabbox3d.h"
 	"CDynamicMeshBuffer.h"
@@ -2301,6 +2394,7 @@
 	"vector2d.h"
 	"vector3d.h"
 	"SIrrCreationParameters.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrcompileconfig.h
 	<stdio.h>
@@ -2312,20 +2406,39 @@
 	"line3d.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrmath.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrcompileconfig.h
+	<stdio.h>
+	<xtl.h>
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\aabbox3d.h
+	"irrMath.h"
+	"plane3d.h"
+	"line3d.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrmath.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IrrCompileConfig.h"
 	"irrTypes.h"
 	<math.h>
 	<float.h>
 	<stdlib.h>
 	<limits.h>
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrtypes.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrtypes.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IrrCompileConfig.h"
 	<wchar.h>
 	<crtdbg.h>
 	"assert.h"
 	<stdlib.h>
 	<crtdbg.h>
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\plane3d.h
 	"irrMath.h"
@@ -2349,6 +2462,31 @@
 	"IIndexBuffer.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\imeshbuffer.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\plane3d.h
+	"irrMath.h"
+	"vector3d.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\vector3d.h
+	"irrMath.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\line3d.h
+	"irrTypes.h"
+	"vector3d.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\cdynamicmeshbuffer.h
+	"IDynamicMeshBuffer.h"
+	"CVertexBuffer.h"
+	"CIndexBuffer.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\idynamicmeshbuffer.h
+	"IMeshBuffer.h"
+	"IVertexBuffer.h"
+	"IIndexBuffer.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\imeshbuffer.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IReferenceCounted.h"
 	"SMaterial.h"
 	"aabbox3d.h"
@@ -2356,11 +2494,19 @@
 	"SVertexIndex.h"
 	"EHardwareBufferFlags.h"
 	"EPrimitiveTypes.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ireferencecounted.h
 	"irrTypes.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\smaterial.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ireferencecounted.h
+	"irrTypes.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\smaterial.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"SColor.h"
 	"matrix4.h"
 	"irrArray.h"
@@ -2368,12 +2514,21 @@
 	"EMaterialTypes.h"
 	"EMaterialFlags.h"
 	"SMaterialLayer.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\scolor.h
 	"irrTypes.h"
 	"irrMath.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\matrix4.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\scolor.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\matrix4.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"irrMath.h"
 	"vector3d.h"
 	"vector2d.h"
@@ -2382,6 +2537,7 @@
 	"rect.h"
 	"irrString.h"
 	<windows.h>
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\vector2d.h
 	"irrMath.h"
@@ -2400,12 +2556,33 @@
 	"vector2d.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrstring.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\vector2d.h
+	"irrMath.h"
+	"dimension2d.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\dimension2d.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\rect.h
+	"irrTypes.h"
+	"dimension2d.h"
+	"position2d.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\position2d.h
+	"vector2d.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrstring.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"irrTypes.h"
 	"irrAllocator.h"
 	"irrMath.h"
 	<stdio.h>
 	<string.h>
 	<stdlib.h>
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrallocator.h
 	"irrTypes.h"
@@ -2413,10 +2590,20 @@
 	<memory.h>
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrarray.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrallocator.h
+	"irrTypes.h"
+	<new>
+	<memory.h>
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrarray.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"irrTypes.h"
 	"heapsort.h"
 	"irrAllocator.h"
 	"irrMath.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\heapsort.h
 	"irrTypes.h"
@@ -2515,11 +2702,112 @@
 	"quaternion.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iq3shader.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\heapsort.h
+	"irrTypes.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ematerialtypes.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ematerialflags.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\smateriallayer.h
+	"matrix4.h"
+	"irrAllocator.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\s3dvertex.h
+	"vector3d.h"
+	"vector2d.h"
+	"SColor.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\svertexindex.h
+	"irrTypes.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ehardwarebufferflags.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\eprimitivetypes.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ivertexbuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"S3DVertex.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iindexbuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SVertexIndex.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\cvertexbuffer.h
+	"IVertexBuffer.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\cindexbuffer.h
+	"IIndexBuffer.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\cmeshbuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\coreutil.h
+	"irrString.h"
+	"path.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\path.h
+	"irrString.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ecullingtypes.h
+	"irrTypes.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\edebugscenetypes.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\edriverfeatures.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\edrivertypes.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\eguialignment.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\eguielementtypes.h
+	"irrTypes.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\emeshwriterenums.h
+	"irrTypes.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\emessageboxflags.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\escenenodeanimatortypes.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\escenenodetypes.h
+	"irrTypes.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\eterrainelements.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\fast_atof.h
+	"irrMath.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ianimatedmesh.h
+	"aabbox3d.h"
+	"IMesh.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\imesh.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"EHardwareBufferFlags.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ianimatedmeshmd2.h
+	"IAnimatedMesh.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ianimatedmeshmd3.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+	"quaternion.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iq3shader.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"irrArray.h"
 	"fast_atof.h"
 	"IFileSystem.h"
 	"IVideoDriver.h"
 	"coreutil.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ifilesystem.h
 	"IReferenceCounted.h"
@@ -2531,6 +2819,19 @@
 	"irrXML.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrxml.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ifilesystem.h
+	"IReferenceCounted.h"
+	"IXMLReader.h"
+	"IFileArchive.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ixmlreader.h
+	"IReferenceCounted.h"
+	"irrXML.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrxml.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	<stdio.h>
 	"IrrCompileConfig.h"
 	<irrXML.h>
@@ -2538,6 +2839,7 @@
 	<irrXML.h>
 	<irrXML.h>
 	<irrXML.h>
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ifilearchive.h
 	"IReadFile.h"
@@ -2552,6 +2854,22 @@
 	"path.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ivideodriver.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ifilearchive.h
+	"IReadFile.h"
+	"IFileList.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ireadfile.h
+	"IReferenceCounted.h"
+	"coreutil.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ifilelist.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ivideodriver.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"rect.h"
 	"SColor.h"
 	"ITexture.h"
@@ -2566,42 +2884,74 @@
 	"EDriverTypes.h"
 	"EDriverFeatures.h"
 	"SExposedVideoData.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\itexture.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\itexture.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IReferenceCounted.h"
 	"IImage.h"
 	"dimension2d.h"
 	"EDriverTypes.h"
 	"path.h"
 	"matrix4.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iimage.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iimage.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IReferenceCounted.h"
 	"position2d.h"
 	"rect.h"
 	"SColor.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\triangle3d.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\triangle3d.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"vector3d.h"
 	"line3d.h"
 	"plane3d.h"
 	"aabbox3d.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\sexposedvideodata.h
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\quaternion.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\sexposedvideodata.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\quaternion.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"irrTypes.h"
 	"irrMath.h"
 	"matrix4.h"
 	"vector3d.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ianimatedmeshscenenode.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ianimatedmeshscenenode.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"ISceneNode.h"
 	"IBoneSceneNode.h"
 	"IAnimatedMeshMD2.h"
 	"IAnimatedMeshMD3.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iscenenode.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iscenenode.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IAttributeExchangingObject.h"
 	"ESceneNodeTypes.h"
 	"ECullingTypes.h"
@@ -2614,16 +2964,25 @@
 	"matrix4.h"
 	"irrList.h"
 	"IAttributes.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iattributeexchangingobject.h
 	"IReferenceCounted.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iscenenodeanimator.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iattributeexchangingobject.h
+	"IReferenceCounted.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iscenenodeanimator.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IReferenceCounted.h"
 	"vector3d.h"
 	"ESceneNodeAnimatorTypes.h"
 	"IAttributeExchangingObject.h"
 	"IEventReceiver.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ieventreceiver.h
 	"ILogger.h"
@@ -2636,11 +2995,26 @@
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\keycodes.h
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\itriangleselector.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ieventreceiver.h
+	"ILogger.h"
+	"Keycodes.h"
+	"irrString.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ilogger.h
+	"IReferenceCounted.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\keycodes.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\itriangleselector.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IReferenceCounted.h"
 	"triangle3d.h"
 	"aabbox3d.h"
 	"matrix4.h"
 	"line3d.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrlist.h
 	"irrTypes.h"
@@ -2648,6 +3022,15 @@
 	"irrMath.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iattributes.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrlist.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iattributes.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IReferenceCounted.h"
 	"SColor.h"
 	"vector3d.h"
@@ -2667,6 +3050,7 @@
 	"irrArray.h"
 	"IXMLReader.h"
 	"EAttributes.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\line2d.h
 	"irrTypes.h"
@@ -2701,10 +3085,47 @@
 	"IImage.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\igpuprogrammingservices.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\line2d.h
+	"irrTypes.h"
+	"vector2d.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\eattributes.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ibonescenenode.h
+	"ISceneNode.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ibillboardscenenode.h
+	"ISceneNode.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ibillboardtextscenenode.h
+	"IBillboardSceneNode.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\icamerascenenode.h
+	"ISceneNode.h"
+	"IEventReceiver.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\icursorcontrol.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\idummytransformationscenenode.h
+	"ISceneNode.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\igeometrycreator.h
+	"IReferenceCounted.h"
+	"IMesh.h"
+	"IImage.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\igpuprogrammingservices.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"EShaderTypes.h"
 	"EMaterialTypes.h"
 	"EPrimitiveTypes.h"
 	"path.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\eshadertypes.h
 	"irrTypes.h"
@@ -2713,6 +3134,16 @@
 	"IGUIElement.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguielement.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\eshadertypes.h
+	"irrTypes.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguibutton.h
+	"IGUIElement.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguielement.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IAttributeExchangingObject.h"
 	"irrList.h"
 	"rect.h"
@@ -2721,6 +3152,7 @@
 	"EGUIElementTypes.h"
 	"EGUIAlignment.h"
 	"IAttributes.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguicheckbox.h
 	"IGUIElement.h"
@@ -2743,6 +3175,30 @@
 	"EGUIElementTypes.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguienvironment.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguicheckbox.h
+	"IGUIElement.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguicolorselectdialog.h
+	"IGUIElement.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguicombobox.h
+	"IGUIElement.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguicontextmenu.h
+	"IGUIElement.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguieditbox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguielementfactory.h
+	"IReferenceCounted.h"
+	"EGUIElementTypes.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguienvironment.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IReferenceCounted.h"
 	"IGUISkin.h"
 	"rect.h"
@@ -2750,22 +3206,37 @@
 	"IEventReceiver.h"
 	"IXMLReader.h"
 	"path.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguiskin.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguiskin.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IAttributeExchangingObject.h"
 	"EGUIAlignment.h"
 	"SColor.h"
 	"rect.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguifileopendialog.h
 	"IGUIElement.h"
 	"path.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguifont.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguifileopendialog.h
+	"IGUIElement.h"
+	"path.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguifont.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IReferenceCounted.h"
 	"SColor.h"
 	"rect.h"
 	"irrString.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguifontbitmap.h
 	"IGUIFont.h"
@@ -2791,10 +3262,38 @@
 	"IGUIElement.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguispritebank.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguifontbitmap.h
+	"IGUIFont.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguiimage.h
+	"IGUIElement.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguiinoutfader.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguilistbox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguimeshviewer.h
+	"IGUIElement.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguiscrollbar.h
+	"IGUIElement.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguispinbox.h
+	"IGUIElement.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguispritebank.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IReferenceCounted.h"
 	"irrArray.h"
 	"SColor.h"
 	"rect.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguistatictext.h
 	"IGUIElement.h"
@@ -2806,10 +3305,24 @@
 	"IGUISkin.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguitable.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguistatictext.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguitabcontrol.h
+	"IGUIElement.h"
+	"SColor.h"
+	"IGUISkin.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguitable.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IGUIElement.h"
 	"irrTypes.h"
 	"SColor.h"
 	"IGUISkin.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguitoolbar.h
 	"IGUIElement.h"
@@ -2863,6 +3376,61 @@
 	"path.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\imeshmanipulator.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguitoolbar.h
+	"IGUIElement.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguiwindow.h
+	"IGUIElement.h"
+	"EMessageBoxFlags.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguitreeview.h
+	"IGUIElement.h"
+	"IGUIImageList.h"
+	"irrTypes.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iguiimagelist.h
+	"IGUIElement.h"
+	"rect.h"
+	"irrTypes.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iimageloader.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"path.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iimagewriter.h
+	"IReferenceCounted.h"
+	"irrString.h"
+	"coreutil.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ilightscenenode.h
+	"ISceneNode.h"
+	"SLight.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\slight.h
+	"SColor.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\imaterialrenderer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\imaterialrendererservices.h
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\imeshcache.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\imeshloader.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\imeshmanipulator.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IReferenceCounted.h"
 	"vector3d.h"
 	"aabbox3d.h"
@@ -2870,6 +3438,7 @@
 	"IAnimatedMesh.h"
 	"IMeshBuffer.h"
 	"SVertexManipulator.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\svertexmanipulator.h
 	"S3DVertex.h"
@@ -2889,6 +3458,27 @@
 	"IReferenceCounted.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iparticlesystemscenenode.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\svertexmanipulator.h
+	"S3DVertex.h"
+	"SColor.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\imeshscenenode.h
+	"ISceneNode.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\imeshwriter.h
+	"IReferenceCounted.h"
+	"EMeshWriterEnums.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\imetatriangleselector.h
+	"ITriangleSelector.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iosoperator.h
+	"IReferenceCounted.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iparticlesystemscenenode.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"ISceneNode.h"
 	"IParticleAnimatedMeshSceneNodeEmitter.h"
 	"IParticleBoxEmitter.h"
@@ -2901,6 +3491,7 @@
 	"IParticleGravityAffector.h"
 	"IParticleRotationAffector.h"
 	"dimension2d.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iparticleanimatedmeshscenenodeemitter.h
 	"IParticleEmitter.h"
@@ -2953,6 +3544,60 @@
 	"IQ3Shader.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrlichtdevice.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iparticleanimatedmeshscenenodeemitter.h
+	"IParticleEmitter.h"
+	"IAnimatedMeshSceneNode.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iparticleemitter.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\sparticle.h
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iparticleboxemitter.h
+	"IParticleEmitter.h"
+	"aabbox3d.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iparticlecylinderemitter.h
+	"IParticleEmitter.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iparticlemeshemitter.h
+	"IParticleEmitter.h"
+	"IMesh.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iparticleringemitter.h
+	"IParticleEmitter.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iparticlesphereemitter.h
+	"IParticleEmitter.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iparticleattractionaffector.h
+	"IParticleAffector.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iparticleaffector.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iparticlefadeoutaffector.h
+	"IParticleAffector.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iparticlegravityaffector.h
+	"IParticleAffector.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iparticlerotationaffector.h
+	"IParticleAffector.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iq3levelmesh.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrlichtdevice.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IReferenceCounted.h"
 	"dimension2d.h"
 	"IVideoDriver.h"
@@ -2963,6 +3608,7 @@
 	"IVideoModeList.h"
 	"ITimer.h"
 	"IOSOperator.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\edevicetypes.h
 
@@ -2978,13 +3624,35 @@
 	"irrMath.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iscenecollisionmanager.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\edevicetypes.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ivideomodelist.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\itimer.h
+	"IReferenceCounted.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\irrmap.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iscenecollisionmanager.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IReferenceCounted.h"
 	"vector3d.h"
 	"triangle3d.h"
 	"position2d.h"
 	"line3d.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iscenemanager.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iscenemanager.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IReferenceCounted.h"
 	"irrArray.h"
 	"irrString.h"
@@ -2999,14 +3667,22 @@
 	"SceneParameters.h"
 	"IGeometryCreator.h"
 	"ISkinnedMesh.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\sceneparameters.h
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iskinnedmesh.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\sceneparameters.h
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iskinnedmesh.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"irrArray.h"
 	"IBoneSceneNode.h"
 	"IAnimatedMesh.h"
 	"SSkinMeshBuffer.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\sskinmeshbuffer.h
 	"IMeshBuffer.h"
@@ -3040,10 +3716,46 @@
 	"ISceneNode.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iterrainscenenode.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\sskinmeshbuffer.h
+	"IMeshBuffer.h"
+	"S3DVertex.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iscenenodeanimatorcamerafps.h
+	"ISceneNodeAnimator.h"
+	"IEventReceiver.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iscenenodeanimatorcameramaya.h
+	"ISceneNodeAnimator.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iscenenodeanimatorcollisionresponse.h
+	"ISceneNode.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iscenenodeanimatorfactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeAnimatorTypes.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iscenenodefactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeTypes.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\isceneuserdataserializer.h
+	"IReferenceCounted.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ishaderconstantsetcallback.h
+	"IReferenceCounted.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ishadowvolumescenenode.h
+	"ISceneNode.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iterrainscenenode.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"ETerrainElements.h"
 	"ISceneNode.h"
 	"IDynamicMeshBuffer.h"
 	"irrArray.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\itextscenenode.h
 	"ISceneNode.h"
@@ -3065,25 +3777,62 @@
 	"irrArray.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\sanimatedmesh.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\itextscenenode.h
+	"ISceneNode.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ivolumelightscenenode.h
+	"ISceneNode.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\iwritefile.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ixmlwriter.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"irrString.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ilightmanager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\sanimatedmesh.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IAnimatedMesh.h"
 	"IMesh.h"
 	"aabbox3d.h"
 	"irrArray.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\sirrcreationparameters.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\sirrcreationparameters.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"EDriverTypes.h"
 	"EDeviceTypes.h"
 	"dimension2d.h"
 	"ILogger.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\skeymap.h
 	"Keycodes.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\smesh.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\skeymap.h
+	"Keycodes.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\smesh.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"IMesh.h"
 	"IMeshBuffer.h"
 	"aabbox3d.h"
 	"irrArray.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\smeshbuffer.h
 	"CMeshBuffer.h"
@@ -3099,12 +3848,30 @@
 	"IMeshBuffer.h"
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\sviewfrustum.h
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\smeshbuffer.h
+	"CMeshBuffer.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\smeshbufferlightmap.h
+	"CMeshBuffer.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\smeshbuffertangents.h
+	"CMeshBuffer.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\ssharedmeshbuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\include\irrlicht\sviewfrustum.h
+>>>>>>> cleaning up some issues with dependencies and etc
 	"plane3d.h"
 	"vector3d.h"
 	"line3d.h"
 	"aabbox3d.h"
 	"matrix4.h"
 	"IVideoDriver.h"
+<<<<<<< HEAD
 
 1298341154 d:\programming\projects\desteer\examples\examplewithirrlicht\source\irrlichtmobileentity.hpp
 	"irrlicht/irrlicht.h"
@@ -5340,3 +6107,18 @@
 1306466575 /home/dennis/code/LikeMagic-All/desteer/include/desteer/entity/MobileEntity.hpp
 	"desteer/entity/IMobileEntity.hpp"
 
+=======
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\source\irrlichtmobileentity.hpp
+	"irrlicht/irrlicht.h"
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/controller/SimpleSteeringController.hpp"
+
+1306297465 d:\programming\projects\desteer\examples\examplewithirrlicht\source\irrlichtbaseentity.hpp
+	"irrlicht/irrlicht.h"
+	"desteer/entity/IBaseEntity.hpp"
+
+1306297465 source:d:\programming\projects\desteer\examples\examplewithirrlicht\source\irrlichtmobileentity.cpp
+	"IrrlichtMobileEntity.hpp"
+
+>>>>>>> cleaning up some issues with dependencies and etc

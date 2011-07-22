@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 # depslib dependency file v1.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # depslib dependency file v1.0
 1298340312 source:/home/kaeles/Code/desteer/source/ArriveBehavior.cpp
@@ -502,3 +503,5 @@
 	"desteer/behavior/WanderBehavior.hpp"
 
 >>>>>>> working on fluent interface
+=======
+>>>>>>> cleaning up some issues with dependencies and etc

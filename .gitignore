@@ -1,16 +1,3 @@
-# Ignore generated dll files
-*.dll
-*.so
-*.so.*
-*.so.*.*
-*.so.*.*.*
-
-# Ignore generated program binaries. 
-*.exe
-
-# Ignore text editor backup copies
-*~
-
 # Ignore intermediate build files.
 *.o.d
 *.o
@@ -23,15 +10,6 @@
 #don't ignore example libs
 !examples/lib/*
 !examples/bin/win32-gcc/*.dll
-
-autom4te.cache/*
-*.cpp~
-*.hpp~
-*.Po
-*.Plo
-*.Tpo
-.deps/*
-*/.deps/*
 
 # Ignore crap codeblocks files
 *.depend~
