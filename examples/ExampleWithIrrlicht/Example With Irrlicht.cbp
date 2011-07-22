@@ -48,15 +48,25 @@
 					<Add option="-lX11" />
 					<Add option="-ldl" />
 					<Add option="-lpthread" />
+<<<<<<< HEAD
 					<Add library="..\..\lib\libdesteer.a" />
 					<Add library="..\..\..\LikeMagic-All\irrlicht\lib\Linux\libIrrlicht.a" />
+=======
+					<Add library="../../lib/libdesteer.a" />
+					<Add library="../../../irrlicht/lib/Linux/libIrrlicht.a" />
+>>>>>>> add-to-likemagic
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+<<<<<<< HEAD
 			<Add directory="..\..\include" />
 			<Add directory="include" />
+=======
+			<Add directory="../../include" />
+			<Add directory="../irrlicht/include" />
+>>>>>>> add-to-likemagic
 		</Compiler>
 		<Unit filename="source\IrrlichtBaseEntity.hpp" />
 		<Unit filename="source\IrrlichtMobileEntity.cpp" />

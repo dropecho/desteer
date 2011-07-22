@@ -156,5 +156,5 @@ void SimpleSteeringController::SetObstacles(EntityGroup &obstacles)
 
 void SimpleSteeringController::SetBehaviorFlag(EBEHAVIOR_FLAG flag, bool active)
 {
-    _behaviorFlags = active ? _behaviorFlags | flag :  _behaviorFlags ^ flag;
+    _behaviorFlags = active ? _behaviorFlags | flag :  _behaviorFlags & ~flag;
 }
