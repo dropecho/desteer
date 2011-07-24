@@ -33,6 +33,18 @@
 					<Add option="-s" />
 				</Linker>
 			</Target>
+			<Target title="DropEcho-Wayup-Debug">
+				<Option output="libDESteerBindings" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-fexceptions" />
@@ -43,6 +55,7 @@
 			<Add option="-Wno-unused-parameter" />
 			<Add option="-Wno-deprecated" />
 			<Add option="-Wno-ignored-qualifiers" />
+			<Add option="-DUSE_DELEGATES_HACK" />
 			<Add directory="../../boost" />
 			<Add directory="../../LikeMagic/Include" />
 			<Add directory="../../io/_build/headers" />

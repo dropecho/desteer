@@ -1,5 +1,7 @@
 #include "desteer/behavior/ObstacleAvoidanceBehavior.hpp"
 
+#include <stdexcept>
+
 using namespace desteer;
 using namespace behavior;
 using namespace entity;
