@@ -16,7 +16,10 @@ ArriveBehavior::ArriveBehavior(vector3df target,IMobileEntity * mob ,float arriv
 
 vector3df ArriveBehavior::Calculate()
 {
+
     vector3df toTarget = _target - _mob->Position();
+    vector3df toTargetUnit = toTarget;
+    toTargetUnit.normalize();
 
     float distanceToTarget = toTarget.getLength();
 
@@ -25,12 +28,10 @@ vector3df ArriveBehavior::Calculate()
         return (vector3df(0,0,0) - (_mob->Velocity() * _mob->MaxForce()));
     }
 
-    if(distanceToTarget > ROUNDING_ERROR_f32 )
+    if(distanceToTarget > ROUNDING_ERROR_f32)
     {
-        //.6 is medium decelleration
         float speed = distanceToTarget / _decceleration;
 
-        //truncate speed to max
         speed = min_(speed, _mob->MaxSpeed());
 
         return (toTarget * (speed/distanceToTarget)) - _mob->Velocity();

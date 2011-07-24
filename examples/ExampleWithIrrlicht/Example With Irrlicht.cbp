@@ -6,7 +6,7 @@
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
-			<Target title="Debug">
+			<Target title="Win32">
 				<Option platforms="Windows;" />
 				<Option output="bin\Example With Irrlicht" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="bin" />
@@ -17,19 +17,7 @@
 					<Add option="-g" />
 				</Compiler>
 			</Target>
-			<Target title="Release">
-				<Option output="bin\Release\Example With Irrlicht" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Release\" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-O2" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
-			</Target>
-			<Target title="Debug-Linux">
+			<Target title="Linux">
 				<Option platforms="Unix;" />
 				<Option output="bin\Example With Irrlicht" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="bin" />
@@ -48,25 +36,17 @@
 					<Add option="-lX11" />
 					<Add option="-ldl" />
 					<Add option="-lpthread" />
-<<<<<<< HEAD
-					<Add library="..\..\lib\libdesteer.a" />
 					<Add library="..\..\..\LikeMagic-All\irrlicht\lib\Linux\libIrrlicht.a" />
-=======
-					<Add library="../../lib/libdesteer.a" />
-					<Add library="../../../irrlicht/lib/Linux/libIrrlicht.a" />
->>>>>>> add-to-likemagic
+					<Add library="..\..\lib\libdesteer.a" />
+					<Add library="..\..\..\irrlicht\lib\Linux\libIrrlicht.a" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-<<<<<<< HEAD
-			<Add directory="..\..\include" />
 			<Add directory="include" />
-=======
-			<Add directory="../../include" />
-			<Add directory="../irrlicht/include" />
->>>>>>> add-to-likemagic
+			<Add directory="..\..\include" />
+			<Add directory="..\irrlicht\include" />
 		</Compiler>
 		<Unit filename="source\IrrlichtBaseEntity.hpp" />
 		<Unit filename="source\IrrlichtMobileEntity.cpp" />
