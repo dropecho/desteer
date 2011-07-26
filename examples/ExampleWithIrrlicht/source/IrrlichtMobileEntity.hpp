@@ -12,6 +12,8 @@ private:
 	irr::scene::ISceneNode* _node;
 
 	controller::ISteeringController *_steering;
+
+	irr::core::vector3df _steeringForce;
 public:
     IrrlichtMobileEntity(irr::scene::ISceneNode* node,
                          irr::core::vector3df position = irr::core::vector3df(0,0,0),
@@ -35,6 +37,8 @@ public:
 
 	virtual irr::core::vector3df ForwardVector() const;
 	virtual void SetForwardVector(irr::core::vector3df forward);
+
+	irr::core::vector3df SteeringVector() const;
 
     virtual irr::core::vector3df transformWorldVectToLocal(irr::core::vector3df vec);
 	virtual irr::core::vector3df transformLocalVectToWorld(irr::core::vector3df vec);

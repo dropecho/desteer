@@ -18,17 +18,17 @@
 1306297465 d:\programming\projects\desteer\include\desteer\entity\ibaseentity.hpp
 	"irrvector/vector3d.h"
 
-1306297465 d:\programming\projects\desteer\include\irrvector\vector3d.h
+1287931378 d:\programming\projects\desteer\include\irrvector\vector3d.h
 	"irrMath.h"
 
-1306297465 d:\programming\projects\desteer\include\irrvector\irrmath.h
+1311656892 d:\programming\projects\desteer\include\irrvector\irrmath.h
 	"irrTypes.h"
 	<math.h>
 	<float.h>
 	<stdlib.h>
 	<limits.h>
 
-1306297465 d:\programming\projects\desteer\include\irrvector\irrtypes.h
+1311656899 d:\programming\projects\desteer\include\irrvector\irrtypes.h
 	<wchar.h>
 	<crtdbg.h>
 	"assert.h"
@@ -74,17 +74,17 @@
 	"desteer/Types.hpp"
 	"desteer/entity/IMobileEntity.hpp"
 
-1306297465 source:d:\programming\projects\desteer\source\obstacleavoidancebehavior.cpp
+1311660711 source:d:\programming\projects\desteer\source\obstacleavoidancebehavior.cpp
 	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
 
 1306297465 d:\programming\projects\desteer\include\desteer\behavior\obstacleavoidancebehavior.hpp
 	"ISteeringBehavior.hpp"
 	"desteer/Types.hpp"
 
-1306297465 source:d:\programming\projects\desteer\source\wanderbehavior.cpp
+1311657131 source:d:\programming\projects\desteer\source\wanderbehavior.cpp
 	"desteer/behavior/WanderBehavior.hpp"
 
-1306297465 d:\programming\projects\desteer\include\desteer\behavior\wanderbehavior.hpp
+1311662082 d:\programming\projects\desteer\include\desteer\behavior\wanderbehavior.hpp
 	"ISteeringBehavior.hpp"
 
 1311317996 source:d:\programming\projects\desteer\source\evadebehavior.cpp

@@ -32,13 +32,14 @@ vector3df ObstacleAvoidanceBehavior::Calculate()
     for(EntityIterator currentObs = _obstacles.begin(); currentObs != _obstacles.end(); ++currentObs)
     {
         localPos = _mob->transformWorldVectToLocal((*currentObs)->Position());
+        float curRadius = (*currentObs)->Radius();
 
         bool inFront = localPos.Z >= 0;
-        bool nearby = localPos.Z < detectLength;
+        bool near = localPos.Z < detectLength;
 
-        if(inFront && nearby)
+        if(inFront && near)
         {
-            bool intersecting = (fabs(localPos.X) - ((*currentObs)->Radius() * .75) < _mob->Radius());
+            bool intersecting = (fabs(localPos.X) - (curRadius * .75) < _mob->Radius());
             if(intersecting)
             {
                 if(localPos.getLength() < distToClosest)
@@ -52,13 +53,16 @@ vector3df ObstacleAvoidanceBehavior::Calculate()
 
     if(closestHitObstacle)
     {
+        localPos = _mob->transformWorldVectToLocal(closestHitObstacle->Position());
         vector3df steeringForce = vector3df(0,0,0);
 
         float multiplier = 1.0 + ( detectLength - localPos.Z ) / detectLength;
         float distToEdge = ( closestHitObstacle->Radius() - localPos.Z );
-        steeringForce.X = distToEdge * multiplier;
-        steeringForce.Z = distToEdge * .02;
+        //steeringForce.X = distToEdge * multiplier;
+        //steeringForce.Z = distToEdge * .02;
 
+        steeringForce.X = (localPos.X - _mob->Radius()) + _mob->Radius();
+        steeringForce.Z = distToEdge;
         return _mob->transformLocalVectToWorld(steeringForce);
     }
     return vector3df(0,0,0);
