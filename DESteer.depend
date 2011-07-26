@@ -125,7 +125,10 @@
 1311318001 source:d:\programming\projects\desteer\source\seekbehavior.cpp
 	"desteer/behavior/SeekBehavior.hpp"
 
-1311318001 source:d:\programming\projects\desteer\source\simplesteeringcontroller.cpp
+1311562738 source:d:\programming\projects\desteer\source\simplesteeringcontroller.cpp
 	"desteer/controller/SimpleSteeringController.hpp"
 	"desteer/Types.hpp"
+
+1311552426 source:d:\programming\projects\desteer\source\arrivebehavior.cpp
+	"desteer/behavior/ArriveBehavior.hpp"
 

@@ -16,16 +16,23 @@ ArriveBehavior::ArriveBehavior(vector3df target,IMobileEntity * mob ,float arriv
 
 vector3df ArriveBehavior::Calculate()
 {
-
     vector3df toTarget = _target - _mob->Position();
-    vector3df toTargetUnit = toTarget;
-    toTargetUnit.normalize();
+
 
     float distanceToTarget = toTarget.getLength();
+    float currentSpeed = _mob->Velocity().getLength();
 
-    if(distanceToTarget < _arriveTolerance)
+    float timeToStop = currentSpeed / _mob->MaxForce();
+    float timeToTarget = distanceToTarget / currentSpeed;
+
+    if(distanceToTarget < _mob->Radius())
     {
-        return (vector3df(0,0,0) - (_mob->Velocity() * _mob->MaxForce()));
+        return vector3df(0,0,0) - (_mob->Velocity() * (_mob->Radius() + _arriveTolerance));
+    }
+
+    if(timeToStop >= timeToTarget)
+    {
+        return toTarget + ( toTarget - (_mob->Velocity() / timeToTarget));
     }
 
     if(distanceToTarget > ROUNDING_ERROR_f32)
