@@ -11,6 +11,9 @@
 !examples/lib/*
 !examples/bin/win32-gcc/*.dll
 
+#dsstore
+.DS_Store
+
 # Ignore crap codeblocks files
 *.depend~
 *.layout~
