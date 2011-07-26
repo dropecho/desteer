@@ -2,6 +2,7 @@
 #include "irrlicht/irrlicht.h"
 #include "IrrlichtMobileEntity.hpp"
 #include "IrrlichtBaseEntity.hpp"
+#include "ResPath.hpp"
 
 using namespace irr;
 using namespace core;
@@ -12,8 +13,12 @@ using namespace entity;
 using namespace behavior;
 using namespace controller;
 
-int main()
+int main(int argc, char *argv[])
 {
+    
+
+
+    
 	IrrlichtDevice *device = createDevice( video::EDT_OPENGL, dimension2d<u32>(1024, 768), 32, false, false, true, 0);
 	IVideoDriver* driver = device->getVideoDriver();
 	ISceneManager* smgr = device->getSceneManager();
@@ -28,7 +33,7 @@ int main()
     u32 tileNumber = 128;
 	IAnimatedMesh* groundMesh = smgr->addHillPlaneMesh("", dimension2d<float>(8,8),dimension2d<u32>(tileNumber,tileNumber),0,0.0f,dimension2df(0,0),dimension2df(tileNumber,tileNumber));
     IAnimatedMeshSceneNode * groundNode = smgr->addAnimatedMeshSceneNode(groundMesh);
-    groundNode->setMaterialTexture(0,driver->getTexture("../media/grid2.png"));
+    groundNode->setMaterialTexture(0,driver->getTexture(resPath("../media/grid2.png")));
     groundNode->setMaterialFlag(EMF_LIGHTING,false);
     groundNode->setPosition(vector3df(0,-2,0));
 
@@ -48,9 +53,9 @@ int main()
     ISceneNode * cube = smgr->addCubeSceneNode(4);
     ISceneNode * cube2 = smgr->addCubeSceneNode(4);
     cube->setMaterialFlag(EMF_LIGHTING,false);
-    cube->setMaterialTexture(0,driver->getTexture("../media/v1-solid.png"));
+    cube->setMaterialTexture(0,driver->getTexture(resPath("../media/v1-solid.png")));
     cube2->setMaterialFlag(EMF_LIGHTING,false);
-    cube2->setMaterialTexture(0,driver->getTexture("../media/v2-solid.png"));
+    cube2->setMaterialTexture(0,driver->getTexture(resPath("../media/v2-solid.png")));
 
     //Creating the actual vehicles
     IrrlichtMobileEntity * Entity1 = new IrrlichtMobileEntity(cube ,vector3df(0,0,0), 1, 60, 150);
