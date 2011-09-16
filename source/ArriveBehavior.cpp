@@ -18,30 +18,31 @@ vector3df ArriveBehavior::Calculate()
 {
     vector3df toTarget = _target - _mob->Position();
 
-
     float distanceToTarget = toTarget.getLength();
     float currentSpeed = _mob->Velocity().getLength();
 
-    float timeToStop = currentSpeed / _mob->MaxForce();
+    float timeToStop = currentSpeed / (_mob->MaxForce() / _mob->Mass());
     float timeToTarget = distanceToTarget / currentSpeed;
 
-    if(distanceToTarget < _mob->Radius())
+  //If the mob is "over" the position (the arrival point is within its radius) just stop.
+    if(distanceToTarget < 1)
     {
         return vector3df(0,0,0) - (_mob->Velocity() * (_mob->Radius() + _arriveTolerance));
     }
 
-    if(timeToStop >= timeToTarget)
+    //If you are within the amount of distance it takes to slow to a stop, start slowing.
+    if(timeToStop + 0.5 >= timeToTarget)
     {
-        return toTarget + ( toTarget - (_mob->Velocity() / timeToTarget));
+        //return toTarget + ( toTarget - (_mob->Velocity() / timeToTarget));
+        return -(_mob->ForwardVector()) * _mob->MaxForce();
     }
 
     if(distanceToTarget > ROUNDING_ERROR_f32)
     {
-        float speed = distanceToTarget / _decceleration;
+        //float speed = distanceToTarget / _decceleration;
+        //speed = min_(speed, _mob->MaxSpeed());
 
-        speed = min_(speed, _mob->MaxSpeed());
-
-        return (toTarget * (speed/distanceToTarget)) - _mob->Velocity();
+        return toTarget * _mob->MaxForce();//(speed/distanceToTarget)) - _mob->Velocity();
     }
 
     return vector3df(0,0,0);

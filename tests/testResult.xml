@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding='ISO-8859-1' standalone='yes' ?>
+<TestRun>
+  <SuccessfulTests>
+    <Test id="1">
+      <Name>basic test::</Name>
+    </Test>
+  </SuccessfulTests>
+  <Statistics>
+    <Tests>1</Tests>
+    <FailuresTotal>0</FailuresTotal>
+    <Errors>0</Errors>
+    <Failures>0</Failures>
+  </Statistics>
+</TestRun>

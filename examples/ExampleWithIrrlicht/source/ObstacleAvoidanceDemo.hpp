@@ -25,30 +25,31 @@ class ObstacleAvoidenceDemo
     //obstacles for entity to avoid.
     EntityGroup obstacles;
 
-    /*for(int i = 0; i < 60; i++)
+    for(int i = 0; i < 60; i++)
     {
         ISceneNode* s = smgr->addSphereSceneNode(20);
         IrrlichtBaseEntity * e = new IrrlichtBaseEntity(s);
         s->setPosition(vector3df( (rand() % randLength) - (randLength/2), 0, (rand() % randLength) - (randLength/2)));
         obstacles.push_back(e);
-    }*/
+    }
 
     //Nodes for vehicles
     ISceneNode * cube = smgr->addCubeSceneNode(4);
     cube->setMaterialFlag(EMF_LIGHTING,false);
     cube->setMaterialTexture(0,driver->getTexture(resPath("../../media/v1-solid.png")));
     //Creating the actual vehicles
-    IrrlichtMobileEntity * Entity1 = new IrrlichtMobileEntity(cube ,vector3df(0,0,0), 1, 100, 150);
+    IrrlichtMobileEntity * Entity1 = new IrrlichtMobileEntity(cube ,vector3df(0,0,0), 1, 100, 25);
 
     //Creating the steering conrollers, constructor also sets steering on entity
     SimpleSteeringController* Entity1Steering = new SimpleSteeringController(Entity1);
 
     //Setting up other params for behaviors
     Entity1Steering->SetObstacles(obstacles);
+    Entity1Steering->SetSeekTarget(vector3df(0,0,513));
 
     //Enabling behaviors
     Entity1Steering->SetBehaviorFlag(EBF_AVOID,true);
-    Entity1Steering->SetBehaviorFlag(EBF_WANDER,true);
+    Entity1Steering->SetBehaviorFlag(EBF_SEEK,true);
 
     //vars for tracking time between frames. This allows framerate independent motion state updates.
     u32 then = device->getTimer()->getTime();
@@ -85,11 +86,11 @@ class ObstacleAvoidenceDemo
         }
         if(entityPos.Z > 512)
         {
-            Entity1->SetPosition(vector3df(entityPos.Z,0,-512));
+            Entity1->SetPosition(vector3df(entityPos.X,0,-512));
         }
         if(entityPos.Z < -512)
         {
-            Entity1->SetPosition(vector3df(entityPos.Z,0,512));
+            Entity1->SetPosition(vector3df(entityPos.X,0,512));
         }
 
 

@@ -1,4 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
+	<File name="include\desteer\Types.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="435" topLine="0" />
+	</File>
+	<File name="include\desteer\behavior\ArriveBehavior.hpp" open="1" top="0" tabpos="10">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="include\desteer\behavior\ObstacleAvoidanceBehavior.hpp" open="1" top="0" tabpos="7">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="include\desteer\behavior\PursuitBehavior.hpp" open="1" top="0" tabpos="2">
+		<Cursor position="98" topLine="0" />
+	</File>
+	<File name="include\desteer\controller\SimpleSteeringController.hpp" open="1" top="0" tabpos="4">
+		<Cursor position="1127" topLine="25" />
+	</File>
+	<File name="source\ArriveBehavior.cpp" open="1" top="0" tabpos="11">
+		<Cursor position="1388" topLine="10" />
+	</File>
+	<File name="source\ObstacleAvoidanceBehavior.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="1987" topLine="24" />
+	</File>
+	<File name="source\PursuitBehavior.cpp" open="1" top="1" tabpos="3">
+		<Cursor position="1021" topLine="3" />
+	</File>
+	<File name="source\SimpleSteeringController.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="2466" topLine="53" />
+	</File>
 </CodeBlocks_layout_file>

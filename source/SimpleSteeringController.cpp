@@ -31,7 +31,6 @@ SimpleSteeringController::SimpleSteeringController(IMobileEntity* mob)
     _pursuitBehavior    = new PursuitBehavior(_pursuitTarget);
     _obsAvoidBehavior   = new ObstacleAvoidanceBehavior(_obstacles);
 
-
     _seekBehavior->SetMobile(_mob);
     _arriveBehavior->SetMobile(_mob);
     _fleeBehavior->SetMobile(_mob);
@@ -75,6 +74,7 @@ irr::core::vector3df SimpleSteeringController::Calculate()
     if(_behaviorFlags & EBF_PURSUIT)
     {
         _pursuitBehavior->SetTarget(_pursuitTarget);
+        _pursuitBehavior->SetOffset(_pursuitOffset);
         steeringForce += _pursuitBehavior->Calculate();
         if(steeringForce.getLengthSQ() > maxForceSQ)
         {
@@ -144,9 +144,10 @@ void SimpleSteeringController::SetHideTarget(entity::IMobileEntity *target)
     _hideTarget = target;
 }
 
-void SimpleSteeringController::SetPursuitTarget(entity::IMobileEntity *target)
+void SimpleSteeringController::SetPursuitTarget(entity::IMobileEntity *target, irr::core::vector3df offset)
 {
     _pursuitTarget = target;
+    _pursuitOffset = offset;
 }
 
 void SimpleSteeringController::SetObstacles(EntityGroup &obstacles)

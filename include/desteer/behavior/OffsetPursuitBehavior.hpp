@@ -1,26 +1,27 @@
 #pragma once
 #include "desteer/behavior/ISteeringBehavior.hpp"
-#include "desteer/behavior/ArriveBehavior.hpp"
+#include "desteer/behavior/PursuitBehavior.hpp"
 
 namespace desteer{
 namespace behavior{
 
-class PursuitBehavior : public ISteeringBehavior
+class OffsetPursuitBehavior : public ISteeringBehavior
 {
     private:
     entity::IMobileEntity * _mob;
     entity::IMobileEntity * _target;
     irr::core::vector3df _offset;
-    ArriveBehavior * _arriveBehavior;
+
+    PursuitBehavior * _pursuitBehavior;
 
 public:
-    PursuitBehavior(entity::IMobileEntity* target, irr::core::vector3df offset = irr::core::vector3df(0,0,0));
+    OffsetPursuitBehavior(entity::IMobileEntity* target,irr::core::vector3df offset = vector3df(0,0,0));
     irr::core::vector3df Calculate();
     void SetMobile(entity::IMobileEntity * mob);
     void SetTarget(entity::IMobileEntity * target);
-    void SetOffset(irr::core::vector3df offset);
 };
 
 
 } //end ns behavior
 } //end ns desteer
+

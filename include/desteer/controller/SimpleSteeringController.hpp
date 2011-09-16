@@ -23,7 +23,8 @@ enum EBEHAVIOR_FLAG
     EBF_SEEK    = 0x10,
     EBF_PURSUIT = 0x20,
     EBF_WANDER  = 0x40,
-    EBF_AVOID   = 0x80
+    EBF_AVOID   = 0x80,
+    EBF_OFFSET_PURSUIT = 0x100
 };
 
 class SimpleSteeringController : public ISteeringController
@@ -33,6 +34,7 @@ class SimpleSteeringController : public ISteeringController
         irr::core::vector3df        _seekTarget;
         irr::core::vector3df        _arriveTarget;
         irr::core::vector3df        _fleeTarget;
+        irr::core::vector3df        _pursuitOffset;
 
         entity::IMobileEntity *     _evadeTarget;
         entity::IMobileEntity *     _hideTarget;
@@ -50,7 +52,6 @@ class SimpleSteeringController : public ISteeringController
         behavior::WanderBehavior  * _wanderBehavior;
         behavior::ObstacleAvoidanceBehavior * _obsAvoidBehavior;
 
-
     public:
         SimpleSteeringController(entity::IMobileEntity *vehicle);
         irr::core::vector3df Calculate();
@@ -60,7 +61,7 @@ class SimpleSteeringController : public ISteeringController
         void SetSeekTarget(irr::core::vector3df target);
         void SetArriveTarget(irr::core::vector3df target);
         void SetHideTarget(entity::IMobileEntity *target);
-        void SetPursuitTarget(entity::IMobileEntity * target);
+        void SetPursuitTarget(entity::IMobileEntity * target, irr::core::vector3df offset = irr::core::vector3df(0,0,0));
 
         void SetObstacles(EntityGroup &obstacles);
     };
