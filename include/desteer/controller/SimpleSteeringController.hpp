@@ -10,6 +10,9 @@
 #include "desteer/behavior/ArriveBehavior.hpp"
 #include "desteer/behavior/HideBehavior.hpp"
 #include "desteer/behavior/ObstacleAvoidanceBehavior.hpp"
+#include "desteer/behavior/AlignmentBehavior.hpp"
+#include "desteer/behavior/SeperationBehavior.hpp"
+#include "desteer/behavior/CohesionBehavior.hpp"
 
 namespace desteer{
 namespace controller{
@@ -24,7 +27,10 @@ enum EBEHAVIOR_FLAG
     EBF_PURSUIT = 0x20,
     EBF_WANDER  = 0x40,
     EBF_AVOID   = 0x80,
-    EBF_OFFSET_PURSUIT = 0x100
+    EBF_OFFSET_PURSUIT = 0x100,
+    EBF_ALIGNMENT = 0x200,
+    EBF_COHESION = 0x400,
+    EBF_SEPERATION = 0x800
 };
 
 class SimpleSteeringController : public ISteeringController
@@ -39,9 +45,11 @@ class SimpleSteeringController : public ISteeringController
         entity::IMobileEntity *     _evadeTarget;
         entity::IMobileEntity *     _hideTarget;
         entity::IMobileEntity *     _pursuitTarget;
+        EntityGroup     _neighbors;
         EntityGroup     _obstacles;
 
         unsigned int _behaviorFlags;
+
 
         behavior::ArriveBehavior  * _arriveBehavior;
         behavior::EvadeBehavior   * _evadeBehavior;
@@ -50,6 +58,9 @@ class SimpleSteeringController : public ISteeringController
         behavior::SeekBehavior    * _seekBehavior;
         behavior::PursuitBehavior * _pursuitBehavior;
         behavior::WanderBehavior  * _wanderBehavior;
+        behavior::AlignmentBehavior  * _alignmentBehavior;
+        behavior::CohesionBehavior   * _cohesionBehavior;
+        behavior::SeperationBehavior * _seperationBehavior;
         behavior::ObstacleAvoidanceBehavior * _obsAvoidBehavior;
 
     public:
@@ -63,6 +74,7 @@ class SimpleSteeringController : public ISteeringController
         void SetHideTarget(entity::IMobileEntity *target);
         void SetPursuitTarget(entity::IMobileEntity * target, irr::core::vector3df offset = irr::core::vector3df(0,0,0));
 
+        void SetNeighbors(EntityGroup &neighbors);
         void SetObstacles(EntityGroup &obstacles);
     };
 

@@ -29,6 +29,9 @@ SimpleSteeringController::SimpleSteeringController(IMobileEntity* mob)
     _wanderBehavior     = new WanderBehavior();
     _evadeBehavior      = new EvadeBehavior(_evadeTarget);
     _pursuitBehavior    = new PursuitBehavior(_pursuitTarget);
+    _alignmentBehavior  = new AlignmentBehavior(_neighbors);
+    _seperationBehavior = new SeperationBehavior(_neighbors);
+    _cohesionBehavior   = new CohesionBehavior(_neighbors);
     _obsAvoidBehavior   = new ObstacleAvoidanceBehavior(_obstacles);
 
     _seekBehavior->SetMobile(_mob);
@@ -38,6 +41,9 @@ SimpleSteeringController::SimpleSteeringController(IMobileEntity* mob)
     _wanderBehavior->SetMobile(_mob);
     _evadeBehavior->SetMobile(_mob);
     _pursuitBehavior->SetMobile(_mob);
+    _alignmentBehavior->SetMobile(_mob);
+    _seperationBehavior->SetMobile(_mob);
+    _cohesionBehavior->SetMobile(_mob);
     _obsAvoidBehavior->SetMobile(_mob);
 
     _mob->SetSteering(this);
@@ -55,7 +61,6 @@ irr::core::vector3df SimpleSteeringController::Calculate()
         if(steeringForce.getLengthSQ() > maxForceSQ)
         {
             steeringForce.setLength(_mob->MaxForce());
-            return steeringForce;
         }
     }
 
@@ -67,7 +72,6 @@ irr::core::vector3df SimpleSteeringController::Calculate()
         if(steeringForce.getLengthSQ() > maxForceSQ)
         {
             steeringForce.setLength(_mob->MaxForce());
-            return steeringForce;
         }
     }
 
@@ -79,7 +83,6 @@ irr::core::vector3df SimpleSteeringController::Calculate()
         if(steeringForce.getLengthSQ() > maxForceSQ)
         {
             steeringForce.setLength(_mob->MaxForce());
-            return steeringForce;
         }
     }
 
@@ -90,7 +93,6 @@ irr::core::vector3df SimpleSteeringController::Calculate()
         if(steeringForce.getLengthSQ() > maxForceSQ)
         {
             steeringForce.setLength(_mob->MaxForce());
-            return steeringForce;
         }
     }
 
@@ -101,7 +103,6 @@ irr::core::vector3df SimpleSteeringController::Calculate()
         if(steeringForce.getLengthSQ() > maxForceSQ)
         {
             steeringForce.setLength(_mob->MaxForce());
-            return steeringForce;
         }
     }
 
@@ -112,7 +113,6 @@ irr::core::vector3df SimpleSteeringController::Calculate()
         if(steeringForce.getLengthSQ() > maxForceSQ)
         {
             steeringForce.setLength(_mob->MaxForce());
-            return steeringForce;
         }
     }
 
@@ -122,7 +122,36 @@ irr::core::vector3df SimpleSteeringController::Calculate()
         if(steeringForce.getLengthSQ() > maxForceSQ)
         {
             steeringForce.setLength(_mob->MaxForce());
-            return steeringForce;
+        }
+    }
+
+    if(_behaviorFlags & EBF_ALIGNMENT)
+    {
+        _alignmentBehavior->SetNeighbors(_neighbors);
+        steeringForce += _alignmentBehavior->Calculate();
+        if(steeringForce.getLengthSQ() > maxForceSQ)
+        {
+            steeringForce.setLength(_mob->MaxForce());
+        }
+    }
+
+    if(_behaviorFlags & EBF_COHESION)
+    {
+        _cohesionBehavior->SetNeighbors(_neighbors);
+        steeringForce += _cohesionBehavior->Calculate();
+        if(steeringForce.getLengthSQ() > maxForceSQ)
+        {
+            steeringForce.setLength(_mob->MaxForce());
+        }
+    }
+
+    if(_behaviorFlags & EBF_SEPERATION)
+    {
+        _seperationBehavior->SetNeighbors(_neighbors);
+        steeringForce += _seperationBehavior->Calculate();
+        if(steeringForce.getLengthSQ() > maxForceSQ)
+        {
+            steeringForce.setLength(_mob->MaxForce());
         }
     }
 
@@ -148,6 +177,11 @@ void SimpleSteeringController::SetPursuitTarget(entity::IMobileEntity *target, i
 {
     _pursuitTarget = target;
     _pursuitOffset = offset;
+}
+
+void SimpleSteeringController::SetNeighbors(EntityGroup &neighbors)
+{
+    _neighbors = neighbors;
 }
 
 void SimpleSteeringController::SetObstacles(EntityGroup &obstacles)

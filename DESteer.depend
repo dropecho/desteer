@@ -102,7 +102,7 @@
 1311652992 d:\programming\projects\desteer\include\desteer\controller\fluentsimplecontroller.hpp
 	"SimpleSteeringController.hpp"
 
-1316041195 d:\programming\projects\desteer\include\desteer\controller\simplesteeringcontroller.hpp
+1316343084 d:\programming\projects\desteer\include\desteer\controller\simplesteeringcontroller.hpp
 	"desteer/controller/ISteeringController.hpp"
 	"desteer/behavior/SeekBehavior.hpp"
 	"desteer/behavior/FleeBehavior.hpp"
@@ -112,6 +112,9 @@
 	"desteer/behavior/ArriveBehavior.hpp"
 	"desteer/behavior/HideBehavior.hpp"
 	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
+	"desteer/behavior/AlignmentBehavior.hpp"
+	"desteer/behavior/SeperationBehavior.hpp"
+	"desteer/behavior/CohesionBehavior.hpp"
 
 1311652992 d:\programming\projects\desteer\include\desteer\behavior\seekbehavior.hpp
 	"ISteeringBehavior.hpp"
@@ -120,17 +123,17 @@
 	"desteer/behavior/ISteeringBehavior.hpp"
 	"desteer/behavior/ArriveBehavior.hpp"
 
-1316048617 source:d:\programming\projects\desteer\source\pursuitbehavior.cpp
+1316061206 source:d:\programming\projects\desteer\source\pursuitbehavior.cpp
 	"desteer/behavior/PursuitBehavior.hpp"
 
 1311652992 source:d:\programming\projects\desteer\source\seekbehavior.cpp
 	"desteer/behavior/SeekBehavior.hpp"
 
-1316042294 source:d:\programming\projects\desteer\source\simplesteeringcontroller.cpp
+1316346352 source:d:\programming\projects\desteer\source\simplesteeringcontroller.cpp
 	"desteer/controller/SimpleSteeringController.hpp"
 	"desteer/Types.hpp"
 
-1316049159 source:d:\programming\projects\desteer\source\arrivebehavior.cpp
+1316060562 source:d:\programming\projects\desteer\source\arrivebehavior.cpp
 	"desteer/behavior/ArriveBehavior.hpp"
 
 1316040225 source:d:\programming\projects\desteer\source\offsetpursuitbehavior.cpp
@@ -139,4 +142,29 @@
 1316040204 d:\programming\projects\desteer\include\desteer\behavior\offsetpursuitbehavior.hpp
 	"desteer/behavior/ISteeringBehavior.hpp"
 	"desteer/behavior/PursuitBehavior.hpp"
+
+1316236497 d:\programming\projects\desteer\include\desteer\behavior\alignmentbehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+
+1316236401 source:d:\programming\projects\desteer\source\alignmentbehavior.cpp
+	"desteer/behavior/AlignmentBehavior.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+
+1316344068 source:d:\programming\projects\desteer\source\cohesionbehavior.cpp
+	"desteer/behavior/CohesionBehavior.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+
+1316334534 d:\programming\projects\desteer\include\desteer\behavior\cohesionbehavior.hpp
+	"ISteeringBehavior.hpp"
+	"ArriveBehavior.hpp"
+	"desteer/Types.hpp"
+
+1316346910 source:d:\programming\projects\desteer\source\seperationbehavior.cpp
+	"desteer/behavior/SeperationBehavior.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+
+1316334581 d:\programming\projects\desteer\include\desteer\behavior\seperationbehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
 
