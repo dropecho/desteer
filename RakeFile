@@ -1,0 +1,10 @@
+CURRENT_ENV = ENV['os']
+TARGETS = {"Windows_NT" => "win32"}
+
+namespace "ci" do
+	desc "Continous Integration Build Task"
+	task :build do
+		puts "Starting CI Build on #{CURRENT_ENV}."
+		sh "codeblocks --build *.workspace --target=#{TARGETS[CURRENT_ENV]}"
+	end
+end
