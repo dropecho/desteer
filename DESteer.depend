@@ -41,7 +41,7 @@
 	<stdlib.h>
 	<limits.h>
 
-1316626202 
+1311317996 
 
 1316626202 d:\programming\projects\desteer\include\irrvector\irrtypes.h
 	<wchar.h>
@@ -121,8 +121,6 @@
 1311317996 source:d:\programming\projects\desteer\source\evadebehavior.cpp
 	"desteer/behavior/EvadeBehavior.hpp"
 	<cassert>
-
-1311317996 
 
 1311317996 source:d:\programming\projects\desteer\source\fleebehavior.cpp
 	"desteer/behavior/FleeBehavior.hpp"
@@ -373,4 +371,173 @@
 
 1317172510 source:/home/kaeles/Code/desteer/source/WanderBehavior.cpp
 	"desteer/behavior/WanderBehavior.hpp"
+
+1317172510 source:/home/kaeles/code/desteer/source/AlignmentBehavior.cpp
+	"desteer/behavior/AlignmentBehavior.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/behavior/AlignmentBehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/behavior/ISteeringBehavior.hpp
+	"desteer/entity/IMobileEntity.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/entity/IMobileEntity.hpp
+	"desteer/entity/IBaseEntity.hpp"
+	"desteer/entity/IEntitySpace.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/entity/IBaseEntity.hpp
+	"irrvector/vector3d.h"
+
+1317172510 /home/kaeles/code/desteer/include/irrvector/vector3d.h
+	<iostream>
+	"irrMath.h"
+
+1317172510 /home/kaeles/code/desteer/include/irrvector/irrMath.h
+	"irrTypes.h"
+	<math.h>
+	<float.h>
+	<stdlib.h>
+	<limits.h>
+
+1317172510 /home/kaeles/code/desteer/include/irrvector/irrTypes.h
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1317172510 /home/kaeles/code/desteer/include/desteer/entity/IEntitySpace.hpp
+	"irrvector/vector3d.h"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/Types.hpp
+	<vector>
+	<iterator>
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/behavior/ISteeringBehavior.hpp"
+
+1317172510 source:/home/kaeles/code/desteer/source/ArriveBehavior.cpp
+	"desteer/behavior/ArriveBehavior.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/behavior/ArriveBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1317172510 source:/home/kaeles/code/desteer/source/CohesionBehavior.cpp
+	"desteer/behavior/CohesionBehavior.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/behavior/CohesionBehavior.hpp
+	"ISteeringBehavior.hpp"
+	"ArriveBehavior.hpp"
+	"desteer/Types.hpp"
+
+1317172510 source:/home/kaeles/code/desteer/source/EvadeBehavior.cpp
+	"desteer/behavior/EvadeBehavior.hpp"
+	<cassert>
+
+1317172510 /home/kaeles/code/desteer/include/desteer/behavior/EvadeBehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/FleeBehavior.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/behavior/FleeBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1317172510 source:/home/kaeles/code/desteer/source/FleeBehavior.cpp
+	"desteer/behavior/FleeBehavior.hpp"
+	<cassert>
+
+1317172510 source:/home/kaeles/code/desteer/source/FluentSimpleController.cpp
+	"desteer/controller/FluentSimpleController.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/controller/FluentSimpleController.hpp
+	"SimpleSteeringController.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/controller/SimpleSteeringController.hpp
+	"desteer/controller/ISteeringController.hpp"
+	"desteer/behavior/SeekBehavior.hpp"
+	"desteer/behavior/FleeBehavior.hpp"
+	"desteer/behavior/WanderBehavior.hpp"
+	"desteer/behavior/PursuitBehavior.hpp"
+	"desteer/behavior/EvadeBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+	"desteer/behavior/HideBehavior.hpp"
+	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
+	"desteer/behavior/AlignmentBehavior.hpp"
+	"desteer/behavior/SeperationBehavior.hpp"
+	"desteer/behavior/CohesionBehavior.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/controller/ISteeringController.hpp
+	"irrvector/vector3d.h"
+	"desteer/Types.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/behavior/SeekBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/behavior/WanderBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/behavior/PursuitBehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/behavior/HideBehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+	"desteer/behavior/EvadeBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/behavior/ObstacleAvoidanceBehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/behavior/SeperationBehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+
+1317172510 source:/home/kaeles/code/desteer/source/HideBehavior.cpp
+	"desteer/behavior/HideBehavior.hpp"
+
+1317172510 source:/home/kaeles/code/desteer/source/InterposeBehavior.cpp
+	"desteer/behavior/InterposeBehavior.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/behavior/InterposeBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1317172510 source:/home/kaeles/code/desteer/source/ModularSteeringController.cpp
+	"desteer/controller/ModularSteeringController.hpp"
+
+1317172510 /home/kaeles/code/desteer/include/desteer/controller/ModularSteeringController.hpp
+	"ISteeringController.hpp"
+	"desteer/Types.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/behavior/ISteeringBehavior.hpp"
+
+1317172510 source:/home/kaeles/code/desteer/source/ObstacleAvoidanceBehavior.cpp
+	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
+
+1317172510 source:/home/kaeles/code/desteer/source/PursuitBehavior.cpp
+	"desteer/behavior/PursuitBehavior.hpp"
+
+1317172510 source:/home/kaeles/code/desteer/source/SeekBehavior.cpp
+	"desteer/behavior/SeekBehavior.hpp"
+
+1317172510 source:/home/kaeles/code/desteer/source/SeperationBehavior.cpp
+	"desteer/behavior/SeperationBehavior.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+
+1317172510 source:/home/kaeles/code/desteer/source/SimpleSteeringController.cpp
+	"desteer/controller/SimpleSteeringController.hpp"
+	"desteer/Types.hpp"
+
+1317172510 source:/home/kaeles/code/desteer/source/WanderBehavior.cpp
+	"desteer/behavior/WanderBehavior.hpp"
+
+1317399142 source:/home/kaeles/code/desteer/source/octree.cpp
+	"desteer/spatial/octree.hpp"
+
+1317399084 /home/kaeles/code/desteer/include/desteer/spatial/octree.hpp
+	"desteer/entity/IBaseEntity.hpp"
+	<vector>
 
