@@ -57,10 +57,11 @@ irr::core::vector3df SimpleSteeringController::Calculate()
     if(_behaviorFlags & EBF_AVOID)
     {
         _obsAvoidBehavior->SetObstacles(_obstacles);
-        steeringForce += _obsAvoidBehavior->Calculate();
+        steeringForce += _obsAvoidBehavior->Calculate() * _mob->MaxForce();
         if(steeringForce.getLengthSQ() > maxForceSQ)
         {
             steeringForce.setLength(_mob->MaxForce());
+            return steeringForce;
         }
     }
 
@@ -96,15 +97,15 @@ irr::core::vector3df SimpleSteeringController::Calculate()
         }
     }
 
-    if(_behaviorFlags & EBF_SEEK)
-    {
-        _seekBehavior->SetTarget(_seekTarget);
-        steeringForce += _seekBehavior->Calculate();
-        if(steeringForce.getLengthSQ() > maxForceSQ)
-        {
-            steeringForce.setLength(_mob->MaxForce());
-        }
-    }
+  if(_behaviorFlags & EBF_SEEK)
+  {
+      _seekBehavior->SetTarget(_seekTarget);
+      steeringForce += (_seekBehavior->Calculate());
+      if(steeringForce.getLengthSQ() > maxForceSQ)
+      {
+          steeringForce.setLength(_mob->MaxForce());
+      }
+  }
 
     if(_behaviorFlags & EBF_ARRIVE)
     {

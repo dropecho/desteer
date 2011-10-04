@@ -14,7 +14,7 @@ octree::octree(int maxDepth, int maxIndices, float size)
 void octree::insert(IBaseEntity *item)
 {
     //If already split, add item to a leaf node...
-    if(false)//_children)
+    if(isSplit)
     {
         // Determine which node to add index to.
 
@@ -46,6 +46,19 @@ void octree::remove(IBaseEntity *item)
 void octree::recalculateIndices()
 {
 
+}
+
+bool octree::isSplit()
+{
+    for(int i = 0; i < 8; ++i)
+    {
+        if(_children[i])
+        {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 IBaseEntity* octree::findNeighbors(IBaseEntity* item)

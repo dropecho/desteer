@@ -514,8 +514,9 @@
 	"desteer/entity/IMobileEntity.hpp"
 	"desteer/behavior/ISteeringBehavior.hpp"
 
-1317172510 source:/home/kaeles/code/desteer/source/ObstacleAvoidanceBehavior.cpp
+1317595154 source:/home/kaeles/code/desteer/source/ObstacleAvoidanceBehavior.cpp
 	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
+	<cstdio>
 
 1317172510 source:/home/kaeles/code/desteer/source/PursuitBehavior.cpp
 	"desteer/behavior/PursuitBehavior.hpp"
@@ -527,7 +528,7 @@
 	"desteer/behavior/SeperationBehavior.hpp"
 	"desteer/entity/IMobileEntity.hpp"
 
-1317172510 source:/home/kaeles/code/desteer/source/SimpleSteeringController.cpp
+1317595388 source:/home/kaeles/code/desteer/source/SimpleSteeringController.cpp
 	"desteer/controller/SimpleSteeringController.hpp"
 	"desteer/Types.hpp"
 
