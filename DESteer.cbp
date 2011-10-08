@@ -58,6 +58,10 @@
 				</Linker>
 			</Target>
 		</Build>
+		<VirtualTargets>
+			<Add alias="Linux" targets="Release;" />
+			<Add alias="Win32" targets="Release;" />
+		</VirtualTargets>
 		<Compiler>
 			<Add option="-Wall" />
 			<Add directory="include" />

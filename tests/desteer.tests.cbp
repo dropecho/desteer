@@ -21,6 +21,10 @@
 				</Linker>
 			</Target>
 		</Build>
+		<VirtualTargets>
+			<Add alias="Linux" targets="Test;" />
+			<Add alias="Win32" targets="Test;" />
+		</VirtualTargets>
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
