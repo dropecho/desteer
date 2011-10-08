@@ -17,7 +17,6 @@ namespace "ci" do
 	desc "Run tests in the continuous integration env"
 	task :tests do
 		puts "Running Tests"
-		directory 'tests/results'
 		sh "tests/bin/desteer.exe"
 	end
 end
