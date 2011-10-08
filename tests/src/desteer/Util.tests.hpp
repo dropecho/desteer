@@ -30,7 +30,8 @@ namespace tut
 
         irr::core::vector3df transformedVec = VectorTransformer::VectorTransformWorldToLocal(worldVec,forward,side,pos);
 
-        ensure_equals("<1,0,0> => <0,0,1>", transformedVec ,localVec);
+        //ensure_equals("<1,0,0> => <0,0,1>", transformedVec ,localVec);
+        ensure(transformedVec == localVec);
 	}
 
 	template<>
@@ -54,7 +55,8 @@ namespace tut
 
         irr::core::vector3df transformedVec = VectorTransformer::VectorTransformWorldToLocal(worldVec,forward,side,pos);
 
-        ensure_equals("<1,0,0> => <0,0,1>", transformedVec ,localVec);
+        //ensure_equals("<1,0,0> => <0,0,1>", transformedVec ,localVec);
+        ensure(transformedVec == localVec);
 	}
 
 	template<>
@@ -78,7 +80,8 @@ namespace tut
 
         irr::core::vector3df transformedVec = VectorTransformer::VectorTransformWorldToLocal(worldVec,forward,side,pos);
 
-        ensure_equals("<0,0,1> @ <0,0,5> => <0,0,-4>", transformedVec ,localVec);
+        //ensure_equals("<0,0,1> @ <0,0,5> => <0,0,-4>", transformedVec ,localVec);
+        ensure(transformedVec == localVec);
 	}
 
 
@@ -103,7 +106,8 @@ namespace tut
 
         irr::core::vector3df transformedVec = VectorTransformer::VectorTransformWorldToLocal(worldVec,forward,side,pos);
 
-        ensure_equals("<0,0,1> @ <0,0,-5> => <0,0,6>", transformedVec ,localVec);
+        //ensure_equals("<0,0,1> @ <0,0,-5> => <0,0,6>", transformedVec ,localVec);
+        ensure(transformedVec == localVec);
 	}
 
 	template<>
@@ -127,7 +131,8 @@ namespace tut
 
         irr::core::vector3df transformedVec = VectorTransformer::VectorTransformWorldToLocal(worldVec,forward,side,pos);
 
-        ensure_equals("<0,0,1> @ <1,0,1> => <-1,0,0>", transformedVec ,localVec);
+        //ensure_equals("<0,0,1> @ <1,0,1> => <-1,0,0>", transformedVec ,localVec);
+        ensure(transformedVec == localVec);
 	}
 
 	template<>
@@ -151,7 +156,8 @@ namespace tut
 
         irr::core::vector3df transformedVec = VectorTransformer::VectorTransformWorldToLocal(worldVec,forward,side,pos);
 
-        ensure_equals("<0,0,1> @ <1,0,-1> => <0,0,2>", transformedVec ,localVec);
+        //ensure_equals("<0,0,1> @ <1,0,-1> => <0,0,2>", transformedVec ,localVec);
+        ensure(transformedVec == localVec);
 	}
 }
 
@@ -184,7 +190,8 @@ namespace tut
 
         irr::core::vector3df transformedVec = VectorTransformer::VectorTransformWorldToLocal(worldVec,forward,side,pos);
 
-        ensure_equals("<1,0,0> => <0,0,1>", transformedVec ,localVec);
+        //ensure_equals("<1,0,0> => <0,0,1>", transformedVec ,localVec);
+        ensure(transformedVec == localVec);
 	}
 
 	template<>
@@ -208,7 +215,8 @@ namespace tut
 
         irr::core::vector3df transformedVec = VectorTransformer::VectorTransformWorldToLocal(worldVec,forward,side,pos);
 
-        ensure_equals("<1,0,0> => <0,0,1>", transformedVec ,localVec);
+        //ensure_equals("<1,0,0> => <0,0,1>", transformedVec ,localVec);
+        ensure(transformedVec == localVec);
 	}
 
 	template<>
@@ -232,7 +240,8 @@ namespace tut
 
         irr::core::vector3df transformedVec = VectorTransformer::VectorTransformWorldToLocal(worldVec,forward,side,pos);
 
-        ensure_equals("<0,0,1> @ <0,0,5> => <0,0,-4>", transformedVec ,localVec);
+        //ensure_equals("<0,0,1> @ <0,0,5> => <0,0,-4>", transformedVec ,localVec);
+        ensure(transformedVec == localVec);
 	}
 
 
@@ -257,7 +266,8 @@ namespace tut
 
         irr::core::vector3df transformedVec = VectorTransformer::VectorTransformWorldToLocal(worldVec,forward,side,pos);
 
-        ensure_equals("<0,0,1> @ <0,0,-5> => <0,0,6>", transformedVec ,localVec);
+        //ensure_equals("<0,0,1> @ <0,0,-5> => <0,0,6>", transformedVec ,localVec);
+        ensure(transformedVec == localVec);
 	}
 
 	template<>
@@ -281,7 +291,8 @@ namespace tut
 
         irr::core::vector3df transformedVec = VectorTransformer::VectorTransformWorldToLocal(worldVec,forward,side,pos);
 
-        ensure_equals("<0,0,1> @ <1,0,1> => <-1,0,0>", transformedVec ,localVec);
+        //ensure_equals("<0,0,1> @ <1,0,1> => <-1,0,0>", transformedVec ,localVec);
+        ensure(transformedVec == localVec);
 	}
 
 	template<>
@@ -305,7 +316,8 @@ namespace tut
 
         irr::core::vector3df transformedVec = VectorTransformer::VectorTransformWorldToLocal(worldVec,forward,side,pos);
 
-        ensure_equals("<0,0,1> @ <1,0,-1> => <0,0,2>", transformedVec ,localVec);
+        //ensure_equals("<0,0,1> @ <1,0,-1> => <0,0,2>", transformedVec ,localVec);
+        ensure(transformedVec == localVec);
 	}
 }
 
