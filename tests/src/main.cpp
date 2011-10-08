@@ -9,7 +9,7 @@ namespace tut
 
 int main()
 {
-	tut::cppunit_reporter reporter();
+	tut::cppunit_reporter reporter;
 	tut::runner.get().set_callback(&reporter);
 
 	tut::runner.get().run_tests();
