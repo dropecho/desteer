@@ -57,7 +57,6 @@ namespace tut
 
         //ensure_equals("<1,0,0> => <0,0,1>", transformedVec ,localVec);
         ensure(transformedVec == localVec);
-
 	}
 
 	template<>
@@ -321,4 +320,3 @@ namespace tut
         ensure(transformedVec == localVec);
 	}
 }
-

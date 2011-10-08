@@ -8,6 +8,7 @@
 		<Build>
 			<Target title="Test">
 				<Option output="bin\desteer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\" />
 				<Option object_output="obj\" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -21,6 +22,10 @@
 				</Linker>
 			</Target>
 		</Build>
+		<VirtualTargets>
+			<Add alias="Linux" targets="Test;" />
+			<Add alias="Win32" targets="Test;" />
+		</VirtualTargets>
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
