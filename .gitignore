@@ -13,7 +13,7 @@
 !examples/**/bin/**/*
 
 #ignore test result files
-tests/results/*.xml
+tests/bin/*.xml
 
 # Ignore crap codeblocks files
 *.depend
