@@ -8,20 +8,13 @@
 *.lib
 
 #don't ignore example libs
-!examples/lib/*
-!examples/bin/win32-gcc/*.dll
+!examples/**/lib/*
+!examples/**/lib/**/*
+!examples/**/bin/**/*
 
-#dsstore
-.DS_Store
+#ignore test result files
+tests/results/*
 
 # Ignore crap codeblocks files
-*.depend~
-*.layout~
-
-# Ignore doxygen output (which can be quite sizeable).
-doxygen/*
-*.html
-*.tex
-*.eps
-# (But don't ignore .xml, because that is used by netbeans projects)
-
+*.depend
+*.layout
