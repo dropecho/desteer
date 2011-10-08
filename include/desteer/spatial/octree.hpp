@@ -13,11 +13,11 @@ private:
     int _maxDepth;
     int _maxIndices;
     float _size;
-
 public:
     octree(int maxDepth = 8, int maxIndices = 36, float size = 256.0f);
     void insert(entity::IBaseEntity* item);
     void remove(entity::IBaseEntity* item);
+    bool isSplit();
 
     void recalculateIndices();
     entity::IBaseEntity* findNeighbors(entity::IBaseEntity* item);

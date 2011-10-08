@@ -1,5 +1,7 @@
 #include "desteer/behavior/ObstacleAvoidanceBehavior.hpp"
 
+#include <cstdio>
+
 using namespace desteer;
 using namespace behavior;
 using namespace entity;
@@ -27,19 +29,18 @@ vector3df ObstacleAvoidanceBehavior::Calculate()
     IBaseEntity* closestHitObstacle = NULL;
     vector3df localPos = vector3df(0,0,0);
     float distToClosest = 16487654;
-    float detectLength = 40 + (_mob->Velocity().getLength()/1.5); //_mob->MaxSpeed() / 5
-
+    float detectLength = _mob->Velocity().getLength();
     for(EntityIterator currentObs = _obstacles.begin(); currentObs != _obstacles.end(); ++currentObs)
     {
         localPos = _mob->transformWorldVectToLocal((*currentObs)->Position());
         float curRadius = (*currentObs)->Radius();
 
         bool inFront = localPos.Z >= 0;
-        bool near = localPos.Z < detectLength;
+        bool near = (localPos.Z - curRadius) < detectLength;
 
         if(inFront && near)
         {
-            bool intersecting = (fabs(localPos.X) - (curRadius * .75) < _mob->Radius());
+            bool intersecting = (fabs(localPos.X) - (curRadius) < _mob->Radius());
             if(intersecting)
             {
                 if(localPos.getLength() < distToClosest)
@@ -60,8 +61,8 @@ vector3df ObstacleAvoidanceBehavior::Calculate()
 
         f32 maxForce = _mob->MaxForce();
         f32 maxSpeed = _mob->MaxSpeed();
-        steeringForce.X = localPos.X >= 0 ? -maxSpeed : maxSpeed;
-        steeringForce.Z = -distToEdge * 10000;
+        steeringForce.X = localPos.X >= 0 ? -maxForce * 9000 : maxForce * 9000;
+        steeringForce.Z = -maxForce + (-maxForce * 1/distToClosest);
         return _mob->transformLocalVectToWorld(steeringForce);
     }
     return vector3df(0,0,0);
