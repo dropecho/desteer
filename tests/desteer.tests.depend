@@ -5,7 +5,7 @@
 	<tut/tut_cppunit_reporter.hpp>
 	<iostream>
 
-1246361698 d:\programming\projects\desteer\tests\include\tut\tut.hpp
+1316626202 d:\programming\projects\desteer\tests\include\tut\tut.hpp
 	<iostream>
 	<map>
 	<vector>
@@ -23,14 +23,14 @@
 	<windows.h>
 	<winbase.h>
 
-1233445198 d:\programming\projects\desteer\tests\include\tut\tut_exception.hpp
+1316626202 d:\programming\projects\desteer\tests\include\tut\tut_exception.hpp
 	<stdexcept>
 	"tut_result.hpp"
 
-1233445198 d:\programming\projects\desteer\tests\include\tut\tut_result.hpp
+1316626202 d:\programming\projects\desteer\tests\include\tut\tut_result.hpp
 	<string>
 
-1233318564 d:\programming\projects\desteer\tests\include\tut\tut_posix.hpp
+1316626202 d:\programming\projects\desteer\tests\include\tut\tut_posix.hpp
 	<errno.h>
 	<unistd.h>
 	<signal.h>
@@ -46,43 +46,44 @@
 	"tut_assert.hpp"
 	"tut_runner.hpp"
 
-1236191966 d:\programming\projects\desteer\tests\include\tut\tut_assert.hpp
+1316626202 d:\programming\projects\desteer\tests\include\tut\tut_assert.hpp
 	"tut_exception.hpp"
 	<limits>
 	<iomanip>
 	<errno.h>
 	<cstring>
 
-1233445198 d:\programming\projects\desteer\tests\include\tut\tut_runner.hpp
+1316626202 d:\programming\projects\desteer\tests\include\tut\tut_runner.hpp
 	<string>
 	<vector>
 	<set>
 	"tut_exception.hpp"
 
-1233317752 d:\programming\projects\desteer\tests\include\tut\tut_cppunit_reporter.hpp
+1316626202 d:\programming\projects\desteer\tests\include\tut\tut_cppunit_reporter.hpp
 	<tut/tut.hpp>
 	<string>
 	<fstream>
 	<vector>
 	<stdexcept>
 
-1312251866 source:d:\programming\projects\desteer\tests\src\main.cpp
-	<tut/tut_console_reporter.hpp>
+1318048180 source:d:\programming\projects\desteer\tests\src\main.cpp
+	<tut/tut_cppunit_reporter.hpp>
 	"tests.hpp"
 
-1233445198 d:\programming\projects\desteer\tests\include\tut\tut_console_reporter.hpp
+1316626202 d:\programming\projects\desteer\tests\include\tut\tut_console_reporter.hpp
 	<tut/tut.hpp>
 	<cassert>
 
-1312251753 d:\programming\projects\desteer\tests\src\tests.hpp
+1318039792 d:\programming\projects\desteer\tests\src\tests.hpp
+	"desteer/spatial/Octree.tests.hpp"
 	"desteer/Util.tests.hpp"
 
-1312658792 d:\programming\projects\desteer\tests\src\desteer\util.tests.hpp
+1318039650 d:\programming\projects\desteer\tests\src\desteer\util.tests.hpp
 	"desteer/Util.hpp"
 	<iostream>
 	<tut/tut.hpp>
 
-1312657709 d:\programming\projects\desteer\include\desteer\util.hpp
+1318039587 d:\programming\projects\desteer\include\desteer\util.hpp
 	"Types.hpp"
 	"irrvector/matrix4.h"
 
@@ -99,18 +100,18 @@
 1306297465 d:\programming\projects\desteer\include\desteer\entity\ibaseentity.hpp
 	"irrvector/vector3d.h"
 
-1312254699 d:\programming\projects\desteer\include\irrvector\vector3d.h
+1316626202 d:\programming\projects\desteer\include\irrvector\vector3d.h
 	<iostream>
 	"irrMath.h"
 
-1311656892 d:\programming\projects\desteer\include\irrvector\irrmath.h
+1316626202 d:\programming\projects\desteer\include\irrvector\irrmath.h
 	"irrTypes.h"
 	<math.h>
 	<float.h>
 	<stdlib.h>
 	<limits.h>
 
-1311656899 d:\programming\projects\desteer\include\irrvector\irrtypes.h
+1316626202 d:\programming\projects\desteer\include\irrvector\irrtypes.h
 	<wchar.h>
 	<crtdbg.h>
 	"assert.h"
@@ -123,9 +124,19 @@
 1306297465 d:\programming\projects\desteer\include\desteer\behavior\isteeringbehavior.hpp
 	"desteer/entity/IMobileEntity.hpp"
 
-1312260951 d:\programming\projects\desteer\include\irrvector\matrix4.h
+1316626202 d:\programming\projects\desteer\include\irrvector\matrix4.h
 	"irrMath.h"
 	"vector3d.h"
 	<cstring>
 	<windows.h>
+
+1318039624 d:\programming\projects\desteer\tests\src\desteer\octree.tests.hpp
+	"desteer/Util.hpp"
+	<iostream>
+	<tut/tut.hpp>
+
+1318041463 d:\programming\projects\desteer\tests\src\desteer\spatial\octree.tests.hpp
+	"desteer/Util.hpp"
+	<iostream>
+	<tut/tut.hpp>
 

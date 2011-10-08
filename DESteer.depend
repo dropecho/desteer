@@ -41,7 +41,7 @@
 	<stdlib.h>
 	<limits.h>
 
-1316626202 
+1311317996 
 
 1316626202 d:\programming\projects\desteer\include\irrvector\irrtypes.h
 	<wchar.h>
@@ -121,8 +121,6 @@
 1311317996 source:d:\programming\projects\desteer\source\evadebehavior.cpp
 	"desteer/behavior/EvadeBehavior.hpp"
 	<cassert>
-
-1311317996 
 
 1311317996 source:d:\programming\projects\desteer\source\fleebehavior.cpp
 	"desteer/behavior/FleeBehavior.hpp"
@@ -373,4 +371,11 @@
 
 1317172510 source:/home/kaeles/Code/desteer/source/WanderBehavior.cpp
 	"desteer/behavior/WanderBehavior.hpp"
+
+1318038789 source:d:\programming\projects\desteer\source\octree.cpp
+	"desteer/spatial/octree.hpp"
+
+1318038704 d:\programming\projects\desteer\include\desteer\spatial\octree.hpp
+	"desteer/entity/IBaseEntity.hpp"
+	<vector>
 

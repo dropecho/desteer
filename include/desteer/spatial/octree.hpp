@@ -9,7 +9,7 @@ class octree
 {
 private:
     std::vector<entity::IBaseEntity *> _indices;
-    octree[8] _children;
+    octree** _children;
     int _maxDepth;
     int _maxIndices;
     float _size;

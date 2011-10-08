@@ -1,5 +1,4 @@
-
-#include <tut/tut_console_reporter.hpp>
+#include <tut/tut_cppunit_reporter.hpp>
 #include "tests.hpp"
 
 namespace tut
@@ -9,7 +8,7 @@ namespace tut
 
 int main()
 {
-	tut::console_reporter reporter;
+	tut::cppunit_reporter reporter("results/results.xml");
 	tut::runner.get().set_callback(&reporter);
 
 	tut::runner.get().run_tests();

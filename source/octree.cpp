@@ -8,7 +8,7 @@ using namespace std;
 
 octree::octree(int maxDepth, int maxIndices, float size)
 {
-    children = 0;
+    _children = 0;
 }
 
 void octree::insert(IBaseEntity *item)
@@ -26,7 +26,7 @@ void octree::insert(IBaseEntity *item)
         // Split the tree when it has too many indices.
         if(_indices.size() +1 >= _maxIndices)
         {
-            _children = octree[8];
+            _children = new octree*[8];
             // Recurse back onto this, as the chilren should now be existant.
             insert(item);
         }
