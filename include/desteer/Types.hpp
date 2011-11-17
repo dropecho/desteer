@@ -11,9 +11,11 @@ typedef std::vector<behavior::ISteeringBehavior *> BehaviorGroup;
 typedef std::vector<behavior::ISteeringBehavior *>::const_iterator BehaviorIterator;
 
 typedef std::vector<entity::IMobileEntity*> MobGroup;
-typedef MobGroup::const_iterator MobIterator;
+typedef MobGroup::iterator MobIterator;
+typedef MobGroup::const_iterator ConstMobIterator;
 
 typedef std::vector<entity::IBaseEntity*> EntityGroup;
-typedef EntityGroup::const_iterator EntityIterator;
+typedef EntityGroup::iterator EntityIterator;
+typedef EntityGroup::const_iterator ConstEntityIterator;
 
 }

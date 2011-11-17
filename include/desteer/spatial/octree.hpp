@@ -1,5 +1,6 @@
 #pragma once
 #include "desteer/entity/IBaseEntity.hpp"
+#include "desteer/Types.hpp"
 #include <vector>
 
 namespace desteer{
@@ -8,19 +9,22 @@ namespace spatial{
 class octree
 {
 private:
-    std::vector<entity::IBaseEntity *> _indices;
+    EntityGroup _indices;
     octree** _children;
-    int _maxDepth;
-    int _maxIndices;
+    unsigned int _maxDepth;
+    unsigned int _maxIndices;
     float _size;
 public:
-    octree(int maxDepth = 8, int maxIndices = 36, float size = 256.0f);
+    octree(unsigned int maxDepth = 8, unsigned int maxIndices = 36, float size = 256.0f);
+    ~octree();
     void insert(entity::IBaseEntity* item);
-    void remove(entity::IBaseEntity* item);
+    bool remove(entity::IBaseEntity* item);
     bool isSplit();
 
+    int indicesCount();
+
     void recalculateIndices();
-    entity::IBaseEntity* findNeighbors(entity::IBaseEntity* item);
+    EntityGroup findNeighbors(entity::IBaseEntity* item);
 };
 
 

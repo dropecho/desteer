@@ -30,7 +30,7 @@ vector3df ObstacleAvoidanceBehavior::Calculate()
     vector3df localPos = vector3df(0,0,0);
     float distToClosest = 16487654;
     float detectLength = _mob->Velocity().getLength();
-    for(EntityIterator currentObs = _obstacles.begin(); currentObs != _obstacles.end(); ++currentObs)
+    for(ConstEntityIterator currentObs = _obstacles.begin(); currentObs != _obstacles.end(); ++currentObs)
     {
         localPos = _mob->transformWorldVectToLocal((*currentObs)->Position());
         float curRadius = (*currentObs)->Radius();
@@ -57,10 +57,7 @@ vector3df ObstacleAvoidanceBehavior::Calculate()
         localPos = _mob->transformWorldVectToLocal(closestHitObstacle->Position());
         vector3df steeringForce = vector3df(0,0,0);
 
-        float distToEdge = ( closestHitObstacle->Radius() - localPos.Z );
-
         f32 maxForce = _mob->MaxForce();
-        f32 maxSpeed = _mob->MaxSpeed();
         steeringForce.X = localPos.X >= 0 ? -maxForce * 9000 : maxForce * 9000;
         steeringForce.Z = -maxForce + (-maxForce * 1/distToClosest);
         return _mob->transformLocalVectToWorld(steeringForce);

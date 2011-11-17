@@ -26,7 +26,7 @@ irr::core::vector3df AlignmentBehavior::Calculate()
 {
     vector3df AverageHeading;
 
-    for(int a = 0; a < _neighbors.size(); ++a)
+    for(unsigned int a = 0; a < _neighbors.size(); ++a)
     {
         if((_neighbors[a]!=_mob))
         {

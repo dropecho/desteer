@@ -50,7 +50,7 @@ vector3df HideBehavior::Calculate()
     float distToClosest = 16415876;
     vector3df BestHidingSpot;
 
-    for(EntityIterator currentObs = _obstacles.begin(); currentObs != _obstacles.end(); ++currentObs)
+    for(ConstEntityIterator currentObs = _obstacles.begin(); currentObs != _obstacles.end(); ++currentObs)
     {
         vector3df HidingSpot = GetHidingPosition(_target->Position(),(*currentObs));
         float sqDist = (HidingSpot - _mob->Position()).getLengthSQ();
