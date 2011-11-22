@@ -15,6 +15,8 @@ class EvadeBehavior : public ISteeringBehavior
 
 public:
     EvadeBehavior(entity::IMobileEntity* target);
+    ~EvadeBehavior();
+
     irr::core::vector3df Calculate();
     void SetMobile(entity::IMobileEntity * mob);
     void SetTarget(entity::IMobileEntity * target);

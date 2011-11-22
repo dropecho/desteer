@@ -65,6 +65,7 @@ class SimpleSteeringController : public ISteeringController
 
     public:
         SimpleSteeringController(entity::IMobileEntity *vehicle);
+        ~SimpleSteeringController();
         irr::core::vector3df Calculate();
 
         void SetBehaviorFlag(EBEHAVIOR_FLAG flag, bool active);

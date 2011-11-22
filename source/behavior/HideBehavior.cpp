@@ -20,6 +20,13 @@ HideBehavior::HideBehavior(IMobileEntity* target,EntityGroup & obstacles, float 
     _arriveBehavior->SetMobile(_mob);
 }
 
+HideBehavior::~HideBehavior()
+{
+    delete _evadeBehavior;
+    delete _arriveBehavior;
+    delete this;
+}
+
 void HideBehavior::SetMobile(IMobileEntity * mob)
 {
     _mob = mob;

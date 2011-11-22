@@ -16,6 +16,7 @@ private:
 
 public:
     CohesionBehavior( EntityGroup& neighbors, entity::IMobileEntity * mob = NULL);
+    ~CohesionBehavior();
 
     irr::core::vector3df Calculate();
     void SetMobile(entity::IMobileEntity * mob);

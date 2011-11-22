@@ -4,11 +4,28 @@ using namespace desteer;
 using namespace controller;
 using namespace behavior;
 
+FluentSimpleController::~FluentSimpleController()
+{
+    delete _seekBehavior;
+    delete _arriveBehavior;
+    delete _fleeBehavior;
+    delete _hideBehavior;
+    delete _wanderBehavior;
+    delete _evadeBehavior;
+    delete _pursuitBehavior;
+    delete _alignmentBehavior;
+    delete _seperationBehavior;
+    delete _cohesionBehavior;
+    delete _obsAvoidBehavior;
+    delete this;
+}
+
 FluentSimpleController * FluentSimpleController::WithSeek(){
     _seekBehavior = new SeekBehavior(_mob);
     SetBehaviorFlag(EBF_SEEK,true);
     return this;
 };
+
 FluentSimpleController * FluentSimpleController::WithSeek(irr::core::vector3df target){
     SetSeekTarget(target);
     return this->WithSeek();

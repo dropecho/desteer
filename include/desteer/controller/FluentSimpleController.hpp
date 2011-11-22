@@ -7,6 +7,8 @@ class FluentSimpleController : private SimpleSteeringController
 {
     public:
     FluentSimpleController();
+    ~FluentSimpleController();
+
     FluentSimpleController(entity::IMobileEntity *vehicle);
     irr::core::vector3df Calculate();
 

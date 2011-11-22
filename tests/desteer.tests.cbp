@@ -30,6 +30,8 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="src\desteer\Util.tests.hpp" />
+		<Unit filename="src\desteer\spatial\Octree.GetOctantFromVector.tests.hpp" />
+		<Unit filename="src\desteer\spatial\Octree.GetOctantUnitVector.tests.hpp" />
 		<Unit filename="src\desteer\spatial\Octree.tests.hpp" />
 		<Unit filename="src\main.cpp" />
 		<Unit filename="src\tests.hpp" />

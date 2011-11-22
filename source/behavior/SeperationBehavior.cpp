@@ -17,6 +17,7 @@ void SeperationBehavior::SetMobile(entity::IMobileEntity * mob)
 {
     _mob = mob;
 }
+
 void SeperationBehavior::SetNeighbors(EntityGroup& neighbors)
 {
     _neighbors = neighbors;
@@ -27,7 +28,7 @@ irr::core::vector3df SeperationBehavior::Calculate()
     if(_mob->Velocity().getLength() <= 1) return vector3df(0,0,0);
     vector3df SteeringForce = vector3df(0,0,0);
 
-    for(int i = 0; i < _neighbors.size(); ++i)
+    for(unsigned int i = 0; i < _neighbors.size(); ++i)
     {
         if((_neighbors[i] != _mob))
         {

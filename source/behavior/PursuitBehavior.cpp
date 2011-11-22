@@ -15,6 +15,12 @@ PursuitBehavior::PursuitBehavior(IMobileEntity * target, vector3df offset)
     _arriveBehavior = new ArriveBehavior();
 }
 
+PursuitBehavior::~PursuitBehavior()
+{
+    delete _arriveBehavior;
+    delete this;
+}
+
 vector3df PursuitBehavior::Calculate()
 {
     vector3df offsetTarget = _target->Position() + (_target->Position() - _target->transformLocalVectToWorld(_offset));

@@ -89,27 +89,28 @@
 		<Unit filename="include\desteer\entity\IEntitySpace.hpp" />
 		<Unit filename="include\desteer\entity\IMobileEntity.hpp" />
 		<Unit filename="include\desteer\entity\MobileEntity.hpp" />
+		<Unit filename="include\desteer\spatial\ISpatialQueryable.hpp" />
 		<Unit filename="include\desteer\spatial\octree.hpp" />
 		<Unit filename="include\irrvector\irrMath.h" />
 		<Unit filename="include\irrvector\irrTypes.h" />
 		<Unit filename="include\irrvector\matrix4.h" />
 		<Unit filename="include\irrvector\vector3d.h" />
-		<Unit filename="source\AlignmentBehavior.cpp" />
-		<Unit filename="source\ArriveBehavior.cpp" />
-		<Unit filename="source\CohesionBehavior.cpp" />
-		<Unit filename="source\EvadeBehavior.cpp" />
-		<Unit filename="source\FleeBehavior.cpp" />
-		<Unit filename="source\FluentSimpleController.cpp" />
-		<Unit filename="source\HideBehavior.cpp" />
-		<Unit filename="source\InterposeBehavior.cpp" />
-		<Unit filename="source\ModularSteeringController.cpp" />
-		<Unit filename="source\ObstacleAvoidanceBehavior.cpp" />
-		<Unit filename="source\PursuitBehavior.cpp" />
-		<Unit filename="source\SeekBehavior.cpp" />
-		<Unit filename="source\SeperationBehavior.cpp" />
-		<Unit filename="source\SimpleSteeringController.cpp" />
-		<Unit filename="source\WanderBehavior.cpp" />
-		<Unit filename="source\octree.cpp" />
+		<Unit filename="source\behavior\AlignmentBehavior.cpp" />
+		<Unit filename="source\behavior\ArriveBehavior.cpp" />
+		<Unit filename="source\behavior\CohesionBehavior.cpp" />
+		<Unit filename="source\behavior\EvadeBehavior.cpp" />
+		<Unit filename="source\behavior\FleeBehavior.cpp" />
+		<Unit filename="source\behavior\HideBehavior.cpp" />
+		<Unit filename="source\behavior\InterposeBehavior.cpp" />
+		<Unit filename="source\behavior\ObstacleAvoidanceBehavior.cpp" />
+		<Unit filename="source\behavior\PursuitBehavior.cpp" />
+		<Unit filename="source\behavior\SeekBehavior.cpp" />
+		<Unit filename="source\behavior\SeperationBehavior.cpp" />
+		<Unit filename="source\behavior\WanderBehavior.cpp" />
+		<Unit filename="source\controller\FluentSimpleController.cpp" />
+		<Unit filename="source\controller\ModularSteeringController.cpp" />
+		<Unit filename="source\controller\SimpleSteeringController.cpp" />
+		<Unit filename="source\spatial\octree.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

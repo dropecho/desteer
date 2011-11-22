@@ -14,6 +14,12 @@ CohesionBehavior::CohesionBehavior(EntityGroup& neighbors, entity::IMobileEntity
     SetMobile(mob);
 }
 
+CohesionBehavior::~CohesionBehavior()
+{
+    delete _arriveBehavior;
+    delete this;
+}
+
 void CohesionBehavior::SetMobile(entity::IMobileEntity * mob)
 {
     _mob = mob;

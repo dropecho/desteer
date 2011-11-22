@@ -49,6 +49,22 @@ SimpleSteeringController::SimpleSteeringController(IMobileEntity* mob)
     _mob->SetSteering(this);
 }
 
+SimpleSteeringController::~SimpleSteeringController()
+{
+    delete _seekBehavior;
+    delete _arriveBehavior;
+    delete _fleeBehavior;
+    delete _hideBehavior;
+    delete _wanderBehavior;
+    delete _evadeBehavior;
+    delete _pursuitBehavior;
+    delete _alignmentBehavior;
+    delete _seperationBehavior;
+    delete _cohesionBehavior;
+    delete _obsAvoidBehavior;
+    delete this;
+}
+
 irr::core::vector3df SimpleSteeringController::Calculate()
 {
     irr::core::vector3df steeringForce = vector3df(0,0,0);

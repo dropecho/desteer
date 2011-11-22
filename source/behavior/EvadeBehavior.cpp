@@ -15,6 +15,12 @@ EvadeBehavior::EvadeBehavior(IMobileEntity * target) : _mob(NULL)
     _fleeBehavior = new FleeBehavior(vector3df(0,0,0));
 }
 
+EvadeBehavior::~EvadeBehavior()
+{
+    delete _fleeBehavior;
+    delete this;
+}
+
 vector3df EvadeBehavior::Calculate()
 {
     assert(_mob != NULL);
