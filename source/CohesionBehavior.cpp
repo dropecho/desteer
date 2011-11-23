@@ -29,7 +29,7 @@ vector3df CohesionBehavior::Calculate()
     vector3df CenterOfMass, SteeringForce;
     if(_mob->Velocity().getLength() <= .001) return vector3df(0,0,0);
 
-    for(int i = 0;i < _neighbors.size(); ++i)
+    for(unsigned int i = 0;i < _neighbors.size(); ++i)
     {
         if((_neighbors[i] != _mob))
         {
