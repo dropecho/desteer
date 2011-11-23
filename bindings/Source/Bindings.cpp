@@ -1,5 +1,5 @@
 // LikeMagic C++ Binding Library
-// Copyright 2008-2010 Dennis Ferron
+// Copyright 2008-2011 Dennis Ferron
 // Co-founder DropEcho Studios, LLC.
 // Visit our website at dropecho.com.
 //
@@ -116,9 +116,17 @@ DLL_PUBLIC void add_bindings(RuntimeTypeSystem& type_sys)
         (transformLocalVectToWorld)
     )
 
+    LM_CLASS(Namespace::global(type_sys), MarkableObjGraph)
+
     LM_CLASS(ns_entity, ScriptedMobileEntity)
     LM_BASE(ScriptedMobileEntity, IMobileEntity)
+    LM_BASE(ScriptedMobileEntity, IBaseEntity)
+    LM_BASE(ScriptedMobileEntity, MarkableObjGraph)
     LM_CONSTR(ScriptedMobileEntity,,)
+
+    LM_FUNC(ScriptedMobileEntity,
+        (Position)
+    )
 
     // There's something strange about the conversion from
     // ScriptedMobileEntity*& to IBaseEntity* const&.
@@ -133,8 +141,6 @@ DLL_PUBLIC void add_bindings(RuntimeTypeSystem& type_sys)
     // caches the temporary copy of the value so there
     // will be something persistent for the reference to refer to.
     type_sys.add_conv<ScriptedMobileEntity*&, IBaseEntity* const&, LikeMagic::TypeConv::NumberConv>();
-
-    LM_FIELD(ScriptedMobileEntity, (OnPosition))
 
     LM_BLOCK(ScriptedMobileEntity,
 

@@ -1,7 +1,5 @@
 #include "desteer/behavior/ObstacleAvoidanceBehavior.hpp"
 
-#include <cstdio>
-
 using namespace desteer;
 using namespace behavior;
 using namespace entity;
@@ -57,7 +55,6 @@ vector3df ObstacleAvoidanceBehavior::Calculate()
         localPos = _mob->transformWorldVectToLocal(closestHitObstacle->Position());
         vector3df steeringForce = vector3df(0,0,0);
 
-        f32 maxForce = _mob->MaxForce();
         steeringForce.X = localPos.X >= 0 ? -maxForce * 9000 : maxForce * 9000;
         steeringForce.Z = -maxForce + (-maxForce * 1/distToClosest);
         return _mob->transformLocalVectToWorld(steeringForce);
