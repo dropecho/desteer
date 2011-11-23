@@ -20,7 +20,7 @@ class TestEntity : public desteer::entity::IBaseEntity
         virtual irr::core::vector3df Position() const {return _position;};
         virtual void SetPosition(irr::core::vector3df position) {_position = position;};
         virtual float Radius() const {return _radius;};
-
+        float SetRadius(float radius){_radius = radius;};
         virtual void Update(float timeElapsed){};
 };
 
@@ -175,5 +175,45 @@ void octree_tests::test<8>()
     octree->RecalculateIndices();
 
     ensure_equals("Should have 1 neighbors.",octree->GetNeighbors(entity1).size(),1);
+}
+
+template<>
+template<>
+void octree_tests::test<9>()
+{
+    set_test_name("When adding two indices in same octant and checking neighbors after one has scaled up to no longer fit and indices have been recalculated");
+    Clear();
+
+    TestEntity* entity1 = new TestEntity(irr::core::vector3df(0,0,1));
+    octree->Insert(entity1);
+
+    TestEntity* entity2 = new TestEntity(irr::core::vector3df(0,0,1));
+    octree->Insert(entity2);
+
+    entity1->SetRadius(5000);
+    octree->RecalculateIndices();
+
+    ensure_equals("Index count should now be 1",octree->IndicesCount(),1);
+    ensure_equals("Should have 1 neighbors.",octree->GetNeighbors(entity1).size(),1);
+}
+
+template<>
+template<>
+void octree_tests::test<10>()
+{
+    set_test_name("When adding two indices in same octant and checking neighbors after one has scaled down to fit and indices have been recalculated");
+    Clear();
+
+    TestEntity* entity1 = new TestEntity(irr::core::vector3df(0,0,1),5000);
+    octree->Insert(entity1);
+
+    TestEntity* entity2 = new TestEntity(irr::core::vector3df(0,0,1));
+    octree->Insert(entity2);
+
+    entity1->SetRadius(1);
+    octree->RecalculateIndices();
+
+    ensure_equals("Index count should now be 0",octree->IndicesCount(),0);
+    ensure_equals("Should have 2 neighbors.",octree->GetNeighbors(entity1).size(),2);
 }
 }

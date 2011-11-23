@@ -47,9 +47,18 @@ void Octree::Insert(IBaseEntity *item)
 
 void Octree::InsertIntoChild(entity::IBaseEntity* item)
 {
-    // Determine which child to add index to, and add it to node.
-    unsigned short int octant = GetOctreeOctant(item->Position(),_origin);
-    _children[octant]->Insert(item);
+    if((item->Radius() * 2) < _size)
+    {
+        // Determine which child to add index to, and add it to node.
+        unsigned short int octant = GetOctreeOctant(item->Position(),_origin);
+        _children[octant]->Insert(item);
+
+        EntityIterator it = find(_indices.begin(),_indices.end(),item);
+        if(it != _indices.end())
+        {
+            _indices.erase(it);
+        }
+    }
 }
 
 void Octree::Grow()
@@ -65,16 +74,16 @@ void Octree::Grow()
             irr::core::vector3df childOrigin = (GetUnitVectorForOctant(i) * (_size / 4)) + _origin;
 
             //Create the child.
-            _children[i] = new Octree(_maxDepth, _maxIndices, _size / 2, _depth + 1, childOrigin);
+            _children[i] = new Octree(_maxDepth, _maxIndices, _size / 2.0f, _depth + 1, childOrigin);
         }
 
+        EntityGroup indices = _indices;
+
         //Go through my indices, and put them in my children.
-        for(EntityIterator it = _indices.begin(); it != _indices.end(); ++it)
+        for(EntityIterator it = indices.begin(); it != indices.end(); ++it)
         {
             InsertIntoChild(*it);
         }
-
-        _indices.clear();
     }
 }
 
@@ -141,7 +150,7 @@ unsigned int Octree::IndicesCountWithChildren()
     {
         totalIndicesInChildren += _children[i]->IndicesCountWithChildren();
     }
-    return totalIndicesInChildren;
+    return totalIndicesInChildren + IndicesCount();
 }
 
 bool Octree::CanPruneLeafs()
@@ -186,7 +195,9 @@ void Octree::RecalculateIndices()
 void Octree::UpdateIndex(IBaseEntity* item)
 {
     EntityGroup neighbors = GetNeighbors(item);
-    if(find(neighbors.begin(),neighbors.end(),item) == neighbors.end())
+    if(find(neighbors.begin(),neighbors.end(),item) == neighbors.end()
+       || item->Radius() > (_size / pow(2,_maxDepth))
+       || item->Radius() * 2 < _size)
     {
         Remove(item);
         Insert(item);
@@ -204,11 +215,7 @@ EntityGroup Octree::GetIndicesWithChildren()
     for(int i = 0; i < 8; ++i)
     {
         EntityGroup childIndices = _children[i]->GetIndicesWithChildren();
-
-        for(EntityIterator it = childIndices.begin(); it != childIndices.end(); ++it)
-        {
-            indices.push_back(*it);
-        }
+        indices.insert(indices.end(),childIndices.begin(),childIndices.end());
     }
     return indices;
 
@@ -221,13 +228,16 @@ EntityGroup& Octree::GetIndices()
 
 EntityGroup Octree::GetNeighbors(IBaseEntity* item)
 {
-    if(IsLeaf())
+    if(IsLeaf() || item->Radius() * 2 > _size)
     {
         return _indices;
     }
     else
     {
         unsigned int octant = GetOctreeOctant(item->Position(), _origin);
-        return _children[octant]->GetNeighbors(item);
+        EntityGroup indices = _indices;
+        EntityGroup childIndices = _children[octant]->GetNeighbors(item);
+        indices.insert(indices.end(),childIndices.begin(),childIndices.end());
+        return indices;
     }
 }
