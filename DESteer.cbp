@@ -61,7 +61,7 @@
 			<Add directory="include" />
 		</Compiler>
 		<Unit filename="include\desteer\Types.hpp" />
-		<Unit filename="include\desteer\Util.hpp" />
+		<Unit filename="include\desteer\VectorTransformer.hpp" />
 		<Unit filename="include\desteer\behavior\AlignmentBehavior.hpp" />
 		<Unit filename="include\desteer\behavior\ArriveBehavior.hpp" />
 		<Unit filename="include\desteer\behavior\CohesionBehavior.hpp" />

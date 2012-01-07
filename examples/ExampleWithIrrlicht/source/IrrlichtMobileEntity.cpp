@@ -33,17 +33,19 @@ float IrrlichtMobileEntity::Radius() const{
 
 vector3df IrrlichtMobileEntity::ForwardVector() const
 {
-	return _node->getRelativeTransformation().getRotationDegrees().rotationToDirection(vector3df(0,0,1));
+	return _node->getRelativeTransformation().getRotationDegrees().rotationToDirection(vector3df(1,0,0));
 }
 
 void IrrlichtMobileEntity::SetForwardVector(irr::core::vector3df forward)
 {
-     _node->setRotation(forward.getHorizontalAngle());
+    vector3df actual = forward.getHorizontalAngle();
+    actual.Y -= 90;
+     _node->setRotation(actual);
 }
 
 vector3df IrrlichtMobileEntity::SideVector() const
 {
-	return _node->getRelativeTransformation().getRotationDegrees().rotationToDirection(vector3df(1,0,0));
+	return _node->getRelativeTransformation().getRotationDegrees().rotationToDirection(vector3df(0,0,1));
 }
 
 void IrrlichtMobileEntity::SetSideVector(irr::core::vector3df side)
@@ -51,26 +53,9 @@ void IrrlichtMobileEntity::SetSideVector(irr::core::vector3df side)
     return;
 }
 
-vector3df IrrlichtMobileEntity::SteeringVector() const
+vector3df IrrlichtMobileEntity::SteeringVector()
 {
     return _steeringForce;
-}
-
-vector3df IrrlichtMobileEntity::transformWorldVectToLocal(irr::core::vector3df vec)
-{
-    vector3df offset = vec - Position();
-
-    vector3df up = _node->getRelativeTransformation().getRotationDegrees().rotationToDirection(vector3df(0,1,0));
-
-    return vector3df(offset.dotProduct(SideVector()),offset.dotProduct(up),offset.dotProduct(ForwardVector()));
-
-}
-
-vector3df IrrlichtMobileEntity::transformLocalVectToWorld(irr::core::vector3df vec)
-{
-    vector3df returnVec = vec;
-    _node->getRelativeTransformation().transformVect(returnVec);
-    return returnVec;
 }
 
 void IrrlichtMobileEntity::Update(float timeElapsed)

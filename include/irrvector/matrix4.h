@@ -716,17 +716,21 @@ namespace core
     template <class T>
     inline CMatrix4<T>& CMatrix4<T>::setRotation( const vector3d<T>& forward, const vector3d<T>& side)
     {
-        CMatrix4<T> mat;
+        vector3d<T> up = -forward.crossProduct(side);
 
-        vector3d<T> up = forward.crossProduct(side);
-
-        mat[0] = side.X;  mat[1] = side.Y; mat[2] = side.Z;
-
-        mat[4] = up.X; mat[5] = up.Y; mat[6] = up.Z;
-
-        mat[8] = forward.X; mat[9] = forward.Y; mat[10] = forward.Z;
-
-        return *this *= mat;
+        M[0] = forward.X;
+        M[1] = up.X;
+        M[2] = side.X;
+        //M[3] = 0;
+        M[4] = forward.Y;
+        M[5] = up.Y;
+        M[6] = side.Y;
+        //M[7] = 0;
+        M[8] = forward.Z;
+        M[9] = up.Z;
+        M[10] = side.Z;
+        //M[11] = 0;
+        return *this;
     }
 
 	template <class T>

@@ -13,6 +13,7 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-Wall" />
 					<Add option="-g" />
 					<Add directory="include" />
 					<Add directory="..\include" />
@@ -29,7 +30,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="src\desteer\Util.tests.hpp" />
+		<Unit filename="src\desteer\LocalToWorldTransform.tests.hpp" />
+		<Unit filename="src\desteer\WorldToLocalTransform.tests.hpp" />
 		<Unit filename="src\desteer\spatial\Octree.GetOctantFromVector.tests.hpp" />
 		<Unit filename="src\desteer\spatial\Octree.GetOctantUnitVector.tests.hpp" />
 		<Unit filename="src\desteer\spatial\Octree.tests.hpp" />

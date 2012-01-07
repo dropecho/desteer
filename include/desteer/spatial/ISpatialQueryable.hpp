@@ -7,7 +7,7 @@ namespace desteer { namespace spatial {
 class ISpatialQueryable
 {
     public:
-        virtual EntityGroup GetNeighbors(entity::IBaseEntity *entity);
+        //virtual EntityGroup GetNeighbors(entity::IBaseEntity *entity);
 };
 
 

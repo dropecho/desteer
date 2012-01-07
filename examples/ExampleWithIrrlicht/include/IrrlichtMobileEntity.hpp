@@ -38,10 +38,8 @@ public:
 	virtual irr::core::vector3df ForwardVector() const;
 	virtual void SetForwardVector(irr::core::vector3df forward);
 
-	irr::core::vector3df SteeringVector() const;
+	irr::core::vector3df SteeringVector();
 
-    virtual irr::core::vector3df transformWorldVectToLocal(irr::core::vector3df vec);
-	virtual irr::core::vector3df transformLocalVectToWorld(irr::core::vector3df vec);
 
     virtual void Update(float delta);
 	virtual void SetSteering(controller::ISteeringController * controller){_steering = controller;};

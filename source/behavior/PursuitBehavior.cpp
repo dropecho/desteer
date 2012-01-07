@@ -1,4 +1,5 @@
 #include "desteer/behavior/PursuitBehavior.hpp"
+#include "desteer/VectorTransformer.hpp"
 
 using namespace desteer;
 using namespace behavior;
@@ -23,7 +24,8 @@ PursuitBehavior::~PursuitBehavior()
 
 vector3df PursuitBehavior::Calculate()
 {
-    vector3df offsetTarget = _target->Position() + (_target->Position() - _target->transformLocalVectToWorld(_offset));
+    vector3df offsetTarget = _target->Position() + (_target->Position() - VectorTransformer::LocalToWorld(_offset,_target));
+                                                    //_target->transformLocalVectToWorld(_offset));
     vector3df toTarget = (offsetTarget - _mob->Position()) ;
     float heading = _mob->ForwardVector().dotProduct(_target->ForwardVector());
 

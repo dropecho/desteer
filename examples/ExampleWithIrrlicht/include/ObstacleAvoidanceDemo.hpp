@@ -8,7 +8,10 @@ class ObstacleAvoidenceDemo
 	IVideoDriver* driver = device->getVideoDriver();
 	ISceneManager* smgr = device->getSceneManager();
 
-	smgr->addCameraSceneNodeFPS();
+	ICameraSceneNode * camera = smgr->addCameraSceneNode();
+	camera->setPosition(vector3df(0,500,0));
+	camera->setTarget(vector3df(0,0,0));
+
 
     //Rand length is used to place stuff onto the actual ground mesh.
     const s32 randLength = 1024;
@@ -25,7 +28,7 @@ class ObstacleAvoidenceDemo
     //obstacles for entity to avoid.
     EntityGroup obstacles;
 
-    for(int i = 0; i < 60; i++)
+    for(int i = 0; i < 50; i++)
     {
         ISceneNode* s = smgr->addSphereSceneNode(20);
         IrrlichtBaseEntity * e = new IrrlichtBaseEntity(s);
@@ -33,27 +36,48 @@ class ObstacleAvoidenceDemo
         obstacles.push_back(e);
     }
 
-    //Nodes for vehicles
-    ISceneNode * cube = smgr->addCubeSceneNode(4);
-    cube->setMaterialFlag(EMF_LIGHTING,false);
-    cube->setMaterialTexture(0,driver->getTexture(resPath("../../media/v1-solid.png")));
-    //Creating the actual vehicles
-    IrrlichtMobileEntity * Entity1 = new IrrlichtMobileEntity(cube ,vector3df(0,0,0), 1, 100, 25);
 
-    //Creating the steering conrollers, constructor also sets steering on entity
-    SimpleSteeringController* Entity1Steering = new SimpleSteeringController(Entity1);
+    EntityGroup vehicles;
 
-    //Setting up other params for behaviors
-    Entity1Steering->SetObstacles(obstacles);
-    Entity1Steering->SetSeekTarget(vector3df(0,0,513));
+    for(int i = 0; i < 150; ++i)
+    {
+        //Nodes for vehicles
+        ISceneNode * cube = smgr->addCubeSceneNode(4);
+        cube->setMaterialFlag(EMF_LIGHTING,false);
+        cube->setMaterialTexture(0,driver->getTexture(resPath("../../media/v1-solid.png")));
+        cube->setPosition(vector3df( (rand() % randLength) - (randLength/2), 0, (rand() % randLength) - (randLength/2)));
 
-    //Enabling behaviors
-    Entity1Steering->SetBehaviorFlag(EBF_AVOID,true);
-    Entity1Steering->SetBehaviorFlag(EBF_SEEK,true);
+        //Creating the actual vehicles
+        IrrlichtMobileEntity * Entity1 = new IrrlichtMobileEntity(cube ,cube->getPosition(), 1, 150, 200);
+
+        //Creating the steering conrollers, constructor also sets steering on entity
+        SimpleSteeringController* EntitySteering = new SimpleSteeringController(Entity1);
+            //Setting up other params for behaviors
+        EntitySteering->SetObstacles(obstacles);
+        int thingx = (rand() % 10) - 5;
+        if(thingx == 0) { thingx = 1;}
+        int thingz = (rand() % 10) - 5;
+        if(thingz == 0) { thingz = 1;}
+        EntitySteering->SetSeekTarget(vector3df(thingx * 513,0,thingz * 513));
+
+        //Enabling behaviors
+        EntitySteering->SetBehaviorFlag(EBF_AVOID,true);
+        EntitySteering->SetBehaviorFlag(EBF_SEEK,true);
+
+        vehicles.push_back(Entity1);
+    }
+
+
+
+
+
 
     //vars for tracking time between frames. This allows framerate independent motion state updates.
     u32 then = device->getTimer()->getTime();
     float timeUpdate = 0;
+
+
+
 
     while(device->run())
 	{
@@ -71,40 +95,34 @@ class ObstacleAvoidenceDemo
 		}
 
         //Do behavior updates before the rendering.
-        Entity1->Update(frameDeltaTime);
-
-        //Wrap X and Z coords so its like astroids.
-        vector3df entityPos = Entity1->Position();
-
-        if(entityPos.X > 512)
+        for(EntityIterator it = vehicles.begin(); it != vehicles.end(); it++)
         {
-            Entity1->SetPosition(vector3df(-512,0,entityPos.Z));
-        }
-        if(entityPos.X < -512)
-        {
-            Entity1->SetPosition(vector3df(512,0,entityPos.Z));
-        }
-        if(entityPos.Z > 512)
-        {
-            Entity1->SetPosition(vector3df(entityPos.X,0,-512));
-        }
-        if(entityPos.Z < -512)
-        {
-            Entity1->SetPosition(vector3df(entityPos.X,0,512));
+            (*it)->Update(frameDeltaTime);
+
+            //Wrap X and Z coords so its like astroids.
+            vector3df entityPos = (*it)->Position();
+
+            if(entityPos.X > 512)
+            {
+                (*it)->SetPosition(vector3df(-512,0,entityPos.Z));
+            }
+            if(entityPos.X < -512)
+            {
+                (*it)->SetPosition(vector3df(512,0,entityPos.Z));
+            }
+            if(entityPos.Z > 512)
+            {
+                (*it)->SetPosition(vector3df(entityPos.X,0,-512));
+            }
+            if(entityPos.Z < -512)
+            {
+                (*it)->SetPosition(vector3df(entityPos.X,0,512));
+            }
         }
 
-
-        SColor velocityColor = SColor(0,255,0,0);
-        SColor steeringForceColor = SColor(0,0,255,0);
-        SColor headingColor = SColor(0,0,0,255);
 
         driver->beginScene(true, true, SColor(255,100,101,140));
             smgr->drawAll();
-            driver->setTransform(video::ETS_WORLD, core::IdentityMatrix);
-            entityPos = Entity1->Position();
-            driver->draw3DLine(entityPos,entityPos + Entity1->Velocity(), velocityColor);
-            driver->draw3DLine(entityPos,entityPos + Entity1->SteeringVector(), steeringForceColor);
-            driver->draw3DLine(entityPos,entityPos + Entity1->ForwardVector(), headingColor);
 		driver->endScene();
 	}
 

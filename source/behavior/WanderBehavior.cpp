@@ -1,4 +1,5 @@
 #include "desteer/behavior/WanderBehavior.hpp"
+#include "desteer/VectorTransformer.hpp"
 
 using namespace desteer;
 using namespace behavior;
@@ -29,7 +30,8 @@ vector3df WanderBehavior::Calculate()
     vector3df scaledTarget = _wanderTarget.normalize() * _wanderRadius;
 
     //Change local vector back to world vector for desired velocity
-    return _mob->transformLocalVectToWorld(scaledTarget + _wanderDistance) - _mob->Position();
+    return VectorTransformer::LocalToWorld(scaledTarget + _wanderDistance, _mob) - _mob->Position();
+    //_mob->transformLocalVectToWorld(scaledTarget + _wanderDistance) - _mob->Position();
 }
 
 void WanderBehavior::SetMobile(entity::IMobileEntity * mob)

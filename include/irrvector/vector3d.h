@@ -5,7 +5,7 @@
 #ifndef __IRR_POINT_3D_H_INCLUDED__
 #define __IRR_POINT_3D_H_INCLUDED__
 
-#include <iostream>
+//#include <iostream>
 #include "irrMath.h"
 
 namespace irr

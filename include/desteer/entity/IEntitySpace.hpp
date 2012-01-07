@@ -12,10 +12,6 @@ class IEntitySpace
 
 	virtual irr::core::vector3df ForwardVector() const = 0;
 	virtual void SetForwardVector(irr::core::vector3df forward) = 0;
-
-    virtual irr::core::vector3df transformWorldVectToLocal(irr::core::vector3df vec) = 0;
-    virtual irr::core::vector3df transformLocalVectToWorld(irr::core::vector3df vec) = 0;
-
 };
 
 }//end namespace entity

@@ -5,6 +5,7 @@
 #include "desteer/spatial/Octree.GetOctantUnitVector.tests.hpp"
 
 //Utility Tests
-#include "desteer/Util.tests.hpp"
+#include "desteer/LocalToWorldTransform.tests.hpp"
+#include "desteer/WorldToLocalTransform.tests.hpp"
 
 

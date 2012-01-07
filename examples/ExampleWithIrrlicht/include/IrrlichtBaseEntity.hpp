@@ -27,7 +27,7 @@ public :
 	virtual irr::core::vector3df Position() const {return _node->getPosition();};
 	virtual void SetPosition(irr::core::vector3df position) {_node->setPosition(position);};
 
-	virtual float Radius() const {return (_node->getBoundingBox().getExtent().getLength() / 2);};
+	virtual float Radius() const {return (_node->getBoundingBox().getExtent().getLength() / 3.0f);};
 
 	virtual void Update(float timeElapsed) {return;};
 };

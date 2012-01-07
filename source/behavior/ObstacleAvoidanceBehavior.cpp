@@ -1,5 +1,6 @@
 #include "desteer/behavior/ObstacleAvoidanceBehavior.hpp"
-
+#include "desteer/VectorTransformer.hpp"
+#include <cstdio>
 using namespace desteer;
 using namespace behavior;
 using namespace entity;
@@ -27,18 +28,19 @@ vector3df ObstacleAvoidanceBehavior::Calculate()
     IBaseEntity* closestHitObstacle = NULL;
     vector3df localPos = vector3df(0,0,0);
     float distToClosest = 16487654;
-    float detectLength = _mob->Velocity().getLength();
+    float currentSpeed = _mob->Velocity().getLength();
+    float detectLength = currentSpeed; //* (_mob->MaxForce() / currentSpeed);
     for(ConstEntityIterator currentObs = _obstacles.begin(); currentObs != _obstacles.end(); ++currentObs)
     {
-        localPos = _mob->transformWorldVectToLocal((*currentObs)->Position());
+        localPos = VectorTransformer::WorldToLocal((*currentObs)->Position(), _mob);
         float curRadius = (*currentObs)->Radius();
 
-        bool inFront = localPos.Z >= 0;
-        bool near = (localPos.Z - curRadius) < detectLength;
+        bool inFront = localPos.X >= 0;
+        bool near = (localPos.X - curRadius) < detectLength;
 
         if(inFront && near)
         {
-            bool intersecting = (fabs(localPos.X) - (curRadius) < _mob->Radius());
+            bool intersecting = (fabs(localPos.Z) - (curRadius) < _mob->Radius());
             if(intersecting)
             {
                 if(localPos.getLength() < distToClosest)
@@ -52,12 +54,12 @@ vector3df ObstacleAvoidanceBehavior::Calculate()
 
     if(closestHitObstacle)
     {
-        localPos = _mob->transformWorldVectToLocal(closestHitObstacle->Position());
+        localPos = VectorTransformer::WorldToLocal(closestHitObstacle->Position(),_mob);
         vector3df steeringForce = vector3df(0,0,0);
-
-        steeringForce.X = localPos.X >= 0 ? -maxForce * 9000 : maxForce * 9000;
-        steeringForce.Z = -maxForce + (-maxForce * 1/distToClosest);
-        return _mob->transformLocalVectToWorld(steeringForce);
+        float maxForce = _mob->MaxForce();
+        steeringForce.Z = localPos.Z >= 0 ? -maxForce : maxForce;
+        //steeringForce.X = -maxForce + (-maxForce * 1/distToClosest);
+        return VectorTransformer::LocalToWorld(steeringForce,_mob);
     }
     return vector3df(0,0,0);
 }
