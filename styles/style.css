@@ -13,6 +13,10 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
+hr{
+	display: block;
+}
+
 .section{
 	font-size: 18px;
 	line-height: 1.25em;
