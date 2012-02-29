@@ -1,0 +1,75 @@
+.container_12{width:98%;margin-left:auto;margin-right:auto;min-width: 960px; max-width:1575px}
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12,.grid_13,.grid_14,.grid_15,.grid_16, .grid_oneFifth, .grid_100p{display:inline;float:left;margin-left:1%;margin-right:1%;}
+.container_12 .grid_3{width:23%;}
+.container_12 .grid_6{width:48%;}
+.container_12 .grid_9{width:73%;}
+.container_12 .grid_12{width:98%;}
+.alpha{margin-left:0;}
+.omega{margin-right:0;}
+.container_12 .grid_1{width:6.333%;}
+.container_12 .grid_2{width:14.666%;}
+.container_12 .grid_oneFifth{width:18%}
+.container_12 .grid_4{width:31.333%;}
+.container_12 .grid_5{width:39.666%;}
+.container_12 .grid_7{width:56.333%;}
+.container_12 .grid_8{width:64.666%;}
+.container_12 .grid_10{width:81.333%;}
+.container_12 .grid_11{width:89.666%;}
+.container_12 .grid_oneFifth{width: 17.9%}
+.container_12 .prefix_3,.container_16 .prefix_4{padding-left:25%;}
+.container_12 .prefix_6,.container_16 .prefix_8{padding-left:50%;}
+.container_12 .prefix_9,.container_16 .prefix_12{padding-left:75%;}
+.container_12 .prefix_1{padding-left:8.333%;}
+.container_12 .prefix_2{padding-left:16.666%;}
+.container_12 .prefix_4{padding-left:33.333%;}
+.container_12 .prefix_5{padding-left:41.666%;}
+.container_12 .prefix_7{padding-left:58.333%;}
+.container_12 .prefix_8{padding-left:66.666%;}
+.container_12 .prefix_10{padding-left:83.333%;}
+.container_12 .prefix_11{padding-left:91.666%;}
+.container_12 .suffix_3,.container_16 .suffix_4{padding-right:25%;}
+.container_12 .suffix_6,.container_16 .suffix_8{padding-right:50%;}
+.container_12 .suffix_9,.container_16 .suffix_12{padding-right:75%;}
+.container_12 .suffix_1{padding-right:8.333%;}
+.container_12 .suffix_2{padding-right:16.666%;}
+.container_12 .suffix_4{padding-right:33.333%;}
+.container_12 .suffix_5{padding-right:41.666%;}
+.container_12 .suffix_7{padding-right:58.333%;}
+.container_12 .suffix_8{padding-right:66.666%;}
+.container_12 .suffix_10{padding-right:83.333%;}
+.container_12 .suffix_11{padding-right:91.666%;}
+html body * span.clear,html body * div.clear,html body * li.clear,html body * dd.clear{background:none;border:0;clear:both;display:block;float:none;font-size:0;list-style:none;overflow:hidden;visibility:hidden;width:0;height:0;margin:0;padding:0;}
+.clearfix:after{clear:both;content:'.';display:block;visibility:hidden;height:0;}
+.clearfix{display:block;}
+* html .clearfix{height:1%;}
+.grid_100p{ width: 99.99%;margin: 0;padding: 0;}
+/*Exceptions*/
+.container_12 .grid_12.alpha.omega{ width: 100%;}
+.container_12 .grid_6.alpha.omega{width:49.8%}
+
+.container_12 .grid_3.omega,.container_12 .grid_3.alpha{width:24%; }
+.container_12 .grid_6.omega,.container_12 .grid_6.alpha{width:49%;}
+.container_12 .grid_9.omega,.container_12 .grid_9.alpha{width:74%;}
+.container_12 .grid_1.alpha, .container_12 .grid_1.omega{width:7.33%;}
+.container_12 .grid_2.alpha, .container_12 .grid_2.omega{width:15.666%;}
+.container_12 .grid_oneFifth.alpha, .container_12 .grid_oneFifth.omega{width:18%}
+.container_12 .grid_4.alpha, .container_12 .grid_4.omega{ width: 32.333%;}
+.container_12 .grid_5.alpha, .container_12 .grid_5.omega{width:40.666%;}
+.container_12 .grid_7.alpha, .container_12 .grid_7.omega{width:57.333%;}
+.container_12 .grid_8.alpha, .container_12 .grid_8.omega{width:65.6%;}
+.container_12 .grid_10.alpha, .container_12 .grid_10.omega{width:82.333%;}
+.container_12 .grid_11.alpha, .container_12 .grid_11.omega{width:90.666%;}
+
+/**/
+.ui-dialog-grid{min-width: 250px !important; max-width: 80%; width:95% !important}
+
+
+/*DEBUGGING*/
+.grid_debug-background-green {background:url("fluid_grid_debug_images/debug_green.png") !important}
+.grid_debug-background-orange{background:url("fluid_grid_debug_images/debug_orange.png") !important}
+.grid_debug-background-purple{background:url("fluid_grid_debug_images/debug_purple.png") !important}
+.grid_debug-background-red{background: url("fluid_grid_debug_images/debug_red.png") !important}
+.grid_debug-background-pink{background:url("fluid_grid_debug_images/debug_pink.png") !important}
+.grid_debug-background-yellow{background:url("fluid_grid_debug_images/debug_yellow.png") !important}
+.grid_debug-background-solid-gray{background:gray !important}
+.grid_debug-background-solid-lime{background:lime !important}

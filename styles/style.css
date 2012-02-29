@@ -1,0 +1,80 @@
+body{
+	margin-top: 50px;
+	color: #444;		
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.85)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+span{
+	font-size: 18px;
+	line-height: 1.25em;
+}
+
+h2.section{
+	font-size:24px;
+	font-weight: bold;
+	line-height: 2em;
+}
+
+#content{	
+	background-image: url("../images/texture.png");
+	background-repeat: repeat-x repeat-y;
+	min-height: 450px;			
+	-moz-box-shadow: 3px 3px 4px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 3px 3px 4px rgba(0,0,0,0.7);
+	box-shadow: 3px 3px 4px rgba(0,0,0,0.7);
+}
+
+#project-title{
+	text-align: center;
+	font-family: georgia,garamond,serif;
+	font-size: 72px;	
+	font-weight: bold;
+	color:#808080;
+	text-shadow:0px 2px 1px rgba(255,255,255,0.7),0 -2px 1px rgba(0,0,0,0.7);
+	font-smooth:always;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke: 1px transparent;
+}
+
+#header{
+	background-color: #FFF;	
+	clear: both;
+	border: thin grey solid;
+	border-bottom: none;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.menu-item{
+	margin: 0px 0px 0px -5px;
+	width: 19.9%;
+	display: inline-block;
+}
+
+.content {
+	display: none;
+}
+.game-block{	
+	/*border: solid thin black;	*/
+}
+.game-block .title{
+	display: block;	
+	padding-left: 10px;
+	font-size: 1.5em;	
+	color: #000;
+	/*background-color: #7874a4;*/
+}
+.game-block .description{
+	padding-left: 45px;		
+}
