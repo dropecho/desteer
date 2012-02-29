@@ -10,7 +10,7 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
-span{
+.section{
 	font-size: 18px;
 	line-height: 1.25em;
 }
@@ -23,14 +23,14 @@ h2.section{
 
 #content{	
 	background-image: url("../images/texture.png");
-	background-repeat: repeat-x repeat-y;
+	background-repeat: repeat-x;
 	min-height: 450px;			
 	-moz-box-shadow: 3px 3px 4px rgba(0,0,0,0.7);
 	-webkit-box-shadow: 3px 3px 4px rgba(0,0,0,0.7);
 	box-shadow: 3px 3px 4px rgba(0,0,0,0.7);
 }
 
-#project-title{
+#project-title, #project-title span{
 	text-align: center;
 	font-family: georgia,garamond,serif;
 	font-size: 72px;	
@@ -40,6 +40,13 @@ h2.section{
 	font-smooth:always;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-stroke: 1px transparent;
+}
+
+#project-title span.title-de{
+	color: #a6c5d0;
+}
+#project-title span.title-other{
+	color: #74868C;
 }
 
 #header{
