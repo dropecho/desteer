@@ -28,14 +28,21 @@ hr{
 	line-height: 2em;	
 }
 
-.section div{
+.section div {
 	display: inline-block;
 	font-size: 18px;
 	line-height: 1.25em;
 	padding: 10px 25px;
 	background-color: rgba(0,0,0,0.04); 	
+	text-decoration: none;
 }
 
+.section a{
+	display: block;
+	font-size: 18px;
+	line-height: 1.25em;	
+	text-decoration: none;
+}
 
 #content{	
 	background-image: url("../images/texture.png");
