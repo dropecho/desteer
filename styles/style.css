@@ -40,7 +40,7 @@ hr{
 
 #content{	
 	background-image: url("../images/texture.png");
-	background-repeat: repeat-x;
+	background-repeat: repeat-x repeat-y;
 	min-height: 450px;			
 	/*-moz-box-shadow: 3px 3px 4px rgba(0,0,0,1);
 	-webkit-box-shadow: 3px 3px 4px rgba(0,0,0,1);*/
