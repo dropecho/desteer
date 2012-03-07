@@ -46,11 +46,10 @@ hr{
 	-webkit-box-shadow: 3px 3px 4px rgba(0,0,0,1);*/
 	box-shadow: 0px 0px 20px rgba(0,0,0,1);
 	border-radius: 10px;
-	padding: 10px 25px 25px 25px;
+	padding: 0px 25px 25px 25px;
 }
 
-#project-title, #project-title span{
-	text-align: center;
+#project-title, #project-title span{	
 	font-family: georgia,garamond,serif;
 	font-size: 72px;	
 	font-weight: bold;
