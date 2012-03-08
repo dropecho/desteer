@@ -50,6 +50,7 @@ hr{
 }
 
 #project-title, #project-title span{	
+	text-align: center;
 	font-family: georgia,garamond,serif;
 	font-size: 72px;	
 	font-weight: bold;
