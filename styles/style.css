@@ -4,14 +4,9 @@ html {
 body{
 	padding-top: 50px;
 	color: #222;
-	background-color: #444;
+	background-image: url("../images/background.png");
+	/*background-color: #444;*/
 	font-family: Arial, Helvetica, sans-serif;
-}
-
-hr{	
-	border: none;
-	border-top: 5px solid rgba(0,0,0,.03);	
-	
 }
 
 .section h2{
@@ -26,7 +21,6 @@ hr{
 	font-size: 1.25em;
 	line-height: 1.5em;
 	padding: 10px 25px;
-	background-color: rgba(0,0,0,0.03); 	
 	text-decoration: none;
 	border-radius: 5px;
 }
